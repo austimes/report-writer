@@ -1,50 +1,51 @@
-import { query, mutation } from "../_generated/server";
+import { mutation, query } from "../_generated/server";
 import { v } from "convex/values";
 
-export const getById = query({
-  args: { id: v.id("users") },
-  handler: async (ctx, { id }) => {
-    return await ctx.db.get(id);
-  },
-});
+export const getOrCreateUser = mutation({
+  args: {},
+  handler: async (ctx) => {
+    const identity = await ctx.auth.getUserIdentity();
+    if (!identity) {
+      throw new Error("Not authenticated");
+    }
 
-export const getByEmail = query({
-  args: { email: v.string() },
-  handler: async (ctx, { email }) => {
-    return await ctx.db
+    const existingUser = await ctx.db
       .query("users")
-      .withIndex("by_email", (q) => q.eq("email", email))
+      .withIndex("by_email", (q) => q.eq("email", identity.email!))
       .unique();
+
+    if (existingUser) {
+      return existingUser._id;
+    }
+
+    const userId = await ctx.db.insert("users", {
+      email: identity.email!,
+      name: identity.name || identity.email!,
+      createdAt: Date.now(),
+    });
+
+    return userId;
   },
 });
 
 export const getCurrentUser = query({
   args: {},
   handler: async (ctx) => {
-    const users = await ctx.db.query("users").collect();
-    return users[0] ?? null;
+    const identity = await ctx.auth.getUserIdentity();
+    if (!identity) {
+      return null;
+    }
+
+    return await ctx.db
+      .query("users")
+      .withIndex("by_email", (q) => q.eq("email", identity.email!))
+      .unique();
   },
 });
 
-export const create = mutation({
-  args: {
-    email: v.string(),
-    name: v.string(),
-  },
-  handler: async (ctx, { email, name }) => {
-    const existing = await ctx.db
-      .query("users")
-      .withIndex("by_email", (q) => q.eq("email", email))
-      .unique();
-
-    if (existing) {
-      throw new Error(`User with email ${email} already exists`);
-    }
-
-    return await ctx.db.insert("users", {
-      email,
-      name,
-      createdAt: Date.now(),
-    });
+export const listUsers = query({
+  args: {},
+  handler: async (ctx) => {
+    return await ctx.db.query("users").collect();
   },
 });

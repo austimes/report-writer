@@ -1,7 +1,3 @@
-import { Auth } from "convex/server";
-
-// Placeholder for authentication configuration
-// TODO: Implement authentication with Convex Auth or custom auth provider
-export const auth: Auth = {
-  getUserIdentity: async () => null,
-};
+// Authentication is now configured via auth.config.ts
+// Clerk JWT tokens are automatically validated by Convex
+// Access user identity in your functions via ctx.auth.getUserIdentity()
