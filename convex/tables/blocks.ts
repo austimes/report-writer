@@ -18,6 +18,16 @@ export const listBySection = query({
   },
 });
 
+export const listByProject = query({
+  args: { projectId: v.id("projects") },
+  handler: async (ctx, { projectId }) => {
+    return await ctx.db
+      .query("blocks")
+      .withIndex("by_project", (q) => q.eq("projectId", projectId))
+      .collect();
+  },
+});
+
 export const create = mutation({
   args: {
     projectId: v.id("projects"),

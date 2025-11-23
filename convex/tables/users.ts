@@ -18,6 +18,14 @@ export const getByEmail = query({
   },
 });
 
+export const getCurrentUser = query({
+  args: {},
+  handler: async (ctx) => {
+    const users = await ctx.db.query("users").collect();
+    return users[0] ?? null;
+  },
+});
+
 export const create = mutation({
   args: {
     email: v.string(),
