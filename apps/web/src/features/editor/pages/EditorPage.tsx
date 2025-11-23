@@ -12,12 +12,22 @@ import { blocksToMarkdown } from '../utils/blocksToMarkdown';
 import { LockButton } from '../../locks/components/LockButton';
 import { LockIndicator } from '../../locks/components/LockIndicator';
 import { useLock } from '../../locks/hooks/useLock';
+import { VersionHistoryPanel } from '../../versions/components/VersionHistoryPanel';
+import { VersionCompareView } from '../../versions/components/VersionCompareView';
+import { CreateVersionButton } from '../../versions/components/CreateVersionButton';
+import { useVersions } from '../../versions/hooks/useVersions';
+import { useVersionComparison } from '../../versions/hooks/useVersionComparison';
 
 export function EditorPage() {
   const { id } = useParams<{ id: string }>();
   const projectId = id as Id<"projects">;
   
   const [activeSectionId, setActiveSectionId] = useState<Id<"sections"> | null>(null);
+  const [showVersionHistory, setShowVersionHistory] = useState(false);
+  const [compareVersions, setCompareVersions] = useState<{
+    versionA: Id<'reportVersions'>;
+    versionB: Id<'reportVersions'>;
+  } | null>(null);
 
   const project = useQuery(api.tables.projects.getById, projectId ? { id: projectId } : "skip");
   const sections = useQuery(api.tables.sections.listByProject, projectId ? { projectId } : "skip");
@@ -25,6 +35,12 @@ export function EditorPage() {
   
   const blocks = useSectionBlocks(activeSectionId);
   const { debouncedSave, immediateSave, saving } = useBlockEditor(currentUser?._id ?? null);
+
+  const { versions, createVersion, restoreVersion } = useVersions(projectId);
+  const comparison = useVersionComparison(
+    compareVersions?.versionA ?? null,
+    compareVersions?.versionB ?? null
+  );
 
   const activeSection = sections?.find((s: any) => s._id === activeSectionId);
   
@@ -64,6 +80,15 @@ export function EditorPage() {
     debouncedSave(blockId, text);
   };
 
+  const handleCompare = (versionA: Id<'reportVersions'>, versionB: Id<'reportVersions'>) => {
+    setCompareVersions({ versionA, versionB });
+  };
+
+  const handleRestore = async (versionId: Id<'reportVersions'>) => {
+    await restoreVersion({ versionId });
+    setShowVersionHistory(false);
+  };
+
   if (!project) {
     return (
       <div className="min-h-screen bg-background flex items-center justify-center">
@@ -75,11 +100,25 @@ export function EditorPage() {
   return (
     <div className="min-h-screen bg-background flex flex-col">
       <header className="border-b bg-card">
-        <div className="container mx-auto px-4 py-4">
-          <h1 className="text-xl font-bold">{project.name}</h1>
-          {project.description && (
-            <p className="text-sm text-muted-foreground">{project.description}</p>
-          )}
+        <div className="container mx-auto px-4 py-4 flex items-center justify-between">
+          <div>
+            <h1 className="text-xl font-bold">{project.name}</h1>
+            {project.description && (
+              <p className="text-sm text-muted-foreground">{project.description}</p>
+            )}
+          </div>
+          <div className="flex items-center gap-3">
+            <CreateVersionButton 
+              projectId={projectId} 
+              onCreateVersion={(pid, summary) => createVersion({ projectId: pid, summary })} 
+            />
+            <button
+              onClick={() => setShowVersionHistory(!showVersionHistory)}
+              className="px-4 py-2 border rounded-md hover:bg-gray-50"
+            >
+              {showVersionHistory ? 'Hide History' : 'Version History'}
+            </button>
+          </div>
         </div>
       </header>
 
@@ -150,7 +189,27 @@ export function EditorPage() {
         <aside className="w-96 flex-shrink-0">
           <MarkdownPreview markdown={markdownPreview} />
         </aside>
+
+        {showVersionHistory && (
+          <aside className="w-80 flex-shrink-0">
+            <VersionHistoryPanel
+              versions={versions}
+              onRestore={handleRestore}
+              onCompare={handleCompare}
+              onClose={() => setShowVersionHistory(false)}
+            />
+          </aside>
+        )}
       </div>
+
+      {compareVersions && (
+        <VersionCompareView
+          differences={comparison}
+          versionA={versions.find((v: any) => v._id === compareVersions.versionA)!}
+          versionB={versions.find((v: any) => v._id === compareVersions.versionB)!}
+          onClose={() => setCompareVersions(null)}
+        />
+      )}
     </div>
   );
 }
