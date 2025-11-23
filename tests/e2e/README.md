@@ -10,9 +10,18 @@ tests/e2e/
 ├── fixtures/
 │   ├── auth.ts           # Authentication fixtures
 │   └── projects.ts       # Project fixtures
-├── auth/                 # Authentication flow tests
-├── projects/             # Project management tests
-└── reports/              # Report generation tests
+├── pages/                # Page object models
+│   ├── LoginPage.ts      # Login page interactions
+│   ├── SignupPage.ts     # Signup page interactions
+│   ├── ProjectsPage.ts   # Projects listing page
+│   ├── EditorPage.ts     # Project editor page
+│   └── VersionHistoryPage.ts # Version history page
+├── specs/                # Test specifications
+│   ├── auth.spec.ts      # Authentication tests
+│   ├── editing_locks.spec.ts # Concurrent editing tests
+│   ├── agent_threads.spec.ts # Agent interaction tests
+│   ├── versions_history.spec.ts # Version management tests
+│   └── comments.spec.ts  # Comments and collaboration tests
 ```
 
 ## Running E2E Tests

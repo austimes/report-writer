@@ -49,62 +49,6 @@
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
         ],
         "timeout": 30000
-      },
-      {
-        "outputDir": "/Users/gre538/code/report-writer/test-results",
-        "repeatEach": 1,
-        "retries": 0,
-        "metadata": {},
-        "id": "firefox",
-        "name": "firefox",
-        "testDir": "/Users/gre538/code/report-writer/tests/e2e",
-        "testIgnore": [],
-        "testMatch": [
-          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
-        ],
-        "timeout": 30000
-      },
-      {
-        "outputDir": "/Users/gre538/code/report-writer/test-results",
-        "repeatEach": 1,
-        "retries": 0,
-        "metadata": {},
-        "id": "webkit",
-        "name": "webkit",
-        "testDir": "/Users/gre538/code/report-writer/tests/e2e",
-        "testIgnore": [],
-        "testMatch": [
-          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
-        ],
-        "timeout": 30000
-      },
-      {
-        "outputDir": "/Users/gre538/code/report-writer/test-results",
-        "repeatEach": 1,
-        "retries": 0,
-        "metadata": {},
-        "id": "Mobile Chrome",
-        "name": "Mobile Chrome",
-        "testDir": "/Users/gre538/code/report-writer/tests/e2e",
-        "testIgnore": [],
-        "testMatch": [
-          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
-        ],
-        "timeout": 30000
-      },
-      {
-        "outputDir": "/Users/gre538/code/report-writer/test-results",
-        "repeatEach": 1,
-        "retries": 0,
-        "metadata": {},
-        "id": "Mobile Safari",
-        "name": "Mobile Safari",
-        "testDir": "/Users/gre538/code/report-writer/tests/e2e",
-        "testIgnore": [],
-        "testMatch": [
-          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
-        ],
-        "timeout": 30000
       }
     ],
     "shard": null,
@@ -114,18 +58,539 @@
     "workers": 4,
     "webServer": null
   },
-  "suites": [],
-  "errors": [
+  "suites": [
     {
-      "message": "Error: No tests found",
-      "stack": "Error: No tests found"
+      "title": "specs/agent_threads.spec.ts",
+      "file": "specs/agent_threads.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Agent Threads",
+          "file": "specs/agent_threads.spec.ts",
+          "line": 7,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should create thread and get agent response",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "19bc61c2ed0b9133be4f-ec17bd2846c02a5650ca",
+              "file": "specs/agent_threads.spec.ts",
+              "line": 8,
+              "column": 3
+            },
+            {
+              "title": "should accept proposed edits from agent",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "19bc61c2ed0b9133be4f-7e57cdc39e8242a4e83f",
+              "file": "specs/agent_threads.spec.ts",
+              "line": 36,
+              "column": 3
+            },
+            {
+              "title": "should reject proposed edits from agent",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "19bc61c2ed0b9133be4f-dcbfb3bef75177178302",
+              "file": "specs/agent_threads.spec.ts",
+              "line": 70,
+              "column": 3
+            },
+            {
+              "title": "should create version after accepting agent edit",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "19bc61c2ed0b9133be4f-e370f96bcad695a71541",
+              "file": "specs/agent_threads.spec.ts",
+              "line": 104,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "specs/auth.spec.ts",
+      "file": "specs/auth.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Authentication",
+          "file": "specs/auth.spec.ts",
+          "line": 7,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should sign up a new user",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "dc83760d852894d7a94b-02feb87ba5d971b0ed5b",
+              "file": "specs/auth.spec.ts",
+              "line": 8,
+              "column": 3
+            },
+            {
+              "title": "should login with existing user",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "dc83760d852894d7a94b-c06592dc67529455622f",
+              "file": "specs/auth.spec.ts",
+              "line": 25,
+              "column": 3
+            },
+            {
+              "title": "should logout successfully",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "dc83760d852894d7a94b-732965b46a7bf2be88e6",
+              "file": "specs/auth.spec.ts",
+              "line": 48,
+              "column": 3
+            },
+            {
+              "title": "should create first project after signup",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "dc83760d852894d7a94b-5d32c7c5d8ed59f14c6d",
+              "file": "specs/auth.spec.ts",
+              "line": 65,
+              "column": 3
+            },
+            {
+              "title": "should show error on invalid login",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "dc83760d852894d7a94b-972bd494c041e19d3588",
+              "file": "specs/auth.spec.ts",
+              "line": 86,
+              "column": 3
+            },
+            {
+              "title": "should navigate between login and signup",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "dc83760d852894d7a94b-b6006d5aa9cdf64309a2",
+              "file": "specs/auth.spec.ts",
+              "line": 97,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "specs/comments.spec.ts",
+      "file": "specs/comments.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Comments",
+          "file": "specs/comments.spec.ts",
+          "line": 7,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should create comment on section",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a1827b3b90e810edf577-cd19defdf69a4f304152",
+              "file": "specs/comments.spec.ts",
+              "line": 8,
+              "column": 3
+            },
+            {
+              "title": "should assign comment to agent",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a1827b3b90e810edf577-cf361b458e204e000f20",
+              "file": "specs/comments.spec.ts",
+              "line": 31,
+              "column": 3
+            },
+            {
+              "title": "should resolve comment",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a1827b3b90e810edf577-6a24f0c53ee29eeb309d",
+              "file": "specs/comments.spec.ts",
+              "line": 60,
+              "column": 3
+            },
+            {
+              "title": "should show comment author",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a1827b3b90e810edf577-337edc424069003bc8fe",
+              "file": "specs/comments.spec.ts",
+              "line": 89,
+              "column": 3
+            },
+            {
+              "title": "should support multiple comments",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a1827b3b90e810edf577-d6c2d5b4a54634e65e83",
+              "file": "specs/comments.spec.ts",
+              "line": 112,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "specs/editing_locks.spec.ts",
+      "file": "specs/editing_locks.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Editing Locks",
+          "file": "specs/editing_locks.spec.ts",
+          "line": 7,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should handle concurrent editing with locks",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "46878dcd3e016dad76ef-12056ff1aba89e00b575",
+              "file": "specs/editing_locks.spec.ts",
+              "line": 8,
+              "column": 3
+            },
+            {
+              "title": "should prevent editing without lock",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "46878dcd3e016dad76ef-004341c7154c036153e9",
+              "file": "specs/editing_locks.spec.ts",
+              "line": 71,
+              "column": 3
+            },
+            {
+              "title": "should show lock owner name",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "46878dcd3e016dad76ef-686a5d1a7bbb51a488ab",
+              "file": "specs/editing_locks.spec.ts",
+              "line": 120,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "specs/versions_history.spec.ts",
+      "file": "specs/versions_history.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Version History",
+          "file": "specs/versions_history.spec.ts",
+          "line": 8,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should create and view versions",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "d87331994c44a0c2b726-b11c54e0d36b9f19b565",
+              "file": "specs/versions_history.spec.ts",
+              "line": 9,
+              "column": 3
+            },
+            {
+              "title": "should compare two versions",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "d87331994c44a0c2b726-6ef49629dc3e3a9d0ecf",
+              "file": "specs/versions_history.spec.ts",
+              "line": 44,
+              "column": 3
+            },
+            {
+              "title": "should restore previous version",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "d87331994c44a0c2b726-9105f1e37bfc4da376a5",
+              "file": "specs/versions_history.spec.ts",
+              "line": 84,
+              "column": 3
+            },
+            {
+              "title": "should show version timestamps",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "d87331994c44a0c2b726-5d19092bdd3312bb6197",
+              "file": "specs/versions_history.spec.ts",
+              "line": 126,
+              "column": 3
+            }
+          ]
+        }
+      ]
     }
   ],
+  "errors": [],
   "stats": {
-    "startTime": "2025-11-22T21:43:45.680Z",
-    "duration": 5.52800000000002,
+    "startTime": "2025-11-23T02:54:11.014Z",
+    "duration": 100.38300000000004,
     "expected": 0,
-    "skipped": 0,
+    "skipped": 22,
     "unexpected": 0,
     "flaky": 0
   }
