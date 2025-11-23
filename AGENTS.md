@@ -133,6 +133,47 @@ history/
 
 For more details, see README.md and QUICKSTART.md.
 
+## LLM-Specific Documentation
+
+This project includes specialized documentation for LLM developers working with Convex and Daytona.
+
+### Convex Documentation
+
+- **docs/convex-llms.txt** - Compact reference with URLs to official Convex documentation sections
+  - Use this for quick lookups and to get current documentation links
+  - Minimal token usage, ideal for context-aware development
+  
+- **docs/convex-llms-full.txt** - Complete Convex documentation for LLMs
+  - Full documentation content (VERY LONG)
+  - Use when you need comprehensive reference without web access
+  - High token usage, use sparingly
+
+### Daytona Documentation
+
+- **docs/daytona-llms.txt** - Compact reference with URLs to official Daytona documentation sections
+  - Use this for quick lookups and to get current documentation links
+  - Minimal token usage, ideal for context-aware development
+  
+- **docs/daytona-llms-full.txt** - Complete Daytona documentation for LLMs
+  - Full documentation content (VERY LONG)
+  - Use when you need comprehensive reference without web access
+  - High token usage, use sparingly
+
+### Usage Guidelines
+
+**Prefer the compact versions (`-llms.txt`) when:**
+- You have web access and can follow documentation links
+- You need to conserve context window tokens
+- You're doing exploratory work and need quick references
+
+**Use the full versions (`-llms-full.txt`) when:**
+- You need comprehensive offline reference
+- You're implementing complex features requiring detailed examples
+- Web access is unavailable or unreliable
+- You need to cross-reference multiple documentation sections
+
+**Note**: The non-full versions contain up-to-date URLs to the official documentation, making them the preferred choice for most development tasks.
+
 ## Available Tools
 
 ### GitHub CLI (gh)
