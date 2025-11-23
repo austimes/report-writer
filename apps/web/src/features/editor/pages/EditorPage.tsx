@@ -17,6 +17,7 @@ import { VersionCompareView } from '../../versions/components/VersionCompareView
 import { CreateVersionButton } from '../../versions/components/CreateVersionButton';
 import { useVersions } from '../../versions/hooks/useVersions';
 import { useVersionComparison } from '../../versions/hooks/useVersionComparison';
+import { ThreadsPanel } from '../../agentThreads';
 
 export function EditorPage() {
   const { id } = useParams<{ id: string }>();
@@ -24,6 +25,7 @@ export function EditorPage() {
   
   const [activeSectionId, setActiveSectionId] = useState<Id<"sections"> | null>(null);
   const [showVersionHistory, setShowVersionHistory] = useState(false);
+  const [showAgentThreads, setShowAgentThreads] = useState(false);
   const [compareVersions, setCompareVersions] = useState<{
     versionA: Id<'reportVersions'>;
     versionB: Id<'reportVersions'>;
@@ -118,6 +120,12 @@ export function EditorPage() {
             >
               {showVersionHistory ? 'Hide History' : 'Version History'}
             </button>
+            <button
+              onClick={() => setShowAgentThreads(!showAgentThreads)}
+              className="px-4 py-2 border rounded-md hover:bg-gray-50"
+            >
+              {showAgentThreads ? 'Hide Threads' : '🤖 Agent Threads'}
+            </button>
           </div>
         </div>
       </header>
@@ -198,6 +206,12 @@ export function EditorPage() {
               onCompare={handleCompare}
               onClose={() => setShowVersionHistory(false)}
             />
+          </aside>
+        )}
+
+        {showAgentThreads && (
+          <aside className="w-96 flex-shrink-0 border-l bg-white">
+            <ThreadsPanel projectId={projectId} />
           </aside>
         )}
       </div>
