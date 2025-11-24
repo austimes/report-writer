@@ -15,7 +15,7 @@ export function ProjectCard({ id, name, description, updatedAt }: ProjectCardPro
   };
 
   return (
-    <Link to={`/projects/${id}`}>
+    <Link to={`/projects/${id}`} data-testid="project-card" data-project-id={id}>
       <Card className="p-6 hover:shadow-lg transition-shadow cursor-pointer">
         <h3 className="text-xl font-semibold mb-2">{name}</h3>
         {description && (

@@ -28,8 +28,8 @@ export function CreateProjectModal({ userId, onClose, onCreate }: CreateProjectM
   };
 
   return (
-    <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
-      <div className="bg-white rounded-lg p-8 max-w-md w-full">
+    <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50" data-testid="create-project-modal-backdrop">
+      <div className="bg-white rounded-lg p-8 max-w-md w-full" data-testid="create-project-modal">
         <h2 className="text-2xl font-bold mb-6">Create New Project</h2>
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
@@ -40,6 +40,7 @@ export function CreateProjectModal({ userId, onClose, onCreate }: CreateProjectM
               value={name}
               onChange={(e) => setName(e.target.value)}
               required
+              data-testid="project-name-input"
             />
           </div>
           <div>
@@ -50,13 +51,14 @@ export function CreateProjectModal({ userId, onClose, onCreate }: CreateProjectM
               placeholder="Project description..."
               value={description}
               onChange={(e) => setDescription(e.target.value)}
+              data-testid="project-description-input"
             />
           </div>
           <div className="flex gap-2 justify-end">
-            <Button type="button" onClick={onClose} variant="outline">
+            <Button type="button" onClick={onClose} variant="outline" data-testid="cancel-create-project">
               Cancel
             </Button>
-            <Button type="submit" disabled={loading}>
+            <Button type="submit" disabled={loading} data-testid="submit-create-project">
               {loading ? 'Creating...' : 'Create Project'}
             </Button>
           </div>

@@ -8,7 +8,7 @@ import { Id } from 'convex/_generated/dataModel';
 
 export function ProjectsListPage() {
   const { user, logout, getOrCreateUser } = useAuth();
-  const userId = user?.id as Id<'users'>;
+  const userId = user?.id;
   const { projects, createProject } = useProjects(userId);
   const [showCreateModal, setShowCreateModal] = useState(false);
 
@@ -34,7 +34,7 @@ export function ProjectsListPage() {
       
       <main className="container mx-auto px-4 py-8">
         <div className="mb-6">
-          <Button onClick={() => setShowCreateModal(true)}>
+          <Button onClick={() => setShowCreateModal(true)} data-testid="open-create-project-modal">
             Create Project
           </Button>
         </div>
@@ -44,7 +44,7 @@ export function ProjectsListPage() {
             No projects yet. Create your first project to get started.
           </div>
         ) : (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" data-testid="project-list">
             {projects.map((project) => (
               <ProjectCard
                 key={project._id}
@@ -58,11 +58,13 @@ export function ProjectsListPage() {
         )}
       </main>
 
-      {showCreateModal && (
+      {showCreateModal && userId && (
         <CreateProjectModal
           userId={userId}
           onClose={() => setShowCreateModal(false)}
-          onCreate={createProject}
+          onCreate={(ownerId, name, description) =>
+            createProject({ ownerId, name, description })
+          }
         />
       )}
     </div>

@@ -5,14 +5,16 @@ export class ProjectsPage {
   readonly createProjectButton: Locator;
   readonly logoutButton: Locator;
   readonly userEmail: Locator;
+  readonly projectList: Locator;
   readonly projectCards: Locator;
 
   constructor(page: Page) {
     this.page = page;
-    this.createProjectButton = page.getByRole('button', { name: /create project/i });
+    this.createProjectButton = page.getByTestId('open-create-project-modal');
     this.logoutButton = page.getByRole('button', { name: /logout/i });
     this.userEmail = page.locator('text=/.*@.*\\..*/');
-    this.projectCards = page.locator('[class*="project-card"], a[href^="/projects/"]');
+    this.projectList = page.getByTestId('project-list');
+    this.projectCards = page.getByTestId('project-card');
   }
 
   async goto() {
@@ -21,27 +23,24 @@ export class ProjectsPage {
 
   async openCreateProjectModal() {
     await this.createProjectButton.click();
+    await this.page.getByTestId('create-project-modal').waitFor();
   }
 
   async createProject(name: string, description?: string) {
     await this.openCreateProjectModal();
-    
-    const nameInput = this.page.locator('input[placeholder*="name" i], input[name="name"]').first();
-    await nameInput.fill(name);
-    
+
+    await this.page.getByTestId('project-name-input').fill(name);
     if (description) {
-      const descInput = this.page.locator('input[placeholder*="description" i], textarea[placeholder*="description" i], input[name="description"], textarea[name="description"]').first();
-      await descInput.fill(description);
+      await this.page.getByTestId('project-description-input').fill(description);
     }
-    
-    const createButton = this.page.getByRole('button', { name: /^create$/i });
-    await createButton.click();
-    
-    await this.page.waitForTimeout(500);
+
+    await this.page.getByTestId('submit-create-project').click();
+    // Wait for modal to close and list to update
+    await this.page.getByTestId('create-project-modal').waitFor({ state: 'detached' });
   }
 
   async getProjectByName(name: string) {
-    return this.page.locator(`text=${name}`).first();
+    return this.page.getByTestId('project-card').filter({ hasText: name }).first();
   }
 
   async openProject(name: string) {
