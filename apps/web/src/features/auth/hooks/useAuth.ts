@@ -1,5 +1,6 @@
-import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useAuth as useClerkAuth } from '@clerk/clerk-react';
+import { useMutation, useQuery } from 'convex/react';
+import { api } from '../../../../../../convex/_generated/api';
 
 export interface User {
   id: string;
@@ -8,59 +9,23 @@ export interface User {
 }
 
 export function useAuth() {
-  const navigate = useNavigate();
-  const [user, setUser] = useState<User | null>(null);
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState<string | null>(null);
+  const { signOut } = useClerkAuth();
+  const getOrCreateUser = useMutation(api.tables.users.getOrCreateUser);
+  const currentUser = useQuery(api.tables.users.getCurrentUser);
 
-  const login = async (email: string, password: string) => {
-    setLoading(true);
-    setError(null);
-    try {
-      const mockUser: User = {
-        id: '1',
-        email,
-        name: email.split('@')[0],
-      };
-      setUser(mockUser);
-      navigate('/');
-    } catch (err) {
-      setError(err instanceof Error ? err.message : 'Login failed');
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  const signup = async (name: string, email: string, password: string) => {
-    setLoading(true);
-    setError(null);
-    try {
-      const mockUser: User = {
-        id: '1',
-        email,
-        name,
-      };
-      setUser(mockUser);
-      navigate('/');
-    } catch (err) {
-      setError(err instanceof Error ? err.message : 'Signup failed');
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  const logout = () => {
-    setUser(null);
-    navigate('/login');
+  const logout = async () => {
+    await signOut();
   };
 
   return {
-    user,
-    loading,
-    error,
-    login,
-    signup,
+    user: currentUser ? {
+      id: currentUser._id,
+      email: currentUser.email,
+      name: currentUser.name,
+    } : null,
+    loading: currentUser === undefined,
     logout,
-    isAuthenticated: user !== null,
+    isAuthenticated: currentUser !== null,
+    getOrCreateUser,
   };
 }

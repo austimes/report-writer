@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Button } from '@/shared/components/ui/Button';
 import { useAuth } from '../../auth/hooks/useAuth';
 import { useProjects } from '../hooks/useProjects';
@@ -7,10 +7,16 @@ import { CreateProjectModal } from '../components/CreateProjectModal';
 import { Id } from 'convex/_generated/dataModel';
 
 export function ProjectsListPage() {
-  const { user, logout } = useAuth();
+  const { user, logout, getOrCreateUser } = useAuth();
   const userId = user?.id as Id<'users'>;
   const { projects, createProject } = useProjects(userId);
   const [showCreateModal, setShowCreateModal] = useState(false);
+
+  useEffect(() => {
+    if (getOrCreateUser) {
+      getOrCreateUser();
+    }
+  }, [getOrCreateUser]);
 
   return (
     <div className="min-h-screen bg-background">
