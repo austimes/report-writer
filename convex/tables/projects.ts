@@ -30,13 +30,15 @@ export const create = mutation({
       throw new Error(`User ${ownerId} not found`);
     }
 
-    return await ctx.db.insert("projects", {
+    const projectId = await ctx.db.insert("projects", {
       ownerId,
       name,
       description,
       createdAt: Date.now(),
       archived: false,
     });
+
+    return projectId;
   },
 });
 
@@ -69,5 +71,80 @@ export const archive = mutation({
     }
 
     await ctx.db.patch(id, { archived: true });
+  },
+});
+
+export const deleteProject = mutation({
+  args: { id: v.id("projects") },
+  handler: async (ctx, { id }) => {
+    const project = await ctx.db.get(id);
+    if (!project) {
+      throw new Error(`Project ${id} not found`);
+    }
+
+    const documents = await ctx.db
+      .query("documents")
+      .withIndex("by_project", (q) => q.eq("projectId", id))
+      .collect();
+
+    for (const doc of documents) {
+      const nodes = await ctx.db
+        .query("nodes")
+        .withIndex("by_document", (q) => q.eq("documentId", doc._id))
+        .collect();
+      
+      for (const node of nodes) {
+        await ctx.db.delete(node._id);
+      }
+      
+      await ctx.db.delete(doc._id);
+    }
+
+    const members = await ctx.db
+      .query("projectMembers")
+      .withIndex("by_project", (q) => q.eq("projectId", id))
+      .collect();
+    
+    for (const member of members) {
+      await ctx.db.delete(member._id);
+    }
+
+    const locks = await ctx.db
+      .query("locks")
+      .withIndex("by_project", (q) => q.eq("projectId", id))
+      .collect();
+    
+    for (const lock of locks) {
+      await ctx.db.delete(lock._id);
+    }
+
+    const threads = await ctx.db
+      .query("agentThreads")
+      .withIndex("by_project", (q) => q.eq("projectId", id))
+      .collect();
+    
+    for (const thread of threads) {
+      await ctx.db.delete(thread._id);
+    }
+
+    const versions = await ctx.db
+      .query("reportVersions")
+      .withIndex("by_project", (q) => q.eq("projectId", id))
+      .collect();
+    
+    for (const version of versions) {
+      await ctx.db.delete(version._id);
+    }
+
+    const comments = await ctx.db
+      .query("comments")
+      .withIndex("by_project", (q) => q.eq("projectId", id))
+      .collect();
+    
+    for (const comment of comments) {
+      await ctx.db.delete(comment._id);
+    }
+
+    await ctx.db.delete(id);
   },
 });

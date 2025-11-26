@@ -1,14 +1,14 @@
 import { query, mutation } from "../_generated/server";
 import { v } from "convex/values";
 
-const LOCK_EXPIRY_MS = 7200000;
+const LOCK_EXPIRY_MS = 7200000; // 2 hours
 
 type Lock = {
   _id: any;
   _creationTime: number;
   projectId: any;
-  resourceType: "section" | "block" | "thread";
-  resourceId: string;
+  documentId?: any;
+  nodeId?: any;
   userId: any;
   lockedAt: number;
 };
@@ -17,17 +17,11 @@ function isLockExpired(lock: Lock): boolean {
   return lock.lockedAt + LOCK_EXPIRY_MS < Date.now();
 }
 
-export const acquireLock = mutation({
+export const acquireDocumentLock = mutation({
   args: {
-    projectId: v.id("projects"),
-    resourceType: v.union(
-      v.literal("section"),
-      v.literal("block"),
-      v.literal("thread")
-    ),
-    resourceId: v.string(),
+    documentId: v.id("documents"),
   },
-  handler: async (ctx, { projectId, resourceType, resourceId }) => {
+  handler: async (ctx, { documentId }) => {
     const userId = await ctx.auth.getUserIdentity();
     if (!userId) {
       throw new Error("Not authenticated");
@@ -42,11 +36,16 @@ export const acquireLock = mutation({
       throw new Error("User not found");
     }
 
+    const document = await ctx.db.get(documentId);
+    if (!document) {
+      throw new Error("Document not found");
+    }
+
+    // Check for existing document lock
     const existingLock = await ctx.db
       .query("locks")
-      .withIndex("by_resource", (q) =>
-        q.eq("resourceType", resourceType).eq("resourceId", resourceId)
-      )
+      .withIndex("by_document", (q) => q.eq("documentId", documentId))
+      .filter((q) => q.eq(q.field("nodeId"), undefined))
       .unique();
 
     if (existingLock) {
@@ -54,12 +53,11 @@ export const acquireLock = mutation({
         if (existingLock.userId !== user._id) {
           const lockOwner = await ctx.db.get(existingLock.userId);
           throw new Error(
-            `Resource is locked by ${lockOwner?.name || "another user"}`
+            `Document is locked by ${lockOwner?.name || "another user"}`
           );
         }
-        await ctx.db.patch(existingLock._id, {
-          lockedAt: Date.now(),
-        });
+        // Refresh existing lock
+        await ctx.db.patch(existingLock._id, { lockedAt: Date.now() });
         return await ctx.db.get(existingLock._id);
       } else {
         await ctx.db.delete(existingLock._id);
@@ -67,9 +65,81 @@ export const acquireLock = mutation({
     }
 
     const lockId = await ctx.db.insert("locks", {
-      projectId,
-      resourceType,
-      resourceId,
+      projectId: document.projectId,
+      documentId,
+      nodeId: undefined,
+      userId: user._id,
+      lockedAt: Date.now(),
+    });
+
+    return await ctx.db.get(lockId);
+  },
+});
+
+export const acquireNodeLock = mutation({
+  args: {
+    nodeId: v.id("nodes"),
+  },
+  handler: async (ctx, { nodeId }) => {
+    const userId = await ctx.auth.getUserIdentity();
+    if (!userId) {
+      throw new Error("Not authenticated");
+    }
+
+    const user = await ctx.db
+      .query("users")
+      .withIndex("by_email", (q) => q.eq("email", userId.email!))
+      .unique();
+
+    if (!user) {
+      throw new Error("User not found");
+    }
+
+    const node = await ctx.db.get(nodeId);
+    if (!node) {
+      throw new Error("Node not found");
+    }
+
+    // Check for existing node lock
+    const existingLock = await ctx.db
+      .query("locks")
+      .withIndex("by_node", (q) => q.eq("nodeId", nodeId))
+      .unique();
+
+    if (existingLock) {
+      if (!isLockExpired(existingLock)) {
+        if (existingLock.userId !== user._id) {
+          const lockOwner = await ctx.db.get(existingLock.userId);
+          throw new Error(
+            `Node is locked by ${lockOwner?.name || "another user"}`
+          );
+        }
+        // Refresh existing lock
+        await ctx.db.patch(existingLock._id, { lockedAt: Date.now() });
+        return await ctx.db.get(existingLock._id);
+      } else {
+        await ctx.db.delete(existingLock._id);
+      }
+    }
+
+    // Check for document-level lock that would block node editing
+    const documentLock = await ctx.db
+      .query("locks")
+      .withIndex("by_document", (q) => q.eq("documentId", node.documentId))
+      .filter((q) => q.eq(q.field("nodeId"), undefined))
+      .unique();
+
+    if (documentLock && !isLockExpired(documentLock) && documentLock.userId !== user._id) {
+      const lockOwner = await ctx.db.get(documentLock.userId);
+      throw new Error(
+        `Document is locked by ${lockOwner?.name || "another user"}`
+      );
+    }
+
+    const lockId = await ctx.db.insert("locks", {
+      projectId: node.projectId,
+      documentId: node.documentId,
+      nodeId,
       userId: user._id,
       lockedAt: Date.now(),
     });
@@ -88,9 +158,7 @@ export const releaseLock = mutation({
 export const refreshLock = mutation({
   args: { lockId: v.id("locks") },
   handler: async (ctx, { lockId }) => {
-    await ctx.db.patch(lockId, {
-      lockedAt: Date.now(),
-    });
+    await ctx.db.patch(lockId, { lockedAt: Date.now() });
     return await ctx.db.get(lockId);
   },
 });
@@ -107,21 +175,41 @@ export const getLocksForProject = query({
   },
 });
 
-export const getLockForResource = query({
-  args: {
-    resourceType: v.union(
-      v.literal("section"),
-      v.literal("block"),
-      v.literal("thread")
-    ),
-    resourceId: v.string(),
+export const getLocksForDocument = query({
+  args: { documentId: v.id("documents") },
+  handler: async (ctx, { documentId }) => {
+    const locks = await ctx.db
+      .query("locks")
+      .withIndex("by_document", (q) => q.eq("documentId", documentId))
+      .collect();
+
+    return locks.filter((lock) => !isLockExpired(lock));
   },
-  handler: async (ctx, { resourceType, resourceId }) => {
+});
+
+export const getLockForNode = query({
+  args: { nodeId: v.id("nodes") },
+  handler: async (ctx, { nodeId }) => {
     const lock = await ctx.db
       .query("locks")
-      .withIndex("by_resource", (q) =>
-        q.eq("resourceType", resourceType).eq("resourceId", resourceId)
-      )
+      .withIndex("by_node", (q) => q.eq("nodeId", nodeId))
+      .unique();
+
+    if (!lock || isLockExpired(lock)) {
+      return null;
+    }
+
+    return lock;
+  },
+});
+
+export const getLockForDocument = query({
+  args: { documentId: v.id("documents") },
+  handler: async (ctx, { documentId }) => {
+    const lock = await ctx.db
+      .query("locks")
+      .withIndex("by_document", (q) => q.eq("documentId", documentId))
+      .filter((q) => q.eq(q.field("nodeId"), undefined))
       .unique();
 
     if (!lock || isLockExpired(lock)) {

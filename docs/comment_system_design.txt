@@ -1,0 +1,7 @@
+Identity is the node’s opaque id, not its title or position.
+Comments point to targetNodeId, plus optional range inside that node.
+Any structural edit (rename, move, reorder) that preserves the node keeps comments intact.
+Deletion: Mark comments as orphaned, show in a dedicated “orphaned comments” view.
+Optionally allow re-attachment via UI.
+Subsection moves: Comments on subsections move with them.
+Comments on parents stay put; scope can allow more nuanced behaviour later.

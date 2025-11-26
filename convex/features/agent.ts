@@ -1,15 +1,16 @@
 import { mutation, action } from "../_generated/server";
 import { v } from "convex/values";
-import { api, internal } from "../_generated/api";
+import { api } from "../_generated/api";
 
 export const createThread = mutation({
   args: {
     projectId: v.id("projects"),
+    documentId: v.optional(v.id("documents")),
     title: v.string(),
-    anchorSectionId: v.optional(v.id("sections")),
+    anchorNodeId: v.optional(v.id("nodes")),
     anchorCommentId: v.optional(v.id("comments")),
   },
-  handler: async (ctx, { projectId, title, anchorSectionId, anchorCommentId }) => {
+  handler: async (ctx, { projectId, documentId, title, anchorNodeId, anchorCommentId }) => {
     const userId = await ctx.auth.getUserIdentity();
     if (!userId) {
       throw new Error("Not authenticated");
@@ -26,8 +27,9 @@ export const createThread = mutation({
 
     const threadId = await ctx.runMutation(api.tables.agentThreads.create, {
       projectId,
+      documentId,
       title,
-      anchorSectionId,
+      anchorNodeId,
       anchorCommentId,
     });
 
@@ -50,8 +52,9 @@ export const forkThread = mutation({
 
     const newThreadId = await ctx.runMutation(api.tables.agentThreads.create, {
       projectId: parentThread.projectId,
+      documentId: parentThread.documentId,
       title: forkTitle,
-      anchorSectionId: parentThread.anchorSectionId,
+      anchorNodeId: parentThread.anchorNodeId,
       anchorCommentId: parentThread.anchorCommentId,
       metadata: {
         parent_thread_id: parentThreadId,
@@ -115,7 +118,7 @@ export const runAgentOnThread = action({
     });
 
     try {
-      const userMessageId = await ctx.runMutation(
+      await ctx.runMutation(
         api.tables.agentMessages.create,
         {
           threadId,
@@ -129,29 +132,30 @@ export const runAgentOnThread = action({
         threadId,
       });
 
-      const sections = await ctx.runQuery(api.tables.sections.listByProject, {
-        projectId: thread.projectId,
-      });
+      // TODO: Update to use nodes table instead of sections/blocks
+      // For now, we'll pass an empty context since the old model is removed
+      const contextNodes: Array<{
+        nodeId: string;
+        nodeType: string;
+        text?: string;
+        parentId?: string;
+      }> = [];
 
-      const contextSections = [];
-      for (const section of sections) {
-        const blocks = await ctx.runQuery(api.tables.blocks.listBySection, {
-          sectionId: section._id,
+      if (thread.documentId) {
+        const nodes = await ctx.runQuery(api.tables.nodes.listByDocument, {
+          documentId: thread.documentId,
         });
-        contextSections.push({
-          sectionId: section._id,
-          headingText: section.headingText,
-          headingLevel: section.headingLevel,
-          blocks: blocks.map((b) => ({
-            blockId: b._id,
-            blockType: b.blockType,
-            markdownText: b.markdownText,
-          })),
-        });
+        for (const node of nodes) {
+          contextNodes.push({
+            nodeId: node._id,
+            nodeType: node.nodeType,
+            text: node.text,
+            parentId: node.parentId,
+          });
+        }
       }
 
-      const sandboxUrl =
-        process.env.SANDBOX_URL || "http://localhost:8000";
+      const sandboxUrl = process.env.SANDBOX_URL || "http://localhost:8000";
 
       let agentResponse;
       let proposedEdits = [];
@@ -169,7 +173,7 @@ export const runAgentOnThread = action({
               content: m.content,
             })),
             context: {
-              sections: contextSections,
+              nodes: contextNodes,
             },
           }),
         });
@@ -253,29 +257,31 @@ export const applyAgentEdits = mutation({
       throw new Error(`Thread ${threadId} not found`);
     }
 
+    // TODO: Update to apply edits to nodes table instead of blocks
     for (const edit of message.toolCalls) {
-      if (edit.type === "edit_block" && edit.blockId && edit.newText) {
-        await ctx.runMutation(api.tables.blocks.updateText, {
-          id: edit.blockId,
-          markdownText: edit.newText,
+      if (edit.type === "edit_node" && edit.nodeId && edit.newText) {
+        await ctx.runMutation(api.tables.nodes.updateText, {
+          id: edit.nodeId,
+          text: edit.newText,
           editorUserId: user._id,
           editType: "agent",
         });
       }
     }
 
-    const versionId = await ctx.runMutation(
-      api.features.versions.createVersionSnapshot,
-      {
-        projectId: thread.projectId,
-        summary: `Applied agent edits from thread "${thread.title}"`,
-      }
-    );
+    // TODO: Implement version snapshot for nodes model
+    // const versionId = await ctx.runMutation(
+    //   api.features.versions.createVersionSnapshot,
+    //   {
+    //     projectId: thread.projectId,
+    //     summary: `Applied agent edits from thread "${thread.title}"`,
+    //   }
+    // );
 
-    await ctx.db.patch(messageId, {
-      appliedEditVersionId: versionId,
-    });
+    // await ctx.db.patch(messageId, {
+    //   appliedEditVersionId: versionId,
+    // });
 
-    return versionId;
+    return null;
   },
 });

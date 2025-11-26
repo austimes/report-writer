@@ -1,21 +1,23 @@
 import { query, mutation } from "../_generated/server";
 import { v } from "convex/values";
 
-export const getForResource = query({
-  args: {
-    resourceType: v.union(
-      v.literal("section"),
-      v.literal("block"),
-      v.literal("thread")
-    ),
-    resourceId: v.string(),
-  },
-  handler: async (ctx, { resourceType, resourceId }) => {
+export const getForDocument = query({
+  args: { documentId: v.id("documents") },
+  handler: async (ctx, { documentId }) => {
     return await ctx.db
       .query("locks")
-      .withIndex("by_resource", (q) =>
-        q.eq("resourceType", resourceType).eq("resourceId", resourceId)
-      )
+      .withIndex("by_document", (q) => q.eq("documentId", documentId))
+      .filter((q) => q.eq(q.field("nodeId"), undefined))
+      .unique();
+  },
+});
+
+export const getForNode = query({
+  args: { nodeId: v.id("nodes") },
+  handler: async (ctx, { nodeId }) => {
+    return await ctx.db
+      .query("locks")
+      .withIndex("by_node", (q) => q.eq("nodeId", nodeId))
       .unique();
   },
 });
@@ -30,22 +32,61 @@ export const listByProject = query({
   },
 });
 
-export const createLock = mutation({
+export const listByDocument = query({
+  args: { documentId: v.id("documents") },
+  handler: async (ctx, { documentId }) => {
+    const documentLock = await ctx.db
+      .query("locks")
+      .withIndex("by_document", (q) => q.eq("documentId", documentId))
+      .filter((q) => q.eq(q.field("nodeId"), undefined))
+      .unique();
+
+    const nodeLocks = await ctx.db
+      .query("locks")
+      .withIndex("by_document", (q) => q.eq("documentId", documentId))
+      .filter((q) => q.neq(q.field("nodeId"), undefined))
+      .collect();
+
+    const locks = documentLock ? [documentLock, ...nodeLocks] : nodeLocks;
+    return locks;
+  },
+});
+
+export const createDocumentLock = mutation({
   args: {
-    projectId: v.id("projects"),
-    resourceType: v.union(
-      v.literal("section"),
-      v.literal("block"),
-      v.literal("thread")
-    ),
-    resourceId: v.string(),
+    documentId: v.id("documents"),
     userId: v.id("users"),
   },
-  handler: async (ctx, { projectId, resourceType, resourceId, userId }) => {
+  handler: async (ctx, { documentId, userId }) => {
+    const document = await ctx.db.get(documentId);
+    if (!document) {
+      throw new Error("Document not found");
+    }
+
     return await ctx.db.insert("locks", {
-      projectId,
-      resourceType,
-      resourceId,
+      projectId: document.projectId,
+      documentId,
+      userId,
+      lockedAt: Date.now(),
+    });
+  },
+});
+
+export const createNodeLock = mutation({
+  args: {
+    nodeId: v.id("nodes"),
+    userId: v.id("users"),
+  },
+  handler: async (ctx, { nodeId, userId }) => {
+    const node = await ctx.db.get(nodeId);
+    if (!node) {
+      throw new Error("Node not found");
+    }
+
+    return await ctx.db.insert("locks", {
+      projectId: node.projectId,
+      documentId: node.documentId,
+      nodeId,
       userId,
       lockedAt: Date.now(),
     });

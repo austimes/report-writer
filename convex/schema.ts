@@ -2,6 +2,46 @@ import { defineSchema, defineTable } from "convex/server";
 import { v } from "convex/values";
 
 export default defineSchema({
+  documents: defineTable({
+    projectId: v.id("projects"),
+    title: v.string(),
+    createdAt: v.number(),
+    createdByUserId: v.id("users"),
+    rootNodeId: v.id("nodes"),
+  })
+    .index("by_project", ["projectId"])
+    .index("by_project_created", ["projectId", "createdAt"]),
+
+  nodes: defineTable({
+    projectId: v.id("projects"),
+    documentId: v.id("documents"),
+    parentId: v.optional(v.id("nodes")),
+    order: v.number(),
+    nodeType: v.union(
+      v.literal("document"),
+      v.literal("heading"),
+      v.literal("paragraph"),
+      v.literal("bulletList"),
+      v.literal("numberedList"),
+      v.literal("listItem"),
+      v.literal("table"),
+      v.literal("tableRow"),
+      v.literal("tableCell"),
+      v.literal("codeBlock"),
+      v.literal("image")
+    ),
+    text: v.optional(v.string()),
+    attrs: v.optional(v.any()),
+    lastEditorUserId: v.optional(v.id("users")),
+    lastEditType: v.optional(v.union(v.literal("human"), v.literal("agent"))),
+    lastEditedAt: v.optional(v.number()),
+    createdAt: v.number(),
+  })
+    .index("by_project", ["projectId"])
+    .index("by_document", ["documentId"])
+    .index("by_parent_order", ["parentId", "order"])
+    .index("by_document_type", ["documentId", "nodeType"]),
+
   users: defineTable({
     email: v.string(),
     name: v.string(),
@@ -28,56 +68,24 @@ export default defineSchema({
     .index("by_user", ["userId"])
     .index("by_project_user", ["projectId", "userId"]),
 
-  sections: defineTable({
-    projectId: v.id("projects"),
-    headingText: v.string(),
-    headingLevel: v.number(),
-    order: v.number(),
-    createdAt: v.number(),
-  })
-    .index("by_project", ["projectId"])
-    .index("by_project_order", ["projectId", "order"]),
-
-  blocks: defineTable({
-    projectId: v.id("projects"),
-    sectionId: v.id("sections"),
-    order: v.number(),
-    blockType: v.union(
-      v.literal("paragraph"),
-      v.literal("bulletList"),
-      v.literal("numberedList"),
-      v.literal("table"),
-      v.literal("image"),
-      v.literal("codeBlock")
-    ),
-    markdownText: v.string(),
-    lastEditorUserId: v.id("users"),
-    lastEditType: v.union(v.literal("human"), v.literal("agent")),
-    lastEditedAt: v.number(),
-  })
-    .index("by_project", ["projectId"])
-    .index("by_section", ["sectionId"])
-    .index("by_section_order", ["sectionId", "order"]),
-
   locks: defineTable({
     projectId: v.id("projects"),
-    resourceType: v.union(
-      v.literal("section"),
-      v.literal("block"),
-      v.literal("thread")
-    ),
-    resourceId: v.string(),
+    documentId: v.optional(v.id("documents")),
+    nodeId: v.optional(v.id("nodes")),
     userId: v.id("users"),
     lockedAt: v.number(),
   })
     .index("by_project", ["projectId"])
-    .index("by_resource", ["resourceType", "resourceId"])
+    .index("by_document", ["documentId"])
+    .index("by_node", ["nodeId"])
     .index("by_user", ["userId"]),
 
   comments: defineTable({
     projectId: v.id("projects"),
-    sectionId: v.optional(v.id("sections")),
-    blockId: v.optional(v.id("blocks")),
+    documentId: v.id("documents"),
+    targetNodeId: v.id("nodes"),
+    rangeStart: v.optional(v.number()),
+    rangeEnd: v.optional(v.number()),
     authorUserId: v.id("users"),
     createdAt: v.number(),
     body: v.string(),
@@ -86,24 +94,25 @@ export default defineSchema({
       v.literal("resolved"),
       v.literal("deferred")
     ),
-    assigneeType: v.optional(
-      v.union(v.literal("human"), v.literal("agent"))
-    ),
+    assigneeType: v.optional(v.union(v.literal("human"), v.literal("agent"))),
     assigneeUserId: v.optional(v.id("users")),
-    linkedSections: v.optional(v.array(v.id("sections"))),
+    linkedNodeIds: v.optional(v.array(v.id("nodes"))),
     resolutionSummary: v.optional(v.string()),
     resolvedByUserId: v.optional(v.id("users")),
     resolvedAt: v.optional(v.number()),
+    orphanedAt: v.optional(v.number()),
   })
     .index("by_project", ["projectId"])
-    .index("by_section", ["sectionId"])
-    .index("by_block", ["blockId"])
+    .index("by_document", ["documentId"])
+    .index("by_node", ["targetNodeId"])
     .index("by_author", ["authorUserId"])
     .index("by_status", ["status"])
-    .index("by_project_status", ["projectId", "status"]),
+    .index("by_project_status", ["projectId", "status"])
+    .index("by_document_orphaned", ["documentId", "orphanedAt"]),
 
   agentThreads: defineTable({
     projectId: v.id("projects"),
+    documentId: v.optional(v.id("documents")),
     title: v.string(),
     createdByUserId: v.id("users"),
     createdAt: v.number(),
@@ -112,13 +121,14 @@ export default defineSchema({
       v.literal("paused"),
       v.literal("completed")
     ),
-    anchorSectionId: v.optional(v.id("sections")),
+    anchorNodeId: v.optional(v.id("nodes")),
     anchorCommentId: v.optional(v.id("comments")),
     metadata: v.optional(v.any()),
   })
     .index("by_project", ["projectId"])
     .index("by_project_status", ["projectId", "status"])
-    .index("by_section", ["anchorSectionId"])
+    .index("by_document", ["documentId"])
+    .index("by_node", ["anchorNodeId"])
     .index("by_comment", ["anchorCommentId"]),
 
   agentMessages: defineTable({
@@ -135,13 +145,15 @@ export default defineSchema({
 
   reportVersions: defineTable({
     projectId: v.id("projects"),
+    documentId: v.id("documents"),
     createdAt: v.number(),
     createdByUserId: v.id("users"),
     summary: v.string(),
     snapshot: v.any(),
   })
     .index("by_project", ["projectId"])
-    .index("by_project_created", ["projectId", "createdAt"]),
+    .index("by_document", ["documentId"])
+    .index("by_document_created", ["documentId", "createdAt"]),
 
   artifacts: defineTable({
     projectId: v.id("projects"),
