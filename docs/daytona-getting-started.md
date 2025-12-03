@@ -20,7 +20,7 @@ Run your first line of code in a Daytona Sandbox. Use our [LLMs context files](/
 <Tabs syncKey="language">
   <TabItem label="Python" icon="seti:python">
     ```bash
-    pip install daytona
+    uv add daytona
     ```
   </TabItem>
 

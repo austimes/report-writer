@@ -15,7 +15,7 @@ Detailed instructions for setting up your local development environment.
 
 ### Optional Tools
 
-- **Poetry** or **uv**: Python dependency management (alternative to pip)
+- **uv**: Python dependency management (required) - https://docs.astral.sh/uv/
 - **VS Code**: Recommended IDE
 - **Convex CLI**: `npm install -g convex`
 
@@ -80,32 +80,16 @@ cat .env.local
 
 ### 4. Set Up Python Sandbox
 
-#### Create Virtual Environment
+#### Install Dependencies
 
 ```bash
 cd apps/sandbox
 
-# Using venv (built-in)
-python -m venv venv
+# Using uv (required)
+uv sync
 
-# Activate (macOS/Linux)
-source venv/bin/activate
-
-# Activate (Windows)
-venv\Scripts\activate
-
-# Or using Poetry (alternative)
-poetry install
-```
-
-#### Install Dependencies
-
-```bash
-# With pip
-pip install -r requirements.txt
-
-# Or with Poetry
-poetry install
+# For development with dev dependencies
+uv sync --dev
 ```
 
 #### Configure Environment Variables
@@ -381,14 +365,11 @@ pnpm install
 ### Python sandbox errors
 
 ```bash
-# Ensure virtual environment activated
-source venv/bin/activate
-
 # Reinstall dependencies
-pip install -r requirements.txt --force-reinstall
+uv sync --reinstall
 
 # Check Python version
-python --version  # Should be 3.11+
+uv run python --version  # Should be 3.11+
 ```
 
 ### Port already in use

@@ -136,11 +136,11 @@ PYTHONUNBUFFERED=1
 ### Deploy Sandbox Code
 
 ```bash
-# Install dependencies
-pip install -r requirements.txt
+# Install dependencies (requires uv)
+uv sync
 
 # Start the FastAPI server
-uvicorn main:app --host 0.0.0.0 --port 8000
+uv run uvicorn sandbox.main:app --host 0.0.0.0 --port 8000
 ```
 
 ### Keep Sandbox Running

@@ -4,30 +4,24 @@ Python-based LLM orchestration service for report-writer.
 
 ## Setup
 
-1. **Create virtual environment:**
+1. **Install dependencies** (requires [uv](https://docs.astral.sh/uv/)):
    ```bash
-   python3 -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   uv sync
+   # Or for development with dev dependencies:
+   uv sync --dev
    ```
 
-2. **Install dependencies:**
-   ```bash
-   pip install -e .
-   # Or for development:
-   pip install -e ".[dev]"
-   ```
-
-3. **Configure environment:**
+2. **Configure environment:**
    ```bash
    cp .env.example .env
    # Edit .env with your API keys
    ```
 
-4. **Run the server:**
+3. **Run the server:**
    ```bash
-   python src/sandbox/main.py
+   uv run python src/sandbox/main.py
    # Or:
-   uvicorn sandbox.main:app --reload
+   uv run uvicorn sandbox.main:app --reload
    ```
 
 ## API Endpoints

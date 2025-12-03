@@ -15,7 +15,7 @@ The Daytona sandbox is running but needs the Python FastAPI application deployed
 
 1. Install the SDK with uv:
 ```bash
-uv pip install daytona-sdk
+uv add daytona-sdk
 ```
 
 2. Get your Daytona API key:
@@ -43,9 +43,8 @@ sandbox.fs.upload_file('apps/sandbox/pyproject.toml', '/app/pyproject.toml')
 sandbox.fs.upload_file('apps/sandbox/requirements.lock', '/app/requirements.lock')
 
 # Install and run
-sandbox.process.execute('cd /app && uv pip install -r requirements.lock')
-sandbox.process.execute('cd /app && uv pip install -e .')
-sandbox.process.start_background('cd /app && uvicorn sandbox.main:app --host 0.0.0.0 --port 8000')
+sandbox.process.execute('cd /app && uv sync --frozen')
+sandbox.process.start_background('cd /app && uv run uvicorn sandbox.main:app --host 0.0.0.0 --port 8000')
 ```
 
 ### Option 2: Using Dockerfile (Build and Push)
@@ -92,9 +91,8 @@ tar -czf /tmp/sandbox-app.tar.gz \
 # 3. Once files are uploaded, SSH/exec into the sandbox:
 cd /app
 tar -xzf sandbox-app.tar.gz
-uv pip install -r requirements.lock
-uv pip install -e .
-uvicorn sandbox.main:app --host 0.0.0.0 --port 8000
+uv sync --frozen
+uv run uvicorn sandbox.main:app --host 0.0.0.0 --port 8000
 ```
 
 ## Verifying Deployment

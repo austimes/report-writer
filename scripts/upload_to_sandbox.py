@@ -8,7 +8,7 @@ from pathlib import Path
 try:
     from daytona_sdk import Daytona
 except ImportError:
-    print("❌ daytona-sdk not installed. Install with: pip install daytona-sdk")
+    print("❌ daytona-sdk not installed. Install with: uv add daytona-sdk")
     sys.exit(1)
 
 def main():
@@ -54,7 +54,7 @@ def main():
     
     # Install dependencies
     print("\n📦 Installing dependencies...")
-    result = sandbox.process.execute("cd /app && pip install -r requirements.lock")
+    result = sandbox.process.execute("cd /app && uv sync --frozen")
     print(result.stdout)
     if result.exit_code != 0:
         print(f"❌ Failed to install dependencies: {result.stderr}")
@@ -62,7 +62,7 @@ def main():
     
     # Install package
     print("\n📦 Installing package...")
-    result = sandbox.process.execute("cd /app && pip install -e .")
+    result = sandbox.process.execute("cd /app && uv sync")
     print(result.stdout)
     if result.exit_code != 0:
         print(f"❌ Failed to install package: {result.stderr}")

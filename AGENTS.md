@@ -76,7 +76,7 @@ Run `bd onboard` to get the content, or see step 2 of the onboard instructions.
 If using Claude or MCP-compatible clients, install the beads MCP server:
 
 ```bash
-pip install beads-mcp
+uv tool install beads-mcp
 ```
 
 Add to MCP config (e.g., `~/.config/claude/config.json`):

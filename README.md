@@ -58,11 +58,9 @@ cd convex
 npx convex dev
 # Follow prompts to create a project
 
-# Set up Python sandbox
+# Set up Python sandbox (requires uv: https://docs.astral.sh/uv/)
 cd apps/sandbox
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-pip install -r requirements.txt
+uv sync
 ```
 
 ### Development

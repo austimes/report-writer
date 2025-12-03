@@ -40,12 +40,10 @@ We use **GitHub Issues** for tracking bugs and feature requests. Before starting
    # Follow the prompts to create a new project or link to existing
    ```
 
-4. **Set up Python sandbox**:
+4. **Set up Python sandbox** (requires [uv](https://docs.astral.sh/uv/)):
    ```bash
    cd apps/sandbox
-   python -m venv venv
-   source venv/bin/activate  # Windows: venv\Scripts\activate
-   pip install -r requirements.txt
+   uv sync
    ```
 
 5. **Configure environment variables**:

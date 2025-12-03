@@ -15,7 +15,7 @@ class OpenAIClient(BaseLLMClient):
             from openai import AsyncOpenAI
         except ImportError:
             raise ImportError(
-                "openai package is required. Install with: pip install openai"
+                "openai package is required. Install with: uv add openai"
             )
 
         self.api_key = api_key or os.getenv("OPENAI_API_KEY")
@@ -43,7 +43,7 @@ class AnthropicClient(BaseLLMClient):
             from anthropic import AsyncAnthropic
         except ImportError:
             raise ImportError(
-                "anthropic package is required. Install with: pip install anthropic"
+                "anthropic package is required. Install with: uv add anthropic"
             )
 
         self.api_key = api_key or os.getenv("ANTHROPIC_API_KEY")
