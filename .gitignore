@@ -60,3 +60,5 @@ pnpm-debug.log*
 .cache/
 .temp/
 .vercel
+apps/sandbox/tmp
+
