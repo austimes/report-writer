@@ -1,0 +1,1997 @@
+{
+  "data": [
+    {
+      "hovertemplate": "scen=Ampol-1p5DS\u003cbr\u003eyear=%{x}\u003cbr\u003eMt CO₂-e=%{y}\u003cextra\u003e\u003c\u002fextra\u003e",
+      "legendgroup": "",
+      "marker": {
+        "color": "rgb(158,158,158)",
+        "symbol": "circle",
+        "size": 0.001
+      },
+      "mode": "markers",
+      "name": "",
+      "orientation": "v",
+      "showlegend": false,
+      "x": {
+        "dtype": "i4",
+        "bdata": "6QcAAOoHAADrBwAA7AcAAO0HAADuBwAA7wcAAPAHAADxBwAA8gcAAPMHAAD4BwAA\u002fQcAAAIIAAA="
+      },
+      "xaxis": "x3",
+      "y": {
+        "dtype": "i1",
+        "bdata": "AAAAAAAAAAAAAAAAAAA="
+      },
+      "yaxis": "y3",
+      "type": "scatter",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(158,158,158)"
+      },
+      "opacity": 0
+    },
+    {
+      "hovertemplate": "scen=Ampol-2p5DS\u003cbr\u003eyear=%{x}\u003cbr\u003eMt CO₂-e=%{y}\u003cextra\u003e\u003c\u002fextra\u003e",
+      "legendgroup": "",
+      "marker": {
+        "color": "rgb(158,158,158)",
+        "symbol": "circle",
+        "size": 0.001
+      },
+      "mode": "markers",
+      "name": "",
+      "orientation": "v",
+      "showlegend": false,
+      "x": {
+        "dtype": "i4",
+        "bdata": "6QcAAOoHAADrBwAA7AcAAO0HAADuBwAA7wcAAPAHAADxBwAA8gcAAPMHAAD4BwAA\u002fQcAAAIIAAA="
+      },
+      "xaxis": "x4",
+      "y": {
+        "dtype": "i1",
+        "bdata": "AAAAAAAAAAAAAAAAAAA="
+      },
+      "yaxis": "y4",
+      "type": "scatter",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(158,158,158)"
+      },
+      "opacity": 0
+    },
+    {
+      "hovertemplate": "scen=Ampol-House-View\u003cbr\u003eyear=%{x}\u003cbr\u003eMt CO₂-e=%{y}\u003cextra\u003e\u003c\u002fextra\u003e",
+      "legendgroup": "",
+      "marker": {
+        "color": "rgb(158,158,158)",
+        "symbol": "circle",
+        "size": 0.001
+      },
+      "mode": "markers",
+      "name": "",
+      "orientation": "v",
+      "showlegend": false,
+      "x": {
+        "dtype": "i4",
+        "bdata": "6QcAAOoHAADrBwAA7AcAAO0HAADuBwAA7wcAAPAHAADxBwAA8gcAAPMHAAD4BwAA\u002fQcAAAIIAAA="
+      },
+      "xaxis": "x",
+      "y": {
+        "dtype": "i1",
+        "bdata": "AAAAAAAAAAAAAAAAAAA="
+      },
+      "yaxis": "y",
+      "type": "scatter",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(158,158,158)"
+      },
+      "opacity": 0
+    },
+    {
+      "fill": "tonexty",
+      "name": "Land Use - Agriculture",
+      "showlegend": true,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "HffcS1CbT0AhMxYG7S1RQJ+ZIRZvFVJAOAeOmIbTUkDgtz8SNuBSQPJu5Tvr\u002f1JAvKsemYckU0Cb4O4XjC5TQDgUDQT1LFNAqvF0pQIBU0D8lvk2vyJUQHCaobTrplVATldztJacVUBdFgtKoY9VQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x3",
+      "yaxis": "y3",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(34,70,34)"
+      },
+      "legendgroup": "Land Use - Agriculture",
+      "marker": {
+        "color": "rgb(34,70,34)"
+      },
+      "fillcolor": "rgb(34,70,34)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Transport - Road",
+      "showlegend": true,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "iW3ziAZK2T6Hw+rGJA0zQLOaV\u002fEe8ENAwylJYbeFTkARXVHK0sNQQPnboNHs4FFAiRBxO92EUkCnOt0PCRVTQAFxe0e4vFNA2Lc332z6U0AxJI6mDiRUQEMJL4JrBFRAx7Ia968EVEA7yVsnhgRUQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x3",
+      "yaxis": "y3",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(128,0,0)"
+      },
+      "legendgroup": "Transport - Road",
+      "marker": {
+        "color": "rgb(128,0,0)"
+      },
+      "fillcolor": "rgb(128,0,0)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Industry - Manufacturing",
+      "showlegend": true,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "tTs6ZflWOUCDpYrB9sM5QE7Xm1m9gUFAa4xXyDcESEB6Hg16WF1IQDwPoT\u002finEhABgX1IMogSUAjMv9P\u002f11LQKZ0bfAc8EtA0rqHXMf3TEBwkMf5se9NQJ6KET5j4E5ATpLoWX8mT0DrsAr9nmdPQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x3",
+      "yaxis": "y3",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(80,80,80)"
+      },
+      "legendgroup": "Industry - Manufacturing",
+      "marker": {
+        "color": "rgb(80,80,80)"
+      },
+      "fillcolor": "rgb(80,80,80)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Power Generation",
+      "showlegend": true,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "BruVuQo37j+0WOSEvI4DQP\u002fwlVr6aAhAEKizf+nuC0BlHIWSa8gMQFnwy8iUhBNAOCrx6Ql2FEDMh5Hk56ssQDLJG0+qzTpAm8fFc2ZhRkD7dZ1PKcxOQC1TT6X551xAc3wQAmDuWEBHe6wdyDtgQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x3",
+      "yaxis": "y3",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(0,169,206)"
+      },
+      "legendgroup": "Power Generation",
+      "marker": {
+        "color": "rgb(0,169,206)"
+      },
+      "fillcolor": "rgb(0,169,206)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Industry - Mining",
+      "showlegend": true,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "fwMXvc8uGECU1OTpiKghQNFrT5LRpSlA4Q+zzqocM0ALdEWsaOo1QC7r6qV4+DdARY7OwaHFO0A5zFu2eSBAQJmgXHuUVkJACBkqM5rqQ0CUkHnzBVRFQGy2GnlBz0lA1a+FD\u002feQSkCHieGxKf9LQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x3",
+      "yaxis": "y3",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(0,0,0)"
+      },
+      "legendgroup": "Industry - Mining",
+      "marker": {
+        "color": "rgb(0,0,0)"
+      },
+      "fillcolor": "rgb(0,0,0)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Transport - Non-Road",
+      "showlegend": true,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "NA\u002f6NZX3D0DyLNHjffgXQGSUTADATiBAvqaiFZoqKkDZcZhM5U4uQD8jYH4PdTBAia+7ANEXMUAba3lW2F4xQKQEyceXjDFA13Ax2w6qMUD0Uec\u002ftqwxQHvju9dMkzJAk8J1ycVTMkCxpf4Pdf8xQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x3",
+      "yaxis": "y3",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(255,184,28)"
+      },
+      "legendgroup": "Transport - Non-Road",
+      "marker": {
+        "color": "rgb(255,184,28)"
+      },
+      "fillcolor": "rgb(255,184,28)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Industry - Other Industry",
+      "showlegend": true,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "cEFrsNm9FUDA9bOtzccWQNQMlierYB5AHpuyiMN8I0AyMG11RtUlQLinoqS5ryhAcnjMp2KgK0A0n6c1vnAuQORqZBiguTBAst3Pq93MMkDlnwmRsNY0QKWtNgJmQzdAbU5Ql3\u002f7OEAaXfPNUVI6QA=="
+      },
+      "type": "scatter",
+      "xaxis": "x3",
+      "yaxis": "y3",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(102,51,0)"
+      },
+      "legendgroup": "Industry - Other Industry",
+      "marker": {
+        "color": "rgb(102,51,0)"
+      },
+      "fillcolor": "rgb(102,51,0)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Buildings - Residential",
+      "showlegend": true,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "JOv\u002fcW9OGT8kA+xCtmboP9Lw7lWW4AJABDBwHhZ2D0DRmb8lAv8QQKbfckAQQhJA7jv\u002fvcfEE0BMD9rxIjUWQHxHAb\u002f0NhhAKwyDGjTQGUAskiTi6AIdQNEbC+bxqx9AHvZ0C5F1IECBfE0Gg+sgQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x3",
+      "yaxis": "y3",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(109,32,119)"
+      },
+      "legendgroup": "Buildings - Residential",
+      "marker": {
+        "color": "rgb(109,32,119)"
+      },
+      "fillcolor": "rgb(109,32,119)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Buildings - Commercial",
+      "showlegend": true,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "n71LLwad\u002fj4I9EDFiRPvP5nks53pDgBAz\u002fDlOSSaBkDC5MNpPLsHQIuOoL9UxghApT6ffujECUCApaMlPbEKQGEkhlDNlgtAQAFGszVnDUBoXhNjOQcRQF1v2tCZgBdAnV3S4wtjF0ADgYE8FyYXQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x3",
+      "yaxis": "y3",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(223,25,149)"
+      },
+      "legendgroup": "Buildings - Commercial",
+      "marker": {
+        "color": "rgb(223,25,149)"
+      },
+      "fillcolor": "rgb(223,25,149)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Hydrogen Production",
+      "showlegend": true,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "8gcAAPEHAADwBwAA7wcAAO4HAADtBwAA7AcAAOsHAADqBwAA6QcAAA=="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "mSrxThXMBEB80sIHOMwEQASVARrBzARAZZg2UW7YBECDRJQcvtgEQODSysa01QRABu875jbTBEBUCxYoEcwEQAKJWd212QRAUZ3proDYBEA="
+      },
+      "type": "scatter",
+      "xaxis": "x3",
+      "yaxis": "y3",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(0,122,83)"
+      },
+      "legendgroup": "Hydrogen Production",
+      "marker": {
+        "color": "rgb(0,122,83)"
+      },
+      "fillcolor": "rgb(0,122,83)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Industry - Chemicals",
+      "showlegend": true,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "Y1tTI1R\u002fyj8yHwjTy9vJP7yaR9sKduM\u002frN8jaC8p6z+zlnShE0brP+huKs2Vx\u002fE\u002finx6Vm5C8j8wf4XIiyXzP\u002fMSkXQnLvQ\u002fLBVAl1DW9T+xCT8ngfL3P8pcuCOR\u002fvg\u002fpu4LykZQ+j+iRR1an1H6Pw=="
+      },
+      "type": "scatter",
+      "xaxis": "x3",
+      "yaxis": "y3",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(159,174,229)"
+      },
+      "legendgroup": "Industry - Chemicals",
+      "marker": {
+        "color": "rgb(159,174,229)"
+      },
+      "fillcolor": "rgb(159,174,229)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Carbon Dioxide Removal - Direct Air Capture",
+      "showlegend": true,
+      "stackgroup": "negative",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA"
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "iNUR+HOXRcBx31fq7+44wDjRMN7kXSXAZ1qaxg2k9b\u002f3Y2P\u002feuHyv4AJiu3cOfC\u002f8busZJaitb90c6dzYk6Lv8OXnTtzyoW\u002f"
+      },
+      "type": "scatter",
+      "xaxis": "x3",
+      "yaxis": "y3",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(30,34,170)"
+      },
+      "legendgroup": "Carbon Dioxide Removal - Direct Air Capture",
+      "marker": {
+        "color": "rgb(30,34,170)"
+      },
+      "fillcolor": "rgb(30,34,170)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Land Use - Sequestration",
+      "showlegend": true,
+      "stackgroup": "negative",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "+KjDk5ZcV8BxL1s5w4tUwFwEfVgJ+kzAShX6DPklPsAqf9sVd50wwPFwndxlTCbAu+NMdZGHGsDCMvwvdKMGwPwswNR21eW\u002fbLsgH9W8uL\u002fUdw2T8\u002fSSvw=="
+      },
+      "type": "scatter",
+      "xaxis": "x3",
+      "yaxis": "y3",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(0,115,119)"
+      },
+      "legendgroup": "Land Use - Sequestration",
+      "marker": {
+        "color": "rgb(0,115,119)"
+      },
+      "fillcolor": "rgb(0,115,119)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Land Use - Forestry & Logging",
+      "showlegend": true,
+      "stackgroup": "negative",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "w\u002foIK7UERMBx3KVnPnFHwFOCXz9J3krA1ot0xh5NTsDfV93UCQBPwCM6u5lMtE\u002fAPvrvDB7YT8AZ6\u002fABj\u002f9PwMMkaFkvok\u002fANnVKFiEhUMAS9lAQhj5QwBVJl3Mx7VDAAii9wCXlUcDqeC0jEjBTwA=="
+      },
+      "type": "scatter",
+      "xaxis": "x3",
+      "yaxis": "y3",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(120,190,32)"
+      },
+      "legendgroup": "Land Use - Forestry & Logging",
+      "marker": {
+        "color": "rgb(120,190,32)"
+      },
+      "fillcolor": "rgb(120,190,32)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Land Use - Agriculture",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "8FhkZ+F0UUCPDl9ckYpUQOSaJOCpLFVAQBP64r6OVUCwLyxxfvxVQDlJQEtk5VVAOP+FRZbfVUBITKz+M7tVQPgAJNg5wlVAyR85YAy7VUC\u002fREANGbRVQHCaobTrplVATldztJacVUBdFgtKoY9VQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x4",
+      "yaxis": "y4",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(34,70,34)"
+      },
+      "legendgroup": "Land Use - Agriculture",
+      "marker": {
+        "color": "rgb(34,70,34)"
+      },
+      "fillcolor": "rgb(34,70,34)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Transport - Road",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "1JL3FK+KN0D5QCKL3+dCQEl2PIYTPUpAzRq6a6jpTkAo5wQFkmtQQCuraNfgLlFAvOhsmy7VUUBSRukcfnZSQObsHxShFFNAp3Xbu35rU0Bs+qJXHKVTQEMJL4JrBFRAx7Ia968EVEA7yVsnhgRUQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x4",
+      "yaxis": "y4",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(128,0,0)"
+      },
+      "legendgroup": "Transport - Road",
+      "marker": {
+        "color": "rgb(128,0,0)"
+      },
+      "fillcolor": "rgb(128,0,0)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Industry - Manufacturing",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "\u002fYD\u002fikgFQEDBDS3fhqVBQK0v1x1odEZATOpyGx+HS0AeC2g7ah9MQE1PakNNdkxAaDkZb96tTEBp9eJNWORMQFDL770hGE1AUuy8pXMeTkA9HJ1C9HFOQJ6KET5j4E5ATpLoWX8mT0DrsAr9nmdPQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x4",
+      "yaxis": "y4",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(80,80,80)"
+      },
+      "legendgroup": "Industry - Manufacturing",
+      "marker": {
+        "color": "rgb(80,80,80)"
+      },
+      "fillcolor": "rgb(80,80,80)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Power Generation",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "Db6xTGlK7j8Nb+fZtpoDQOvD2FK\u002fJjNAcPBxwl64OUB+iJL7pn1BQFg4+MOa9kNATbPALNw5RkDU7z9Ii4RIQFMFmg0enEhANu9756rYTkDwREererxUQC1TT6X551xAc3wQAmDuWEBHe6wdyDtgQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x4",
+      "yaxis": "y4",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(0,169,206)"
+      },
+      "legendgroup": "Power Generation",
+      "marker": {
+        "color": "rgb(0,169,206)"
+      },
+      "fillcolor": "rgb(0,169,206)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Industry - Mining",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "BsEGXP2LKEC4shuf46UyQI\u002f7yHBsfzlAPyTciFylQUC2V9IFUzFEQGmhcjxNFUZALOuWEZxNRkBTRpr81GhHQFDvWEJyK0dAnjWdHEQ4SECmwobzx8hIQGy2GnlBz0lA1a+FD\u002feQSkCHieGxKf9LQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x4",
+      "yaxis": "y4",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(0,0,0)"
+      },
+      "legendgroup": "Industry - Mining",
+      "marker": {
+        "color": "rgb(0,0,0)"
+      },
+      "fillcolor": "rgb(0,0,0)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Transport - Non-Road",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "xAyjrU\u002fdM0DR2qw1Lxc0QI8\u002fzX\u002fphDNAgQ3A13PUMkAKZ6F9ExszQB5MTAQvKDNAZqv0WnH3MkBUjRDkw6wyQFMDsrlFWDJAh\u002fKuN99ZM0BC\u002fTB1VAIzQHvju9dMkzJAk8J1ycVTMkCxpf4Pdf8xQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x4",
+      "yaxis": "y4",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(255,184,28)"
+      },
+      "legendgroup": "Transport - Non-Road",
+      "marker": {
+        "color": "rgb(255,184,28)"
+      },
+      "fillcolor": "rgb(255,184,28)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Industry - Other Industry",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "8IqJe8EVGECWwAsqhpUaQCpygZAghiJARoxev6UiLUCmNZQBbtEvQFrjaQ1LoDBA8DAV92hlMUBaumeInisyQAiDm\u002fRHGzNACAbDbNNWNEBpDhIcVI81QKWtNgJmQzdAbU5Ql3\u002f7OEAaXfPNUVI6QA=="
+      },
+      "type": "scatter",
+      "xaxis": "x4",
+      "yaxis": "y4",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(102,51,0)"
+      },
+      "legendgroup": "Industry - Other Industry",
+      "marker": {
+        "color": "rgb(102,51,0)"
+      },
+      "fillcolor": "rgb(102,51,0)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Buildings - Residential",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "r3eugCat\u002fD8m9aBUzvcGQBKs2+ayCA9A8oB+F+SPE0DGQ64DZ2oUQAmR31OEchVA1R7ssHYjF0BAvNTe+yoZQHDNF1Wl4hpA0VJl9qIMHEBXjEvxqWcdQNEbC+bxqx9AHvZ0C5F1IECBfE0Gg+sgQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x4",
+      "yaxis": "y4",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(109,32,119)"
+      },
+      "legendgroup": "Buildings - Residential",
+      "marker": {
+        "color": "rgb(109,32,119)"
+      },
+      "fillcolor": "rgb(109,32,119)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Buildings - Commercial",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "+O0dSqa6FUCdY07ler0WQKqNzwuloRdAlpVLfFPBF0CkxvLUBMYXQLazotxr0BdAPkMNk+bUF0CGi39TOScYQEoL+gAxXxhAfdVWIJ5RFkA0z04hl4oXQF1v2tCZgBdAnV3S4wtjF0ADgYE8FyYXQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x4",
+      "yaxis": "y4",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(223,25,149)"
+      },
+      "legendgroup": "Buildings - Commercial",
+      "marker": {
+        "color": "rgb(223,25,149)"
+      },
+      "fillcolor": "rgb(223,25,149)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Hydrogen Production",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "UCvtbLd\u002fuj9Q6sTNVX+6P2eYnSAMoAVAYM3qdD4OBkDaeMMXbdAEQNTmf15v0ARAtULSlW3QBEBgYchzW9AEQLIFb1FK0ARAFu4o4xrMBEBo+odcGswEQFQLFigRzARAAolZ3bXZBEBRnemugNgEQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x4",
+      "yaxis": "y4",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(0,122,83)"
+      },
+      "legendgroup": "Hydrogen Production",
+      "marker": {
+        "color": "rgb(0,122,83)"
+      },
+      "fillcolor": "rgb(0,122,83)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Industry - Chemicals",
+      "showlegend": false,
+      "stackgroup": "negative",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAA=="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "b81kiV6F4r\u002fY9Se5SL6wv5YyRVIn3ua\u002f0ZqONSxb7L8="
+      },
+      "type": "scatter",
+      "xaxis": "x4",
+      "yaxis": "y4",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(159,174,229)"
+      },
+      "legendgroup": "Industry - Chemicals",
+      "marker": {
+        "color": "rgb(159,174,229)"
+      },
+      "fillcolor": "rgb(159,174,229)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Industry - Chemicals",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "8gcAAPEHAADwBwAA7wcAAO4HAADtBwAA7AcAAOsHAADqBwAA6QcAAA=="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "unWrYcVQ5T8uw0\u002fFi1LlP1zqbaCpVOU\u002fyfXesZRW5T9R2FPle1jlPzre4BE+7\u002fg\u002flXd3cXD7+D\u002fKXLgjkf74P6buC8pGUPo\u002fokUdWp9R+j8="
+      },
+      "type": "scatter",
+      "xaxis": "x4",
+      "yaxis": "y4",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(159,174,229)"
+      },
+      "legendgroup": "Industry - Chemicals",
+      "marker": {
+        "color": "rgb(159,174,229)"
+      },
+      "fillcolor": "rgb(159,174,229)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Carbon Dioxide Removal - Direct Air Capture",
+      "showlegend": false,
+      "stackgroup": "negative",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA"
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "6aB9hk1bGcCGkt7OQ9QCwAN+ln52DfS\u002fSbXtqlFmBMArfivJ3yDiv0oJyne2z96\u002fwhOti9al2b\u002fxHmR6FcHUv8MPBLS3zMy\u002f"
+      },
+      "type": "scatter",
+      "xaxis": "x4",
+      "yaxis": "y4",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(30,34,170)"
+      },
+      "legendgroup": "Carbon Dioxide Removal - Direct Air Capture",
+      "marker": {
+        "color": "rgb(30,34,170)"
+      },
+      "fillcolor": "rgb(30,34,170)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Land Use - Sequestration",
+      "showlegend": false,
+      "stackgroup": "negative",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "+LIB\u002f\u002fp\u002fXsBBCzrTV09PwDXeD94SKDfAlcE3tCumJMBSZ7NK5KgVwHwHPS8nTAvAtZdN88CN\u002fb8ibA7styDov\u002fBXTC6R0MS\u002f76Zy3oEVnr+XGbjq00Bqvw=="
+      },
+      "type": "scatter",
+      "xaxis": "x4",
+      "yaxis": "y4",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(0,115,119)"
+      },
+      "legendgroup": "Land Use - Sequestration",
+      "marker": {
+        "color": "rgb(0,115,119)"
+      },
+      "fillcolor": "rgb(0,115,119)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Land Use - Forestry & Logging",
+      "showlegend": false,
+      "stackgroup": "negative",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "aphY\u002f72xQ8AJi8JlSChHwHlNtaCnjkrAHoQ2cqcgTsDOZ0FsF9dOwNpxS29EkU\u002fAAYlw5CawT8Bu1UZsddVPwM7K4imBh0\u002fAkYAnEjMaUMDtgK95zT5QwBVJl3Mx7VDAAii9wCXlUcDqeC0jEjBTwA=="
+      },
+      "type": "scatter",
+      "xaxis": "x4",
+      "yaxis": "y4",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(120,190,32)"
+      },
+      "legendgroup": "Land Use - Forestry & Logging",
+      "marker": {
+        "color": "rgb(120,190,32)"
+      },
+      "fillcolor": "rgb(120,190,32)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Land Use - Agriculture",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "slHWrHedVEDi1fFktWdVQP\u002fEqa\u002fJ31VAq8sBtS4RVkBieBCSWQdWQHJuUDsw81VA8gGZgi\u002frVUCwiZNp4NdVQM4ldgpzz1VAP2jdtlLBVUAz4Rk+6rNVQHCaobTrplVATldztJacVUBdFgtKoY9VQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x",
+      "yaxis": "y",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(34,70,34)"
+      },
+      "legendgroup": "Land Use - Agriculture",
+      "marker": {
+        "color": "rgb(34,70,34)"
+      },
+      "fillcolor": "rgb(34,70,34)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Transport - Road",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "rwU0MblhTEDuZM4G5slOQFLy\u002fvoVwFBAVvW4983mUUA\u002fGZ6krXlSQE2+acZJ7FJABP2QSV05U0B3dnC9TYtTQMxp9kvK81NAKO0u7\u002fD9U0COf3PmSf1TQEMJL4JrBFRAx7Ia968EVEA6yVsnhgRUQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x",
+      "yaxis": "y",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(128,0,0)"
+      },
+      "legendgroup": "Transport - Road",
+      "marker": {
+        "color": "rgb(128,0,0)"
+      },
+      "fillcolor": "rgb(128,0,0)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Industry - Manufacturing",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "9DngS9v2SUDF5hSFfkVKQCzNhlxRtUtASkfVzTOnTEC\u002fxtjDv+pMQC2fs3wyJ01AGIvk011mTUDqz8I1aLBNQGRB90Bm\u002f01AneW+AepPTkCm\u002fjrVwJlOQJ6KET5j4E5ATpLoWX8mT0DrsAr9nmdPQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x",
+      "yaxis": "y",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(80,80,80)"
+      },
+      "legendgroup": "Industry - Manufacturing",
+      "marker": {
+        "color": "rgb(80,80,80)"
+      },
+      "fillcolor": "rgb(80,80,80)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Power Generation",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "0PvNJ7NSAEDgaBr2YDglQBOo9OM4+DNAI9Mbqe3\u002fQUDTckWzo81HQDZFseneNkpArH0AOyRMS0Bf\u002focVFoFMQIfSg\u002fqO0U1Adazz3jUsUUDw82gV3kBVQC1TT6X551xAc3wQAmDuWEBHe6wdyDtgQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x",
+      "yaxis": "y",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(0,169,206)"
+      },
+      "legendgroup": "Power Generation",
+      "marker": {
+        "color": "rgb(0,169,206)"
+      },
+      "fillcolor": "rgb(0,169,206)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Industry - Mining",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "PIyIVVAGLkCxR30xtV4zQA3TwfP\u002f0jpAIohQ+08GQ0APCl0ksflEQK4\u002frmsDmUZAl086Tzz4RkCUKd4rqfRHQBVgBVN+2EdAvvWU1mJXSEDufCoj6tpIQGy2GnlBz0lA1a+FD\u002feQSkCHieGxKf9LQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x",
+      "yaxis": "y",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(0,0,0)"
+      },
+      "legendgroup": "Industry - Mining",
+      "marker": {
+        "color": "rgb(0,0,0)"
+      },
+      "fillcolor": "rgb(0,0,0)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Transport - Non-Road",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "eksHU71KNEBPxtjYRBA0QJ29wOiuxzNAPXiZFtikM0CbkoYhGJ4zQMzmmsgjlzNAjWRJvtWKM0AyY5AY32IzQG1sqXJFOTNA3Oszi0MRM0DirdfZ+dIyQHvju9dMkzJAk8J1ycVTMkCxpf4Pdf8xQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x",
+      "yaxis": "y",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(255,184,28)"
+      },
+      "legendgroup": "Transport - Non-Road",
+      "marker": {
+        "color": "rgb(255,184,28)"
+      },
+      "fillcolor": "rgb(255,184,28)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Industry - Other Industry",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "M1YPTrHcGUCSQy+QQQwdQLideAyO3yJAmCfa8B06LUCMdkdCtbIvQM9zUPVqijBAFG\u002fYb9pTMUBmo7OymhcyQPGzXfAQ9TJA15erjVFKNEBC81+v75U1QKWtNgJmQzdAbU5Ql3\u002f7OEAaXfPNUVI6QA=="
+      },
+      "type": "scatter",
+      "xaxis": "x",
+      "yaxis": "y",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(102,51,0)"
+      },
+      "legendgroup": "Industry - Other Industry",
+      "marker": {
+        "color": "rgb(102,51,0)"
+      },
+      "fillcolor": "rgb(102,51,0)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Buildings - Residential",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "sWQvQZpMBUA\u002fUAq+cI4MQC2c6CEv1hJAOm2FU1JrF0A92V2xRE8YQAcHpPG\u002fPxlASDc4PEslGkBb384fWDobQGNl6SWqJRxAne3LMRNIHUBuIIamP3UeQNEbC+bxqx9AHvZ0C5F1IECBfE0Gg+sgQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x",
+      "yaxis": "y",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(109,32,119)"
+      },
+      "legendgroup": "Buildings - Residential",
+      "marker": {
+        "color": "rgb(109,32,119)"
+      },
+      "fillcolor": "rgb(109,32,119)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Buildings - Commercial",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "tqpecoqkGkDSbByGwacaQJ39SCdwvxpA6RIM+ijvGkDTQmBthfQaQEpNp6n0+BpAdRBOoDD9GkC4eJROPgEbQJ+YYdIgBRtAXDqD4xO8F0BmXwhgm54XQF1v2tCZgBdAnV3S4wtjF0ADgYE8FyYXQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x",
+      "yaxis": "y",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(223,25,149)"
+      },
+      "legendgroup": "Buildings - Commercial",
+      "marker": {
+        "color": "rgb(223,25,149)"
+      },
+      "fillcolor": "rgb(223,25,149)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Hydrogen Production",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "OPiAhgQfAT8AQjhbehz8PkHCJfoezARAMVxAbVbQBEDmuEBUXdAEQJfkoOJZ0ARAJ59PTlXQBECD5S3gR9AEQIIT4fc+0ARA9CL2qBnMBEDhBTP+GMwEQFQLFigRzARAAolZ3bXZBEBRnemugNgEQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x",
+      "yaxis": "y",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(0,122,83)"
+      },
+      "legendgroup": "Hydrogen Production",
+      "marker": {
+        "color": "rgb(0,122,83)"
+      },
+      "fillcolor": "rgb(0,122,83)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Industry - Chemicals",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "JQNSl+3Q7z\u002fkKxi4DO7vP0yn8x9Zv\u002fM\u002fOIOzCmzo+D8exBaaiOr4PxLs2pTz7Pg\u002fMguOV4jv+D99UZTzW\u002fL4P8JKlucv9fg\u002fHwFjzk74+D+49bDFcfv4P8pcuCOR\u002fvg\u002fpu4LykZQ+j+iRR1an1H6Pw=="
+      },
+      "type": "scatter",
+      "xaxis": "x",
+      "yaxis": "y",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(159,174,229)"
+      },
+      "legendgroup": "Industry - Chemicals",
+      "marker": {
+        "color": "rgb(159,174,229)"
+      },
+      "fillcolor": "rgb(159,174,229)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Carbon Dioxide Removal - Direct Air Capture",
+      "showlegend": false,
+      "stackgroup": "negative",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA"
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "vljrRlDV3b8jeoXwg3VHvzR+qjhvpkC\u002fgddVzqDUOr\u002f+wcivdY01v6753VRkEzG\u002fdBSEBmNTKr8MHWxeix4iv3oAwgm36xO\u002f"
+      },
+      "type": "scatter",
+      "xaxis": "x",
+      "yaxis": "y",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(30,34,170)"
+      },
+      "legendgroup": "Carbon Dioxide Removal - Direct Air Capture",
+      "marker": {
+        "color": "rgb(30,34,170)"
+      },
+      "fillcolor": "rgb(30,34,170)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Land Use - Sequestration",
+      "showlegend": false,
+      "stackgroup": "negative",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "wYC1aUqYIL9GGDv1ipQav2vFIv+Y1BG\u002f87vjzsGoAb+kWvCllWryvnaBeJMEN+e+FjMyU6vi2L6jkFQsvC3Evq2wJvDmSqW+V\u002f0SzW7nfr4rVWFseaBavg=="
+      },
+      "type": "scatter",
+      "xaxis": "x",
+      "yaxis": "y",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(0,115,119)"
+      },
+      "legendgroup": "Land Use - Sequestration",
+      "marker": {
+        "color": "rgb(0,115,119)"
+      },
+      "fillcolor": "rgb(0,115,119)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Land Use - Forestry & Logging",
+      "showlegend": false,
+      "stackgroup": "negative",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "cfTp2b2xQ8A+h8aTbDhHwD\u002f5BMe+nUrAgv4X2TQhTsCx4x9Fid9OwI275f+Ik0\u002fAr3WGeIK2T8DXk4KOxNxPwBGjT4s8hk\u002fAvArtF8kZUMCHaSpEYD1QwBVJl3Mx7VDAAii9wCXlUcDqeC0jEjBTwA=="
+      },
+      "type": "scatter",
+      "xaxis": "x",
+      "yaxis": "y",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(120,190,32)"
+      },
+      "legendgroup": "Land Use - Forestry & Logging",
+      "marker": {
+        "color": "rgb(120,190,32)"
+      },
+      "fillcolor": "rgb(120,190,32)"
+    },
+    {
+      "legendgroup": "Net Emissions",
+      "line": {
+        "width": 2,
+        "color": "yellow"
+      },
+      "marker": {
+        "line": {
+          "color": "black",
+          "width": 1
+        },
+        "size": 10,
+        "color": "yellow"
+      },
+      "mode": "lines+markers",
+      "name": "Net Emissions",
+      "showlegend": false,
+      "x": {
+        "dtype": "i2",
+        "bdata": "6QfqB+sH7AftB+4H7wfwB\u002fEH8gfzB\u002fgH\u002fQcCCA=="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "MqH9+9UQeUAeMeLIvzt3QEZX9oAwPHhAuN0yLLqlc0BMERuNgMZxQJrmHHkMK3BATNckVEoabUDZLu8jQ8ZpQMUUbX4SxmdAKKh\u002fKvO3ZUDxl2kaISpiQLtWuEGIuU5ABNXU+OIjL8BQJmJ9Dd9RwA=="
+      },
+      "type": "scatter",
+      "xaxis": "x3",
+      "yaxis": "y3"
+    },
+    {
+      "legendgroup": "NDC 2030 (43%) ",
+      "line": {
+        "width": 2,
+        "color": "cyan"
+      },
+      "marker": {
+        "line": {
+          "color": "black",
+          "width": 1
+        },
+        "size": 10,
+        "color": "cyan"
+      },
+      "mode": "markers",
+      "name": "NDC 2030 (43%) ",
+      "showlegend": false,
+      "x": {
+        "dtype": "i2",
+        "bdata": "7gc="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "iUFg5dDMdUA="
+      },
+      "type": "scatter",
+      "xaxis": "x3",
+      "yaxis": "y3"
+    },
+    {
+      "legendgroup": "NDC 2035 (62%)",
+      "line": {
+        "width": 2,
+        "color": "rgb(0,29,52)"
+      },
+      "marker": {
+        "line": {
+          "color": "black",
+          "width": 1
+        },
+        "size": 10,
+        "color": "rgb(0,29,52)"
+      },
+      "mode": "markers",
+      "name": "NDC 2035 (62%)",
+      "showlegend": false,
+      "x": {
+        "dtype": "i2",
+        "bdata": "8wc="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "ou4DkNrybEA="
+      },
+      "type": "scatter",
+      "xaxis": "x3",
+      "yaxis": "y3"
+    },
+    {
+      "legendgroup": "NDC 2035 (70%)",
+      "line": {
+        "width": 2,
+        "color": "rgb(0,29,52)"
+      },
+      "marker": {
+        "line": {
+          "color": "black",
+          "width": 1
+        },
+        "size": 10,
+        "color": "rgb(0,29,52)"
+      },
+      "mode": "markers",
+      "name": "NDC 2035 (70%)",
+      "showlegend": false,
+      "x": {
+        "dtype": "i2",
+        "bdata": "8wc="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "j41AvK7aZkA="
+      },
+      "type": "scatter",
+      "xaxis": "x3",
+      "yaxis": "y3"
+    },
+    {
+      "legendgroup": "Net Emissions",
+      "line": {
+        "width": 2,
+        "color": "yellow"
+      },
+      "marker": {
+        "line": {
+          "color": "black",
+          "width": 1
+        },
+        "size": 10,
+        "color": "yellow"
+      },
+      "mode": "lines+markers",
+      "name": "Net Emissions",
+      "showlegend": false,
+      "x": {
+        "dtype": "i2",
+        "bdata": "6QfqB+sH7AftB+4H7wfwB\u002fEH8gfzB\u002fgH\u002fQcCCA=="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "MqH9+9UQeUAeMeLIvzt3QEZX9oAwPHhA4WiCPnr8dUB20CiklW90QM9XRzUWM3NABOUwR8\u002fhckDF6fJE2i9yQCgbvK3AinFAvuu3SoGucEDSFXvQ7qJtQB\u002fOylaDuGdAN6ZyiUsaWUBg2ph2aUsMQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x4",
+      "yaxis": "y4"
+    },
+    {
+      "legendgroup": "NDC 2030 (43%) ",
+      "line": {
+        "width": 2,
+        "color": "cyan"
+      },
+      "marker": {
+        "line": {
+          "color": "black",
+          "width": 1
+        },
+        "size": 10,
+        "color": "cyan"
+      },
+      "mode": "markers",
+      "name": "NDC 2030 (43%) ",
+      "showlegend": false,
+      "x": {
+        "dtype": "i2",
+        "bdata": "7gc="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "iUFg5dDMdUA="
+      },
+      "type": "scatter",
+      "xaxis": "x4",
+      "yaxis": "y4"
+    },
+    {
+      "legendgroup": "NDC 2035 (62%)",
+      "line": {
+        "width": 2,
+        "color": "rgb(0,29,52)"
+      },
+      "marker": {
+        "line": {
+          "color": "black",
+          "width": 1
+        },
+        "size": 10,
+        "color": "rgb(0,29,52)"
+      },
+      "mode": "markers",
+      "name": "NDC 2035 (62%)",
+      "showlegend": false,
+      "x": {
+        "dtype": "i2",
+        "bdata": "8wc="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "ou4DkNrybEA="
+      },
+      "type": "scatter",
+      "xaxis": "x4",
+      "yaxis": "y4"
+    },
+    {
+      "legendgroup": "NDC 2035 (70%)",
+      "line": {
+        "width": 2,
+        "color": "rgb(0,29,52)"
+      },
+      "marker": {
+        "line": {
+          "color": "black",
+          "width": 1
+        },
+        "size": 10,
+        "color": "rgb(0,29,52)"
+      },
+      "mode": "markers",
+      "name": "NDC 2035 (70%)",
+      "showlegend": false,
+      "x": {
+        "dtype": "i2",
+        "bdata": "8wc="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "j41AvK7aZkA="
+      },
+      "type": "scatter",
+      "xaxis": "x4",
+      "yaxis": "y4"
+    },
+    {
+      "legendgroup": "Net Emissions",
+      "line": {
+        "width": 2,
+        "color": "yellow"
+      },
+      "marker": {
+        "line": {
+          "color": "black",
+          "width": 1
+        },
+        "size": 10,
+        "color": "yellow"
+      },
+      "mode": "lines+markers",
+      "name": "Net Emissions",
+      "showlegend": false,
+      "x": {
+        "dtype": "i2",
+        "bdata": "6QfqB+sH7AftB+4H7wfwB\u002fEH8gfzB\u002fgH\u002fQcCCA=="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "MqH9+9UQeUAeMeLIvzt3QEZX9oAwPHhAMs3ohDM9dkDm1TMmsBV1QBYBkSVcd3RA+Hd9NSAVdECtPDL8rqxzQFlwiEPYWXNASFUdZaPBckA8N8Rklp9xQJm2vMOB\u002fW5AOMTCb7+6a0A32wHDmq1pQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x",
+      "yaxis": "y"
+    },
+    {
+      "legendgroup": "NDC 2030 (43%) ",
+      "line": {
+        "width": 2,
+        "color": "cyan"
+      },
+      "marker": {
+        "line": {
+          "color": "black",
+          "width": 1
+        },
+        "size": 10,
+        "color": "cyan"
+      },
+      "mode": "markers",
+      "name": "NDC 2030 (43%) ",
+      "showlegend": false,
+      "x": {
+        "dtype": "i2",
+        "bdata": "7gc="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "iUFg5dDMdUA="
+      },
+      "type": "scatter",
+      "xaxis": "x",
+      "yaxis": "y"
+    },
+    {
+      "legendgroup": "NDC 2035 (62%)",
+      "line": {
+        "width": 2,
+        "color": "rgb(0,29,52)"
+      },
+      "marker": {
+        "line": {
+          "color": "black",
+          "width": 1
+        },
+        "size": 10,
+        "color": "rgb(0,29,52)"
+      },
+      "mode": "markers",
+      "name": "NDC 2035 (62%)",
+      "showlegend": false,
+      "x": {
+        "dtype": "i2",
+        "bdata": "8wc="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "ou4DkNrybEA="
+      },
+      "type": "scatter",
+      "xaxis": "x",
+      "yaxis": "y"
+    },
+    {
+      "legendgroup": "NDC 2035 (70%)",
+      "line": {
+        "width": 2,
+        "color": "rgb(0,29,52)"
+      },
+      "marker": {
+        "line": {
+          "color": "black",
+          "width": 1
+        },
+        "size": 10,
+        "color": "rgb(0,29,52)"
+      },
+      "mode": "markers",
+      "name": "NDC 2035 (70%)",
+      "showlegend": false,
+      "x": {
+        "dtype": "i2",
+        "bdata": "8wc="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "j41AvK7aZkA="
+      },
+      "type": "scatter",
+      "xaxis": "x",
+      "yaxis": "y"
+    },
+    {
+      "legendgroup": "Net Emissions",
+      "line": {
+        "width": 2,
+        "color": "yellow"
+      },
+      "marker": {
+        "line": {
+          "color": "black",
+          "width": 1
+        },
+        "size": 10,
+        "color": "yellow"
+      },
+      "mode": "lines+markers",
+      "name": "Net Emissions",
+      "showlegend": true,
+      "x": [
+        null
+      ],
+      "y": [
+        null
+      ],
+      "type": "scatter"
+    },
+    {
+      "legendgroup": "NDC 2030 (43%) ",
+      "line": {
+        "width": 2,
+        "color": "cyan"
+      },
+      "marker": {
+        "line": {
+          "color": "black",
+          "width": 1
+        },
+        "size": 10,
+        "color": "cyan"
+      },
+      "mode": "markers",
+      "name": "NDC 2030 (43%) ",
+      "showlegend": true,
+      "x": [
+        null
+      ],
+      "y": [
+        null
+      ],
+      "type": "scatter"
+    },
+    {
+      "legendgroup": "NDC 2035 (62%)",
+      "line": {
+        "width": 2,
+        "color": "rgb(0,29,52)"
+      },
+      "marker": {
+        "line": {
+          "color": "black",
+          "width": 1
+        },
+        "size": 10,
+        "color": "rgb(0,29,52)"
+      },
+      "mode": "markers",
+      "name": "NDC 2035 (62%)",
+      "showlegend": true,
+      "x": [
+        null
+      ],
+      "y": [
+        null
+      ],
+      "type": "scatter"
+    },
+    {
+      "legendgroup": "NDC 2035 (70%)",
+      "line": {
+        "width": 2,
+        "color": "rgb(0,29,52)"
+      },
+      "marker": {
+        "line": {
+          "color": "black",
+          "width": 1
+        },
+        "size": 10,
+        "color": "rgb(0,29,52)"
+      },
+      "mode": "markers",
+      "name": "NDC 2035 (70%)",
+      "showlegend": true,
+      "x": [
+        null
+      ],
+      "y": [
+        null
+      ],
+      "type": "scatter"
+    }
+  ],
+  "layout": {
+    "template": {
+      "data": {
+        "scatter": [
+          {
+            "line": {
+              "width": 5
+            },
+            "opacity": 0.7,
+            "type": "scatter"
+          }
+        ]
+      },
+      "layout": {
+        "bargap": 0.5,
+        "colorway": [
+          "rgb(0,29,52)",
+          "rgb(0,0,128)",
+          "rgb(30,34,170)",
+          "rgb(0,75,135)",
+          "rgb(0,115,119)",
+          "rgb(0,169,206)",
+          "rgb(67,194,204)",
+          "rgb(159,174,229)",
+          "rgb(34,70,34)",
+          "rgb(0,122,83)",
+          "rgb(107,142,35)",
+          "rgb(120,190,32)",
+          "rgb(113,204,152)",
+          "rgb(232,119,34)",
+          "rgb(255,184,28)",
+          "rgb(109,32,119)",
+          "rgb(223,25,149)",
+          "rgb(0,0,0)",
+          "rgb(44,44,44)",
+          "rgb(80,80,80)",
+          "rgb(158,158,158)",
+          "rgb(117,117,121)",
+          "rgb(200,200,220)",
+          "rgb(102,51,0)",
+          "rgb(128,0,0)"
+        ],
+        "font": {
+          "family": "Arial",
+          "size": 15
+        },
+        "legend": {
+          "entrywidth": 0,
+          "entrywidthmode": "pixels",
+          "font": {
+            "size": 15
+          },
+          "itemsizing": "constant",
+          "itemwidth": 30,
+          "orientation": "h",
+          "traceorder": "normal",
+          "x": 0.5,
+          "xanchor": "center",
+          "y": -0.05,
+          "yanchor": "top"
+        },
+        "margin": {
+          "b": 105,
+          "r": 25,
+          "t": 50
+        },
+        "paper_bgcolor": "white",
+        "plot_bgcolor": "white",
+        "title": {
+          "font": {
+            "color": "#333333",
+            "size": 16
+          }
+        },
+        "xaxis": {
+          "showgrid": false,
+          "tickfont": {
+            "size": 15
+          },
+          "title": {
+            "font": {
+              "size": 15
+            }
+          }
+        },
+        "yaxis": {
+          "gridcolor": "lightgrey",
+          "tickfont": {
+            "size": 15
+          },
+          "title": {
+            "font": {
+              "size": 15
+            }
+          }
+        }
+      }
+    },
+    "xaxis": {
+      "anchor": "y",
+      "domain": [
+        0.0,
+        0.45
+      ],
+      "title": {
+        "text": ""
+      }
+    },
+    "yaxis": {
+      "anchor": "x",
+      "domain": [
+        0.0,
+        0.47
+      ],
+      "title": {
+        "text": "Mt CO₂-e"
+      },
+      "showticklabels": true,
+      "nticks": 10,
+      "matches": "y",
+      "range": [
+        -225.0,
+        625.0
+      ]
+    },
+    "xaxis2": {
+      "anchor": "y2",
+      "domain": [
+        0.55,
+        1.0
+      ],
+      "matches": "x",
+      "title": {
+        "text": ""
+      }
+    },
+    "yaxis2": {
+      "anchor": "x2",
+      "domain": [
+        0.0,
+        0.47
+      ],
+      "matches": "y",
+      "showticklabels": true,
+      "nticks": 10,
+      "range": [
+        -225.0,
+        625.0
+      ],
+      "title": {
+        "text": "Mt CO₂-e"
+      }
+    },
+    "xaxis3": {
+      "anchor": "y3",
+      "domain": [
+        0.0,
+        0.45
+      ],
+      "matches": "x",
+      "showticklabels": false,
+      "title": {
+        "text": ""
+      }
+    },
+    "yaxis3": {
+      "anchor": "x3",
+      "domain": [
+        0.53,
+        1.0
+      ],
+      "matches": "y",
+      "title": {
+        "text": "Mt CO₂-e"
+      },
+      "showticklabels": true,
+      "nticks": 10,
+      "range": [
+        -225.0,
+        625.0
+      ]
+    },
+    "xaxis4": {
+      "anchor": "y4",
+      "domain": [
+        0.55,
+        1.0
+      ],
+      "matches": "x",
+      "showticklabels": false,
+      "title": {
+        "text": ""
+      }
+    },
+    "yaxis4": {
+      "anchor": "x4",
+      "domain": [
+        0.53,
+        1.0
+      ],
+      "matches": "y",
+      "showticklabels": true,
+      "nticks": 10,
+      "range": [
+        -225.0,
+        625.0
+      ],
+      "title": {
+        "text": "Mt CO₂-e"
+      }
+    },
+    "annotations": [
+      {
+        "font": {
+          "color": "black",
+          "family": "Arial",
+          "size": 15
+        },
+        "showarrow": false,
+        "text": "\u003cb\u003eAmpol-House-View\u003c\u002fb\u003e\u003cbr\u003eNet Emissions by Sector",
+        "x": 0.225,
+        "xanchor": "center",
+        "xref": "paper",
+        "y": 0.48,
+        "yanchor": "bottom",
+        "yref": "paper"
+      },
+      {
+        "font": {
+          "color": "black",
+          "family": "Arial",
+          "size": 15
+        },
+        "showarrow": false,
+        "text": "\u003cb\u003eAmpol-1p5DS\u003c\u002fb\u003e\u003cbr\u003eNet Emissions by Sector",
+        "x": 0.225,
+        "xanchor": "center",
+        "xref": "paper",
+        "y": 1.01,
+        "yanchor": "bottom",
+        "yref": "paper"
+      },
+      {
+        "font": {
+          "color": "black",
+          "family": "Arial",
+          "size": 15
+        },
+        "showarrow": false,
+        "text": "\u003cb\u003eAmpol-2p5DS\u003c\u002fb\u003e\u003cbr\u003eNet Emissions by Sector",
+        "x": 0.775,
+        "xanchor": "center",
+        "xref": "paper",
+        "y": 1.01,
+        "yanchor": "bottom",
+        "yref": "paper"
+      },
+      {
+        "font": {
+          "color": "darkgrey",
+          "size": 8
+        },
+        "showarrow": false,
+        "text": "2025-12-03 Copyright © CSIRO",
+        "x": 1,
+        "xanchor": "right",
+        "xref": "paper",
+        "y": -0.05,
+        "yanchor": "top",
+        "yref": "paper"
+      }
+    ],
+    "legend": {
+      "tracegroupgap": 0,
+      "title": {
+        "text": ""
+      },
+      "y": -0.07,
+      "yanchor": "top",
+      "xanchor": "center",
+      "x": 0.5
+    },
+    "title": {
+      "text": ""
+    },
+    "shapes": [
+      {
+        "line": {
+          "color": "black",
+          "width": 1
+        },
+        "type": "line",
+        "x0": 0,
+        "x1": 1,
+        "xref": "x domain",
+        "y0": 0,
+        "y1": 0,
+        "yref": "y"
+      },
+      {
+        "line": {
+          "color": "black",
+          "width": 1
+        },
+        "type": "line",
+        "x0": 0,
+        "x1": 1,
+        "xref": "x3 domain",
+        "y0": 0,
+        "y1": 0,
+        "yref": "y3"
+      },
+      {
+        "line": {
+          "color": "black",
+          "width": 1
+        },
+        "type": "line",
+        "x0": 0,
+        "x1": 1,
+        "xref": "x4 domain",
+        "y0": 0,
+        "y1": 0,
+        "yref": "y4"
+      }
+    ],
+    "modebar": {
+      "add": [
+        "v1hovermode",
+        "toggleSpikelines",
+        "drawline",
+        "hoverClosestGl2d",
+        "drawopenpath",
+        "drawclosedpath",
+        "drawcircle",
+        "drawrect",
+        "eraseshape"
+      ]
+    }
+  }
+}

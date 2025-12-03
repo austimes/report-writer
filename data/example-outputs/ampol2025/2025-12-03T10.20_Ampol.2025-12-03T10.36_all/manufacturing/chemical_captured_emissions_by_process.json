@@ -1,0 +1,821 @@
+{
+  "data": [
+    {
+      "hovertemplate": "scen=Ampol-1p5DS\u003cbr\u003eyear=%{x}\u003cbr\u003eMt CO₂-e=%{y}\u003cextra\u003e\u003c\u002fextra\u003e",
+      "legendgroup": "",
+      "marker": {
+        "color": "rgb(158,158,158)",
+        "symbol": "circle",
+        "size": 0.001
+      },
+      "mode": "markers",
+      "name": "",
+      "orientation": "v",
+      "showlegend": false,
+      "x": {
+        "dtype": "i4",
+        "bdata": "6QcAAOoHAADrBwAA7AcAAO0HAADuBwAA7wcAAPAHAADxBwAA8gcAAPMHAAD4BwAA\u002fQcAAAIIAAA="
+      },
+      "xaxis": "x3",
+      "y": {
+        "dtype": "i1",
+        "bdata": "AAAAAAAAAAAAAAAAAAA="
+      },
+      "yaxis": "y3",
+      "type": "scatter",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(158,158,158)"
+      },
+      "opacity": 0
+    },
+    {
+      "hovertemplate": "scen=Ampol-2p5DS\u003cbr\u003eyear=%{x}\u003cbr\u003eMt CO₂-e=%{y}\u003cextra\u003e\u003c\u002fextra\u003e",
+      "legendgroup": "",
+      "marker": {
+        "color": "rgb(158,158,158)",
+        "symbol": "circle",
+        "size": 0.001
+      },
+      "mode": "markers",
+      "name": "",
+      "orientation": "v",
+      "showlegend": false,
+      "x": {
+        "dtype": "i4",
+        "bdata": "6QcAAOoHAADrBwAA7AcAAO0HAADuBwAA7wcAAPAHAADxBwAA8gcAAPMHAAD4BwAA\u002fQcAAAIIAAA="
+      },
+      "xaxis": "x4",
+      "y": {
+        "dtype": "i1",
+        "bdata": "AAAAAAAAAAAAAAAAAAA="
+      },
+      "yaxis": "y4",
+      "type": "scatter",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(158,158,158)"
+      },
+      "opacity": 0
+    },
+    {
+      "hovertemplate": "scen=Ampol-House-View\u003cbr\u003eyear=%{x}\u003cbr\u003eMt CO₂-e=%{y}\u003cextra\u003e\u003c\u002fextra\u003e",
+      "legendgroup": "",
+      "marker": {
+        "color": "rgb(158,158,158)",
+        "symbol": "circle",
+        "size": 0.001
+      },
+      "mode": "markers",
+      "name": "",
+      "orientation": "v",
+      "showlegend": false,
+      "x": {
+        "dtype": "i4",
+        "bdata": "6QcAAOoHAADrBwAA7AcAAO0HAADuBwAA7wcAAPAHAADxBwAA8gcAAPMHAAD4BwAA\u002fQcAAAIIAAA="
+      },
+      "xaxis": "x",
+      "y": {
+        "dtype": "i1",
+        "bdata": "AAAAAAAAAAAAAAAAAAA="
+      },
+      "yaxis": "y",
+      "type": "scatter",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(158,158,158)"
+      },
+      "opacity": 0
+    },
+    {
+      "fill": "tonexty",
+      "name": "Ipc_Gas-Based Methanol Production With CCS",
+      "showlegend": true,
+      "stackgroup": "negative",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "fDPqazcweL5FNexnuF2PvnxOucv5IJS+oFmQZHUtkb5haSp9LLaNvs0kvQNX6Yq+B\u002fv7U1+YiL5GvFyRsr6FvlkyMWWScYK+fjhrJyo7fb4+Mwu+P311vg=="
+      },
+      "type": "scatter",
+      "xaxis": "x3",
+      "yaxis": "y3",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(158,158,158)"
+      },
+      "legendgroup": "Ipc_Gas-Based Methanol Production With CCS",
+      "marker": {
+        "color": "rgb(158,158,158)"
+      },
+      "fillcolor": "rgb(158,158,158)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Ipc_Blr_Coal With CCS",
+      "showlegend": true,
+      "stackgroup": "negative",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "BXT5eKNrm75w9xdC4becvneHQJpIEZ2+tO\u002fppEhul74oB\u002f4dQgyWvvCUAbvIVpW+XWXOo4FdlL6YGrMjCh6TvnylfC34fpG+ltES7lM4jr6NLvH11JaDvg=="
+      },
+      "type": "scatter",
+      "xaxis": "x3",
+      "yaxis": "y3",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(0,0,0)"
+      },
+      "legendgroup": "Ipc_Blr_Coal With CCS",
+      "marker": {
+        "color": "rgb(0,0,0)"
+      },
+      "fillcolor": "rgb(0,0,0)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Ipc_Blr_Natural Gas With CCS",
+      "showlegend": true,
+      "stackgroup": "negative",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "m5X1tfOk5b5vTtpIrhHmvmuP\u002fLKepuG+D+0UQ\u002fg6lL5DlfS805mRvm3xSXHa\u002fo6+v4t2bMfeir6ZVomR5ayGvr5WHOlIu4K+xpRqwU54e76vsy5ti5xyvg=="
+      },
+      "type": "scatter",
+      "xaxis": "x3",
+      "yaxis": "y3",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(30,34,170)"
+      },
+      "legendgroup": "Ipc_Blr_Natural Gas With CCS",
+      "marker": {
+        "color": "rgb(30,34,170)"
+      },
+      "fillcolor": "rgb(30,34,170)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Ipc_Urea Production",
+      "showlegend": true,
+      "stackgroup": "negative",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "ZVVZ0p6tqr4WHfILrZ2uvjxR7aAzSLW+hdyJmg0MtL5QMOmxEsqzvlPcjZXWJLK+uv\u002flwimNsL4fniVkGdatvhRHtvKOQqq+iyg6cNKJpr7jjab8ig+hvg=="
+      },
+      "type": "scatter",
+      "xaxis": "x3",
+      "yaxis": "y3",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(0,169,206)"
+      },
+      "legendgroup": "Ipc_Urea Production",
+      "marker": {
+        "color": "rgb(0,169,206)"
+      },
+      "fillcolor": "rgb(0,169,206)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Ipc_Green H2-Based Methanol Production",
+      "showlegend": true,
+      "stackgroup": "negative",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "dlRon3CGfb+G5+zOfSl8vzlvyFFHtsi+ZIRDpPPixL613rKpoavDvvNmGWLBNMG+a2Bl7Czkvb5qIHLc7l25vjWxm9cck7S+04SEQJ45sL7fgzIQiP2mvg=="
+      },
+      "type": "scatter",
+      "xaxis": "x3",
+      "yaxis": "y3",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(0,0,128)"
+      },
+      "legendgroup": "Ipc_Green H2-Based Methanol Production",
+      "marker": {
+        "color": "rgb(0,0,128)"
+      },
+      "fillcolor": "rgb(0,0,128)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Ipc_Gas-Based Methanol Production With CCS",
+      "showlegend": false,
+      "stackgroup": "negative",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "53KxNiX6kr6RLB0xgyuPvnZdzRFH25K+xlteahkukb4Edo4STLGRvjdL3Ia5ApG+\u002f16xxmdlkL7rsgk7kWyOvk+NS5QLLYy+cRx86\u002fbRhb5Ont8gFL9\u002fvg=="
+      },
+      "type": "scatter",
+      "xaxis": "x4",
+      "yaxis": "y4",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(158,158,158)"
+      },
+      "legendgroup": "Ipc_Gas-Based Methanol Production With CCS",
+      "marker": {
+        "color": "rgb(158,158,158)"
+      },
+      "fillcolor": "rgb(158,158,158)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Ipc_Blr_Coal With CCS",
+      "showlegend": false,
+      "stackgroup": "negative",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "rWx6QQDHj74gVcjLOseNvoqNwmU4\u002f46+fLhDaec8j77WgLU0J3mMvmEoXTK1VIu+0f7jp1Gxib78b\u002fdbjrGHvr7xiayHfYS+RHrt3PsvgL48s5KU0+B1vg=="
+      },
+      "type": "scatter",
+      "xaxis": "x4",
+      "yaxis": "y4",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(0,0,0)"
+      },
+      "legendgroup": "Ipc_Blr_Coal With CCS",
+      "marker": {
+        "color": "rgb(0,0,0)"
+      },
+      "fillcolor": "rgb(0,0,0)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Ipc_Blr_Natural Gas With CCS",
+      "showlegend": false,
+      "stackgroup": "negative",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "X7AKdJ6giL7fU18\u002fJB6TvtKRgJ5o8oq+fkK2JnNOhL7lKBad28OCvp2yojGsAIG+2okuhwJ8fr40a6iN2AN7vpXIT4RN13e+fCQ+eQd\u002fcr7KLKPEzY5qvg=="
+      },
+      "type": "scatter",
+      "xaxis": "x4",
+      "yaxis": "y4",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(30,34,170)"
+      },
+      "legendgroup": "Ipc_Blr_Natural Gas With CCS",
+      "marker": {
+        "color": "rgb(30,34,170)"
+      },
+      "fillcolor": "rgb(30,34,170)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Ipc_Urea Production",
+      "showlegend": false,
+      "stackgroup": "negative",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "MFqBloREsL52HQMWonm3vthveB3MIsS+9hGG+HGDxb6MEwqH\u002ftrDvksnyniakcK+faj2Bi0uwb4wQfxxwUu\u002fvpQoLvHJq6u+KhKPHne9p75NaHDWFRuivg=="
+      },
+      "type": "scatter",
+      "xaxis": "x4",
+      "yaxis": "y4",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(0,169,206)"
+      },
+      "legendgroup": "Ipc_Urea Production",
+      "marker": {
+        "color": "rgb(0,169,206)"
+      },
+      "fillcolor": "rgb(0,169,206)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Ipc_Green H2-Based Methanol Production",
+      "showlegend": false,
+      "stackgroup": "negative",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "bBdAljGp8L9btxm7Pavwv4Nv6pWX+v6\u002ftAEiop1cA8AA8wIRWcfrvzdCdkjwxuu\u002fVArnt5nG67+sAw0wVsbrv6l3vgoWxuu\u002fbtWOEjrip74MOnHvavGgvg=="
+      },
+      "type": "scatter",
+      "xaxis": "x4",
+      "yaxis": "y4",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(0,0,128)"
+      },
+      "legendgroup": "Ipc_Green H2-Based Methanol Production",
+      "marker": {
+        "color": "rgb(0,0,128)"
+      },
+      "fillcolor": "rgb(0,0,128)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Ipc_Gas-Based Methanol Production With CCS",
+      "showlegend": false,
+      "stackgroup": "negative",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "y\u002fmWDrAhj75INVxSQYqHvsiJxNiAXIu+VgQH2bzniL7MII6EBlmJvh6gvZK6K4i+BEK+UfHShr4EDwagKSiFviJQrAikG4O+M8Eh1BM4f764BoWa3eh2vg=="
+      },
+      "type": "scatter",
+      "xaxis": "x",
+      "yaxis": "y",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(158,158,158)"
+      },
+      "legendgroup": "Ipc_Gas-Based Methanol Production With CCS",
+      "marker": {
+        "color": "rgb(158,158,158)"
+      },
+      "fillcolor": "rgb(158,158,158)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Ipc_Blr_Coal With CCS",
+      "showlegend": false,
+      "stackgroup": "negative",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "zngmm8udcr70p6GwLP6FvrKR+c6L4oa+H9JPizkUh75kQ21y7RaFvvKVy57YIIS+wcZc5VIFg76InfG0eZqBvrYqtbCFwH6+U+uYyyRqeL5wTl57ZeBwvg=="
+      },
+      "type": "scatter",
+      "xaxis": "x",
+      "yaxis": "y",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(0,0,0)"
+      },
+      "legendgroup": "Ipc_Blr_Coal With CCS",
+      "marker": {
+        "color": "rgb(0,0,0)"
+      },
+      "fillcolor": "rgb(0,0,0)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Ipc_Blr_Natural Gas With CCS",
+      "showlegend": false,
+      "stackgroup": "negative",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "9GVLEYbEbb62uf6lXoOGvjMIArxLKIG+dmauPtLIer6WD7ltOMd4vvSEtxzAdXa+5xoLB60mdL7uw1\u002fCxtFxvh9jADUwvG6+AosK3u1Tab49Cy4KEEJivg=="
+      },
+      "type": "scatter",
+      "xaxis": "x",
+      "yaxis": "y",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(30,34,170)"
+      },
+      "legendgroup": "Ipc_Blr_Natural Gas With CCS",
+      "marker": {
+        "color": "rgb(30,34,170)"
+      },
+      "fillcolor": "rgb(30,34,170)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Ipc_Urea Production",
+      "showlegend": false,
+      "stackgroup": "negative",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "4UJYIBx+ob5M45SxpBmmviApFKoIpLG+TyDY+esBsb40kzei5Q2vvtAYRhTgOqy+w7jdk6Vfqb6oNZNvkb+mvlNo0FYw9KO+\u002fgFRg3U3ob5EFEeKAEiavg=="
+      },
+      "type": "scatter",
+      "xaxis": "x",
+      "yaxis": "y",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(0,169,206)"
+      },
+      "legendgroup": "Ipc_Urea Production",
+      "marker": {
+        "color": "rgb(0,169,206)"
+      },
+      "fillcolor": "rgb(0,169,206)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Ipc_Green H2-Based Methanol Production",
+      "showlegend": false,
+      "stackgroup": "negative",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "0dJujgjsmL4xQ2cApcSrvk2TBl+tx7O+5bQQBFpUsL7gMznnfbSsvkZOnTD9z6i+gydKENdDpb5XnIUgpYaivjTEU5niwZ++cGdK9mTImr51YRC\u002fF9yTvg=="
+      },
+      "type": "scatter",
+      "xaxis": "x",
+      "yaxis": "y",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(0,0,128)"
+      },
+      "legendgroup": "Ipc_Green H2-Based Methanol Production",
+      "marker": {
+        "color": "rgb(0,0,128)"
+      },
+      "fillcolor": "rgb(0,0,128)"
+    }
+  ],
+  "layout": {
+    "template": {
+      "data": {
+        "scatter": [
+          {
+            "line": {
+              "width": 5
+            },
+            "opacity": 0.7,
+            "type": "scatter"
+          }
+        ]
+      },
+      "layout": {
+        "bargap": 0.5,
+        "colorway": [
+          "rgb(0,29,52)",
+          "rgb(0,0,128)",
+          "rgb(30,34,170)",
+          "rgb(0,75,135)",
+          "rgb(0,115,119)",
+          "rgb(0,169,206)",
+          "rgb(67,194,204)",
+          "rgb(159,174,229)",
+          "rgb(34,70,34)",
+          "rgb(0,122,83)",
+          "rgb(107,142,35)",
+          "rgb(120,190,32)",
+          "rgb(113,204,152)",
+          "rgb(232,119,34)",
+          "rgb(255,184,28)",
+          "rgb(109,32,119)",
+          "rgb(223,25,149)",
+          "rgb(0,0,0)",
+          "rgb(44,44,44)",
+          "rgb(80,80,80)",
+          "rgb(158,158,158)",
+          "rgb(117,117,121)",
+          "rgb(200,200,220)",
+          "rgb(102,51,0)",
+          "rgb(128,0,0)"
+        ],
+        "font": {
+          "family": "Arial",
+          "size": 15
+        },
+        "legend": {
+          "entrywidth": 0,
+          "entrywidthmode": "pixels",
+          "font": {
+            "size": 15
+          },
+          "itemsizing": "constant",
+          "itemwidth": 30,
+          "orientation": "h",
+          "traceorder": "normal",
+          "x": 0.5,
+          "xanchor": "center",
+          "y": -0.05,
+          "yanchor": "top"
+        },
+        "margin": {
+          "b": 105,
+          "r": 25,
+          "t": 50
+        },
+        "paper_bgcolor": "white",
+        "plot_bgcolor": "white",
+        "title": {
+          "font": {
+            "color": "#333333",
+            "size": 16
+          }
+        },
+        "xaxis": {
+          "showgrid": false,
+          "tickfont": {
+            "size": 15
+          },
+          "title": {
+            "font": {
+              "size": 15
+            }
+          }
+        },
+        "yaxis": {
+          "gridcolor": "lightgrey",
+          "tickfont": {
+            "size": 15
+          },
+          "title": {
+            "font": {
+              "size": 15
+            }
+          }
+        }
+      }
+    },
+    "xaxis": {
+      "anchor": "y",
+      "domain": [
+        0.0,
+        0.45
+      ],
+      "title": {
+        "text": ""
+      }
+    },
+    "yaxis": {
+      "anchor": "x",
+      "domain": [
+        0.0,
+        0.47
+      ],
+      "title": {
+        "text": "Mt CO₂-e"
+      },
+      "showticklabels": true,
+      "nticks": 10,
+      "matches": "y",
+      "range": [
+        -2.625,
+        0.625
+      ]
+    },
+    "xaxis2": {
+      "anchor": "y2",
+      "domain": [
+        0.55,
+        1.0
+      ],
+      "matches": "x",
+      "title": {
+        "text": ""
+      }
+    },
+    "yaxis2": {
+      "anchor": "x2",
+      "domain": [
+        0.0,
+        0.47
+      ],
+      "matches": "y",
+      "showticklabels": true,
+      "nticks": 10,
+      "range": [
+        -2.625,
+        0.625
+      ],
+      "title": {
+        "text": "Mt CO₂-e"
+      }
+    },
+    "xaxis3": {
+      "anchor": "y3",
+      "domain": [
+        0.0,
+        0.45
+      ],
+      "matches": "x",
+      "showticklabels": false,
+      "title": {
+        "text": ""
+      }
+    },
+    "yaxis3": {
+      "anchor": "x3",
+      "domain": [
+        0.53,
+        1.0
+      ],
+      "matches": "y",
+      "title": {
+        "text": "Mt CO₂-e"
+      },
+      "showticklabels": true,
+      "nticks": 10,
+      "range": [
+        -2.625,
+        0.625
+      ]
+    },
+    "xaxis4": {
+      "anchor": "y4",
+      "domain": [
+        0.55,
+        1.0
+      ],
+      "matches": "x",
+      "showticklabels": false,
+      "title": {
+        "text": ""
+      }
+    },
+    "yaxis4": {
+      "anchor": "x4",
+      "domain": [
+        0.53,
+        1.0
+      ],
+      "matches": "y",
+      "showticklabels": true,
+      "nticks": 10,
+      "range": [
+        -2.625,
+        0.625
+      ],
+      "title": {
+        "text": "Mt CO₂-e"
+      }
+    },
+    "annotations": [
+      {
+        "font": {
+          "color": "black",
+          "family": "Arial",
+          "size": 15
+        },
+        "showarrow": false,
+        "text": "\u003cb\u003eAmpol-House-View\u003c\u002fb\u003e\u003cbr\u003eChemical Captured Emissions by Process",
+        "x": 0.225,
+        "xanchor": "center",
+        "xref": "paper",
+        "y": 0.48,
+        "yanchor": "bottom",
+        "yref": "paper"
+      },
+      {
+        "font": {
+          "color": "black",
+          "family": "Arial",
+          "size": 15
+        },
+        "showarrow": false,
+        "text": "\u003cb\u003eAmpol-1p5DS\u003c\u002fb\u003e\u003cbr\u003eChemical Captured Emissions by Process",
+        "x": 0.225,
+        "xanchor": "center",
+        "xref": "paper",
+        "y": 1.01,
+        "yanchor": "bottom",
+        "yref": "paper"
+      },
+      {
+        "font": {
+          "color": "black",
+          "family": "Arial",
+          "size": 15
+        },
+        "showarrow": false,
+        "text": "\u003cb\u003eAmpol-2p5DS\u003c\u002fb\u003e\u003cbr\u003eChemical Captured Emissions by Process",
+        "x": 0.775,
+        "xanchor": "center",
+        "xref": "paper",
+        "y": 1.01,
+        "yanchor": "bottom",
+        "yref": "paper"
+      },
+      {
+        "font": {
+          "color": "darkgrey",
+          "size": 8
+        },
+        "showarrow": false,
+        "text": "2025-12-03 Copyright © CSIRO",
+        "x": 1,
+        "xanchor": "right",
+        "xref": "paper",
+        "y": -0.05,
+        "yanchor": "top",
+        "yref": "paper"
+      }
+    ],
+    "legend": {
+      "tracegroupgap": 0,
+      "title": {
+        "text": ""
+      },
+      "y": -0.07,
+      "yanchor": "top",
+      "xanchor": "center",
+      "x": 0.5
+    },
+    "title": {
+      "text": ""
+    },
+    "shapes": [
+      {
+        "line": {
+          "color": "black",
+          "width": 1
+        },
+        "type": "line",
+        "x0": 0,
+        "x1": 1,
+        "xref": "x domain",
+        "y0": 0,
+        "y1": 0,
+        "yref": "y"
+      },
+      {
+        "line": {
+          "color": "black",
+          "width": 1
+        },
+        "type": "line",
+        "x0": 0,
+        "x1": 1,
+        "xref": "x3 domain",
+        "y0": 0,
+        "y1": 0,
+        "yref": "y3"
+      },
+      {
+        "line": {
+          "color": "black",
+          "width": 1
+        },
+        "type": "line",
+        "x0": 0,
+        "x1": 1,
+        "xref": "x4 domain",
+        "y0": 0,
+        "y1": 0,
+        "yref": "y4"
+      }
+    ],
+    "modebar": {
+      "add": [
+        "v1hovermode",
+        "toggleSpikelines",
+        "drawline",
+        "hoverClosestGl2d",
+        "drawopenpath",
+        "drawclosedpath",
+        "drawcircle",
+        "drawrect",
+        "eraseshape"
+      ]
+    }
+  }
+}

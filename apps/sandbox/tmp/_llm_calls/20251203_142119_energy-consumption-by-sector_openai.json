@@ -1,0 +1,28 @@
+{
+  "timestamp": "2025-12-03T14:21:19.489676",
+  "section_id": "energy-consumption-by-sector",
+  "provider": "openai",
+  "model": "gpt-5.1-2025-11-13",
+  "request": {
+    "model": "gpt-5.1-2025-11-13",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an expert report writer for energy and emissions analysis."
+      },
+      {
+        "role": "user",
+        "content": "[text prompt, 2 images]"
+      }
+    ],
+    "max_tokens": 4000,
+    "reasoning_effort": "medium",
+    "image_count": 2,
+    "chart_ids": [
+      "electricity_consumption_by_sector",
+      "industry_energy_use_by_fuel"
+    ],
+    "prompt_preview": "# Task: Write the 'Energy consumption by sector' section of the report\n\n## Section Information\n- **Title**: Energy consumption by sector\n- **Level**: ## (heading level 2)\n- **Parent Section**: Projection results\n\n## Instructions\nProvide an overview of the energy consumption by sector projection results\n\n## Available Data\nThe following 2 chart(s) are available for this section:\n\n### Electricity consumption by sector\n- **ID**: electricity_consumption_by_sector\n- **Category**: electricity\n- **Figur..."
+  },
+  "response": "Projected energy consumption profiles show a marked shift towards electricity use across most sectors, underpinned by efficiency improvements and fuel switching away from fossil fuels.\n\nElectricity consumption roughly doubles to triples between 2025 and 2050 across all scenarios. Starting from 355.36 TWh in 2025, total electricity use reaches 719.75 TWh in 2050 in the Ampol-House-View (reference/baseline scenario), an increase of 102.5%. Under the Ampol-2p5DS (2.5\u00b0C pathway), electricity grows by 119.7% to 780.55 TWh, while in the more ambitious Ampol-1p5DS (1.5\u00b0C-aligned pathway) it rises by 186.9% to 1,019.51 TWh in 2050. By 2050, electricity demand in Ampol-1p5DS is around 300 TWh higher than in the reference scenario, reflecting deeper electrification of transport, buildings, and industrial processes, as well as additional demand from emerging loads such as hydrogen production and carbon dioxide removal. Sectoral profiles in the figure highlight particularly strong growth in electricity use for hydrogen production and commercial and residential buildings, alongside steady or increasing demand from manufacturing and transport.\n\n![Electricity consumption by sector](figures/electricity_consumption_by_sector.png)  \n*Figure: Projected electricity consumption by sector from 2025 to 2050 across the three scenarios, showing stronger growth in total electricity demand under deeper decarbonisation pathways.*\n\nIn contrast to rising electricity use, total final energy consumption in industry declines over the projection period in all scenarios. From a common 2025 baseline of 1,555.51 PJ, industrial energy use falls to 1,179.22 PJ in 2050 in Ampol-1p5DS (a 24.2% reduction), 1,089.19 PJ in Ampol-2p5DS (30.0% reduction), and 1,164.28 PJ in Ampol-House-View (25.2% reduction). The composition of industrial energy shifts significantly: natural gas, coal and diesel use contract substantially, while electricity, hydrogen, biomass, biomethane and dedicated \u201celectrification\u201d loads increase their share, consistent with process electrification and fuel substitution. By 2050, total industrial energy use is 90.0 PJ higher in Ampol-1p5DS than in Ampol-2p5DS, reflecting somewhat higher activity levels and greater reliance on energy-intensive low-carbon fuels, even as overall emissions fall (see Emissions by sector section).\n\n![Industry Energy Use by Fuel](figures/industry_energy_use_by_fuel.png)  \n*Figure: Projected industrial final energy use by fuel from 2025 to 2050 across the three scenarios, illustrating declining fossil fuel use and growing contributions from electricity and low-emissions fuels.*"
+}

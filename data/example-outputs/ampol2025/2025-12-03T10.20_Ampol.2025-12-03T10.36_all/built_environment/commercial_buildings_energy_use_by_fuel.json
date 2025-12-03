@@ -1,0 +1,899 @@
+{
+  "data": [
+    {
+      "hovertemplate": "scen=Ampol-1p5DS\u003cbr\u003eyear=%{x}\u003cbr\u003ePJ=%{y}\u003cextra\u003e\u003c\u002fextra\u003e",
+      "legendgroup": "",
+      "marker": {
+        "color": "rgb(158,158,158)",
+        "symbol": "circle",
+        "size": 0.001
+      },
+      "mode": "markers",
+      "name": "",
+      "orientation": "v",
+      "showlegend": false,
+      "x": {
+        "dtype": "i4",
+        "bdata": "6QcAAOoHAADrBwAA7AcAAO0HAADuBwAA7wcAAPAHAADxBwAA8gcAAPMHAAD4BwAA\u002fQcAAAIIAAA="
+      },
+      "xaxis": "x3",
+      "y": {
+        "dtype": "i1",
+        "bdata": "AAAAAAAAAAAAAAAAAAA="
+      },
+      "yaxis": "y3",
+      "type": "scatter",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(158,158,158)"
+      },
+      "opacity": 0
+    },
+    {
+      "hovertemplate": "scen=Ampol-2p5DS\u003cbr\u003eyear=%{x}\u003cbr\u003ePJ=%{y}\u003cextra\u003e\u003c\u002fextra\u003e",
+      "legendgroup": "",
+      "marker": {
+        "color": "rgb(158,158,158)",
+        "symbol": "circle",
+        "size": 0.001
+      },
+      "mode": "markers",
+      "name": "",
+      "orientation": "v",
+      "showlegend": false,
+      "x": {
+        "dtype": "i4",
+        "bdata": "6QcAAOoHAADrBwAA7AcAAO0HAADuBwAA7wcAAPAHAADxBwAA8gcAAPMHAAD4BwAA\u002fQcAAAIIAAA="
+      },
+      "xaxis": "x4",
+      "y": {
+        "dtype": "i1",
+        "bdata": "AAAAAAAAAAAAAAAAAAA="
+      },
+      "yaxis": "y4",
+      "type": "scatter",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(158,158,158)"
+      },
+      "opacity": 0
+    },
+    {
+      "hovertemplate": "scen=Ampol-House-View\u003cbr\u003eyear=%{x}\u003cbr\u003ePJ=%{y}\u003cextra\u003e\u003c\u002fextra\u003e",
+      "legendgroup": "",
+      "marker": {
+        "color": "rgb(158,158,158)",
+        "symbol": "circle",
+        "size": 0.001
+      },
+      "mode": "markers",
+      "name": "",
+      "orientation": "v",
+      "showlegend": false,
+      "x": {
+        "dtype": "i4",
+        "bdata": "6QcAAOoHAADrBwAA7AcAAO0HAADuBwAA7wcAAPAHAADxBwAA8gcAAPMHAAD4BwAA\u002fQcAAAIIAAA="
+      },
+      "xaxis": "x",
+      "y": {
+        "dtype": "i1",
+        "bdata": "AAAAAAAAAAAAAAAAAAA="
+      },
+      "yaxis": "y",
+      "type": "scatter",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(158,158,158)"
+      },
+      "opacity": 0
+    },
+    {
+      "fill": "tonexty",
+      "name": "Electricity",
+      "showlegend": true,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "5mLUTY8heEDq94Y221l1QHH+lIWZonJA5pXgVa8JcECEHF9OK15vQLSvUMeeim5A+Z6ihWCobUB47Uhu+odsQPY+7vw1KmtAzuTT5I4fakBjld\u002fu5mFpQDyEvW8yNmlA9xM2yYXXaEBsHF7DjMFoQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x3",
+      "yaxis": "y3",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(0,169,206)"
+      },
+      "legendgroup": "Electricity",
+      "marker": {
+        "color": "rgb(0,169,206)"
+      },
+      "fillcolor": "rgb(0,169,206)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Oil",
+      "showlegend": true,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "\u002fQcAAPgHAADzBwAA8gcAAPEHAADwBwAA7wcAAO4HAADtBwAA7AcAAOsHAADqBwAA6QcAAA=="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "PMaMNb3lJUD0CfSXFTczQF4SgY+y9jhA4zTEbmDvOUCz2BKSy9U6QNGJsD5crztAxZ0sGEODPEAZhWDSV1M9QL+p63DQGT5AGGPiADDRPkDrinDBHSRAQPH+Oxje0j9A1KxtoS1fP0A="
+      },
+      "type": "scatter",
+      "xaxis": "x3",
+      "yaxis": "y3",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(80,80,80)"
+      },
+      "legendgroup": "Oil",
+      "marker": {
+        "color": "rgb(80,80,80)"
+      },
+      "fillcolor": "rgb(80,80,80)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Gas - Natural Gas",
+      "showlegend": true,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "c7eD5FS0PT\u002fY6yfReaPEP3O9vaF+8RNA669hbxu1I0A6K3W5l3ElQEfpDGJyCidAMlJhkLyVKEBlbftdo+kpQHIRFwKvLStAcL05FrMNMED\u002ftB8roBs4QCiJNJmunkdAkrjMqkW1R0DUhqZ1yI1HQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x3",
+      "yaxis": "y3",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(158,158,158)"
+      },
+      "legendgroup": "Gas - Natural Gas",
+      "marker": {
+        "color": "rgb(158,158,158)"
+      },
+      "fillcolor": "rgb(158,158,158)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Biofuel - Biomethane",
+      "showlegend": true,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "kmnv8vZePEBJG2XQ9l48QH8y76\u002f2XjxA4V4CfPZePECePmgk9l48QCkrr6n1XjxAHYdL6\u002fRePECpDWON8148QNA3cN\u002fwXjxAAcutjxOrOkAeFZniZC8zQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x3",
+      "yaxis": "y3",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(255,184,28)"
+      },
+      "legendgroup": "Biofuel - Biomethane",
+      "marker": {
+        "color": "rgb(255,184,28)"
+      },
+      "fillcolor": "rgb(255,184,28)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Electricity - Electrification",
+      "showlegend": true,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA"
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "bwbzDmzZGUD4smJDA2QTQOChLxMyPglAuRr+CYcs\u002fD\u002fEMB3\u002fAmf4PxV00iuwzPQ\u002fCvyObM9c8T9FbrPEdC7sP6decFOL+eU\u002ftQ9cvxkQ4D8Tkxdmq9vUP7QRehHXb7Q\u002f"
+      },
+      "type": "scatter",
+      "xaxis": "x3",
+      "yaxis": "y3",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(0,0,128)"
+      },
+      "legendgroup": "Electricity - Electrification",
+      "marker": {
+        "color": "rgb(0,0,128)"
+      },
+      "fillcolor": "rgb(0,0,128)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Gas - Hydrogen",
+      "showlegend": true,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA"
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "YtpOGWoP3j+tdQW+ZQ\u002feP72cGShhD94\u002fHlZU3FkP3j+Fy+7sWOHeP8F2XAX5\u002fN4\u002fqlkw+zHV2z8dgPgEF3zbP+V2TB50ets\u002fRYghnrx02z+X9CX\u002f0DzbP75Es0TR0I8\u002f"
+      },
+      "type": "scatter",
+      "xaxis": "x3",
+      "yaxis": "y3",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(0,122,83)"
+      },
+      "legendgroup": "Gas - Hydrogen",
+      "marker": {
+        "color": "rgb(0,122,83)"
+      },
+      "fillcolor": "rgb(0,122,83)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Electricity",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "jlIf0WxdcUATAGaeQD9wQLzrgRHpkG5A3QrqdyCbbEB1PKPsw0dsQActbAgH62tA8IK7V2GEa0C9MmPxNgtrQIX+mt2+j2pAf8oqETcmakDOHXVVEr1pQDyEvW8yNmlA+BM2yYXXaEBsHF7DjMFoQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x4",
+      "yaxis": "y4",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(0,169,206)"
+      },
+      "legendgroup": "Electricity",
+      "marker": {
+        "color": "rgb(0,169,206)"
+      },
+      "fillcolor": "rgb(0,169,206)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Oil",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "Fx0CtHMzR0CgoegUhn5GQCMkSY7iHkZAXvEKrui5RUAY4dgpt6ZFQAem0a0LlEVAFeFq28CBRUBu0B1Cz29FQJxZxiw8XkVANkV+NGScQEAIDsR18l9AQOuKcMEdJEBA8f47GN7SP0DUrG2hLV8\u002fQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x4",
+      "yaxis": "y4",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(80,80,80)"
+      },
+      "legendgroup": "Oil",
+      "marker": {
+        "color": "rgb(80,80,80)"
+      },
+      "fillcolor": "rgb(80,80,80)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Gas - Natural Gas",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "YH9QeigfNUBsamigs\u002fg6QK4fSJDXcj9ADBy8qnaAQEDZa7jEt6NAQIgDUNhW0UBAN3UnpfPyQEBqb+iWJ6tBQBXpZEm1L0JAjRtX8NquREB4cq03j2BHQCiJNJmunkdAkrjMqkW1R0DUhqZ1yI1HQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x4",
+      "yaxis": "y4",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(158,158,158)"
+      },
+      "legendgroup": "Gas - Natural Gas",
+      "marker": {
+        "color": "rgb(158,158,158)"
+      },
+      "fillcolor": "rgb(158,158,158)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Biofuel - Biomethane",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "Zp4N7cEJNkBjv4S3C3sxQGHVykHidCpAlLT0NzZNKUBFeZRjEgwpQG4iLoOwxChAbI9TPXt6KEBqmGlQIQ0mQPeNGir95SNAvRnvFSaBFEDSjuFwU3fTPw=="
+      },
+      "type": "scatter",
+      "xaxis": "x4",
+      "yaxis": "y4",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(255,184,28)"
+      },
+      "legendgroup": "Biofuel - Biomethane",
+      "marker": {
+        "color": "rgb(255,184,28)"
+      },
+      "fillcolor": "rgb(255,184,28)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Electricity - Electrification",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA"
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "l4XkZzOuBUBucnD4AQ8AQBZbdFoVLfY\u002f7PKTjXlE6j9nd67QcPfmP9poYLiVxOM\u002f+faHxNqq4D8VCzzBHFPbP8QOyEl6gNU\u002f8Iw37xe6zz8ONMPJRMzEP7QRehHXb7Q\u002f"
+      },
+      "type": "scatter",
+      "xaxis": "x4",
+      "yaxis": "y4",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(0,0,128)"
+      },
+      "legendgroup": "Electricity - Electrification",
+      "marker": {
+        "color": "rgb(0,0,128)"
+      },
+      "fillcolor": "rgb(0,0,128)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Gas - Hydrogen",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA"
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "+lFLd8vU9T8sZa+XlYDiPxr+tZVb+uI\u002fuI1XB1W94z9e\u002fSlMMtvjPy5C8EswFuE\u002fhliOYHQN4T9htT7UGf3ZP8PFIenlBOE\u002fTFEBFoPZ3T++34bmTwiVP75Es0TR0I8\u002f"
+      },
+      "type": "scatter",
+      "xaxis": "x4",
+      "yaxis": "y4",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(0,122,83)"
+      },
+      "legendgroup": "Gas - Hydrogen",
+      "marker": {
+        "color": "rgb(0,122,83)"
+      },
+      "fillcolor": "rgb(0,122,83)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Electricity",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "EQBtWEvvcUAFbnwxJ5NwQFBd\u002f7R15m5A+i3mKhDMbECTEUY4WmxsQB7M7xBTB2xAHp0CKcmca0DMz5ni4B5rQIF293Tlm2pAgOHbz6YyakA6rvnlocdpQDyEvW8yNmlA9xM2yYXXaEBsHF7DjMFoQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x",
+      "yaxis": "y",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(0,169,206)"
+      },
+      "legendgroup": "Electricity",
+      "marker": {
+        "color": "rgb(0,169,206)"
+      },
+      "fillcolor": "rgb(0,169,206)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Oil",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "+MVdZX0zR0AvgNsshn5GQFYqxDbjHkZAb989b+q5RUB0fU28yaZFQBXDH4IglEVAcF3a1dSBRUDlXDCb4m9FQDDu7MpMXkVA5YG9s2OcQEBmnqP38V9AQOuKcMEdJEBA8f47GN7SP0DUrG2hLV8\u002fQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x",
+      "yaxis": "y",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(80,80,80)"
+      },
+      "legendgroup": "Oil",
+      "marker": {
+        "color": "rgb(80,80,80)"
+      },
+      "fillcolor": "rgb(80,80,80)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Gas - Natural Gas",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "mrj43JwYREAC9mRTYhVFQKk6vQehxUVAtJEjV8urRkBfKz2UQdBGQKREXLdI8kZAL0Zk52wTR0BnXoxsvTNHQA6F0EY8U0dAWKptBkFuR0CdxhUWaIdHQCiJNJmunkdAkrjMqkW1R0DUhqZ1yI1HQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x",
+      "yaxis": "y",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(158,158,158)"
+      },
+      "legendgroup": "Gas - Natural Gas",
+      "marker": {
+        "color": "rgb(158,158,158)"
+      },
+      "fillcolor": "rgb(158,158,158)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Biofuel - Biomethane",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "NI6omDygB0DHk4jterL9PxtzwYyv2us\u002fLJqLjOA9xz\u002fSq+y\u002fe+q3P7A4mvan3bQ\u002fb6UbJz2rrz+DRnNrTF6iPyfADcwu51o\u002fu8OvvraWWj8vYcEHpvdZPw=="
+      },
+      "type": "scatter",
+      "xaxis": "x",
+      "yaxis": "y",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(255,184,28)"
+      },
+      "legendgroup": "Biofuel - Biomethane",
+      "marker": {
+        "color": "rgb(255,184,28)"
+      },
+      "fillcolor": "rgb(255,184,28)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Electricity - Electrification",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA"
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "o9POOSuuBUDJyFQU\u002fw4AQNYda2oZLfY\u002fyrmXlYFE6j+BbW9wl\u002ffmP9d8sv7SxOM\u002fGZ5KKhKr4D+Fr7m7g1PbPwoAoaODgNU\u002fXDdOzVi6zz9SDHKOi8zEP7QRehHXb7Q\u002f"
+      },
+      "type": "scatter",
+      "xaxis": "x",
+      "yaxis": "y",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(0,0,128)"
+      },
+      "legendgroup": "Electricity - Electrification",
+      "marker": {
+        "color": "rgb(0,0,128)"
+      },
+      "fillcolor": "rgb(0,0,128)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Gas - Hydrogen",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA"
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "\u002fAfnLb3n5j\u002f2peNnDHriPwz9vOHi+OI\u002f0Gl+yJb04D8cQHcAt3jfP7+VHfTfE9g\u002fV8t4Kbqg0D\u002fr+jcHqALCP6S7wRnCP5Y\u002f3db5kYw1lj\u002f8LKz+kYyTP75Es0TR0I8\u002f"
+      },
+      "type": "scatter",
+      "xaxis": "x",
+      "yaxis": "y",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(0,122,83)"
+      },
+      "legendgroup": "Gas - Hydrogen",
+      "marker": {
+        "color": "rgb(0,122,83)"
+      },
+      "fillcolor": "rgb(0,122,83)"
+    }
+  ],
+  "layout": {
+    "template": {
+      "data": {
+        "scatter": [
+          {
+            "line": {
+              "width": 5
+            },
+            "opacity": 0.7,
+            "type": "scatter"
+          }
+        ]
+      },
+      "layout": {
+        "bargap": 0.5,
+        "colorway": [
+          "rgb(0,29,52)",
+          "rgb(0,0,128)",
+          "rgb(30,34,170)",
+          "rgb(0,75,135)",
+          "rgb(0,115,119)",
+          "rgb(0,169,206)",
+          "rgb(67,194,204)",
+          "rgb(159,174,229)",
+          "rgb(34,70,34)",
+          "rgb(0,122,83)",
+          "rgb(107,142,35)",
+          "rgb(120,190,32)",
+          "rgb(113,204,152)",
+          "rgb(232,119,34)",
+          "rgb(255,184,28)",
+          "rgb(109,32,119)",
+          "rgb(223,25,149)",
+          "rgb(0,0,0)",
+          "rgb(44,44,44)",
+          "rgb(80,80,80)",
+          "rgb(158,158,158)",
+          "rgb(117,117,121)",
+          "rgb(200,200,220)",
+          "rgb(102,51,0)",
+          "rgb(128,0,0)"
+        ],
+        "font": {
+          "family": "Arial",
+          "size": 15
+        },
+        "legend": {
+          "entrywidth": 0,
+          "entrywidthmode": "pixels",
+          "font": {
+            "size": 15
+          },
+          "itemsizing": "constant",
+          "itemwidth": 30,
+          "orientation": "h",
+          "traceorder": "normal",
+          "x": 0.5,
+          "xanchor": "center",
+          "y": -0.05,
+          "yanchor": "top"
+        },
+        "margin": {
+          "b": 105,
+          "r": 25,
+          "t": 50
+        },
+        "paper_bgcolor": "white",
+        "plot_bgcolor": "white",
+        "title": {
+          "font": {
+            "color": "#333333",
+            "size": 16
+          }
+        },
+        "xaxis": {
+          "showgrid": false,
+          "tickfont": {
+            "size": 15
+          },
+          "title": {
+            "font": {
+              "size": 15
+            }
+          }
+        },
+        "yaxis": {
+          "gridcolor": "lightgrey",
+          "tickfont": {
+            "size": 15
+          },
+          "title": {
+            "font": {
+              "size": 15
+            }
+          }
+        }
+      }
+    },
+    "xaxis": {
+      "anchor": "y",
+      "domain": [
+        0.0,
+        0.45
+      ],
+      "title": {
+        "text": ""
+      }
+    },
+    "yaxis": {
+      "anchor": "x",
+      "domain": [
+        0.0,
+        0.47
+      ],
+      "title": {
+        "text": "PJ"
+      },
+      "showticklabels": true,
+      "nticks": 10,
+      "matches": "y",
+      "range": [
+        -12.5,
+        512.5
+      ]
+    },
+    "xaxis2": {
+      "anchor": "y2",
+      "domain": [
+        0.55,
+        1.0
+      ],
+      "matches": "x",
+      "title": {
+        "text": ""
+      }
+    },
+    "yaxis2": {
+      "anchor": "x2",
+      "domain": [
+        0.0,
+        0.47
+      ],
+      "matches": "y",
+      "showticklabels": true,
+      "nticks": 10,
+      "range": [
+        -12.5,
+        512.5
+      ],
+      "title": {
+        "text": "PJ"
+      }
+    },
+    "xaxis3": {
+      "anchor": "y3",
+      "domain": [
+        0.0,
+        0.45
+      ],
+      "matches": "x",
+      "showticklabels": false,
+      "title": {
+        "text": ""
+      }
+    },
+    "yaxis3": {
+      "anchor": "x3",
+      "domain": [
+        0.53,
+        1.0
+      ],
+      "matches": "y",
+      "title": {
+        "text": "PJ"
+      },
+      "showticklabels": true,
+      "nticks": 10,
+      "range": [
+        -12.5,
+        512.5
+      ]
+    },
+    "xaxis4": {
+      "anchor": "y4",
+      "domain": [
+        0.55,
+        1.0
+      ],
+      "matches": "x",
+      "showticklabels": false,
+      "title": {
+        "text": ""
+      }
+    },
+    "yaxis4": {
+      "anchor": "x4",
+      "domain": [
+        0.53,
+        1.0
+      ],
+      "matches": "y",
+      "showticklabels": true,
+      "nticks": 10,
+      "range": [
+        -12.5,
+        512.5
+      ],
+      "title": {
+        "text": "PJ"
+      }
+    },
+    "annotations": [
+      {
+        "font": {
+          "color": "black",
+          "family": "Arial",
+          "size": 15
+        },
+        "showarrow": false,
+        "text": "\u003cb\u003eAmpol-House-View\u003c\u002fb\u003e\u003cbr\u003eCommercial Buildings Energy Use by Fuel",
+        "x": 0.225,
+        "xanchor": "center",
+        "xref": "paper",
+        "y": 0.48,
+        "yanchor": "bottom",
+        "yref": "paper"
+      },
+      {
+        "font": {
+          "color": "black",
+          "family": "Arial",
+          "size": 15
+        },
+        "showarrow": false,
+        "text": "\u003cb\u003eAmpol-1p5DS\u003c\u002fb\u003e\u003cbr\u003eCommercial Buildings Energy Use by Fuel",
+        "x": 0.225,
+        "xanchor": "center",
+        "xref": "paper",
+        "y": 1.01,
+        "yanchor": "bottom",
+        "yref": "paper"
+      },
+      {
+        "font": {
+          "color": "black",
+          "family": "Arial",
+          "size": 15
+        },
+        "showarrow": false,
+        "text": "\u003cb\u003eAmpol-2p5DS\u003c\u002fb\u003e\u003cbr\u003eCommercial Buildings Energy Use by Fuel",
+        "x": 0.775,
+        "xanchor": "center",
+        "xref": "paper",
+        "y": 1.01,
+        "yanchor": "bottom",
+        "yref": "paper"
+      },
+      {
+        "font": {
+          "color": "darkgrey",
+          "size": 8
+        },
+        "showarrow": false,
+        "text": "2025-12-03 Copyright © CSIRO",
+        "x": 1,
+        "xanchor": "right",
+        "xref": "paper",
+        "y": -0.05,
+        "yanchor": "top",
+        "yref": "paper"
+      }
+    ],
+    "legend": {
+      "tracegroupgap": 0,
+      "title": {
+        "text": ""
+      },
+      "y": -0.07,
+      "yanchor": "top",
+      "xanchor": "center",
+      "x": 0.5
+    },
+    "title": {
+      "text": ""
+    },
+    "shapes": [
+      {
+        "line": {
+          "color": "black",
+          "width": 1
+        },
+        "type": "line",
+        "x0": 0,
+        "x1": 1,
+        "xref": "x domain",
+        "y0": 0,
+        "y1": 0,
+        "yref": "y"
+      },
+      {
+        "line": {
+          "color": "black",
+          "width": 1
+        },
+        "type": "line",
+        "x0": 0,
+        "x1": 1,
+        "xref": "x3 domain",
+        "y0": 0,
+        "y1": 0,
+        "yref": "y3"
+      },
+      {
+        "line": {
+          "color": "black",
+          "width": 1
+        },
+        "type": "line",
+        "x0": 0,
+        "x1": 1,
+        "xref": "x4 domain",
+        "y0": 0,
+        "y1": 0,
+        "yref": "y4"
+      }
+    ],
+    "modebar": {
+      "add": [
+        "v1hovermode",
+        "toggleSpikelines",
+        "drawline",
+        "hoverClosestGl2d",
+        "drawopenpath",
+        "drawclosedpath",
+        "drawcircle",
+        "drawrect",
+        "eraseshape"
+      ]
+    }
+  }
+}

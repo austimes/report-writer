@@ -1,0 +1,29 @@
+{
+  "timestamp": "2025-12-03T14:32:34.850022",
+  "section_id": "agriculture",
+  "provider": "openai",
+  "model": "gpt-5.1-2025-11-13",
+  "request": {
+    "model": "gpt-5.1-2025-11-13",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an expert report writer for energy and emissions analysis."
+      },
+      {
+        "role": "user",
+        "content": "[text prompt, 3 images]"
+      }
+    ],
+    "max_tokens": 4000,
+    "reasoning_effort": "medium",
+    "image_count": 3,
+    "chart_ids": [
+      "agriculture_energy_use_by_fuel",
+      "agriculture_and_land_use_emissions",
+      "agriculture_abatement_by_process"
+    ],
+    "prompt_preview": "# Task: Write the 'Agriculture' section of the report\n\n## Section Information\n- **Title**: Agriculture\n- **Level**: ### (heading level 3)\n- **Parent Section**: Energy consumption by sector\n\n## Instructions\nProvide an overview of the agriculture energy consumption projection results\n\n## Available Data\nThe following 3 chart(s) are available for this section:\n\n### Agriculture Energy Use by Fuel\n- **ID**: agriculture_energy_use_by_fuel\n- **Category**: agriculture\n- **Figure Path**: `figures/agricult..."
+  },
+  "response": "Agricultural energy demand is projected to decline modestly across all scenarios, with differing trajectories reflecting the pace of on\u2011farm technology change and fuel switching. Total final energy use falls from 107.69 PJ in 2025 to 88.75 PJ in 2050 in **Ampol-1p5DS (1.5\u00b0C\u2011aligned pathway)**, a reduction of 17.6%. Under **Ampol-2p5DS (2.5\u00b0C pathway)**, energy use decreases by 7.5% over the same period (to 99.56 PJ), while **Ampol-House-View (reference/baseline scenario)** shows the smallest decline, to 101.1 PJ (\u20116.1%). These outcomes are driven primarily by reductions in diesel consumption, partially offset by higher electricity use and the emergence of biomethane, particularly in the 1.5\u00b0C\u2011aligned pathway where stronger decarbonisation policies accelerate equipment turnover and electrification.\n\n![Agriculture Energy Use by Fuel](figures/agriculture_energy_use_by_fuel.png)  \n*Figure: Projected agricultural final energy consumption by fuel type, showing faster total demand reduction and stronger fuel switching away from diesel in the Ampol-1p5DS scenario relative to Ampol-2p5DS and Ampol-House-View.*\n\nDespite only moderate changes in total energy use, agricultural and land\u2011use emissions diverge sharply between scenarios due to non\u2011energy process emissions and land carbon dynamics. All scenarios start from around 9.49 Mt CO\u2082\u2011e in 2025. By 2050, net emissions fall to \u201170.26 Mt CO\u2082\u2011e in Ampol-1p5DS and \u201191.57 Mt CO\u2082\u2011e in Ampol-2p5DS, equivalent to reductions of 840.4% and 1,064.9% respectively, as forestry expansion and sequestration more than offset residual agricultural emissions. In contrast, Ampol-House-View reaches 43.06 Mt CO\u2082\u2011e in 2050, an increase of 353.7% from 2025 and 134.6 Mt CO\u2082\u2011e higher than the Ampol-2p5DS pathway, highlighting the scale of additional land\u2011sector mitigation required to align with temperature goals.\n\n![Agriculture and Land Use Emissions](figures/agriculture_and_land_use_emissions.png)  \n*Figure: Net agriculture and land\u2011use emissions by subsector, including sequestration, illustrating the transition from a net source to a substantial net sink in the transition scenarios, compared with rising net emissions in Ampol-House-View.*\n\nAchieving the deep emissions reductions in the transition scenarios relies heavily on targeted abatement measures, particularly methane mitigation in livestock systems. Cumulative abatement from identified processes reaches 24.99 Mt CO\u2082\u2011e per year by 2050 in Ampol-1p5DS and 22.11 Mt CO\u2082\u2011e in Ampol-2p5DS, compared with only 9.93 Mt CO\u2082\u2011e in Ampol-House-View. The most material contribution comes from methane mitigation in sheep and cattle, complemented by measures in dairy herds and the uptake of precision agriculture and automation technologies that lower non\u2011energy emissions intensity. The weaker uptake of these measures in the reference/baseline scenario explains much of the gap in agricultural and land\u2011use emissions relative to the transition pathways.\n\n![Agriculture Abatement By Process](figures/agriculture_abatement_by_process.png)  \n*Figure: Annual agricultural abatement by process, showing the increasing contribution of livestock methane mitigation and precision agriculture technologies in the transition scenarios compared with the more limited uptake in Ampol-House-View.*"
+}

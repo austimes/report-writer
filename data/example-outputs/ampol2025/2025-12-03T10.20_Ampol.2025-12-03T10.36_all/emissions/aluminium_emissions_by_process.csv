@@ -1,0 +1,31 @@
+scen,process,unit,2025,2026,2027,2028,2029,2030,2031,2032,2033,2034,2035,2040,2045,2050
+Ampol-1p5DS,Boiler Natural Gas,Mt CO₂-e,0.08,0.08,0.08,0.08,0.08,0.12,0.12,0.12,0.12,0.12,0.12,0.09,0.06,0.04
+Ampol-1p5DS,Calcination,Mt CO₂-e,0.39,0.39,0.39,0.4,0.39,0.36,0.36,0.36,0.36,0.36,0.33,0.21,0.09,0.09
+Ampol-1p5DS,Calcination With CCS,Mt CO₂-e,0.0,0.0,0.0,0.0,0.0,0.02,0.02,0.02,0.02,0.02,0.02,0.01,0.0,0.0
+Ampol-1p5DS,Hall-Héroult (Inert Anode - Metal-Oxide),Mt CO₂-e,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.01,0.01
+Ampol-1p5DS,Hall-Héroult (Prebaked Anode),Mt CO₂-e,0.0,0.0,0.0,0.04,0.06,0.07,0.08,0.08,0.09,0.14,0.17,0.47,0.75,0.75
+Ampol-1p5DS,Hall-Héroult (Prebaked Anode) With CCS,Mt CO₂-e,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.01,0.01,0.01
+Ampol-1p5DS,Hall-Héroult (Søderberg Anode),Mt CO₂-e,2.56,2.56,2.56,2.57,2.57,2.53,2.51,2.52,2.51,2.46,2.41,1.1,0.02,0.01
+Ampol-1p5DS,Hall-Héroult (Søderberg Anode) With CCS,Mt CO₂-e,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.01,0.01,0.0
+Ampol-1p5DS,Prebaked Anode,Mt CO₂-e,0.0,0.0,0.0,0.0,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.05,0.05,0.05
+Ampol-1p5DS,Søderberg Anode Paste,Mt CO₂-e,0.17,0.17,0.17,0.17,0.16,0.15,0.15,0.15,0.15,0.15,0.13,0.06,0.0,0.0
+Ampol-2p5DS,Boiler Natural Gas,Mt CO₂-e,0.08,0.08,0.08,0.08,0.08,0.07,0.07,0.07,0.08,0.08,0.08,0.08,0.09,0.09
+Ampol-2p5DS,Calcination,Mt CO₂-e,0.39,0.39,0.39,0.39,0.39,0.36,0.35,0.35,0.36,0.36,0.35,0.33,0.31,0.31
+Ampol-2p5DS,Calcination With CCS,Mt CO₂-e,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Ampol-2p5DS,Hall-Héroult (Inert Anode - Metal-Oxide),Mt CO₂-e,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Ampol-2p5DS,Hall-Héroult (Prebaked Anode),Mt CO₂-e,0.0,0.0,0.0,0.01,0.01,0.02,0.03,0.05,0.07,0.08,0.1,0.91,1.72,1.74
+Ampol-2p5DS,Hall-Héroult (Prebaked Anode) With CCS,Mt CO₂-e,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Ampol-2p5DS,Hall-Héroult (Søderberg Anode),Mt CO₂-e,2.56,2.56,2.56,2.56,2.55,2.38,2.38,2.36,2.36,2.34,2.31,1.14,0.03,0.01
+Ampol-2p5DS,Hall-Héroult (Søderberg Anode) With CCS,Mt CO₂-e,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Ampol-2p5DS,Prebaked Anode,Mt CO₂-e,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.01,0.01,0.01,0.09,0.17,0.17
+Ampol-2p5DS,Søderberg Anode Paste,Mt CO₂-e,0.17,0.17,0.17,0.17,0.17,0.15,0.15,0.15,0.15,0.15,0.14,0.07,0.0,0.0
+Ampol-House-View,Boiler Natural Gas,Mt CO₂-e,0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08
+Ampol-House-View,Calcination,Mt CO₂-e,0.39,0.39,0.39,0.39,0.39,0.4,0.39,0.39,0.39,0.39,0.39,0.39,0.39,0.39
+Ampol-House-View,Calcination With CCS,Mt CO₂-e,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Ampol-House-View,Hall-Héroult (Inert Anode - Metal-Oxide),Mt CO₂-e,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Ampol-House-View,Hall-Héroult (Prebaked Anode),Mt CO₂-e,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.02,0.04,0.05,0.07,0.15,0.28,0.33
+Ampol-House-View,Hall-Héroult (Prebaked Anode) With CCS,Mt CO₂-e,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Ampol-House-View,Hall-Héroult (Søderberg Anode),Mt CO₂-e,2.56,2.56,2.56,2.57,2.57,2.58,2.57,2.55,2.54,2.52,2.5,2.37,2.21,2.18
+Ampol-House-View,Hall-Héroult (Søderberg Anode) With CCS,Mt CO₂-e,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Ampol-House-View,Prebaked Anode,Mt CO₂-e,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.01,0.01,0.02,0.03,0.03
+Ampol-House-View,Søderberg Anode Paste,Mt CO₂-e,0.17,0.17,0.17,0.17,0.17,0.17,0.17,0.17,0.17,0.17,0.17,0.16,0.14,0.14

@@ -1,0 +1,31 @@
+scen,process,unit,2025,2026,2027,2028,2029,2030,2031,2032,2033,2034,2035,2040,2045,2050
+Ampol-1p5DS,Boiler Natural Gas With CCS,Mt CO₂-e,0.0,0.0,0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0
+Ampol-1p5DS,Calcination With CCS,Mt CO₂-e,0.0,0.0,0.0,-0.0,-0.0,-0.15,-0.15,-0.15,-0.15,-0.15,-0.14,-0.08,-0.04,-0.01
+Ampol-1p5DS,Dry Kiln With CCS,Mt CO₂-e,0.0,0.0,0.0,-0.02,-0.02,-0.02,-0.02,-0.02,-0.02,-0.02,-0.02,-0.05,-0.1,-0.12
+Ampol-1p5DS,Hall-Héroult (Prebaked Anode) With CCS,Mt CO₂-e,0.0,0.0,0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.09,-0.09,-0.05
+Ampol-1p5DS,Hall-Héroult (Søderberg Anode) With CCS,Mt CO₂-e,0.0,0.0,0.0,-0.0,-0.0,-0.04,-0.04,-0.04,-0.04,-0.04,-0.04,-0.05,-0.09,-0.0
+Ampol-1p5DS,Inm_Blr_Coal With CCS,Mt CO₂-e,0.0,0.0,0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0
+Ampol-1p5DS,Inm_Blr_Natural Gas With CCS,Mt CO₂-e,0.0,0.0,0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0
+Ampol-1p5DS,Inmcem_Alternative Fuel Kiln With CCS,Mt CO₂-e,0.0,0.0,0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0
+Ampol-1p5DS,Oxygen-Enriched Kiln With CCS,Mt CO₂-e,0.0,0.0,0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0
+Ampol-1p5DS,Precalcination Stage With CCS,Mt CO₂-e,0.0,0.0,0.0,-0.01,-0.01,-0.01,-0.01,-0.01,-0.01,-0.01,-0.01,-0.01,-0.02,-0.01
+Ampol-2p5DS,Boiler Natural Gas With CCS,Mt CO₂-e,0.0,0.0,0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0
+Ampol-2p5DS,Calcination With CCS,Mt CO₂-e,0.0,0.0,0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0
+Ampol-2p5DS,Dry Kiln With CCS,Mt CO₂-e,0.0,0.0,0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.05,-0.11,-0.12
+Ampol-2p5DS,Hall-Héroult (Prebaked Anode) With CCS,Mt CO₂-e,0.0,0.0,0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0
+Ampol-2p5DS,Hall-Héroult (Søderberg Anode) With CCS,Mt CO₂-e,0.0,0.0,0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0
+Ampol-2p5DS,Inm_Blr_Coal With CCS,Mt CO₂-e,0.0,0.0,0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0
+Ampol-2p5DS,Inm_Blr_Natural Gas With CCS,Mt CO₂-e,0.0,0.0,0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0
+Ampol-2p5DS,Inmcem_Alternative Fuel Kiln With CCS,Mt CO₂-e,0.0,0.0,0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0
+Ampol-2p5DS,Oxygen-Enriched Kiln With CCS,Mt CO₂-e,0.0,0.0,0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0
+Ampol-2p5DS,Precalcination Stage With CCS,Mt CO₂-e,0.0,0.0,0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.02,-0.03,-0.01
+Ampol-House-View,Boiler Natural Gas With CCS,Mt CO₂-e,0.0,0.0,0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0
+Ampol-House-View,Calcination With CCS,Mt CO₂-e,0.0,0.0,0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0
+Ampol-House-View,Dry Kiln With CCS,Mt CO₂-e,0.0,0.0,0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0
+Ampol-House-View,Hall-Héroult (Prebaked Anode) With CCS,Mt CO₂-e,0.0,0.0,0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0
+Ampol-House-View,Hall-Héroult (Søderberg Anode) With CCS,Mt CO₂-e,0.0,0.0,0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0
+Ampol-House-View,Inm_Blr_Coal With CCS,Mt CO₂-e,0.0,0.0,0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0
+Ampol-House-View,Inm_Blr_Natural Gas With CCS,Mt CO₂-e,0.0,0.0,0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0
+Ampol-House-View,Inmcem_Alternative Fuel Kiln With CCS,Mt CO₂-e,0.0,0.0,0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0
+Ampol-House-View,Oxygen-Enriched Kiln With CCS,Mt CO₂-e,0.0,0.0,0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0
+Ampol-House-View,Precalcination Stage With CCS,Mt CO₂-e,0.0,0.0,0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0

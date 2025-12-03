@@ -12,6 +12,7 @@
     "test:ci": "npm run lint && npm test && npm run test:integ && npm run test:e2e"
   },
   "devDependencies": {
+    "@edge-runtime/vm": "^5.0.0",
     "@playwright/test": "^1.40.1",
     "@testing-library/jest-dom": "^6.1.5",
     "@testing-library/react": "^14.1.2",

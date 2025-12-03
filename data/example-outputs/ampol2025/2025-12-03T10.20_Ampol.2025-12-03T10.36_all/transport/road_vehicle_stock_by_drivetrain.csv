@@ -1,0 +1,25 @@
+scen,process_technology1,unit,2025,2026,2027,2028,2029,2030,2031,2032,2033,2034,2035,2040,2045,2050
+Ampol-1p5DS,Autonomous Electric Vehicle,Vehicle Stock (%),0.01,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.01,0.16,0.16,0.96,2.12,3.87
+Ampol-1p5DS,Autonomous Ride-Share Electric Vehicle,Vehicle Stock (%),0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.04,0.6,2.69
+Ampol-1p5DS,Combustion Engine,Vehicle Stock (%),92.28,89.52,89.12,82.88,83.89,79.75,77.76,74.8,71.85,64.34,60.85,29.49,13.9,0.77
+Ampol-1p5DS,Fuel Cell Vehicle,Vehicle Stock (%),0.0,0.0,0.0,0.0,0.0,0.0,0.04,0.22,0.31,0.61,0.82,2.1,2.7,3.33
+Ampol-1p5DS,Hybrid,Vehicle Stock (%),5.09,5.36,6.96,4.62,4.93,5.01,4.71,4.53,4.31,4.07,3.6,2.23,1.51,0.9
+Ampol-1p5DS,Long-Range Electric Vehicle,Vehicle Stock (%),0.84,1.74,1.51,8.5,7.45,9.94,11.42,13.18,14.85,19.81,22.19,41.81,50.26,54.39
+Ampol-1p5DS,Plug-In Hybrid Electric,Vehicle Stock (%),0.51,1.16,0.75,0.64,0.66,0.82,0.82,0.92,1.07,1.37,1.55,2.91,3.55,4.46
+Ampol-1p5DS,Short-Range Electric Vehicle,Vehicle Stock (%),1.28,2.21,1.65,3.36,3.06,4.46,5.24,6.34,7.59,9.65,10.83,20.46,25.36,29.58
+Ampol-2p5DS,Autonomous Electric Vehicle,Vehicle Stock (%),0.01,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.01,0.26,0.57
+Ampol-2p5DS,Autonomous Ride-Share Electric Vehicle,Vehicle Stock (%),0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Ampol-2p5DS,Combustion Engine,Vehicle Stock (%),92.28,89.52,89.12,85.38,84.69,81.87,80.25,78.12,76.0,73.95,71.57,54.54,38.66,24.33
+Ampol-2p5DS,Fuel Cell Vehicle,Vehicle Stock (%),0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.01,0.01,0.01,0.02,0.16,0.31,0.41
+Ampol-2p5DS,Hybrid,Vehicle Stock (%),5.09,5.36,6.96,5.27,5.31,5.53,5.53,5.57,5.57,5.34,5.27,3.33,3.04,2.43
+Ampol-2p5DS,Long-Range Electric Vehicle,Vehicle Stock (%),0.84,1.74,1.51,7.22,7.6,9.74,11.14,12.88,14.54,16.52,18.3,33.67,46.02,57.54
+Ampol-2p5DS,Plug-In Hybrid Electric,Vehicle Stock (%),0.51,1.16,0.75,0.6,0.68,0.8,0.79,0.87,0.96,1.01,1.34,2.04,2.96,3.74
+Ampol-2p5DS,Short-Range Electric Vehicle,Vehicle Stock (%),1.28,2.21,1.65,1.53,1.72,2.06,2.27,2.56,2.92,3.17,3.5,6.26,8.75,10.98
+Ampol-House-View,Autonomous Electric Vehicle,Vehicle Stock (%),0.01,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.11
+Ampol-House-View,Autonomous Ride-Share Electric Vehicle,Vehicle Stock (%),0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Ampol-House-View,Combustion Engine,Vehicle Stock (%),92.28,89.52,89.12,86.65,85.8,82.89,81.81,80.56,79.2,77.94,77.17,68.92,62.25,57.51
+Ampol-House-View,Fuel Cell Vehicle,Vehicle Stock (%),0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.01,0.01,0.01,0.03,0.04,0.07
+Ampol-House-View,Hybrid,Vehicle Stock (%),5.09,5.36,6.96,8.29,8.51,10.05,10.71,11.27,11.89,12.33,12.62,14.52,15.94,15.64
+Ampol-House-View,Long-Range Electric Vehicle,Vehicle Stock (%),0.84,1.74,1.51,2.26,2.71,3.51,3.89,4.36,4.86,5.37,5.72,9.94,13.37,16.39
+Ampol-House-View,Plug-In Hybrid Electric,Vehicle Stock (%),0.51,1.16,0.75,1.28,1.31,1.77,1.77,1.94,2.12,2.32,2.4,3.7,4.61,5.52
+Ampol-House-View,Short-Range Electric Vehicle,Vehicle Stock (%),1.28,2.21,1.65,1.51,1.66,1.77,1.81,1.86,1.92,2.03,2.08,2.9,3.78,4.76

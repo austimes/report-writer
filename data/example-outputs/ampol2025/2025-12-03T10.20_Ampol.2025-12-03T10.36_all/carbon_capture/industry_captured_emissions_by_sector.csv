@@ -1,0 +1,23 @@
+scen,process,unit,2025,2026,2027,2028,2029,2030,2031,2032,2033,2034,2035,2040,2045,2050
+Ampol-1p5DS,Chemicals - Petrochemicals - Ipc_Green H2-Based Methanol Production,Mt CO₂-e,0.0,0.0,0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.01,-0.01
+Ampol-1p5DS,Manufacturing - Aluminium - Calcination With CCS,Mt CO₂-e,0.0,0.0,0.0,-0.0,-0.0,-0.15,-0.15,-0.15,-0.15,-0.15,-0.14,-0.08,-0.04,-0.01
+Ampol-1p5DS,Manufacturing - Aluminium - Hall-Héroult (Prebaked Anode) With CCS,Mt CO₂-e,0.0,0.0,0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.09,-0.09,-0.05
+Ampol-1p5DS,Manufacturing - Aluminium - Hall-Héroult (Søderberg Anode) With CCS,Mt CO₂-e,0.0,0.0,0.0,-0.0,-0.0,-0.04,-0.04,-0.04,-0.04,-0.04,-0.04,-0.05,-0.09,-0.0
+Ampol-1p5DS,Manufacturing - Cement - Dry Kiln With CCS,Mt CO₂-e,0.0,0.0,0.0,-0.02,-0.02,-0.02,-0.02,-0.02,-0.02,-0.02,-0.02,-0.05,-0.1,-0.12
+Ampol-1p5DS,Manufacturing - Cement - Precalcination Stage With CCS,Mt CO₂-e,0.0,0.0,0.0,-0.01,-0.01,-0.01,-0.01,-0.01,-0.01,-0.01,-0.01,-0.01,-0.02,-0.01
+Ampol-2p5DS,Chemicals - Petrochemicals - Ipc_Green H2-Based Methanol Production,Mt CO₂-e,0.0,0.0,0.0,-0.0,-0.0,-0.87,-0.87,-0.87,-0.87,-0.87,-2.42,-1.94,-1.04,-1.04
+Ampol-2p5DS,Manufacturing - Aluminium - Calcination With CCS,Mt CO₂-e,0.0,0.0,0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0
+Ampol-2p5DS,Manufacturing - Aluminium - Hall-Héroult (Prebaked Anode) With CCS,Mt CO₂-e,0.0,0.0,0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0
+Ampol-2p5DS,Manufacturing - Aluminium - Hall-Héroult (Søderberg Anode) With CCS,Mt CO₂-e,0.0,0.0,0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0
+Ampol-2p5DS,Manufacturing - Cement - Dry Kiln With CCS,Mt CO₂-e,0.0,0.0,0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.05,-0.11,-0.12
+Ampol-2p5DS,Manufacturing - Cement - Precalcination Stage With CCS,Mt CO₂-e,0.0,0.0,0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.02,-0.03,-0.01
+Ampol-2p5DS,Mining - Oil - Oil Extraction CCS,Mt CO₂-e,0.0,0.0,0.0,0.0,0.0,0.0,-0.0,-0.0,-0.01,-0.01,-0.02,-0.05,-0.08,-0.12
+Ampol-2p5DS,Other Industry - Gas Supply - Gas Supply Centralised Networks,Mt CO₂-e,0.0,0.0,0.0,0.0,0.0,0.0,-0.04,-0.05,-0.11,-0.11,-0.19,-0.37,-0.52,-0.68
+Ampol-House-View,Chemicals - Petrochemicals - Ipc_Green H2-Based Methanol Production,Mt CO₂-e,0.0,0.0,0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0
+Ampol-House-View,Manufacturing - Aluminium - Calcination With CCS,Mt CO₂-e,0.0,0.0,0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0
+Ampol-House-View,Manufacturing - Aluminium - Hall-Héroult (Prebaked Anode) With CCS,Mt CO₂-e,0.0,0.0,0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0
+Ampol-House-View,Manufacturing - Aluminium - Hall-Héroult (Søderberg Anode) With CCS,Mt CO₂-e,0.0,0.0,0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0
+Ampol-House-View,Manufacturing - Cement - Dry Kiln With CCS,Mt CO₂-e,0.0,0.0,0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0
+Ampol-House-View,Manufacturing - Cement - Precalcination Stage With CCS,Mt CO₂-e,0.0,0.0,0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0
+Ampol-House-View,Mining - Oil - Oil Extraction CCS,Mt CO₂-e,0.0,0.0,0.0,0.0,0.0,0.0,-0.0,-0.0,-0.01,-0.01,-0.01,-0.04,-0.05,-0.12
+Ampol-House-View,Other Industry - Gas Supply - Gas Supply Centralised Networks,Mt CO₂-e,0.0,0.0,0.0,0.0,0.0,0.0,-0.03,-0.05,-0.07,-0.1,-0.11,-0.3,-0.21,-0.68

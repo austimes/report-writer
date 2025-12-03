@@ -1,0 +1,31 @@
+{
+  "timestamp": "2025-12-03T13:51:11.320047",
+  "section_id": "transport",
+  "provider": "openai",
+  "model": "gpt-5.1-2025-11-13",
+  "request": {
+    "model": "gpt-5.1-2025-11-13",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an expert report writer for energy and emissions analysis."
+      },
+      {
+        "role": "user",
+        "content": "[text prompt, 5 images]"
+      }
+    ],
+    "temperature": 0.7,
+    "max_tokens": 4000,
+    "image_count": 5,
+    "chart_ids": [
+      "domestic_transport_energy_use_by_fuel",
+      "road_transport_energy_use_by_fuel",
+      "new_vehicle_sales_by_drivetrain",
+      "road_vehicle_stock_by_drivetrain",
+      "domestic_transport_emissions_by_subsector"
+    ],
+    "prompt_preview": "# Task: Write the 'Transport' section of the report\n\n## Section Information\n- **Title**: Transport\n- **Level**: ### (heading level 3)\n- **Parent Section**: Energy consumption by sector\n\n## Instructions\nProvide an overview of the transport energy consumption projection results\n\n## Available Data\nThe following 5 chart(s) are available for this section:\n\n### Domestic Transport Energy Use by Fuel\n- **ID**: domestic_transport_energy_use_by_fuel\n- **Category**: transport\n- **Figure Path**: `figures/do..."
+  },
+  "response": "### Transport\n\nDomestic transport remains one of the largest final energy\u2010using sectors, but its trajectory diverges markedly across scenarios as electrification and efficiency improvements accelerate.\n\nTotal domestic transport energy use falls in both decarbonisation scenarios, from 1,447 PJ in 2025 to 840 PJ in 2050 in Ampol\u20111p5DS (\u201142.0%) and to 1,081 PJ in Ampol\u20112p5DS (\u201125.3%). Under the Ampol\u2011House\u2011View, aggregate energy demand is broadly flat, increasing marginally to 1,450 PJ by 2050 (+0.2%), leaving demand 610 PJ higher than in Ampol\u20111p5DS. The 1.5\u00b0C\u2011aligned pathway therefore combines demand moderation with substantial fuel switching, while the House View assumes continued growth in activity largely offsetting efficiency gains.\n\n![Domestic Transport Energy Use by Fuel](figures/domestic_transport_energy_use_by_fuel.png)  \n*Figure  X: Projected domestic transport final energy use by fuel and scenario, 2025\u20132050.*\n\nRoad transport dominates these outcomes. Road energy use declines from 1,177 PJ in 2025 to 557 PJ in 2050 in Ampol\u20111p5DS (\u201152.7%) and to 675 PJ in Ampol\u20112p5DS (\u201142.6%), driven by rapid uptake of electric and other zero\u2011emissions drivetrains and improvements in vehicle efficiency. In contrast, Ampol\u2011House\u2011View road energy demand remains comparatively high at 1,068 PJ in 2050 (\u20119.3% vs 2025), 511 PJ above the 1.5\u00b0C pathway. Across scenarios, diesel and petrol consumption fall steadily, with electricity, biofuels and hydrogen increasingly supplying residual demand, particularly in heavy and long\u2011haul segments under the more ambitious pathways.\n\n![Road Transport Energy Use by Fuel](figures/road_transport_energy_use_by_fuel.png)  \n*Figure  X: Road transport final energy use by fuel and scenario, 2025\u20132050.*\n\nThe energy trends are underpinned by deep structural change in the vehicle fleet. While total new light\u2011duty vehicle sales are held constant in percentage terms across scenarios by construction, the technology mix shifts markedly. In Ampol\u20111p5DS, internal combustion engine (ICE) vehicles are rapidly displaced in new sales by long\u2011range battery electric vehicles (BEVs), supported by hybrids, plug\u2011in hybrids and a small but growing share of fuel\u2011cell vehicles. Ampol\u20112p5DS exhibits a similar but more gradual transition, whereas the House View retains a larger ICE share for longer, delaying full electrification of new sales.\n\n![New Vehicle Sales by Drivetrain](figures/new_vehicle_sales_by_drivetrain.png)  \n*Figure  X: Share of new road vehicle sales by drivetrain and scenario, 2025\u20132050.*\n\nThese sales dynamics flow through to the on\u2011road vehicle stock. In Ampol\u20111p5DS, ICE vehicles fall from effectively the entire fleet in 2025 to a minority share by 2050, replaced predominantly by long\u2011range BEVs and other electric drivetrains. The 2.5\u00b0C pathway shows a slower turnover, with a significant residual ICE fleet in 2050, while the House View maintains the highest share of combustion vehicles, consistent with higher ongoing liquid fuel demand.\n\n![Road Vehicle Stock by drivetrain](figures/road_vehicle_stock_by_drivetrain.png)  \n*Figure  X: Road vehicle stock by drivetrain and scenario, 2025\u20132050.*\n\nAs a result, domestic transport emissions decline sharply in the decarbonisation scenarios. In Ampol\u20111p5DS, total emissions fall from 98.1 Mt CO\u2082\u2011e in 2025 to just 4.0 Mt CO\u2082\u2011e in 2050 (\u201195.9%), approaching full decarbonisation across passenger vehicles, commercial vehicles and other modes. Ampol\u20112p5DS records a reduction to 43.4 Mt CO\u2082\u2011e by 2050 (\u201155.7%), reflecting slower electrification and continued use of liquid fuels, particularly in heavy road freight and aviation. Under the Ampol\u2011House\u2011View, emissions decline more modestly to 77.1 Mt CO\u2082\u2011e in 2050 (\u201121.4%), remaining 73.1 Mt CO\u2082\u2011e higher than in the 1.5\u00b0C pathway. Passenger vehicles and light commercial vehicles provide the largest absolute reductions in all scenarios, with heavy vehicles, aviation and shipping accounting for a growing share of the remaining emissions footprint by mid\u2011century.\n\n![Domestic Transport Emissions by Subsector](figures/domestic_transport_emissions_by_subsector.png)  \n*Figure  X: Domestic transport emissions by subsector and scenario, 2025\u20132050.*"
+}

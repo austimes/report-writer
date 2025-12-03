@@ -1,5 +1,6 @@
 import { query, mutation } from "../_generated/server";
 import { v } from "convex/values";
+import { Id } from "../_generated/dataModel";
 
 const LOCK_EXPIRY_MS = 7200000; // 2 hours
 
@@ -217,5 +218,165 @@ export const getLockForDocument = query({
     }
 
     return lock;
+  },
+});
+
+export const getLockForResource = query({
+  args: {
+    resourceType: v.string(),
+    resourceId: v.string(),
+  },
+  handler: async (ctx, { resourceType, resourceId }) => {
+    if (resourceType === "document") {
+      const lock = await ctx.db
+        .query("locks")
+        .withIndex("by_document", (q) => q.eq("documentId", resourceId as any))
+        .filter((q) => q.eq(q.field("nodeId"), undefined))
+        .unique();
+
+      if (!lock || isLockExpired(lock)) {
+        return null;
+      }
+      return lock;
+    }
+
+    if (resourceType === "node") {
+      const lock = await ctx.db
+        .query("locks")
+        .withIndex("by_node", (q) => q.eq("nodeId", resourceId as any))
+        .unique();
+
+      if (!lock || isLockExpired(lock)) {
+        return null;
+      }
+      return lock;
+    }
+
+    return null;
+  },
+});
+
+export const acquireLock = mutation({
+  args: {
+    projectId: v.id("projects"),
+    resourceType: v.string(),
+    resourceId: v.string(),
+  },
+  handler: async (ctx, { resourceType, resourceId }) => {
+    const userId = await ctx.auth.getUserIdentity();
+    if (!userId) {
+      throw new Error("Not authenticated");
+    }
+
+    const user = await ctx.db
+      .query("users")
+      .withIndex("by_email", (q) => q.eq("email", userId.email!))
+      .unique();
+
+    if (!user) {
+      throw new Error("User not found");
+    }
+
+    if (resourceType === "document") {
+      const documentId = resourceId as Id<"documents">;
+      const document = await ctx.db.get(documentId);
+      if (!document) {
+        throw new Error("Document not found");
+      }
+
+      const existingLock = await ctx.db
+        .query("locks")
+        .withIndex("by_document", (q) => q.eq("documentId", documentId))
+        .filter((q) => q.eq(q.field("nodeId"), undefined))
+        .unique();
+
+      if (existingLock) {
+        if (!isLockExpired(existingLock)) {
+          if (existingLock.userId !== user._id) {
+            const lockOwner = await ctx.db.get(existingLock.userId);
+            throw new Error(
+              `Document is locked by ${(lockOwner as { name?: string })?.name || "another user"}`
+            );
+          }
+          await ctx.db.patch(existingLock._id, { lockedAt: Date.now() });
+          return await ctx.db.get(existingLock._id);
+        } else {
+          await ctx.db.delete(existingLock._id);
+        }
+      }
+
+      const lockId = await ctx.db.insert("locks", {
+        projectId: document.projectId,
+        documentId,
+        nodeId: undefined,
+        userId: user._id,
+        lockedAt: Date.now(),
+      });
+
+      return await ctx.db.get(lockId);
+    }
+
+    if (resourceType === "node") {
+      const nodeId = resourceId as Id<"nodes">;
+      const node = await ctx.db.get(nodeId);
+      if (!node) {
+        throw new Error("Node not found");
+      }
+
+      const existingLock = await ctx.db
+        .query("locks")
+        .withIndex("by_node", (q) => q.eq("nodeId", nodeId))
+        .unique();
+
+      if (existingLock) {
+        if (!isLockExpired(existingLock)) {
+          if (existingLock.userId !== user._id) {
+            const lockOwner = await ctx.db.get(existingLock.userId);
+            throw new Error(
+              `Node is locked by ${(lockOwner as { name?: string })?.name || "another user"}`
+            );
+          }
+          await ctx.db.patch(existingLock._id, { lockedAt: Date.now() });
+          return await ctx.db.get(existingLock._id);
+        } else {
+          await ctx.db.delete(existingLock._id);
+        }
+      }
+
+      const documentLock = await ctx.db
+        .query("locks")
+        .withIndex("by_document", (q) => q.eq("documentId", node.documentId))
+        .filter((q) => q.eq(q.field("nodeId"), undefined))
+        .unique();
+
+      if (documentLock && !isLockExpired(documentLock) && documentLock.userId !== user._id) {
+        const lockOwner = await ctx.db.get(documentLock.userId);
+        throw new Error(
+          `Document is locked by ${(lockOwner as { name?: string })?.name || "another user"}`
+        );
+      }
+
+      const lockId = await ctx.db.insert("locks", {
+        projectId: node.projectId,
+        documentId: node.documentId,
+        nodeId,
+        userId: user._id,
+        lockedAt: Date.now(),
+      });
+
+      return await ctx.db.get(lockId);
+    }
+
+    throw new Error(`Unsupported resource type: ${resourceType}`);
+  },
+});
+
+export const getHierarchyLockConflict = query({
+  args: {
+    resourceType: v.string(),
+    resourceId: v.string(),
+  },
+  handler: async () => {
+    return null;
   },
 });

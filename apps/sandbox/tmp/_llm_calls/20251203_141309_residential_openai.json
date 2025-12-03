@@ -1,0 +1,29 @@
+{
+  "timestamp": "2025-12-03T14:13:09.603990",
+  "section_id": "residential",
+  "provider": "openai",
+  "model": "gpt-5.1-2025-11-13",
+  "request": {
+    "model": "gpt-5.1-2025-11-13",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an expert report writer for energy and emissions analysis."
+      },
+      {
+        "role": "user",
+        "content": "[text prompt, 3 images]"
+      }
+    ],
+    "max_tokens": 4000,
+    "reasoning_effort": "medium",
+    "image_count": 3,
+    "chart_ids": [
+      "residential_buildings_energy_use_by_fuel",
+      "built_environment_emissions",
+      "building_production_by_sector"
+    ],
+    "prompt_preview": "# Task: Write the 'Residential' section of the report\n\n## Section Information\n- **Title**: Residential\n- **Level**: ### (heading level 3)\n- **Parent Section**: Energy consumption by sector\n\n## Instructions\nProvide an overview of the residential energy consumption projection results\n\n## Available Data\nThe following 3 chart(s) are available for this section:\n\n### Residential Buildings Energy Use by Fuel\n- **ID**: residential_buildings_energy_use_by_fuel\n- **Category**: built_environment\n- **Figure..."
+  },
+  "response": "Residential energy demand remains broadly stable over the projection period, with modest declines in final energy use despite growth in the dwelling stock. Across all scenarios, residential buildings consume around 508.9 PJ in 2025. By 2050 this falls slightly to 482.7 PJ in **Ampol-1p5DS** (1.5\u00b0C\u2011aligned pathway, \u22125.1%), 482.0 PJ in **Ampol-2p5DS** (2.5\u00b0C pathway, \u22125.3%) and 481.1 PJ in **Ampol-House-View** (reference/baseline scenario, \u22125.5%). The relatively small variation between scenarios in 2050 (the 1.5\u00b0C case is only 1.6 PJ above the baseline) indicates that efficiency gains and appliance performance improvements largely offset increased service demand in all pathways.\n\nThe composition of residential energy use changes more substantially than the total volume. In all scenarios, grid electricity becomes increasingly dominant as natural gas and traditional biofuels (wood) decline. In the **Ampol-1p5DS** pathway, dedicated \u201celectrification\u201d loads (for example, from heat pumps replacing gas space and water heating) grow steadily to 2050, while gas \u2013 particularly natural gas \u2013 contracts sharply. Low\u2011carbon gases (biomethane and hydrogen) and LPG remain niche contributors by 2050. The **Ampol-House-View** scenario exhibits a similar, though slightly slower, shift away from combustion fuels, reflecting more gradual appliance turnover and policy uptake.\n\n![Residential Buildings Energy Use by Fuel](figures/residential_buildings_energy_use_by_fuel.png)  \n*Figure: Projected residential final energy use by fuel, showing relatively flat total demand but a pronounced shift from natural gas and solid biofuels towards electricity and electrification across all scenarios.*\n\nUnderlying drivers of residential energy demand include continued growth in the housing stock and total serviced floor area. Building production for the residential sector increases steadily from 2025 to 2050, consistent with population and household formation trends and aligned with the broader built environment outlook discussed in the commercial subsection. This structural growth reinforces the importance of efficiency standards and electrification in containing aggregate residential energy use.\n\n![Building Production by Sector](figures/building_production_by_sector.png)  \n*Figure: Building production by sector, illustrating sustained growth in residential and commercial building activity over 2025\u20132050.*\n\nEmissions associated with residential energy use decline much faster than final energy consumption, reflecting decarbonisation of the electricity supply and fuel switching away from fossil gases. At the whole built environment level (residential plus commercial), emissions fall from 14.25 Mt CO\u2082\u2011e in 2025 to net zero by 2050 in **Ampol-1p5DS**, implying the effective elimination of direct residential combustion emissions and near\u2011complete decarbonisation of electricity. Under **Ampol-2p5DS**, built environment emissions fall to 7.22 Mt CO\u2082\u2011e by 2050 (\u221249.3%), while the **Ampol-House-View** baseline only reaches 9.32 Mt CO\u2082\u2011e (\u221234.6%). The residential share of these totals shrinks markedly over time in all scenarios but remains materially above zero in the 2.5\u00b0C and baseline pathways, highlighting the additional abatement required\u2014through deeper electrification and cleaner fuels\u2014to align residential emissions with a 1.5\u00b0C\u2011consistent trajectory.\n\n![Built Environment Emissions](figures/built_environment_emissions.png)  \n*Figure: Emissions from the built environment (residential and commercial) under each scenario, showing rapid decarbonisation to net zero by 2050 in the 1.5\u00b0C\u2011aligned pathway and more gradual reductions in the 2.5\u00b0C and baseline cases.*"
+}

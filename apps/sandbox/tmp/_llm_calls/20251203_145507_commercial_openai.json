@@ -1,0 +1,29 @@
+{
+  "timestamp": "2025-12-03T14:55:07.561495",
+  "section_id": "commercial",
+  "provider": "openai",
+  "model": "gpt-5.1-2025-11-13",
+  "request": {
+    "model": "gpt-5.1-2025-11-13",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an expert report writer for energy and emissions analysis."
+      },
+      {
+        "role": "user",
+        "content": "[text prompt, 3 images]"
+      }
+    ],
+    "max_tokens": 4000,
+    "reasoning_effort": "medium",
+    "image_count": 3,
+    "chart_ids": [
+      "commercial_buildings_energy_use_by_fuel",
+      "built_environment_emissions",
+      "building_production_by_sector"
+    ],
+    "prompt_preview": "# Task: Write the 'Commercial' section of the report\n\n## Section Information\n- **Title**: Commercial\n- **Level**: ### (heading level 3)\n- **Parent Section**: Energy consumption by sector\n\n## Instructions\nProvide an overview of the commercial energy consumption projection results\n\n## Available Data\nThe following 3 chart(s) are available for this section:\n\n### Commercial Buildings Energy Use by Fuel\n- **ID**: commercial_buildings_energy_use_by_fuel\n- **Category**: built_environment\n- **Figure Path..."
+  },
+  "response": "Commercial energy demand is projected to grow steadily across all scenarios, driven by sustained expansion in commercial floor space. Total commercial buildings energy use rises from 276.5 PJ in 2025 to between 371.5 PJ (Ampol-2p5DS) and 421.4 PJ (Ampol-1p5DS) by 2050, an increase of 34\u201352%. The reference/baseline **Ampol-House-View** scenario reaches 379.9 PJ by 2050, sitting between the two decarbonisation pathways. The higher 2050 consumption in the 1.5\u00b0C\u2011aligned pathway (about 50 PJ above the 2.5\u00b0C pathway) reflects stronger electrification and associated conversion losses, alongside higher service demand, rather than weaker efficiency.\n\n![Commercial Buildings Energy Use by Fuel](figures/commercial_buildings_energy_use_by_fuel.png)  \n*Figure: Projected final energy consumption in commercial buildings by fuel and scenario, 2025\u20132050.*\n\nAcross all scenarios, electricity remains the dominant energy carrier in commercial buildings and increases its share over time, while direct use of oil and natural gas either declines or grows only modestly. In the **Ampol-1p5DS** pathway, the growth in electricity is supplemented by emerging low\u2011emissions options such as biomethane and hydrogen, which begin to displace fossil gas in the later years of the outlook. This shift in the fuel mix underpins the sector\u2019s emissions reductions even as absolute energy use grows.\n\nThe growth in energy demand is closely linked to the expansion of the commercial building stock. Commercial floor area nearly doubles over the projection period, rising from around 0.5 billion m\u00b2 in 2025 to just over 1.0 billion m\u00b2 by 2050, significantly increasing the demand for heating, cooling, lighting and equipment services in the sector.\n\n![Building Production by Sector](figures/building_production_by_sector.png)  \n*Figure: Projected commercial and residential building production (new floor area and dwellings), 2025\u20132050.*\n\nDespite rising commercial energy use, built environment emissions fall markedly, illustrating strong decoupling between activity and emissions intensity. Total built environment emissions (commercial plus residential) drop from 14.25 Mt CO\u2082\u2011e in 2025 to zero by 2050 in **Ampol-1p5DS**, and to 7.22 Mt CO\u2082\u2011e in **Ampol-2p5DS** (a 49% reduction). Under **Ampol-House-View**, residual emissions remain higher at 9.32 Mt CO\u2082\u2011e in 2050, around 9.3 Mt CO\u2082\u2011e above the 1.5\u00b0C\u2011aligned pathway. Within this total, the commercial sector remains a significant contributor, so faster electrification and fuel switching away from fossil fuels in commercial buildings are critical to achieving the deeper emissions reductions seen in the 1.5\u00b0C\u2011aligned pathway.\n\n![Built Environment Emissions](figures/built_environment_emissions.png)  \n*Figure: Projected operational emissions from the built environment (commercial and residential combined) under each scenario, 2025\u20132050.*"
+}

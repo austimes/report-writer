@@ -7,7 +7,7 @@ export default defineSchema({
     title: v.string(),
     createdAt: v.number(),
     createdByUserId: v.id("users"),
-    rootNodeId: v.id("nodes"),
+    rootNodeId: v.optional(v.id("nodes")),
   })
     .index("by_project", ["projectId"])
     .index("by_project_created", ["projectId", "createdAt"]),

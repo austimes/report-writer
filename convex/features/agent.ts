@@ -1,6 +1,7 @@
 import { mutation, action } from "../_generated/server";
 import { v } from "convex/values";
 import { api } from "../_generated/api";
+import { Id } from "../_generated/dataModel";
 
 export const createThread = mutation({
   args: {
@@ -10,7 +11,7 @@ export const createThread = mutation({
     anchorNodeId: v.optional(v.id("nodes")),
     anchorCommentId: v.optional(v.id("comments")),
   },
-  handler: async (ctx, { projectId, documentId, title, anchorNodeId, anchorCommentId }) => {
+  handler: async (ctx, { projectId, documentId, title, anchorNodeId, anchorCommentId }): Promise<Id<"agentThreads">> => {
     const userId = await ctx.auth.getUserIdentity();
     if (!userId) {
       throw new Error("Not authenticated");
@@ -42,7 +43,7 @@ export const forkThread = mutation({
     parentThreadId: v.id("agentThreads"),
     title: v.optional(v.string()),
   },
-  handler: async (ctx, { parentThreadId, title }) => {
+  handler: async (ctx, { parentThreadId, title }): Promise<Id<"agentThreads">> => {
     const parentThread = await ctx.db.get(parentThreadId);
     if (!parentThread) {
       throw new Error(`Parent thread ${parentThreadId} not found`);
@@ -72,7 +73,7 @@ export const appendMessage = mutation({
     content: v.string(),
     senderUserId: v.optional(v.id("users")),
   },
-  handler: async (ctx, { threadId, senderType, content, senderUserId }) => {
+  handler: async (ctx, { threadId, senderType, content, senderUserId }): Promise<Id<"agentMessages">> => {
     const messageId = await ctx.runMutation(api.tables.agentMessages.create, {
       threadId,
       senderType,
@@ -84,12 +85,17 @@ export const appendMessage = mutation({
   },
 });
 
+interface AgentRunResult {
+  messageId: Id<"agentMessages">;
+  proposedEdits: Array<Record<string, unknown>>;
+}
+
 export const runAgentOnThread = action({
   args: {
     threadId: v.id("agentThreads"),
     userMessage: v.string(),
   },
-  handler: async (ctx, { threadId, userMessage }) => {
+  handler: async (ctx, { threadId, userMessage }): Promise<AgentRunResult> => {
     const userId = await ctx.auth.getUserIdentity();
     if (!userId) {
       throw new Error("Not authenticated");
@@ -116,6 +122,10 @@ export const runAgentOnThread = action({
       resourceType: "thread",
       resourceId: threadId,
     });
+
+    if (!lock) {
+      throw new Error("Failed to acquire lock");
+    }
 
     try {
       await ctx.runMutation(
@@ -155,10 +165,12 @@ export const runAgentOnThread = action({
         }
       }
 
-      const sandboxUrl = process.env.SANDBOX_URL || "http://localhost:8000";
+      // Convex actions have process.env available, but we need to work around TypeScript
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      const sandboxUrl = ((globalThis as any).process?.env?.SANDBOX_URL as string | undefined) ?? "http://localhost:8000";
 
-      let agentResponse;
-      let proposedEdits = [];
+      let agentResponse: string;
+      let proposedEdits: Array<Record<string, unknown>> = [];
 
       try {
         const response = await fetch(`${sandboxUrl}/v1/agent/run`, {
@@ -168,7 +180,7 @@ export const runAgentOnThread = action({
           },
           body: JSON.stringify({
             threadId,
-            messages: messages.map((m) => ({
+            messages: messages.map((m: { senderType: string; content: string }) => ({
               senderType: m.senderType,
               content: m.content,
             })),
@@ -224,7 +236,7 @@ export const applyAgentEdits = mutation({
     threadId: v.id("agentThreads"),
     messageId: v.id("agentMessages"),
   },
-  handler: async (ctx, { threadId, messageId }) => {
+  handler: async (ctx, { threadId, messageId }): Promise<null> => {
     const userId = await ctx.auth.getUserIdentity();
     if (!userId) {
       throw new Error("Not authenticated");

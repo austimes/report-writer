@@ -1,0 +1,31 @@
+{
+  "timestamp": "2025-12-03T14:47:39.404123",
+  "section_id": "emissions",
+  "provider": "openai",
+  "model": "gpt-5.1-2025-11-13",
+  "request": {
+    "model": "gpt-5.1-2025-11-13",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an expert report writer for energy and emissions analysis."
+      },
+      {
+        "role": "user",
+        "content": "[text prompt, 5 images]"
+      }
+    ],
+    "max_tokens": 4000,
+    "reasoning_effort": "medium",
+    "image_count": 5,
+    "chart_ids": [
+      "emissions_reduction_by_sector",
+      "net_emissions_by_sector",
+      "emissions_from_electricity_generation",
+      "domestic_transport_emissions_by_subsector",
+      "built_environment_emissions"
+    ],
+    "prompt_preview": "# Task: Write the 'Emissions' section of the report\n\n## Section Information\n- **Title**: Emissions\n- **Level**: ## (heading level 2)\n- **Parent Section**: Projection results\n\n## Instructions\nProvide an overview of the emissions projection results\n\n## Available Data\nThe following 5 chart(s) are available for this section:\n\n### Emissions Reduction by Sector\n- **ID**: emissions_reduction_by_sector\n- **Category**: emissions\n- **Figure Path**: `figures/emissions_reduction_by_sector.png`\n- **Units**: ..."
+  },
+  "response": "Projected national emissions across all scenarios start from a 2025 baseline of 401.05 Mt CO\u2082\u2011e. Under the Ampol-1p5DS (1.5\u00b0C-aligned pathway), net emissions fall to \u201171.48 Mt CO\u2082\u2011e by 2050, a 117.8% reduction that reflects a transition to net removals. The Ampol-2p5DS (2.5\u00b0C pathway) also approaches net zero, declining 99.1% to 3.52 Mt CO\u2082\u2011e in 2050. In contrast, the Ampol-House-View (reference/baseline scenario) only reduces emissions by 48.8%, to 205.41 Mt CO\u2082\u2011e in 2050\u2014276.9 Mt CO\u2082\u2011e higher than the 1.5\u00b0C pathway.\n\n![Net Emissions by Sector](figures/net_emissions_by_sector.png)  \n*Figure: Net emissions trajectory by sector from 2025 to 2050 under each scenario.*\n\nAt the sector level, the largest absolute reductions occur in power generation in all pathways. From the 2025 baseline of 401.05 Mt CO\u2082\u2011e, the Ampol-1p5DS delivers a total reduction of 472.53 Mt CO\u2082\u2011e by 2050, with power generation contributing 128.92 Mt CO\u2082\u2011e of abatement, followed by industry (109.74 Mt CO\u2082\u2011e) and transport (94.07 Mt CO\u2082\u2011e). The Ampol-2p5DS achieves a 397.51 Mt CO\u2082\u2011e reduction, with similarly large cuts from power generation (128.92 Mt CO\u2082\u2011e), land use (101.06 Mt CO\u2082\u2011e) and industry (97.01 Mt CO\u2082\u2011e). The Ampol-House-View delivers only 195.63 Mt CO\u2082\u2011e of total abatement, and while power generation (127.83 Mt CO\u2082\u2011e) and industry (72.37 Mt CO\u2082\u2011e) still decarbonise substantially, land use becomes a net source, adding 33.58 Mt CO\u2082\u2011e by 2050.\n\n![Emissions Reduction by Sector](figures/emissions_reduction_by_sector.png)  \n*Figure: Cumulative emissions reductions (and increases) by sector to 2050 relative to 2025 levels.*\n\nDecarbonisation of electricity generation is rapid and near-complete in all scenarios. Sectoral emissions decline from 129.87 Mt CO\u2082\u2011e in 2025 to 0.94 Mt CO\u2082\u2011e in 2050 under Ampol-1p5DS and 0.95 Mt CO\u2082\u2011e under Ampol-2p5DS, both representing 99.3% reductions. The Ampol-House-View also delivers strong power-sector abatement, falling to 2.04 Mt CO\u2082\u2011e by 2050 (a 98.4% reduction), leaving only a small residual gap to the 1.5\u00b0C pathway.\n\n![Emissions from Electricity Generation](figures/emissions_from_electricity_generation.png)  \n*Figure: Emissions from electricity generation by technology and scenario, 2025\u20132050.*\n\nTransport represents a major point of divergence between scenarios. Under Ampol-1p5DS, domestic transport emissions fall from 98.07 Mt CO\u2082\u2011e in 2025 to 4.00 Mt CO\u2082\u2011e in 2050 (a 95.9% reduction), with deep declines across passenger, freight and aviation subsectors. Ampol-2p5DS achieves a more moderate 55.7% reduction, to 43.42 Mt CO\u2082\u2011e. Ampol-House-View only reduces transport emissions by 21.4%, leaving 77.06 Mt CO\u2082\u2011e in 2050\u201473.1 Mt CO\u2082\u2011e higher than in the 1.5\u00b0C-aligned pathway\u2014highlighting the importance of accelerated vehicle efficiency and fuel switching discussed in the transport section of this report.\n\n![Domestic Transport Emissions by Subsector](figures/domestic_transport_emissions_by_subsector.png)  \n*Figure: Domestic transport emissions by mode from 2025 to 2050 for each scenario.*\n\nIn the built environment, the Ampol-1p5DS pathway fully abates emissions, reducing combined residential and commercial emissions from 14.25 Mt CO\u2082\u2011e in 2025 to zero by 2050 through aggressive electrification and efficiency. Under Ampol-2p5DS, built-environment emissions fall by 49.3% to 7.22 Mt CO\u2082\u2011e in 2050, while in the Ampol-House-View they decline by only 34.6% to 9.32 Mt CO\u2082\u2011e. The persistence of emissions in the reference pathway underscores the additional opportunity available from stronger building-code, appliance and heating policy measures.\n\n![Built Environment Emissions](figures/built_environment_emissions.png)  \n*Figure: Residential and commercial emissions trajectories in the built environment across scenarios.*"
+}

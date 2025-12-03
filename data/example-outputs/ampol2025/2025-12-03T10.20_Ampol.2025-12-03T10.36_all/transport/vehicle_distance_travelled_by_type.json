@@ -1,0 +1,899 @@
+{
+  "data": [
+    {
+      "hovertemplate": "scen=Ampol-1p5DS\u003cbr\u003eyear=%{x}\u003cbr\u003ekm=%{y}\u003cextra\u003e\u003c\u002fextra\u003e",
+      "legendgroup": "",
+      "marker": {
+        "color": "rgb(158,158,158)",
+        "symbol": "circle",
+        "size": 0.001
+      },
+      "mode": "markers",
+      "name": "",
+      "orientation": "v",
+      "showlegend": false,
+      "x": {
+        "dtype": "i4",
+        "bdata": "6QcAAOoHAADrBwAA7AcAAO0HAADuBwAA7wcAAPAHAADxBwAA8gcAAPMHAAD4BwAA\u002fQcAAAIIAAA="
+      },
+      "xaxis": "x3",
+      "y": {
+        "dtype": "i1",
+        "bdata": "AAAAAAAAAAAAAAAAAAA="
+      },
+      "yaxis": "y3",
+      "type": "scatter",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(158,158,158)"
+      },
+      "opacity": 0
+    },
+    {
+      "hovertemplate": "scen=Ampol-2p5DS\u003cbr\u003eyear=%{x}\u003cbr\u003ekm=%{y}\u003cextra\u003e\u003c\u002fextra\u003e",
+      "legendgroup": "",
+      "marker": {
+        "color": "rgb(158,158,158)",
+        "symbol": "circle",
+        "size": 0.001
+      },
+      "mode": "markers",
+      "name": "",
+      "orientation": "v",
+      "showlegend": false,
+      "x": {
+        "dtype": "i4",
+        "bdata": "6QcAAOoHAADrBwAA7AcAAO0HAADuBwAA7wcAAPAHAADxBwAA8gcAAPMHAAD4BwAA\u002fQcAAAIIAAA="
+      },
+      "xaxis": "x4",
+      "y": {
+        "dtype": "i1",
+        "bdata": "AAAAAAAAAAAAAAAAAAA="
+      },
+      "yaxis": "y4",
+      "type": "scatter",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(158,158,158)"
+      },
+      "opacity": 0
+    },
+    {
+      "hovertemplate": "scen=Ampol-House-View\u003cbr\u003eyear=%{x}\u003cbr\u003ekm=%{y}\u003cextra\u003e\u003c\u002fextra\u003e",
+      "legendgroup": "",
+      "marker": {
+        "color": "rgb(158,158,158)",
+        "symbol": "circle",
+        "size": 0.001
+      },
+      "mode": "markers",
+      "name": "",
+      "orientation": "v",
+      "showlegend": false,
+      "x": {
+        "dtype": "i4",
+        "bdata": "6QcAAOoHAADrBwAA7AcAAO0HAADuBwAA7wcAAPAHAADxBwAA8gcAAPMHAAD4BwAA\u002fQcAAAIIAAA="
+      },
+      "xaxis": "x",
+      "y": {
+        "dtype": "i1",
+        "bdata": "AAAAAAAAAAAAAAAAAAA="
+      },
+      "yaxis": "y",
+      "type": "scatter",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(158,158,158)"
+      },
+      "opacity": 0
+    },
+    {
+      "fill": "tonexty",
+      "name": "Passenger Vehicle",
+      "showlegend": true,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "o+VwzsN3S0IhofU0syxKQm1m5a74u0hCFBtwisRiR0JPJVfWZiNHQoC\u002fVwPj5EZC2VqENJSjRkKTjtCgUGBGQrMHKX16G0ZCHCXHlpzSRUIEl+t5d4dFQi+uO1lV8kRC4tVx\u002fki1REIfFwGz1XVEQg=="
+      },
+      "type": "scatter",
+      "xaxis": "x3",
+      "yaxis": "y3",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(117,117,121)"
+      },
+      "legendgroup": "Passenger Vehicle",
+      "marker": {
+        "color": "rgb(117,117,121)"
+      },
+      "fillcolor": "rgb(117,117,121)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Light Commercial Vehicle",
+      "showlegend": true,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "F2eUDcBpN0I+URRwIkk1QgpE61YgRDNC+r\u002fXdrdAMUJ7C9fbJdkwQntrDT\u002fSczBC99TlXcsOMEJ3LrjM9FovQrCLRBvzqy5CZILTN28GLkIONUzPNFwtQloyqr4lByxCwM57P2KWK0Lza4RevSorQg=="
+      },
+      "type": "scatter",
+      "xaxis": "x3",
+      "yaxis": "y3",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(102,51,0)"
+      },
+      "legendgroup": "Light Commercial Vehicle",
+      "marker": {
+        "color": "rgb(102,51,0)"
+      },
+      "fillcolor": "rgb(102,51,0)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Rigid Trucks",
+      "showlegend": true,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "1LsgkwE6FkJ4l9OO+4ITQvOkTFAJExFCOciGMuy3DUKW74FaPt0MQu1MMaTIDgxCe5a04\u002flAC0LeAse4H4QKQu+KBTil5glC6BJSREdWCUKF785hTLQIQsQEWW0mlwdC5NLxg00LB0KHZJqf\u002fYoGQg=="
+      },
+      "type": "scatter",
+      "xaxis": "x3",
+      "yaxis": "y3",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(0,169,206)"
+      },
+      "legendgroup": "Rigid Trucks",
+      "marker": {
+        "color": "rgb(0,169,206)"
+      },
+      "fillcolor": "rgb(0,169,206)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Articulated Vehicles",
+      "showlegend": true,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "e6SXnHZ6EELCH94qmd4MQsqQL\u002fKxMglCTiaDhongBUIKP1rQ1ToFQp57+sU+nQRCi9mzsPMDBEKZHsk\u002fRXUDQmsMZcUN\u002fQJCtMGYDa6OAkIB+FNVPBYCQkUCk8hl3ABCcguVOiyvAEIMdYF2Z4gAQg=="
+      },
+      "type": "scatter",
+      "xaxis": "x3",
+      "yaxis": "y3",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(0,0,128)"
+      },
+      "legendgroup": "Articulated Vehicles",
+      "marker": {
+        "color": "rgb(0,0,128)"
+      },
+      "fillcolor": "rgb(0,0,128)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Motorcycle",
+      "showlegend": true,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "mU\u002fkPQ636UG4PkaDZC7oQVjMaLIpteZBeFRQG8JG5UHmQ9MKaADlQZWKFUn6ueRB4NgI3Ndu5EHHqDVsTyPkQdbub8up1+NBe1CaaBmL40Edu9JFCj\u002fjQSwGc+cVkOJBAqgAALJi4kGvcNy+7zLiQQ=="
+      },
+      "type": "scatter",
+      "xaxis": "x3",
+      "yaxis": "y3",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(0,122,83)"
+      },
+      "legendgroup": "Motorcycle",
+      "marker": {
+        "color": "rgb(0,122,83)"
+      },
+      "fillcolor": "rgb(0,122,83)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Bus",
+      "showlegend": true,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "usmL0x4P6UGO+\u002f6ziYrnQVF5uKKdAOZB0Ve5Tjlx5EFNIBsWiynkQTmxOCo9IuRBbIhXi+f840Hb5gfjQMzjQX6lOBhPjuNBDdaCutRB40EMQhQ7cPbiQZkhVSUOSOJBWb1McdEe4kGx9l0AB\u002fHhQQ=="
+      },
+      "type": "scatter",
+      "xaxis": "x3",
+      "yaxis": "y3",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(232,119,34)"
+      },
+      "legendgroup": "Bus",
+      "marker": {
+        "color": "rgb(232,119,34)"
+      },
+      "fillcolor": "rgb(232,119,34)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Passenger Vehicle",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "Esyq6jfgRkLC\u002fXN7cp5GQuCTWParQkZCQeV9UqrSRUJgr5KgS7lFQpbZGHGkn0VCumlVrr2ERUIX9veC5mZFQviQjRjWRkVCjE83rE4jRUJoom704vtEQi+uO1lV8kRC4tVx\u002fki1REIgFwGz1XVEQg=="
+      },
+      "type": "scatter",
+      "xaxis": "x4",
+      "yaxis": "y4",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(117,117,121)"
+      },
+      "legendgroup": "Passenger Vehicle",
+      "marker": {
+        "color": "rgb(117,117,121)"
+      },
+      "fillcolor": "rgb(117,117,121)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Light Commercial Vehicle",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "kl\u002fCVQLGMEIj9myUHk8wQmyM6ks+fS9C8ltkjrEfLkKfxRxa19MtQs9kFJ+AiS1CncDMowI7LUJC+lSmHOksQhUdq\u002frToCxCOnUg7UFcLEI42i0TUQ8sQloyqr4lByxCwM57P2KWK0Lya4RevSorQg=="
+      },
+      "type": "scatter",
+      "xaxis": "x4",
+      "yaxis": "y4",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(102,51,0)"
+      },
+      "legendgroup": "Light Commercial Vehicle",
+      "marker": {
+        "color": "rgb(102,51,0)"
+      },
+      "fillcolor": "rgb(102,51,0)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Rigid Trucks",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "\u002fmISAWphDUIMXiRaF\u002fkLQrd60vLiawpCD2aDKef4CEKe8ZYkrrMIQgLup05HdAhC1sfXqCwvCEI1T6RwXugHQmX+x+FWsgdC1kpxhDaEB0KZYwpcnkYHQsQEWW0mlwdC5NLxg00LB0KHZJqf\u002fYoGQg=="
+      },
+      "type": "scatter",
+      "xaxis": "x4",
+      "yaxis": "y4",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(0,169,206)"
+      },
+      "legendgroup": "Rigid Trucks",
+      "marker": {
+        "color": "rgb(0,169,206)"
+      },
+      "fillcolor": "rgb(0,169,206)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Articulated Vehicles",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "NU33gh27BUJljAj5s5gEQq+v\u002fbr2bANCMKdfMV5RAkLzdtOxZx0CQmNGWKto7QFCELNG2y25AUL4gheP+4MBQhd94ha4WwFCX2AFX106AUIK6\u002f10xQ0BQkUCk8hl3ABCcguVOiyvAEIMdYF2Z4gAQg=="
+      },
+      "type": "scatter",
+      "xaxis": "x4",
+      "yaxis": "y4",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(0,0,128)"
+      },
+      "legendgroup": "Articulated Vehicles",
+      "marker": {
+        "color": "rgb(0,0,128)"
+      },
+      "fillcolor": "rgb(0,0,128)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Motorcycle",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "8uUAV4ui5EE5aX1rKmDkQYjt4H3WAORBMxVpX0qP40Fq9fGPknTjQUN88rQEWeNBRLdKIlI840HNWxv37B3jQaZYBPj3\u002feJBMsYkjrja4kEajDP3wrTiQSwGc+cVkOJBAqgAALJi4kGvcNy+7zLiQQ=="
+      },
+      "type": "scatter",
+      "xaxis": "x4",
+      "yaxis": "y4",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(0,122,83)"
+      },
+      "legendgroup": "Motorcycle",
+      "marker": {
+        "color": "rgb(0,122,83)"
+      },
+      "fillcolor": "rgb(0,122,83)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Bus",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "HRtoVXIa5EGlXLktjMfjQQgMwe9XV+NB07n3wf0L40FaTu1eYQnjQZLiDPQPAeNBQKjzKFDy4kHYHxGCftziQVKpsUUiv+JBm6R5Oi2Z4kEaK9mkpnHiQZkhVSUOSOJBWb1McdEe4kGy9l0AB\u002fHhQQ=="
+      },
+      "type": "scatter",
+      "xaxis": "x4",
+      "yaxis": "y4",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(232,119,34)"
+      },
+      "legendgroup": "Bus",
+      "marker": {
+        "color": "rgb(232,119,34)"
+      },
+      "fillcolor": "rgb(232,119,34)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Passenger Vehicle",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "lt72zGXfSELJm0T2\u002fS9IQpv7tfpeZ0dCPU01XjyQRkIWisUJcmJGQt\u002fMDcFRNEZCDtAHifIERkIPlW1wg9JFQvGkTkbjnUVCaxG3RsNmRUKEunaumCxFQi+uO1lV8kRC4tVx\u002fki1REIfFwGz1XVEQg=="
+      },
+      "type": "scatter",
+      "xaxis": "x",
+      "yaxis": "y",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(117,117,121)"
+      },
+      "legendgroup": "Passenger Vehicle",
+      "marker": {
+        "color": "rgb(117,117,121)"
+      },
+      "fillcolor": "rgb(117,117,121)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Light Commercial Vehicle",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "s2U4x1JlM0LrVTBe\u002fj8yQsW6LoUgEjFCd9QyVwK8L0Krf4fuWUAvQhZMxQ6dxy5CchVv\u002f+JLLkJRAHM18s0tQkle6HizWy1CegmZdorvLEKTsMt913ssQloyqr4lByxCwM57P2KWK0Lya4RevSorQg=="
+      },
+      "type": "scatter",
+      "xaxis": "x",
+      "yaxis": "y",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(102,51,0)"
+      },
+      "legendgroup": "Light Commercial Vehicle",
+      "marker": {
+        "color": "rgb(102,51,0)"
+      },
+      "fillcolor": "rgb(102,51,0)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Rigid Trucks",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "bFz4eBsBFUJc6BMqmnESQp\u002fCwodALBBC+d2BSlh4DEJQW49EZ8cLQmQJy\u002fmfIAtCrYK8y2t3CkI5zupQkNAJQkQ1xuwLQAlCGLXZXwm8CEKMEDx6QCsIQsoEWW0mlwdC6dLxg00LB0KGZJqf\u002fYoGQg=="
+      },
+      "type": "scatter",
+      "xaxis": "x",
+      "yaxis": "y",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(0,169,206)"
+      },
+      "legendgroup": "Rigid Trucks",
+      "marker": {
+        "color": "rgb(0,169,206)"
+      },
+      "fillcolor": "rgb(0,169,206)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Articulated Vehicles",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "1ki8t65eBUL\u002frQ2hWmgEQg2FStbgWANC176+fP1LAkIrTyfpIRoCQmRrLfyW6wFCmQcmHlW4AUJj1HWSs4MBQga9TiKuWwFC5VtnD1o6AULZEN\u002f+xw0BQkUCk8hl3ABCcguVOiyvAEIMdYF2Z4gAQg=="
+      },
+      "type": "scatter",
+      "xaxis": "x",
+      "yaxis": "y",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(0,0,128)"
+      },
+      "legendgroup": "Articulated Vehicles",
+      "marker": {
+        "color": "rgb(0,0,128)"
+      },
+      "fillcolor": "rgb(0,0,128)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Motorcycle",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "6MnwWAX35EH9rxBAZLDkQRJ8U2nBSeRBUXKqqKS+40ElC0ps4Z3jQebzndQEfONBDsQEqdxY40HK5Ng04jPjQcO7ZHJ1DeNBfOc0enDl4kFvlicrkrviQSwGc+cVkOJBAqgAALJi4kGxcNy+7zLiQQ=="
+      },
+      "type": "scatter",
+      "xaxis": "x",
+      "yaxis": "y",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(0,122,83)"
+      },
+      "legendgroup": "Motorcycle",
+      "marker": {
+        "color": "rgb(0,122,83)"
+      },
+      "fillcolor": "rgb(0,122,83)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Bus",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "Dr7WjHEa5EEZy0ubjsfjQTZsMlbYaONBN3jxxek840H5DYKKdyvjQQUHyGZRFeNBsiWOrR784kGpJ1csNN\u002fiQY1VJugQvuJBtcqOBUSY4kHfjs2S8XDiQZkhVSUOSOJBWb1McdEe4kGy9l0AB\u002fHhQQ=="
+      },
+      "type": "scatter",
+      "xaxis": "x",
+      "yaxis": "y",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(232,119,34)"
+      },
+      "legendgroup": "Bus",
+      "marker": {
+        "color": "rgb(232,119,34)"
+      },
+      "fillcolor": "rgb(232,119,34)"
+    }
+  ],
+  "layout": {
+    "template": {
+      "data": {
+        "scatter": [
+          {
+            "line": {
+              "width": 5
+            },
+            "opacity": 0.7,
+            "type": "scatter"
+          }
+        ]
+      },
+      "layout": {
+        "bargap": 0.5,
+        "colorway": [
+          "rgb(0,29,52)",
+          "rgb(0,0,128)",
+          "rgb(30,34,170)",
+          "rgb(0,75,135)",
+          "rgb(0,115,119)",
+          "rgb(0,169,206)",
+          "rgb(67,194,204)",
+          "rgb(159,174,229)",
+          "rgb(34,70,34)",
+          "rgb(0,122,83)",
+          "rgb(107,142,35)",
+          "rgb(120,190,32)",
+          "rgb(113,204,152)",
+          "rgb(232,119,34)",
+          "rgb(255,184,28)",
+          "rgb(109,32,119)",
+          "rgb(223,25,149)",
+          "rgb(0,0,0)",
+          "rgb(44,44,44)",
+          "rgb(80,80,80)",
+          "rgb(158,158,158)",
+          "rgb(117,117,121)",
+          "rgb(200,200,220)",
+          "rgb(102,51,0)",
+          "rgb(128,0,0)"
+        ],
+        "font": {
+          "family": "Arial",
+          "size": 15
+        },
+        "legend": {
+          "entrywidth": 0,
+          "entrywidthmode": "pixels",
+          "font": {
+            "size": 15
+          },
+          "itemsizing": "constant",
+          "itemwidth": 30,
+          "orientation": "h",
+          "traceorder": "normal",
+          "x": 0.5,
+          "xanchor": "center",
+          "y": -0.05,
+          "yanchor": "top"
+        },
+        "margin": {
+          "b": 105,
+          "r": 25,
+          "t": 50
+        },
+        "paper_bgcolor": "white",
+        "plot_bgcolor": "white",
+        "title": {
+          "font": {
+            "color": "#333333",
+            "size": 16
+          }
+        },
+        "xaxis": {
+          "showgrid": false,
+          "tickfont": {
+            "size": 15
+          },
+          "title": {
+            "font": {
+              "size": 15
+            }
+          }
+        },
+        "yaxis": {
+          "gridcolor": "lightgrey",
+          "tickfont": {
+            "size": 15
+          },
+          "title": {
+            "font": {
+              "size": 15
+            }
+          }
+        }
+      }
+    },
+    "xaxis": {
+      "anchor": "y",
+      "domain": [
+        0.0,
+        0.45
+      ],
+      "title": {
+        "text": ""
+      }
+    },
+    "yaxis": {
+      "anchor": "x",
+      "domain": [
+        0.0,
+        0.47
+      ],
+      "title": {
+        "text": "km"
+      },
+      "showticklabels": true,
+      "nticks": 10,
+      "matches": "y",
+      "range": [
+        -12500000000.0,
+        462500000000.0
+      ]
+    },
+    "xaxis2": {
+      "anchor": "y2",
+      "domain": [
+        0.55,
+        1.0
+      ],
+      "matches": "x",
+      "title": {
+        "text": ""
+      }
+    },
+    "yaxis2": {
+      "anchor": "x2",
+      "domain": [
+        0.0,
+        0.47
+      ],
+      "matches": "y",
+      "showticklabels": true,
+      "nticks": 10,
+      "range": [
+        -12500000000.0,
+        462500000000.0
+      ],
+      "title": {
+        "text": "km"
+      }
+    },
+    "xaxis3": {
+      "anchor": "y3",
+      "domain": [
+        0.0,
+        0.45
+      ],
+      "matches": "x",
+      "showticklabels": false,
+      "title": {
+        "text": ""
+      }
+    },
+    "yaxis3": {
+      "anchor": "x3",
+      "domain": [
+        0.53,
+        1.0
+      ],
+      "matches": "y",
+      "title": {
+        "text": "km"
+      },
+      "showticklabels": true,
+      "nticks": 10,
+      "range": [
+        -12500000000.0,
+        462500000000.0
+      ]
+    },
+    "xaxis4": {
+      "anchor": "y4",
+      "domain": [
+        0.55,
+        1.0
+      ],
+      "matches": "x",
+      "showticklabels": false,
+      "title": {
+        "text": ""
+      }
+    },
+    "yaxis4": {
+      "anchor": "x4",
+      "domain": [
+        0.53,
+        1.0
+      ],
+      "matches": "y",
+      "showticklabels": true,
+      "nticks": 10,
+      "range": [
+        -12500000000.0,
+        462500000000.0
+      ],
+      "title": {
+        "text": "km"
+      }
+    },
+    "annotations": [
+      {
+        "font": {
+          "color": "black",
+          "family": "Arial",
+          "size": 15
+        },
+        "showarrow": false,
+        "text": "\u003cb\u003eAmpol-House-View\u003c\u002fb\u003e\u003cbr\u003eVehicle Distance Travelled by Type",
+        "x": 0.225,
+        "xanchor": "center",
+        "xref": "paper",
+        "y": 0.48,
+        "yanchor": "bottom",
+        "yref": "paper"
+      },
+      {
+        "font": {
+          "color": "black",
+          "family": "Arial",
+          "size": 15
+        },
+        "showarrow": false,
+        "text": "\u003cb\u003eAmpol-1p5DS\u003c\u002fb\u003e\u003cbr\u003eVehicle Distance Travelled by Type",
+        "x": 0.225,
+        "xanchor": "center",
+        "xref": "paper",
+        "y": 1.01,
+        "yanchor": "bottom",
+        "yref": "paper"
+      },
+      {
+        "font": {
+          "color": "black",
+          "family": "Arial",
+          "size": 15
+        },
+        "showarrow": false,
+        "text": "\u003cb\u003eAmpol-2p5DS\u003c\u002fb\u003e\u003cbr\u003eVehicle Distance Travelled by Type",
+        "x": 0.775,
+        "xanchor": "center",
+        "xref": "paper",
+        "y": 1.01,
+        "yanchor": "bottom",
+        "yref": "paper"
+      },
+      {
+        "font": {
+          "color": "darkgrey",
+          "size": 8
+        },
+        "showarrow": false,
+        "text": "2025-12-03 Copyright © CSIRO",
+        "x": 1,
+        "xanchor": "right",
+        "xref": "paper",
+        "y": -0.05,
+        "yanchor": "top",
+        "yref": "paper"
+      }
+    ],
+    "legend": {
+      "tracegroupgap": 0,
+      "title": {
+        "text": ""
+      },
+      "y": -0.07,
+      "yanchor": "top",
+      "xanchor": "center",
+      "x": 0.5
+    },
+    "title": {
+      "text": ""
+    },
+    "shapes": [
+      {
+        "line": {
+          "color": "black",
+          "width": 1
+        },
+        "type": "line",
+        "x0": 0,
+        "x1": 1,
+        "xref": "x domain",
+        "y0": 0,
+        "y1": 0,
+        "yref": "y"
+      },
+      {
+        "line": {
+          "color": "black",
+          "width": 1
+        },
+        "type": "line",
+        "x0": 0,
+        "x1": 1,
+        "xref": "x3 domain",
+        "y0": 0,
+        "y1": 0,
+        "yref": "y3"
+      },
+      {
+        "line": {
+          "color": "black",
+          "width": 1
+        },
+        "type": "line",
+        "x0": 0,
+        "x1": 1,
+        "xref": "x4 domain",
+        "y0": 0,
+        "y1": 0,
+        "yref": "y4"
+      }
+    ],
+    "modebar": {
+      "add": [
+        "v1hovermode",
+        "toggleSpikelines",
+        "drawline",
+        "hoverClosestGl2d",
+        "drawopenpath",
+        "drawclosedpath",
+        "drawcircle",
+        "drawrect",
+        "eraseshape"
+      ]
+    }
+  }
+}

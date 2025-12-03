@@ -32,12 +32,17 @@ export const create = mutation({
 
     const now = Date.now();
 
-    // Step 1: Create the root node first (with placeholder documentId)
-    // We'll patch it after creating the document
+    const documentId = await ctx.db.insert("documents", {
+      projectId,
+      title,
+      createdAt: now,
+      createdByUserId: userId,
+      rootNodeId: undefined,
+    });
+
     const rootNodeId = await ctx.db.insert("nodes", {
       projectId,
-      // Temporarily use a self-reference pattern - will be patched
-      documentId: "" as any,
+      documentId,
       parentId: undefined,
       order: 0,
       nodeType: "document",
@@ -46,17 +51,7 @@ export const create = mutation({
       createdAt: now,
     });
 
-    // Step 2: Create the document pointing to the root node
-    const documentId = await ctx.db.insert("documents", {
-      projectId,
-      title,
-      createdAt: now,
-      createdByUserId: userId,
-      rootNodeId,
-    });
-
-    // Step 3: Patch the root node with the correct documentId
-    await ctx.db.patch(rootNodeId, { documentId });
+    await ctx.db.patch(documentId, { rootNodeId });
 
     return documentId;
   },

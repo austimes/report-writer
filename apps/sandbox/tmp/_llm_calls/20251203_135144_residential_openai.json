@@ -1,0 +1,29 @@
+{
+  "timestamp": "2025-12-03T13:51:44.501365",
+  "section_id": "residential",
+  "provider": "openai",
+  "model": "gpt-5.1-2025-11-13",
+  "request": {
+    "model": "gpt-5.1-2025-11-13",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an expert report writer for energy and emissions analysis."
+      },
+      {
+        "role": "user",
+        "content": "[text prompt, 3 images]"
+      }
+    ],
+    "temperature": 0.7,
+    "max_tokens": 4000,
+    "image_count": 3,
+    "chart_ids": [
+      "residential_buildings_energy_use_by_fuel",
+      "built_environment_emissions",
+      "building_production_by_sector"
+    ],
+    "prompt_preview": "# Task: Write the 'Residential' section of the report\n\n## Section Information\n- **Title**: Residential\n- **Level**: ### (heading level 3)\n- **Parent Section**: Energy consumption by sector\n\n## Instructions\nProvide an overview of the residential energy consumption projection results\n\n## Available Data\nThe following 3 chart(s) are available for this section:\n\n### Residential Buildings Energy Use by Fuel\n- **ID**: residential_buildings_energy_use_by_fuel\n- **Category**: built_environment\n- **Figure..."
+  },
+  "response": "### Residential\n\nResidential energy demand is projected to remain broadly stable over the outlook period despite continued growth in the dwelling stock. Across all scenarios, total residential buildings energy use declines modestly from 508.9 PJ in 2025 to around 481\u2013482 PJ in 2050, a reduction of 5.1\u20135.5%. This indicates that improvements in building fabric, appliance efficiency and electrification offset the additional energy requirements from an expanding housing base.\n\nIn the decarbonisation scenarios, electrification is the dominant driver of change. In both the Ampol\u20111p5DS and Ampol\u20112p5DS scenarios, electricity (including dedicated \u201celectricity \u2013 electrification\u201d loads) increases its share of final energy, while fossil gas use falls steadily. By 2050, total residential energy use in Ampol\u20111p5DS (482.7 PJ) is slightly higher than in the Ampol\u2011House\u2011View (481.1 PJ), reflecting deeper fuel\u2011switching to electricity and low\u2011emissions gases rather than absolute energy savings. The Ampol\u20112p5DS pathway (482.0 PJ in 2050) shows a similar aggregate reduction, with a somewhat slower displacement of natural gas.\n\n![Residential Buildings Energy Use by Fuel](figures/residential_buildings_energy_use_by_fuel.png)  \n*Figure 8: Projected residential buildings energy use by fuel, 2025\u20132050, under the three core scenarios (PJ).*\n\nThese fuel\u2011mix shifts translate into substantial emissions reductions from the residential segment of the built environment. Under the Ampol\u20111p5DS scenario, built\u2011environment emissions fall from 14.25 Mt CO\u2082\u2011e in 2025 to zero by 2050, implying full decarbonisation of both residential and commercial buildings. In the Ampol\u20112p5DS scenario, emissions decline by 49.3% to 7.22 Mt CO\u2082\u2011e in 2050, while under the Ampol\u2011House\u2011View they fall by 34.6% to 9.32 Mt CO\u2082\u2011e. By 2050, the House\u2011View is 9.3 Mt CO\u2082\u2011e higher than the Ampol\u20111p5DS pathway, underscoring the importance of accelerated efficiency and electrification measures in the residential sector.\n\n![Built Environment Emissions](figures/built_environment_emissions.png)  \n*Figure 9: Built\u2011environment emissions (residential and commercial) under each scenario, 2025\u20132050 (Mt CO\u2082\u2011e).*\n\nResidential building activity increases steadily over the projection horizon, with the total residential stock rising from around 11 million dwellings-equivalent in 2025 to about 17\u201318 million by 2050. This growth in floor area and dwelling numbers reinforces the significance of energy\u2011performance standards for new construction and retrofits, as efficiency gains are required simply to hold total energy demand roughly flat while enabling deep emissions reductions.\n\n![Building Production by Sector](figures/building_production_by_sector.png)  \n*Figure 10: Projected building production for residential and commercial sectors, 2025\u20132050 (dwellings; m\u00b2).*"
+}

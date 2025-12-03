@@ -1,0 +1,31 @@
+{
+  "timestamp": "2025-12-03T14:40:28.046145",
+  "section_id": "emissions",
+  "provider": "openai",
+  "model": "gpt-5.1-2025-11-13",
+  "request": {
+    "model": "gpt-5.1-2025-11-13",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an expert report writer for energy and emissions analysis."
+      },
+      {
+        "role": "user",
+        "content": "[text prompt, 5 images]"
+      }
+    ],
+    "max_tokens": 4000,
+    "reasoning_effort": "medium",
+    "image_count": 5,
+    "chart_ids": [
+      "emissions_reduction_by_sector",
+      "net_emissions_by_sector",
+      "emissions_from_electricity_generation",
+      "domestic_transport_emissions_by_subsector",
+      "built_environment_emissions"
+    ],
+    "prompt_preview": "# Task: Write the 'Emissions' section of the report\n\n## Section Information\n- **Title**: Emissions\n- **Level**: ## (heading level 2)\n- **Parent Section**: Projection results\n\n## Instructions\nProvide an overview of the emissions projection results\n\n## Available Data\nThe following 5 chart(s) are available for this section:\n\n### Emissions Reduction by Sector\n- **ID**: emissions_reduction_by_sector\n- **Category**: emissions\n- **Figure Path**: `figures/emissions_reduction_by_sector.png`\n- **Units**: ..."
+  },
+  "response": "Across all scenarios, national net emissions decline materially from the 2025 baseline of 401.05 Mt CO\u2082-e, but the pace and depth of decarbonisation vary significantly. Under the Ampol-1p5DS (1.5\u00b0C-aligned pathway), net emissions fall to -71.48 Mt CO\u2082-e by 2050, a 117.8% reduction that implies net removals by mid\u2011century. The Ampol-2p5DS (2.5\u00b0C pathway) almost reaches net zero by 2050 at 3.52 Mt CO\u2082-e (a 99.1% reduction), while the Ampol-House-View (reference/baseline scenario) achieves only a 48.8% reduction, remaining at 205.41 Mt CO\u2082-e in 2050. By 2050, the emissions gap between the Ampol-House-View and Ampol-1p5DS pathways is 276.9 Mt CO\u2082-e.\n\n![Net Emissions by Sector](figures/net_emissions_by_sector.png)  \n*Figure: Projected net emissions by sector from 2025 to 2050 under the three scenarios, highlighting the differing depths of decarbonisation and the emergence of net removals in Ampol-1p5DS.*\n\nIn all scenarios, power generation is the single largest source of emissions reductions. From a 2025 baseline contribution of 129.87 Mt CO\u2082-e, electricity sector emissions decline by 99.3% in both the Ampol-1p5DS and Ampol-2p5DS pathways, reaching around 0.94\u20130.95 Mt CO\u2082-e by 2050; even in the Ampol-House-View case they fall by 98.4% to 2.04 Mt CO\u2082-e. At the system level, this translates into power generation providing about one-third of total abatement: reductions of around 129 Mt CO\u2082-e in each scenario. The remaining differences between pathways are therefore driven primarily by transport, land use, industry and the built environment (see also the Energy system and Sectoral pathways sections).\n\n![Emissions from Electricity Generation](figures/emissions_from_electricity_generation.png)  \n*Figure: Emissions from electricity generation by plant type, showing near-complete decarbonisation of the power sector across all scenarios by 2050.*\n\nSectoral decomposition of the 2050 outcome underscores the importance of rapid emissions cuts beyond the power sector. Total abatement from the 2025 baseline is deepest in the Ampol-1p5DS pathway at -472.53 Mt CO\u2082-e, reflecting large contributions from industry (-109.74 Mt CO\u2082-e) and transport (-94.07 Mt CO\u2082-e) alongside power generation (-128.92 Mt CO\u2082-e). In the Ampol-2p5DS case, total reductions reach -397.51 Mt CO\u2082-e, with a stronger reliance on land use abatement (-101.06 Mt CO\u2082-e) and slightly smaller cuts in industry (-97.01 Mt CO\u2082-e) and transport (-55 Mt CO\u2082-e). By contrast, the Ampol-House-View achieves only -195.63 Mt CO\u2082-e of aggregate abatement, with power generation (-127.83 Mt CO\u2082-e) and industry (-72.37 Mt CO\u2082-e) doing most of the work; transport reductions are modest (-21.01 Mt CO\u2082-e), and land use becomes a net emissions source (+33.58 Mt CO\u2082-e), materially weakening the overall outcome.\n\n![Emissions Reduction by Sector](figures/emissions_reduction_by_sector.png)  \n*Figure: Cumulative emissions reductions by major sector from the 2025 baseline to 2050, highlighting the dominance of power generation abatement and divergent land use outcomes across scenarios.*\n\nTransport and the built environment emerge as key differentiators between an emissions trajectory that is aligned with a 1.5\u00b0C outcome and one that is not. Domestic transport emissions fall from 98.07 Mt CO\u2082-e in 2025 to just 4.0 Mt CO\u2082-e by 2050 under Ampol-1p5DS, a 95.9% reduction driven by rapid electrification and efficiency gains across all modes. In Ampol-2p5DS, transport emissions decline by only 55.7% to 43.42 Mt CO\u2082-e, while in the Ampol-House-View case they remain relatively high at 77.06 Mt CO\u2082-e (a 21.4% reduction), leaving a 73.1 Mt CO\u2082-e gap to the 1.5\u00b0C-aligned pathway in 2050. Similarly, built environment emissions (residential and commercial buildings) reach zero by 2050 under Ampol-1p5DS, compared with 7.22 Mt CO\u2082-e in Ampol-2p5DS and 9.32 Mt CO\u2082-e in the Ampol-House-View pathway.\n\n![Domestic Transport Emissions by Subsector](figures/domestic_transport_emissions_by_subsector.png)  \n*Figure: Domestic transport emissions by subsector, showing near-complete decarbonisation across vehicle and mode types only under the Ampol-1p5DS pathway.*\n\n![Built Environment Emissions](figures/built_environment_emissions.png)  \n*Figure: Residential and commercial emissions trajectories, with full decarbonisation by 2050 in Ampol-1p5DS compared to partial reductions in Ampol-2p5DS and Ampol-House-View.*\n\nCollectively, these projections indicate that while decarbonisation of the power sector is a common feature across all scenarios, achieving a 1.5\u00b0C-consistent or even net-zero outcome by mid\u2011century depends critically on deep additional reductions in transport, land use, industry and buildings, alongside the deployment of net removals."
+}

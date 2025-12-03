@@ -4,7 +4,6 @@ import { useAuth } from '../../auth/hooks/useAuth';
 import { useProjects } from '../hooks/useProjects';
 import { ProjectCard } from '../components/ProjectCard';
 import { CreateProjectModal } from '../components/CreateProjectModal';
-import { Id } from 'convex/_generated/dataModel';
 
 export function ProjectsListPage() {
   const { user, logout, getOrCreateUser } = useAuth();

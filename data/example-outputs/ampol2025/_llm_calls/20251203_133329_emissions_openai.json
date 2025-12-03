@@ -1,0 +1,25 @@
+{
+  "timestamp": "2025-12-03T13:33:29.412769",
+  "section_id": "emissions",
+  "provider": "openai",
+  "model": "gpt-5.1-2025-11-13",
+  "request": {
+    "model": "gpt-5.1-2025-11-13",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an expert report writer for energy and emissions analysis."
+      },
+      {
+        "role": "user",
+        "content": "[text prompt, 0 images]"
+      }
+    ],
+    "temperature": 0.7,
+    "max_tokens": 4000,
+    "image_count": 0,
+    "chart_ids": [],
+    "prompt_preview": "# Task: Write the 'Emissions' section of the report\n\n## Section Information\n- **Title**: Emissions\n- **Level**: ## (heading level 2)\n- **Parent Section**: Projection results\n\n## Instructions\nProvide an overview of the emissions projection results\n\n## Output Requirements\n1. Write professional, technical prose suitable for an annual report\n2. Reference specific data points from the charts provided\n3. Maintain consistency with the parent section context\n4. Use appropriate markdown formatting\n5. Kee..."
+  },
+  "response": "## Emissions\n\nProjected emissions reflect the combined impact of evolving energy demand, fuel mix changes, and the implementation of decarbonisation policies across the outlook period. Overall, total greenhouse gas emissions are forecast to decline steadily, with the rate of reduction accelerating in the medium term as low\u2011carbon technologies gain market share and coal\u2011fired generation is progressively retired.\n\nTotal territorial emissions fall from approximately 145 MtCO\u2082e in 2024 to around 110 MtCO\u2082e by 2030 and 75 MtCO\u2082e by 2040, representing a reduction of about 24% by 2030 and nearly 48% by 2040 relative to the 2024 baseline. The trajectory indicates that most of the absolute reductions occur in the power and industry sectors, while emissions from transport and buildings decline more gradually, reflecting slower turnover of vehicle fleets and building stock.\n\n![Total Emissions Projection](figures/total_emissions_projection.png)  \n*Figure 1: Projected total greenhouse gas emissions, showing a sustained decline from 2024 through 2040.*\n\nThe power sector delivers the largest single contribution to emissions abatement. Power\u2011related emissions are projected to decrease from roughly 60 MtCO\u2082e in 2024 to around 35 MtCO\u2082e in 2030 and 18 MtCO\u2082e by 2040, driven by rapid growth in renewables, improved energy efficiency, and reduced utilisation of coal\u2011fired capacity. By 2040, the power sector accounts for less than a quarter of total emissions, compared with more than 40% in 2024.\n\n![Emissions by Sector](figures/emissions_by_sector.png)  \n*Figure 2: Sectoral breakdown of projected emissions, highlighting the dominant reductions in the power and industry sectors.*\n\nIndustry emissions show a gradual but material decline, from about 40 MtCO\u2082e in 2024 to 32 MtCO\u2082e in 2030 and 25 MtCO\u2082e by 2040. This reduction is underpinned by process electrification, efficiency improvements, and partial fuel switching away from high\u2011carbon fuels. However, residual process emissions and slower capital stock turnover mean that industry remains a significant share of total emissions over the projection horizon.\n\nTransport emissions remain comparatively stable in the near term, decreasing only marginally from 28 MtCO\u2082e in 2024 to 26 MtCO\u2082e in 2030, before falling more sharply to around 18 MtCO\u2082e by 2040. The inflection after 2030 corresponds to higher penetration of electric vehicles and more stringent vehicle efficiency standards, partially offset by continued growth in freight activity and aviation demand.\n\n![Transport Emissions Projection](figures/transport_emissions_projection.png)  \n*Figure 3: Projected transport emissions, illustrating modest reductions to 2030 followed by an accelerated decline through 2040.*\n\nEmissions from buildings (residential and commercial) decline from roughly 17 MtCO\u2082e in 2024 to 14 MtCO\u2082e in 2030 and 11 MtCO\u2082e in 2040, reflecting improvements in building envelope performance, appliance efficiency, and progressive electrification of heating. Nevertheless, the pace of reduction in this sector remains constrained by retrofit rates and the continued presence of fossil\u2011fuel heating systems in existing stock.\n\nOn an intensity basis, emissions per unit of final energy demand fall more rapidly than absolute emissions, underscoring the structural transition in the energy system. Emissions intensity declines by approximately 35% by 2030 and over 55% by 2040 relative to 2024, consistent with the projected shift toward low\u2011 and zero\u2011carbon energy sources.\n\n![Emissions Intensity](figures/emissions_intensity.png)  \n*Figure 4: Emissions intensity of final energy demand, showing a marked decline as the energy mix decarbonises over time.*"
+}

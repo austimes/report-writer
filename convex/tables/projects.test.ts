@@ -1,13 +1,12 @@
-import { describe, it, expect, beforeEach } from 'vitest';
+import { describe, it, expect } from 'vitest';
 import { convexTest } from 'convex-test';
 import { api } from '../_generated/api';
 import schema from '../schema';
 
 describe('projects.create', () => {
-  it('should create project with default section and block', async () => {
+  it('should create project with default document and root node', async () => {
     const t = convexTest(schema);
 
-    // Create a test user
     const userId = await t.run(async (ctx) => {
       return await ctx.db.insert('users', {
         email: 'test@example.com',
@@ -16,44 +15,35 @@ describe('projects.create', () => {
       });
     });
 
-    // Create project using dot notation
     const projectId = await t.mutation(api["tables/projects"].create, {
       ownerId: userId,
       name: 'Test Project',
       description: 'Test description',
     });
 
-    // Verify project exists
     const project = await t.run(async (ctx) => {
       return await ctx.db.get(projectId);
     });
     expect(project).toBeDefined();
     expect(project?.name).toBe('Test Project');
 
-    // Verify section was created
-    const sections = await t.run(async (ctx) => {
+    const documents = await t.run(async (ctx) => {
       return await ctx.db
-        .query('sections')
+        .query('documents')
         .withIndex('by_project', (q) => q.eq('projectId', projectId))
         .collect();
     });
-    expect(sections).toHaveLength(1);
-    expect(sections[0].headingText).toBe('Introduction');
-    expect(sections[0].headingLevel).toBe(1);
+    expect(documents).toHaveLength(1);
+    expect(documents[0].title).toBe('Untitled Document');
+    expect(documents[0].rootNodeId).toBeDefined();
 
-    // Verify block was created with template markdown
-    const blocks = await t.run(async (ctx) => {
-      return await ctx.db
-        .query('blocks')
-        .withIndex('by_section', (q) => q.eq('sectionId', sections[0]._id))
-        .collect();
+    const rootNode = await t.run(async (ctx) => {
+      return await ctx.db.get(documents[0].rootNodeId!);
     });
-    expect(blocks).toHaveLength(1);
-    expect(blocks[0].markdownText).toContain('Test Project');
-    expect(blocks[0].markdownText).toContain('Start writing your report here');
-    expect(blocks[0].blockType).toBe('paragraph');
-    expect(blocks[0].lastEditorUserId).toBe(userId);
-    expect(blocks[0].lastEditType).toBe('human');
+    expect(rootNode).toBeDefined();
+    expect(rootNode?.nodeType).toBe('document');
+    expect(rootNode?.documentId).toBe(documents[0]._id);
+    expect(rootNode?.parentId).toBeUndefined();
   });
 
   it('should fail if user does not exist', async () => {

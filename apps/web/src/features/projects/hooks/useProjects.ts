@@ -10,11 +10,13 @@ export function useProjects(userId: Id<'users'> | undefined) {
   const createProject = useMutation(api.tables.projects.create);
   const updateProject = useMutation(api.tables.projects.update);
   const archiveProject = useMutation(api.tables.projects.archive);
+  const deleteProject = useMutation(api.tables.projects.deleteProject);
 
   return {
     projects: projects ?? [],
     createProject,
     updateProject,
     archiveProject,
+    deleteProject,
   };
 }

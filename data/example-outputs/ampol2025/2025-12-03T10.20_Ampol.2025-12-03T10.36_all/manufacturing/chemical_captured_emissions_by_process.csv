@@ -1,0 +1,16 @@
+scen,process,unit,2025,2026,2027,2028,2029,2030,2031,2032,2033,2034,2035,2040,2045,2050
+Ampol-1p5DS,Ipc_Blr_Coal With CCS,Mt CO₂-e,0.0,0.0,0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0
+Ampol-1p5DS,Ipc_Blr_Natural Gas With CCS,Mt CO₂-e,0.0,0.0,0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0
+Ampol-1p5DS,Ipc_Gas-Based Methanol Production With CCS,Mt CO₂-e,0.0,0.0,0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0
+Ampol-1p5DS,Ipc_Green H2-Based Methanol Production,Mt CO₂-e,0.0,0.0,0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.01,-0.01
+Ampol-1p5DS,Ipc_Urea Production,Mt CO₂-e,0.0,0.0,0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0
+Ampol-2p5DS,Ipc_Blr_Coal With CCS,Mt CO₂-e,0.0,0.0,0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0
+Ampol-2p5DS,Ipc_Blr_Natural Gas With CCS,Mt CO₂-e,0.0,0.0,0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0
+Ampol-2p5DS,Ipc_Gas-Based Methanol Production With CCS,Mt CO₂-e,0.0,0.0,0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0
+Ampol-2p5DS,Ipc_Green H2-Based Methanol Production,Mt CO₂-e,0.0,0.0,0.0,-0.0,-0.0,-0.87,-0.87,-0.87,-0.87,-0.87,-2.42,-1.94,-1.04,-1.04
+Ampol-2p5DS,Ipc_Urea Production,Mt CO₂-e,0.0,0.0,0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0
+Ampol-House-View,Ipc_Blr_Coal With CCS,Mt CO₂-e,0.0,0.0,0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0
+Ampol-House-View,Ipc_Blr_Natural Gas With CCS,Mt CO₂-e,0.0,0.0,0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0
+Ampol-House-View,Ipc_Gas-Based Methanol Production With CCS,Mt CO₂-e,0.0,0.0,0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0
+Ampol-House-View,Ipc_Green H2-Based Methanol Production,Mt CO₂-e,0.0,0.0,0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0
+Ampol-House-View,Ipc_Urea Production,Mt CO₂-e,0.0,0.0,0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0

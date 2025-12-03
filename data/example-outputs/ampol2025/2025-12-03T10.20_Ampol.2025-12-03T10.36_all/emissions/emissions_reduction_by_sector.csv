@@ -1,0 +1,25 @@
+process_sector0,val,measure,scen
+Net 2025,401.05,relative,Ampol-1p5DS
+Power Generation,-128.92,relative,Ampol-1p5DS
+Industry,-109.74,relative,Ampol-1p5DS
+Transport,-94.07,relative,Ampol-1p5DS
+Land Use,-79.76,relative,Ampol-1p5DS
+Carbon Dioxide Removal,-43.18,relative,Ampol-1p5DS
+Buildings,-14.25,relative,Ampol-1p5DS
+Hydrogen Production,-2.61,relative,Ampol-1p5DS
+Net 2025,401.05,relative,Ampol-2p5DS
+Power Generation,-128.92,relative,Ampol-2p5DS
+Land Use,-101.06,relative,Ampol-2p5DS
+Industry,-97.01,relative,Ampol-2p5DS
+Transport,-54.66,relative,Ampol-2p5DS
+Buildings,-7.02,relative,Ampol-2p5DS
+Carbon Dioxide Removal,-6.34,relative,Ampol-2p5DS
+Hydrogen Production,-2.5,relative,Ampol-2p5DS
+Net 2025,401.05,relative,Ampol-House-View
+Power Generation,-127.83,relative,Ampol-House-View
+Industry,-72.37,relative,Ampol-House-View
+Transport,-21.01,relative,Ampol-House-View
+Buildings,-4.92,relative,Ampol-House-View
+Hydrogen Production,-2.61,relative,Ampol-House-View
+Carbon Dioxide Removal,-0.47,relative,Ampol-House-View
+Land Use,33.58,relative,Ampol-House-View

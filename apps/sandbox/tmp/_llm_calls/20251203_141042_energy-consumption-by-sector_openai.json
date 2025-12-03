@@ -1,0 +1,28 @@
+{
+  "timestamp": "2025-12-03T14:10:42.692596",
+  "section_id": "energy-consumption-by-sector",
+  "provider": "openai",
+  "model": "gpt-5.1-2025-11-13",
+  "request": {
+    "model": "gpt-5.1-2025-11-13",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an expert report writer for energy and emissions analysis."
+      },
+      {
+        "role": "user",
+        "content": "[text prompt, 2 images]"
+      }
+    ],
+    "max_tokens": 4000,
+    "reasoning_effort": "medium",
+    "image_count": 2,
+    "chart_ids": [
+      "electricity_consumption_by_sector",
+      "industry_energy_use_by_fuel"
+    ],
+    "prompt_preview": "# Task: Write the 'Energy consumption by sector' section of the report\n\n## Section Information\n- **Title**: Energy consumption by sector\n- **Level**: ## (heading level 2)\n- **Parent Section**: Projection results\n\n## Instructions\nProvide an overview of the energy consumption by sector projection results\n\n## Available Data\nThe following 2 chart(s) are available for this section:\n\n### Electricity consumption by sector\n- **ID**: electricity_consumption_by_sector\n- **Category**: electricity\n- **Figur..."
+  },
+  "response": "Projected energy consumption by sector reflects a strong electrification trend across the economy, coupled with improved energy efficiency and fuel switching, with the scale and pace varying across scenarios.\n\nElectricity use grows rapidly in all scenarios from a common 2025 baseline of 355.36 TWh. By 2050, electricity consumption more than triples in **Ampol-1p5DS (1.5\u00b0C-aligned pathway)** to 1,019.51 TWh, an increase of 186.9%. In **Ampol-2p5DS (2.5\u00b0C pathway)**, electricity demand reaches 780.55 TWh (+119.7%), while in the **Ampol-House-View (reference/baseline scenario)** it reaches 719.75 TWh (+102.5%). The 1.5\u00b0C-aligned pathway therefore exhibits substantially higher electrification, with total electricity use in 2050 around 300 TWh above the baseline (299.8 TWh). This uplift is driven by greater electrification of road and non\u2011road transport, increased electricity demand in manufacturing and other industrial subsectors, the emergence of hydrogen production as a major new demand source, and additional requirements for carbon dioxide removal technologies toward mid\u2011century.  \n\n![Electricity consumption by sector](figures/electricity_consumption_by_sector.png)  \n*Figure: Projected electricity demand by sector, showing stronger and earlier growth in electricity use in transport, industry and new energy sectors under the Ampol\u20111p5DS scenario relative to Ampol\u20112p5DS and the Ampol\u2011House\u2011View.*\n\nIn contrast, total final energy use in the industrial sector declines across all scenarios as efficiency improvements and process changes outweigh new loads. From a starting point of 1,555.51 PJ in 2025, industrial energy demand falls to 1,179.22 PJ in **Ampol\u20111p5DS** (\u201124.2%), 1,089.19 PJ in **Ampol\u20112p5DS** (\u201130.0%) and 1,164.28 PJ in the **Ampol\u2011House\u2011View** (\u201125.2%) by 2050. Despite having the strongest climate ambition, Ampol\u20111p5DS retains slightly higher industrial energy use than Ampol\u20112p5DS in 2050 (by 90.0 PJ), reflecting higher use of electricity and low\u2011carbon fuels in energy\u2011intensive transformation processes (such as hydrogen production and deeper electrification of heat and feedstocks).\n\nAcross all scenarios, the industrial fuel mix shifts away from fossil fuels and toward electricity and low\u2011emissions energy carriers. Use of natural gas, coal and diesel declines considerably over the projection period, partially offset by increased electricity consumption and growing contributions from hydrogen, biomass and biomethane. These trends are most pronounced in Ampol\u20111p5DS, aligning with the emissions reductions discussed in the industrial and economy\u2011wide emissions results sections.\n\n![Industry Energy Use by Fuel](figures/industry_energy_use_by_fuel.png)  \n*Figure: Industrial final energy use by fuel, illustrating declining total energy demand and a transition from fossil fuels toward electricity and low\u2011carbon fuels, with the most pronounced shift under the Ampol\u20111p5DS scenario.*"
+}

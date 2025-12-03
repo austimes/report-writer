@@ -1,0 +1,29 @@
+{
+  "timestamp": "2025-12-03T13:52:11.015513",
+  "section_id": "agriculture",
+  "provider": "openai",
+  "model": "gpt-5.1-2025-11-13",
+  "request": {
+    "model": "gpt-5.1-2025-11-13",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an expert report writer for energy and emissions analysis."
+      },
+      {
+        "role": "user",
+        "content": "[text prompt, 3 images]"
+      }
+    ],
+    "temperature": 0.7,
+    "max_tokens": 4000,
+    "image_count": 3,
+    "chart_ids": [
+      "agriculture_energy_use_by_fuel",
+      "agriculture_and_land_use_emissions",
+      "agriculture_abatement_by_process"
+    ],
+    "prompt_preview": "# Task: Write the 'Agriculture' section of the report\n\n## Section Information\n- **Title**: Agriculture\n- **Level**: ### (heading level 3)\n- **Parent Section**: Energy consumption by sector\n\n## Instructions\nProvide an overview of the agriculture energy consumption projection results\n\n## Available Data\nThe following 3 chart(s) are available for this section:\n\n### Agriculture Energy Use by Fuel\n- **ID**: agriculture_energy_use_by_fuel\n- **Category**: agriculture\n- **Figure Path**: `figures/agricult..."
+  },
+  "response": "### Agriculture\n\nAgricultural energy demand is projected to remain a relatively small but material share of total final energy use, with divergent outcomes across scenarios reflecting different levels of decarbonisation ambition.\n\nUnder the Ampol\u20111p5DS scenario, total agricultural energy use declines from 107.7 PJ in 2025 to 88.8 PJ in 2050, a reduction of 17.6%. This is driven primarily by a marked contraction in diesel consumption, partially offset by higher electricity use and modest growth in low\u2011emissions fuels such as biomethane. In the Ampol\u20112p5DS, energy use falls more modestly, by 7.5% over the same period (from 107.7 PJ to 99.6 PJ), as diesel remains more persistent in on\u2011farm operations. The Ampol\u2011House\u2011View scenario shows the least structural change, with energy demand only 6.1% lower by 2050 (101.1 PJ), leaving agriculture 12.3 PJ higher than in the 1.5\u00b0C\u2011aligned pathway.\n\n![Agriculture Energy Use by Fuel](figures/agriculture_energy_use_by_fuel.png)  \n*Figure: Projected agricultural final energy use by fuel, 2025\u20132050, across scenarios.*\n\nWhen combined with land\u2011use dynamics, these energy trajectories translate into very different emissions outcomes. In both decarbonisation scenarios, agriculture and land use shift from being a net emissions source to a substantial net sink. Net sector emissions fall from 9.5 Mt CO\u2082\u2011e in 2025 to \u201170.3 Mt CO\u2082\u2011e in 2050 in Ampol\u20111p5DS (an 840% reduction) and to \u201191.6 Mt CO\u2082\u2011e in Ampol\u20112p5DS (a 1,065% reduction). These results reflect strong sequestration from forestry and land\u2011use change, combined with declining non\u2011energy emissions from livestock and other agricultural activities. By contrast, in the Ampol\u2011House\u2011View scenario net emissions increase to 43.1 Mt CO\u2082\u2011e by 2050 (up 354% from 2025), leaving a 134.6 Mt CO\u2082\u2011e gap to the 2.5\u00b0C\u2011aligned pathway.\n\n![Agriculture and Land Use Emissions](figures/agriculture_and_land_use_emissions.png)  \n*Figure: Net agriculture and land\u2011use emissions, including sequestration, by sub\u2011sector, 2025\u20132050.*\n\nAbatement from agricultural processes is a key driver of these outcomes. In 2050, process\u2011level abatement in Ampol\u20111p5DS reaches 25.0 Mt CO\u2082\u2011e, compared with 22.1 Mt CO\u2082\u2011e in Ampol\u20112p5DS and only 9.9 Mt CO\u2082\u2011e in the Ampol\u2011House\u2011View scenario. The bulk of this abatement arises from methane\u2011reduction measures in sheep and cattle, complemented by improvements in dairy emissions intensity and wider adoption of precision agriculture and automation technologies. The 15.1 Mt CO\u2082\u2011e difference between Ampol\u2011House\u2011View and Ampol\u20111p5DS in 2050 highlights the scale of additional on\u2011farm mitigation required to align agricultural emissions with a 1.5\u00b0C pathway.\n\n![Agriculture Abatement By Process](figures/agriculture_abatement_by_process.png)  \n*Figure: Process\u2011level agricultural abatement by scenario, 2025\u20132050.*"
+}

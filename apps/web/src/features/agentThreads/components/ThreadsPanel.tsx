@@ -10,9 +10,10 @@ import { ThreadView } from './ThreadView';
 
 interface ThreadsPanelProps {
   projectId: Id<'projects'>;
+  documentId?: Id<'documents'>;
 }
 
-export function ThreadsPanel({ projectId }: ThreadsPanelProps) {
+export function ThreadsPanel({ projectId, documentId }: ThreadsPanelProps) {
   const threads = useQuery(api.tables.agentThreads.listByProject, { projectId });
   const [selectedThreadId, setSelectedThreadId] = useState<Id<'agentThreads'> | null>(null);
 
@@ -33,7 +34,7 @@ export function ThreadsPanel({ projectId }: ThreadsPanelProps) {
     <div className="flex flex-col h-full">
       <div className="flex items-center justify-between p-4 border-b">
         <h2 className="text-lg font-semibold">Agent Threads</h2>
-        <CreateThreadButton projectId={projectId} />
+        <CreateThreadButton projectId={projectId} documentId={documentId} />
       </div>
 
       <div className="flex-1 overflow-y-auto p-4 space-y-2">
@@ -63,7 +64,7 @@ export function ThreadsPanel({ projectId }: ThreadsPanelProps) {
                     )}>
                       {thread.status}
                     </span>
-                    {thread.anchorSectionId && <span>📍 Section</span>}
+                    {thread.anchorNodeId && <span>📍 Node</span>}
                     {thread.anchorCommentId && <span>💬 Comment</span>}
                   </div>
                 </div>

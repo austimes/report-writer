@@ -1,0 +1,1367 @@
+{
+  "data": [
+    {
+      "hovertemplate": "scen=Ampol-1p5DS\u003cbr\u003eyear=%{x}\u003cbr\u003eTWh=%{y}\u003cextra\u003e\u003c\u002fextra\u003e",
+      "legendgroup": "",
+      "marker": {
+        "color": "rgb(158,158,158)",
+        "symbol": "circle",
+        "size": 0.001
+      },
+      "mode": "markers",
+      "name": "",
+      "orientation": "v",
+      "showlegend": false,
+      "x": {
+        "dtype": "i4",
+        "bdata": "6QcAAOoHAADrBwAA7AcAAO0HAADuBwAA7wcAAPAHAADxBwAA8gcAAPMHAAD4BwAA\u002fQcAAAIIAAA="
+      },
+      "xaxis": "x3",
+      "y": {
+        "dtype": "i1",
+        "bdata": "AAAAAAAAAAAAAAAAAAA="
+      },
+      "yaxis": "y3",
+      "type": "scatter",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(158,158,158)"
+      },
+      "opacity": 0
+    },
+    {
+      "hovertemplate": "scen=Ampol-2p5DS\u003cbr\u003eyear=%{x}\u003cbr\u003eTWh=%{y}\u003cextra\u003e\u003c\u002fextra\u003e",
+      "legendgroup": "",
+      "marker": {
+        "color": "rgb(158,158,158)",
+        "symbol": "circle",
+        "size": 0.001
+      },
+      "mode": "markers",
+      "name": "",
+      "orientation": "v",
+      "showlegend": false,
+      "x": {
+        "dtype": "i4",
+        "bdata": "6QcAAOoHAADrBwAA7AcAAO0HAADuBwAA7wcAAPAHAADxBwAA8gcAAPMHAAD4BwAA\u002fQcAAAIIAAA="
+      },
+      "xaxis": "x4",
+      "y": {
+        "dtype": "i1",
+        "bdata": "AAAAAAAAAAAAAAAAAAA="
+      },
+      "yaxis": "y4",
+      "type": "scatter",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(158,158,158)"
+      },
+      "opacity": 0
+    },
+    {
+      "hovertemplate": "scen=Ampol-House-View\u003cbr\u003eyear=%{x}\u003cbr\u003eTWh=%{y}\u003cextra\u003e\u003c\u002fextra\u003e",
+      "legendgroup": "",
+      "marker": {
+        "color": "rgb(158,158,158)",
+        "symbol": "circle",
+        "size": 0.001
+      },
+      "mode": "markers",
+      "name": "",
+      "orientation": "v",
+      "showlegend": false,
+      "x": {
+        "dtype": "i4",
+        "bdata": "6QcAAOoHAADrBwAA7AcAAO0HAADuBwAA7wcAAPAHAADxBwAA8gcAAPMHAAD4BwAA\u002fQcAAAIIAAA="
+      },
+      "xaxis": "x",
+      "y": {
+        "dtype": "i1",
+        "bdata": "AAAAAAAAAAAAAAAAAAA="
+      },
+      "yaxis": "y",
+      "type": "scatter",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(158,158,158)"
+      },
+      "opacity": 0
+    },
+    {
+      "fill": "tonexty",
+      "name": "Hydrogen Production",
+      "showlegend": true,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA"
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "sGig5NYvZEBdtXF0BtVkQBH8QgmD23BAFgeHw3u3cEAe5pwJXoNwQLm+chpsb3BA3L5rCBBdcECYL0InVV1wQFLCRqXWY3BAdoN9ARMdYkCEMJNemOI6QFbe8SH74TtA"
+      },
+      "type": "scatter",
+      "xaxis": "x3",
+      "yaxis": "y3",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(0,122,83)"
+      },
+      "legendgroup": "Hydrogen Production",
+      "marker": {
+        "color": "rgb(0,122,83)"
+      },
+      "fillcolor": "rgb(0,122,83)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Buildings - Commercial",
+      "showlegend": true,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "QnGsA6+acUDMu983ib5uQDg5ZaiFY2pAavL4WoEEZkC8OkbwwURlQNiVVKRJemRAimpLaZOsY0BzcywKk8FiQG9SAZXswWFAiCKJPvPpYEDhZG5XXC1gQPxZXebTcl5A9S8r9Yy9XUCOj9Yxm21dQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x3",
+      "yaxis": "y3",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(223,25,149)"
+      },
+      "legendgroup": "Buildings - Commercial",
+      "marker": {
+        "color": "rgb(223,25,149)"
+      },
+      "fillcolor": "rgb(223,25,149)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Buildings - Residential",
+      "showlegend": true,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "5m608sleWkBsIm6lXhlZQHsArfGNG1dAEo7+ykKHVUBGHdrVCjxVQGvepFod8lRAUXkBF+yoVED1H8q9V2JUQAWWBdUKJVRAm4m6MrgZVEAoN60GgRNUQAWKQuMNTFRAItZ3GChWVEAE5Uj4mkVUQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x3",
+      "yaxis": "y3",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(109,32,119)"
+      },
+      "legendgroup": "Buildings - Residential",
+      "marker": {
+        "color": "rgb(109,32,119)"
+      },
+      "fillcolor": "rgb(109,32,119)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Industry - Manufacturing",
+      "showlegend": true,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "hSJAHb4iYEC1WuhZ60tdQMXpJA2PF1lA6D+HIfOwVkCAXzQZnV5VQIpg7C3Z+lRA04jxJ8pMU0B+qq1pS19QQPlhx2TM2U9A4yr4TtuGTkD\u002fSPFrMXJOQI5V5Lr8y01AMQRb\u002fNpXTUCnnGeYcgBNQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x3",
+      "yaxis": "y3",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(80,80,80)"
+      },
+      "legendgroup": "Industry - Manufacturing",
+      "marker": {
+        "color": "rgb(80,80,80)"
+      },
+      "fillcolor": "rgb(80,80,80)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Industry - Mining",
+      "showlegend": true,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "4i85Orj1VkC0kMkX0cdUQCpkPyy\u002f7FJA5lmSv++zUUA3zq61s7lRQANDa+vEeVFA0bXNBJQ0UEDyJZYJt2FMQM12hdnzwUlAzCpefYjFSUDrnw30a75JQApmhmJFokpAjQd7LClhSkDPDVulVnpKQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x3",
+      "yaxis": "y3",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(0,0,0)"
+      },
+      "legendgroup": "Industry - Mining",
+      "marker": {
+        "color": "rgb(0,0,0)"
+      },
+      "fillcolor": "rgb(0,0,0)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Industry - Other Industry",
+      "showlegend": true,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "tdp\u002frXurQ0Al8eNZh51CQJS3cuIPvUFABFyZnKhBQUB\u002f2r8Vt9BAQKA0RgeJL0BAyTgpbUEcP0C5v\u002fEh39w9QJ6lQsL\u002fKjxA8fx+pOHkOUCYKTt2\u002ftE3QDHG2C2OdDZAmhrkczHZNkBOcmvJqSc3QA=="
+      },
+      "type": "scatter",
+      "xaxis": "x3",
+      "yaxis": "y3",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(102,51,0)"
+      },
+      "legendgroup": "Industry - Other Industry",
+      "marker": {
+        "color": "rgb(102,51,0)"
+      },
+      "fillcolor": "rgb(102,51,0)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Transport - Road",
+      "showlegend": true,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "9dy\u002fD+2FW0DrIlvACddUQMcrN2Y5\u002fEtA7hZz0G26PEABWMdJT1E3QDSMeBgm2DFARcpr09x4LUBXh\u002fERr9gnQAhiDPVg7SJAw5uwBar3HEB7weJLPK8UQEAm9o8Hkf8\u002f7TwyOsqS9T9sLKi09gLsPw=="
+      },
+      "type": "scatter",
+      "xaxis": "x3",
+      "yaxis": "y3",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(128,0,0)"
+      },
+      "legendgroup": "Transport - Road",
+      "marker": {
+        "color": "rgb(128,0,0)"
+      },
+      "fillcolor": "rgb(128,0,0)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Industry - Chemicals",
+      "showlegend": true,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "6V8cDrgkKECZ9txH8tImQG9hPa4rAClAyhWGiKYULUDwTt5A5\u002fUsQGXpBzpqyixAzXVYG7+JLED9a7wN0mssQIh5DE0wVyxAdXSc8jo8LEDMWQvkeTQsQEM+\u002fDtkDyxASHfFpvuILUB3q7dssI0tQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x3",
+      "yaxis": "y3",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(159,174,229)"
+      },
+      "legendgroup": "Industry - Chemicals",
+      "marker": {
+        "color": "rgb(159,174,229)"
+      },
+      "fillcolor": "rgb(159,174,229)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Land Use - Agriculture",
+      "showlegend": true,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "70DMY+KeSkBave9lcv5GQBzdd\u002fcVqUJAq41yHYVSPUBt5Xqrj8g7QAaWhBEYljhAh\u002fRC+ogJNEBvn4vJEIsxQCc2S3DwdCxAe3LLOSm7JECx9cU+AIEdQEJKEuzBABVATp4rX6\u002fsEECMM0PTe0sMQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x3",
+      "yaxis": "y3",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(34,70,34)"
+      },
+      "legendgroup": "Land Use - Agriculture",
+      "marker": {
+        "color": "rgb(34,70,34)"
+      },
+      "fillcolor": "rgb(34,70,34)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Transport - Non-Road",
+      "showlegend": true,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "hheC9GDDJEAtBbKUkaQhQDd7HqufyhxAkebUWygpFkCU6icmvc0UQAgAk+RmdBNAQDUzLgIZEkBXYn3ATr4QQJsDGwQRKg9A3X+BCbLQDEBoRFUyLbYLQJbIxpy6agtAfFDnPJLbCUDTu0+8IbsJQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x3",
+      "yaxis": "y3",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(255,184,28)"
+      },
+      "legendgroup": "Transport - Non-Road",
+      "marker": {
+        "color": "rgb(255,184,28)"
+      },
+      "fillcolor": "rgb(255,184,28)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Land Use - Forestry & Logging",
+      "showlegend": true,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "AuT81aTlGkD\u002fP4kQ+8AVQDh\u002fzpVkFhFApbAPEAA0CkARhupPYbsIQLPy1xjZTgdABRPJwPXsBUAKjl6pZ5oEQPLKtrsumwBAxZcqD6c68z\u002figzaEEt7aPxep6435L8U\u002fUtW4jQDQwT9szgsEe+ehPw=="
+      },
+      "type": "scatter",
+      "xaxis": "x3",
+      "yaxis": "y3",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(120,190,32)"
+      },
+      "legendgroup": "Land Use - Forestry & Logging",
+      "marker": {
+        "color": "rgb(120,190,32)"
+      },
+      "fillcolor": "rgb(120,190,32)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Carbon Dioxide Removal - Direct Air Capture",
+      "showlegend": true,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA"
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "8tNX4csYMkBSFF8dpQIlQAL2g8IYHRJAmWp2OwSe4j\u002fH8zMyJ0HgP5s6jyxb89s\u002fbcM6U+mVoj9sMlsxHEN3P6xr887KrHI\u002f"
+      },
+      "type": "scatter",
+      "xaxis": "x3",
+      "yaxis": "y3",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(30,34,170)"
+      },
+      "legendgroup": "Carbon Dioxide Removal - Direct Air Capture",
+      "marker": {
+        "color": "rgb(30,34,170)"
+      },
+      "fillcolor": "rgb(30,34,170)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Hydrogen Production",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA"
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "xmOX0mJ\u002fY0CqkUx2pUplQFJhbKvA5XFAenpbk4QickBxc+O0q3NyQPccXgAYfHJAmNhYa15tckDtOVaRdTJyQEKkho5NEnJA2w7jUVLWcUDXEco1KrJxQFne8SH74TtA"
+      },
+      "type": "scatter",
+      "xaxis": "x4",
+      "yaxis": "y4",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(0,122,83)"
+      },
+      "legendgroup": "Hydrogen Production",
+      "marker": {
+        "color": "rgb(0,122,83)"
+      },
+      "fillcolor": "rgb(0,122,83)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Buildings - Commercial",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "ywksVqvYZkCm8\u002fUq7SplQDEbfvjhmGNAA9bdKVH6YUAXIvIaHq5hQPUZ2chIX2FA75aIOyILYUBkB4GlRqxgQPphSRI+TGBAqJ9pcz7gX0BS+nBk3CpfQDmJ6bP4Zl5A9S8r9Yy9XUCOj9Yxm21dQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x4",
+      "yaxis": "y4",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(223,25,149)"
+      },
+      "legendgroup": "Buildings - Commercial",
+      "marker": {
+        "color": "rgb(223,25,149)"
+      },
+      "fillcolor": "rgb(223,25,149)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Buildings - Residential",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "tnIldEI+WEBDKTnOWktXQPOvAq\u002fKWVZAV\u002f5vL9NiVUCswUHPSzRVQKWDRwtaBlVA3byZ25rYVEBfc341FKtUQEZC+rqof1RAdge0X+xrVEBWi9UoAFtUQAWKQuMNTFRAItZ3GChWVEAE5Uj4mkVUQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x4",
+      "yaxis": "y4",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(109,32,119)"
+      },
+      "legendgroup": "Buildings - Residential",
+      "marker": {
+        "color": "rgb(109,32,119)"
+      },
+      "fillcolor": "rgb(109,32,119)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Industry - Manufacturing",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "vaP8AtG9WEDUm7wyysVYQIp0MeJ9xFNATyk9txuYUkCeGxLgQRBSQFsRSd7QnFFAcMFqrcAeUUAjZDNY+JpQQPuQeAGJFlBAKy5wACA3T0DPCz\u002fFz25OQI5V5Lr8y01ALARb\u002fNpXTUCnnGeYcgBNQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x4",
+      "yaxis": "y4",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(80,80,80)"
+      },
+      "legendgroup": "Industry - Manufacturing",
+      "marker": {
+        "color": "rgb(80,80,80)"
+      },
+      "fillcolor": "rgb(80,80,80)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Industry - Mining",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "MHKyaj8DWkBcKJq+o1JYQAO0HMgHA1dAb7X2OSaLUUAASUFix4VQQLQ5IeNdYk9AHrxXMHN6TUAqUr2i63BMQIPgvv7wPktAdvymwav1SkB\u002fbkEWZsNKQA1mhmJFokpAjQd7LClhSkDPDVulVnpKQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x4",
+      "yaxis": "y4",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(0,0,0)"
+      },
+      "legendgroup": "Industry - Mining",
+      "marker": {
+        "color": "rgb(0,0,0)"
+      },
+      "fillcolor": "rgb(0,0,0)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Industry - Other Industry",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "1Z5r8z8NQEDHOB32n+o9QCqAvAzEyjtAknXOIguiNUBNC8ka5Q41QGCsEH1HkzVAfkECo3o7NkBbXMWOgVw2QFQf\u002fkiDnTVAFBFzGRTiNUBTq9E2kjw2QDHG2C2OdDZAmhrkczHZNkBOcmvJqSc3QA=="
+      },
+      "type": "scatter",
+      "xaxis": "x4",
+      "yaxis": "y4",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(102,51,0)"
+      },
+      "legendgroup": "Industry - Other Industry",
+      "marker": {
+        "color": "rgb(102,51,0)"
+      },
+      "fillcolor": "rgb(102,51,0)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Transport - Road",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "WntIsMy8TkDV48uNbzVGQLTSNRJiLztAl2gZXtAjLkCuGWE\u002fLOgpQJSndjqBCSZALgqVmQ8RI0DkeCoCXiIgQE4X+vEfhBpAXj9m92riFEDEqNsRrt0OQEEm9o8Hkf8\u002f7TwyOsqS9T9sLKi09gLsPw=="
+      },
+      "type": "scatter",
+      "xaxis": "x4",
+      "yaxis": "y4",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(128,0,0)"
+      },
+      "legendgroup": "Transport - Road",
+      "marker": {
+        "color": "rgb(128,0,0)"
+      },
+      "fillcolor": "rgb(128,0,0)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Industry - Chemicals",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "gQtMA4SEJ0Dz5Bal2x8nQPl8eHF4oSxADjX+YctJMUAOqw5JyVUuQFjYGH6DVC5AdnXVAtlTLkCTZgROPlMuQKU2ncLrUS5A5aZv9jQDLEDaGGEkTgksQEM+\u002fDtkDyxASHfFpvuILUB3q7dssI0tQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x4",
+      "yaxis": "y4",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(159,174,229)"
+      },
+      "legendgroup": "Industry - Chemicals",
+      "marker": {
+        "color": "rgb(159,174,229)"
+      },
+      "fillcolor": "rgb(159,174,229)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Land Use - Agriculture",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "CL+JL1DUN0CHeLELs\u002f4zQFbwf\u002fv9NSpAzNCyLYT5JUDa6\u002f4LgyQlQGU14fY8WiRAZil5rUGSI0C1IfXkIs0iQFapfXcF8yFAXqg6jYojHkDdRUSSvkgYQEJKEuzBABVATp4rX6\u002fsEECMM0PTe0sMQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x4",
+      "yaxis": "y4",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(34,70,34)"
+      },
+      "legendgroup": "Land Use - Agriculture",
+      "marker": {
+        "color": "rgb(34,70,34)"
+      },
+      "fillcolor": "rgb(34,70,34)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Transport - Non-Road",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "72vLqZYNIEBtr14XEpwZQEZwa8kx4RNAB7aCL6ibDkABwIdcOncNQF8\u002fFMhhYwxARHtDyRNVC0BasVIvSkoKQLUTvf\u002f0OwpAB9iOjHIsCkBXGL3O0RQKQJXIxpy6agtAfFDnPJLbCUDTu0+8IbsJQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x4",
+      "yaxis": "y4",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(255,184,28)"
+      },
+      "legendgroup": "Transport - Non-Road",
+      "marker": {
+        "color": "rgb(255,184,28)"
+      },
+      "fillcolor": "rgb(255,184,28)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Land Use - Forestry & Logging",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "1vQossMj\u002fz+1DPBM+8D2PxXbA4LmRqo\u002f9YAl8XSf7z9KzwALbdzvP3rSE+4IH\u002fI\u002fCEnofr2L5j\u002ffeTYDub\u002fbP3cObWLNuec\u002faQVEWjEf4T\u002f9pv3eJazfPxep6435L8U\u002fUtW4jQDQwT9szgsEe+ehPw=="
+      },
+      "type": "scatter",
+      "xaxis": "x4",
+      "yaxis": "y4",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(120,190,32)"
+      },
+      "legendgroup": "Land Use - Forestry & Logging",
+      "marker": {
+        "color": "rgb(120,190,32)"
+      },
+      "fillcolor": "rgb(120,190,32)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Carbon Dioxide Removal - Direct Air Capture",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA"
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "DnlW4S5hBUDkyD6+hxTwP3ZuDkJwNuE\u002fNIjyCfOE8T9MtCSOJF\u002fPP\u002f+cazKSsMo\u002ftMY8J6o9xj+8qSeFRgPCP76cPdR2BLk\u002f"
+      },
+      "type": "scatter",
+      "xaxis": "x4",
+      "yaxis": "y4",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(30,34,170)"
+      },
+      "legendgroup": "Carbon Dioxide Removal - Direct Air Capture",
+      "marker": {
+        "color": "rgb(30,34,170)"
+      },
+      "fillcolor": "rgb(30,34,170)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Hydrogen Production",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA"
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "XmMQ7VjqYUC7UDjIflNkQCytRetvf3FAZjrYFTbjcUCl\u002fCrYCB5yQIGldncCJnJA0ZmmN+kpckAUpVr53yVyQDRrYKvPFnJAYH8oTxj0cUALkNLYP7xxQFbe8SH74TtA"
+      },
+      "type": "scatter",
+      "xaxis": "x",
+      "yaxis": "y",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(0,122,83)"
+      },
+      "legendgroup": "Hydrogen Production",
+      "marker": {
+        "color": "rgb(0,122,83)"
+      },
+      "fillcolor": "rgb(0,122,83)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Buildings - Commercial",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "FlJ5JrUpZ0DhSlqyiVllQGQnf32lsGNAmFK0FukHYkBy9lnlR7hhQCtrHxUlZ2FAf2IqzOkRYUCxUggFvbFgQBuMLyGeT2BAsfaxOyfnX0BIfzlpujBfQDmJ6bP4Zl5A8y8r9Yy9XUCOj9Yxm21dQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x",
+      "yaxis": "y",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(223,25,149)"
+      },
+      "legendgroup": "Buildings - Commercial",
+      "marker": {
+        "color": "rgb(223,25,149)"
+      },
+      "fillcolor": "rgb(223,25,149)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Buildings - Residential",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "5RYWnF5LWEAYBLPlMktXQAX4EEKvYlZAEmElRe1lVUAi++WJajdVQD+5PiLSC1VAsqAUNJDbVEC+NJLU0q1UQLGh0ktsglRAHx9B9mJuVEACP7H7PFxUQAWKQuMNTFRAItZ3GChWVEAE5Uj4mkVUQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x",
+      "yaxis": "y",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(109,32,119)"
+      },
+      "legendgroup": "Buildings - Residential",
+      "marker": {
+        "color": "rgb(109,32,119)"
+      },
+      "fillcolor": "rgb(109,32,119)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Industry - Manufacturing",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "BYrqOhJ8U0ANY01kZpVTQCphM+XetlJAh328r6tJUkCwtQZd+f1RQBXO87hwkFFAWT4GyB8UUUAq0mGc1ZFQQMCOlsXAE1BA0Dmps8o3T0Cor3z8\u002fm5OQI5V5Lr8y01AMQRb\u002fNpXTUCnnGeYcgBNQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x",
+      "yaxis": "y",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(80,80,80)"
+      },
+      "legendgroup": "Industry - Manufacturing",
+      "marker": {
+        "color": "rgb(80,80,80)"
+      },
+      "fillcolor": "rgb(80,80,80)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Industry - Mining",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "En\u002fLScIiWkBEie0jwKdYQP37CgeNaFdA1BegmBzbUUBP9wGsf6lQQFQsUWB6iE9A+7hvOFulTUCb4JT2dY9MQNpUC8RdPEtABbp\u002f8YwCS0DhPeLyJclKQA5mhmJFokpAjQd7LClhSkDPDVulVnpKQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x",
+      "yaxis": "y",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(0,0,0)"
+      },
+      "legendgroup": "Industry - Mining",
+      "marker": {
+        "color": "rgb(0,0,0)"
+      },
+      "fillcolor": "rgb(0,0,0)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Industry - Other Industry",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "qmqmQSBWREBPW3yDlEBBQLKloJ6UXztA4tq+c2snNkCjSVm4a681QL7LbLqdkDZAtl1I5W4LN0D9yfHbiTs3QNANd75U9DZATvW6xDyFNkCNa1\u002fjJFY2QDHG2C2OdDZAmhrkczHZNkBOcmvJqSc3QA=="
+      },
+      "type": "scatter",
+      "xaxis": "x",
+      "yaxis": "y",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(102,51,0)"
+      },
+      "legendgroup": "Industry - Other Industry",
+      "marker": {
+        "color": "rgb(102,51,0)"
+      },
+      "fillcolor": "rgb(102,51,0)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Transport - Road",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "075mz7etNkD6QUq+fQUwQGgAoMXe9yRAf0LFAitdGkALttCmO+wXQPfVtB1RYhVAyERhBR0WE0AesUCRIt4QQEt\u002fdCQdfA1A8Zz44AMrCUAgZd5z6s0EQEAm9o8Hkf8\u002f7TwyOsqS9T9sLKi09gLsPw=="
+      },
+      "type": "scatter",
+      "xaxis": "x",
+      "yaxis": "y",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(128,0,0)"
+      },
+      "legendgroup": "Transport - Road",
+      "marker": {
+        "color": "rgb(128,0,0)"
+      },
+      "fillcolor": "rgb(128,0,0)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Industry - Chemicals",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "49FpvxwBJEALXCL8VwEkQCfwcIhTRidAorTdDSLjK0DzEwJrh+crQFHhpz+C7CtAgLpF2s3xK0AFDwYqdfcrQJrneEcd\u002fStAWegeZjQDLEAgX1O9TQksQEM+\u002fDtkDyxASHfFpvuILUB3q7dssI0tQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x",
+      "yaxis": "y",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(159,174,229)"
+      },
+      "legendgroup": "Industry - Chemicals",
+      "marker": {
+        "color": "rgb(159,174,229)"
+      },
+      "fillcolor": "rgb(159,174,229)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Land Use - Agriculture",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "drLiv+mJNUAGoDmDDQMyQDGn\u002fmgcJihA8kcj5bW\u002fI0DcP13KEOIiQB5Ii6ITDCJAJqImgGA5IUByho6ekUUgQIFrkZBjlh5AmXWChjqrG0DkuLfnwnIYQEJKEuzBABVATp4rX6\u002fsEECMM0PTe0sMQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x",
+      "yaxis": "y",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(34,70,34)"
+      },
+      "legendgroup": "Land Use - Agriculture",
+      "marker": {
+        "color": "rgb(34,70,34)"
+      },
+      "fillcolor": "rgb(34,70,34)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Transport - Non-Road",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "RewkK2jiLEAw+CUF588mQGe0KW\u002f5WCFAym+L8\u002fkbGUBL020afFcXQEQWlsZinxVAxjQJ3KTvE0D7UIL7FEoSQHh57PxzzBBAayiswpmzDkCMThTpzggNQJbIxpy6agtAfFDnPJLbCUDTu0+8IbsJQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x",
+      "yaxis": "y",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(255,184,28)"
+      },
+      "legendgroup": "Transport - Non-Road",
+      "marker": {
+        "color": "rgb(255,184,28)"
+      },
+      "fillcolor": "rgb(255,184,28)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Land Use - Forestry & Logging",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "S43KuKoj\u002fz9uTML0qJgCQNanmmcTfOs\u002fSBlQeOBJ8D+FyvaD7BL3P0RZfuLbCvQ\u002fiJDMPxOb8D96iLcwP\u002fzpP4+cJDGKn+U\u002fCaHjf9tq3z8959YeYzDWPxep6435L8U\u002fUtW4jQDQwT9szgsEe+ehPw=="
+      },
+      "type": "scatter",
+      "xaxis": "x",
+      "yaxis": "y",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(120,190,32)"
+      },
+      "legendgroup": "Land Use - Forestry & Logging",
+      "marker": {
+        "color": "rgb(120,190,32)"
+      },
+      "fillcolor": "rgb(120,190,32)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Carbon Dioxide Removal - Direct Air Capture",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA"
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "UMKdaiXByD\u002f2rAK2orv3PuZ5U4tV\u002fMg+"
+      },
+      "type": "scatter",
+      "xaxis": "x",
+      "yaxis": "y",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(30,34,170)"
+      },
+      "legendgroup": "Carbon Dioxide Removal - Direct Air Capture",
+      "marker": {
+        "color": "rgb(30,34,170)"
+      },
+      "fillcolor": "rgb(30,34,170)"
+    }
+  ],
+  "layout": {
+    "template": {
+      "data": {
+        "scatter": [
+          {
+            "line": {
+              "width": 5
+            },
+            "opacity": 0.7,
+            "type": "scatter"
+          }
+        ]
+      },
+      "layout": {
+        "bargap": 0.5,
+        "colorway": [
+          "rgb(0,29,52)",
+          "rgb(0,0,128)",
+          "rgb(30,34,170)",
+          "rgb(0,75,135)",
+          "rgb(0,115,119)",
+          "rgb(0,169,206)",
+          "rgb(67,194,204)",
+          "rgb(159,174,229)",
+          "rgb(34,70,34)",
+          "rgb(0,122,83)",
+          "rgb(107,142,35)",
+          "rgb(120,190,32)",
+          "rgb(113,204,152)",
+          "rgb(232,119,34)",
+          "rgb(255,184,28)",
+          "rgb(109,32,119)",
+          "rgb(223,25,149)",
+          "rgb(0,0,0)",
+          "rgb(44,44,44)",
+          "rgb(80,80,80)",
+          "rgb(158,158,158)",
+          "rgb(117,117,121)",
+          "rgb(200,200,220)",
+          "rgb(102,51,0)",
+          "rgb(128,0,0)"
+        ],
+        "font": {
+          "family": "Arial",
+          "size": 15
+        },
+        "legend": {
+          "entrywidth": 0,
+          "entrywidthmode": "pixels",
+          "font": {
+            "size": 15
+          },
+          "itemsizing": "constant",
+          "itemwidth": 30,
+          "orientation": "h",
+          "traceorder": "normal",
+          "x": 0.5,
+          "xanchor": "center",
+          "y": -0.05,
+          "yanchor": "top"
+        },
+        "margin": {
+          "b": 105,
+          "r": 25,
+          "t": 50
+        },
+        "paper_bgcolor": "white",
+        "plot_bgcolor": "white",
+        "title": {
+          "font": {
+            "color": "#333333",
+            "size": 16
+          }
+        },
+        "xaxis": {
+          "showgrid": false,
+          "tickfont": {
+            "size": 15
+          },
+          "title": {
+            "font": {
+              "size": 15
+            }
+          }
+        },
+        "yaxis": {
+          "gridcolor": "lightgrey",
+          "tickfont": {
+            "size": 15
+          },
+          "title": {
+            "font": {
+              "size": 15
+            }
+          }
+        }
+      }
+    },
+    "xaxis": {
+      "anchor": "y",
+      "domain": [
+        0.0,
+        0.45
+      ],
+      "title": {
+        "text": ""
+      }
+    },
+    "yaxis": {
+      "anchor": "x",
+      "domain": [
+        0.0,
+        0.47
+      ],
+      "title": {
+        "text": "TWh"
+      },
+      "showticklabels": true,
+      "nticks": 10,
+      "matches": "y",
+      "range": [
+        -50.0,
+        1250.0
+      ]
+    },
+    "xaxis2": {
+      "anchor": "y2",
+      "domain": [
+        0.55,
+        1.0
+      ],
+      "matches": "x",
+      "title": {
+        "text": ""
+      }
+    },
+    "yaxis2": {
+      "anchor": "x2",
+      "domain": [
+        0.0,
+        0.47
+      ],
+      "matches": "y",
+      "showticklabels": true,
+      "nticks": 10,
+      "range": [
+        -50.0,
+        1250.0
+      ],
+      "title": {
+        "text": "TWh"
+      }
+    },
+    "xaxis3": {
+      "anchor": "y3",
+      "domain": [
+        0.0,
+        0.45
+      ],
+      "matches": "x",
+      "showticklabels": false,
+      "title": {
+        "text": ""
+      }
+    },
+    "yaxis3": {
+      "anchor": "x3",
+      "domain": [
+        0.53,
+        1.0
+      ],
+      "matches": "y",
+      "title": {
+        "text": "TWh"
+      },
+      "showticklabels": true,
+      "nticks": 10,
+      "range": [
+        -50.0,
+        1250.0
+      ]
+    },
+    "xaxis4": {
+      "anchor": "y4",
+      "domain": [
+        0.55,
+        1.0
+      ],
+      "matches": "x",
+      "showticklabels": false,
+      "title": {
+        "text": ""
+      }
+    },
+    "yaxis4": {
+      "anchor": "x4",
+      "domain": [
+        0.53,
+        1.0
+      ],
+      "matches": "y",
+      "showticklabels": true,
+      "nticks": 10,
+      "range": [
+        -50.0,
+        1250.0
+      ],
+      "title": {
+        "text": "TWh"
+      }
+    },
+    "annotations": [
+      {
+        "font": {
+          "color": "black",
+          "family": "Arial",
+          "size": 15
+        },
+        "showarrow": false,
+        "text": "\u003cb\u003eAmpol-House-View\u003c\u002fb\u003e\u003cbr\u003eElectricity consumption by sector",
+        "x": 0.225,
+        "xanchor": "center",
+        "xref": "paper",
+        "y": 0.48,
+        "yanchor": "bottom",
+        "yref": "paper"
+      },
+      {
+        "font": {
+          "color": "black",
+          "family": "Arial",
+          "size": 15
+        },
+        "showarrow": false,
+        "text": "\u003cb\u003eAmpol-1p5DS\u003c\u002fb\u003e\u003cbr\u003eElectricity consumption by sector",
+        "x": 0.225,
+        "xanchor": "center",
+        "xref": "paper",
+        "y": 1.01,
+        "yanchor": "bottom",
+        "yref": "paper"
+      },
+      {
+        "font": {
+          "color": "black",
+          "family": "Arial",
+          "size": 15
+        },
+        "showarrow": false,
+        "text": "\u003cb\u003eAmpol-2p5DS\u003c\u002fb\u003e\u003cbr\u003eElectricity consumption by sector",
+        "x": 0.775,
+        "xanchor": "center",
+        "xref": "paper",
+        "y": 1.01,
+        "yanchor": "bottom",
+        "yref": "paper"
+      },
+      {
+        "font": {
+          "color": "darkgrey",
+          "size": 8
+        },
+        "showarrow": false,
+        "text": "2025-12-03 Copyright © CSIRO",
+        "x": 1,
+        "xanchor": "right",
+        "xref": "paper",
+        "y": -0.05,
+        "yanchor": "top",
+        "yref": "paper"
+      }
+    ],
+    "legend": {
+      "tracegroupgap": 0,
+      "title": {
+        "text": ""
+      },
+      "y": -0.07,
+      "yanchor": "top",
+      "xanchor": "center",
+      "x": 0.5
+    },
+    "title": {
+      "text": ""
+    },
+    "shapes": [
+      {
+        "line": {
+          "color": "black",
+          "width": 1
+        },
+        "type": "line",
+        "x0": 0,
+        "x1": 1,
+        "xref": "x domain",
+        "y0": 0,
+        "y1": 0,
+        "yref": "y"
+      },
+      {
+        "line": {
+          "color": "black",
+          "width": 1
+        },
+        "type": "line",
+        "x0": 0,
+        "x1": 1,
+        "xref": "x3 domain",
+        "y0": 0,
+        "y1": 0,
+        "yref": "y3"
+      },
+      {
+        "line": {
+          "color": "black",
+          "width": 1
+        },
+        "type": "line",
+        "x0": 0,
+        "x1": 1,
+        "xref": "x4 domain",
+        "y0": 0,
+        "y1": 0,
+        "yref": "y4"
+      }
+    ],
+    "modebar": {
+      "add": [
+        "v1hovermode",
+        "toggleSpikelines",
+        "drawline",
+        "hoverClosestGl2d",
+        "drawopenpath",
+        "drawclosedpath",
+        "drawcircle",
+        "drawrect",
+        "eraseshape"
+      ]
+    }
+  }
+}

@@ -1,0 +1,691 @@
+{
+  "data": [
+    {
+      "hovertemplate": "scen=Ampol-2p5DS\u003cbr\u003eyear=%{x}\u003cbr\u003eMt CO₂-e=%{y}\u003cextra\u003e\u003c\u002fextra\u003e",
+      "legendgroup": "",
+      "marker": {
+        "color": "rgb(158,158,158)",
+        "symbol": "circle",
+        "size": 0.001
+      },
+      "mode": "markers",
+      "name": "",
+      "orientation": "v",
+      "showlegend": false,
+      "x": {
+        "dtype": "i4",
+        "bdata": "6QcAAOoHAADrBwAA7AcAAO0HAADuBwAA7wcAAPAHAADxBwAA8gcAAPMHAAD4BwAA\u002fQcAAAIIAAA="
+      },
+      "xaxis": "x3",
+      "y": {
+        "dtype": "i1",
+        "bdata": "AAAAAAAAAAAAAAAAAAA="
+      },
+      "yaxis": "y3",
+      "type": "scatter",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(158,158,158)"
+      },
+      "opacity": 0
+    },
+    {
+      "hovertemplate": "scen=Ampol-House-View\u003cbr\u003eyear=%{x}\u003cbr\u003eMt CO₂-e=%{y}\u003cextra\u003e\u003c\u002fextra\u003e",
+      "legendgroup": "",
+      "marker": {
+        "color": "rgb(158,158,158)",
+        "symbol": "circle",
+        "size": 0.001
+      },
+      "mode": "markers",
+      "name": "",
+      "orientation": "v",
+      "showlegend": false,
+      "x": {
+        "dtype": "i4",
+        "bdata": "6QcAAOoHAADrBwAA7AcAAO0HAADuBwAA7wcAAPAHAADxBwAA8gcAAPMHAAD4BwAA\u002fQcAAAIIAAA="
+      },
+      "xaxis": "x4",
+      "y": {
+        "dtype": "i1",
+        "bdata": "AAAAAAAAAAAAAAAAAAA="
+      },
+      "yaxis": "y4",
+      "type": "scatter",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(158,158,158)"
+      },
+      "opacity": 0
+    },
+    {
+      "hovertemplate": "scen=Ampol-1p5DS\u003cbr\u003eyear=%{x}\u003cbr\u003eMt CO₂-e=%{y}\u003cextra\u003e\u003c\u002fextra\u003e",
+      "legendgroup": "",
+      "marker": {
+        "color": "rgb(158,158,158)",
+        "symbol": "circle",
+        "size": 0.001
+      },
+      "mode": "markers",
+      "name": "",
+      "orientation": "v",
+      "showlegend": false,
+      "x": {
+        "dtype": "i4",
+        "bdata": "6QcAAOoHAADrBwAA7AcAAO0HAADuBwAA7wcAAPAHAADxBwAA8gcAAPMHAAD4BwAA\u002fQcAAAIIAAA="
+      },
+      "xaxis": "x",
+      "y": {
+        "dtype": "i1",
+        "bdata": "AAAAAAAAAAAAAAAAAAA="
+      },
+      "yaxis": "y",
+      "type": "scatter",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(158,158,158)"
+      },
+      "opacity": 0
+    },
+    {
+      "fill": "tonexty",
+      "name": "Mining",
+      "showlegend": true,
+      "stackgroup": "negative",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "Mm8rShw0v79Q0pPRVm20v0JWEBfrJ6i\u002fKI32wwc0lL+8MDPen4p\u002fv7jdoLZOzIS\u002fsRm3E23Ha7+o8BB54K9svw=="
+      },
+      "type": "scatter",
+      "xaxis": "x3",
+      "yaxis": "y3",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(0,0,0)"
+      },
+      "legendgroup": "Mining",
+      "marker": {
+        "color": "rgb(0,0,0)"
+      },
+      "fillcolor": "rgb(0,0,0)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Manufacturing",
+      "showlegend": true,
+      "stackgroup": "negative",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "KjntVDY0wL9Vd9LlOyfCv3H6NMWyS7C\u002fMRHO9EtN\u002fb6COzkp0cn5voNHA674qPa+oTV8rabV8777a8Vjgtrwvqlae1IAlOy+QW6DvYPi574PUNL0tGnhvg=="
+      },
+      "type": "scatter",
+      "xaxis": "x3",
+      "yaxis": "y3",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(80,80,80)"
+      },
+      "legendgroup": "Manufacturing",
+      "marker": {
+        "color": "rgb(80,80,80)"
+      },
+      "fillcolor": "rgb(80,80,80)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Other Industry",
+      "showlegend": true,
+      "stackgroup": "negative",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "\u002f2NuSimr5b8gwcjzWa3gv6Glpf6OnNe\u002fULrMpxRXyL9p1xPlq0S9v2CWoP6oJ72\u002fQsHAud3vqL\u002fW3ZvwrPChvw=="
+      },
+      "type": "scatter",
+      "xaxis": "x3",
+      "yaxis": "y3",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(102,51,0)"
+      },
+      "legendgroup": "Other Industry",
+      "marker": {
+        "color": "rgb(102,51,0)"
+      },
+      "fillcolor": "rgb(102,51,0)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Chemicals",
+      "showlegend": true,
+      "stackgroup": "negative",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "GzNAVzOp8L+z5RH5P6vwvxwY2tma+v6\u002foq5AUJ9cA8CfAEFSX8frvzEySCb2xuu\u002f9dVaKp\u002fG679jYQUoW8brv8f+07cYxuu\u002f6wgwaQe4vb6rD21MtbS1vg=="
+      },
+      "type": "scatter",
+      "xaxis": "x3",
+      "yaxis": "y3",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(159,174,229)"
+      },
+      "legendgroup": "Chemicals",
+      "marker": {
+        "color": "rgb(159,174,229)"
+      },
+      "fillcolor": "rgb(159,174,229)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Mining",
+      "showlegend": false,
+      "stackgroup": "negative",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "IVTJRQs0v79P6qX96nupv6PvjEhc8KO\u002f\u002fWGCsRYoe78LWZe+wMl2vxMGfkdt+4C\u002fkW2Yu4JRZL+Y89fkRYxnvw=="
+      },
+      "type": "scatter",
+      "xaxis": "x4",
+      "yaxis": "y4",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(0,0,0)"
+      },
+      "legendgroup": "Mining",
+      "marker": {
+        "color": "rgb(0,0,0)"
+      },
+      "fillcolor": "rgb(0,0,0)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Manufacturing",
+      "showlegend": false,
+      "stackgroup": "negative",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "m\u002ffb4yDSzr4wJq23nzLWvkeAqYrhnta+1diTP+FM1L4dr4V3GYrTvmxMq\u002fcUG9K+iBMV61e80L7gOmJOyHXOvmZyyTKBL8u+Pu+\u002fbFJGx76UZ\u002f3NQ93Bvg=="
+      },
+      "type": "scatter",
+      "xaxis": "x4",
+      "yaxis": "y4",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(80,80,80)"
+      },
+      "legendgroup": "Manufacturing",
+      "marker": {
+        "color": "rgb(80,80,80)"
+      },
+      "fillcolor": "rgb(80,80,80)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Other Industry",
+      "showlegend": false,
+      "stackgroup": "negative",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "wgLTBier5b8djqRy2PzKv8fYIfBS89K\u002fW1618NJHvL9PSFzg+Ji5vySjh\u002fxVsLK\u002fYJfDx6h\u002fqr8xISZ1Jdagvw=="
+      },
+      "type": "scatter",
+      "xaxis": "x4",
+      "yaxis": "y4",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(102,51,0)"
+      },
+      "legendgroup": "Other Industry",
+      "marker": {
+        "color": "rgb(102,51,0)"
+      },
+      "fillcolor": "rgb(102,51,0)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Chemicals",
+      "showlegend": false,
+      "stackgroup": "negative",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "G3jXH0f2tL4O0w43T7jAvnJgyYpQ7Ma+NUsv9yiBxL6FsDnl0Z3Cvk4pN4Uuu8C+6wJoqTHPvb7QWtEejJi6vv8Ehi\u002fvL7e++xkn+JaSs741BguIVS+tvg=="
+      },
+      "type": "scatter",
+      "xaxis": "x4",
+      "yaxis": "y4",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(159,174,229)"
+      },
+      "legendgroup": "Chemicals",
+      "marker": {
+        "color": "rgb(159,174,229)"
+      },
+      "fillcolor": "rgb(159,174,229)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Manufacturing",
+      "showlegend": false,
+      "stackgroup": "negative",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "zLrYpv1Yx78PnWNgvb7Wv7i1kzvRwtK\u002fGURufquhyr\u002fRdQyPKBDMv8pimwglEMy\u002f2sxAMSAQzL\u002fE5IgBHhDMv\u002fMdxgXNAcy\u002frTm\u002f9r6in79ltkdO7Vievw=="
+      },
+      "type": "scatter",
+      "xaxis": "x",
+      "yaxis": "y",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(80,80,80)"
+      },
+      "legendgroup": "Manufacturing",
+      "marker": {
+        "color": "rgb(80,80,80)"
+      },
+      "fillcolor": "rgb(80,80,80)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Chemicals",
+      "showlegend": false,
+      "stackgroup": "negative",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "2zH\u002fZJ6Sfb93jG8uLTZ8v92t8+pXB+y+uSyNnehB076AOOxCaDDSvo98yG1ESNC+K6Um+M37zL4+POeN+E7JvqDXD+PeXMW+D6h4wmRowb4iTd7XAPu4vg=="
+      },
+      "type": "scatter",
+      "xaxis": "x",
+      "yaxis": "y",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(159,174,229)"
+      },
+      "legendgroup": "Chemicals",
+      "marker": {
+        "color": "rgb(159,174,229)"
+      },
+      "fillcolor": "rgb(159,174,229)"
+    }
+  ],
+  "layout": {
+    "template": {
+      "data": {
+        "scatter": [
+          {
+            "line": {
+              "width": 5
+            },
+            "opacity": 0.7,
+            "type": "scatter"
+          }
+        ]
+      },
+      "layout": {
+        "bargap": 0.5,
+        "colorway": [
+          "rgb(0,29,52)",
+          "rgb(0,0,128)",
+          "rgb(30,34,170)",
+          "rgb(0,75,135)",
+          "rgb(0,115,119)",
+          "rgb(0,169,206)",
+          "rgb(67,194,204)",
+          "rgb(159,174,229)",
+          "rgb(34,70,34)",
+          "rgb(0,122,83)",
+          "rgb(107,142,35)",
+          "rgb(120,190,32)",
+          "rgb(113,204,152)",
+          "rgb(232,119,34)",
+          "rgb(255,184,28)",
+          "rgb(109,32,119)",
+          "rgb(223,25,149)",
+          "rgb(0,0,0)",
+          "rgb(44,44,44)",
+          "rgb(80,80,80)",
+          "rgb(158,158,158)",
+          "rgb(117,117,121)",
+          "rgb(200,200,220)",
+          "rgb(102,51,0)",
+          "rgb(128,0,0)"
+        ],
+        "font": {
+          "family": "Arial",
+          "size": 15
+        },
+        "legend": {
+          "entrywidth": 0,
+          "entrywidthmode": "pixels",
+          "font": {
+            "size": 15
+          },
+          "itemsizing": "constant",
+          "itemwidth": 30,
+          "orientation": "h",
+          "traceorder": "normal",
+          "x": 0.5,
+          "xanchor": "center",
+          "y": -0.05,
+          "yanchor": "top"
+        },
+        "margin": {
+          "b": 105,
+          "r": 25,
+          "t": 50
+        },
+        "paper_bgcolor": "white",
+        "plot_bgcolor": "white",
+        "title": {
+          "font": {
+            "color": "#333333",
+            "size": 16
+          }
+        },
+        "xaxis": {
+          "showgrid": false,
+          "tickfont": {
+            "size": 15
+          },
+          "title": {
+            "font": {
+              "size": 15
+            }
+          }
+        },
+        "yaxis": {
+          "gridcolor": "lightgrey",
+          "tickfont": {
+            "size": 15
+          },
+          "title": {
+            "font": {
+              "size": 15
+            }
+          }
+        }
+      }
+    },
+    "xaxis": {
+      "anchor": "y",
+      "domain": [
+        0.0,
+        0.45
+      ],
+      "title": {
+        "text": ""
+      }
+    },
+    "yaxis": {
+      "anchor": "x",
+      "domain": [
+        0.0,
+        0.47
+      ],
+      "title": {
+        "text": "Mt CO₂-e"
+      },
+      "showticklabels": true,
+      "nticks": 10,
+      "matches": "y",
+      "range": [
+        -2.625,
+        0.625
+      ]
+    },
+    "xaxis2": {
+      "anchor": "y2",
+      "domain": [
+        0.55,
+        1.0
+      ],
+      "matches": "x",
+      "title": {
+        "text": ""
+      }
+    },
+    "yaxis2": {
+      "anchor": "x2",
+      "domain": [
+        0.0,
+        0.47
+      ],
+      "matches": "y",
+      "showticklabels": true,
+      "nticks": 10,
+      "range": [
+        -2.625,
+        0.625
+      ],
+      "title": {
+        "text": "Mt CO₂-e"
+      }
+    },
+    "xaxis3": {
+      "anchor": "y3",
+      "domain": [
+        0.0,
+        0.45
+      ],
+      "matches": "x",
+      "showticklabels": false,
+      "title": {
+        "text": ""
+      }
+    },
+    "yaxis3": {
+      "anchor": "x3",
+      "domain": [
+        0.53,
+        1.0
+      ],
+      "matches": "y",
+      "title": {
+        "text": "Mt CO₂-e"
+      },
+      "showticklabels": true,
+      "nticks": 10,
+      "range": [
+        -2.625,
+        0.625
+      ]
+    },
+    "xaxis4": {
+      "anchor": "y4",
+      "domain": [
+        0.55,
+        1.0
+      ],
+      "matches": "x",
+      "showticklabels": false,
+      "title": {
+        "text": ""
+      }
+    },
+    "yaxis4": {
+      "anchor": "x4",
+      "domain": [
+        0.53,
+        1.0
+      ],
+      "matches": "y",
+      "showticklabels": true,
+      "nticks": 10,
+      "range": [
+        -2.625,
+        0.625
+      ],
+      "title": {
+        "text": "Mt CO₂-e"
+      }
+    },
+    "annotations": [
+      {
+        "font": {
+          "color": "black",
+          "family": "Arial",
+          "size": 15
+        },
+        "showarrow": false,
+        "text": "\u003cb\u003eAmpol-1p5DS\u003c\u002fb\u003e\u003cbr\u003eIndustry Captured Emissions",
+        "x": 0.225,
+        "xanchor": "center",
+        "xref": "paper",
+        "y": 0.48,
+        "yanchor": "bottom",
+        "yref": "paper"
+      },
+      {
+        "font": {
+          "color": "black",
+          "family": "Arial",
+          "size": 15
+        },
+        "showarrow": false,
+        "text": "\u003cb\u003eAmpol-2p5DS\u003c\u002fb\u003e\u003cbr\u003eIndustry Captured Emissions",
+        "x": 0.225,
+        "xanchor": "center",
+        "xref": "paper",
+        "y": 1.01,
+        "yanchor": "bottom",
+        "yref": "paper"
+      },
+      {
+        "font": {
+          "color": "black",
+          "family": "Arial",
+          "size": 15
+        },
+        "showarrow": false,
+        "text": "\u003cb\u003eAmpol-House-View\u003c\u002fb\u003e\u003cbr\u003eIndustry Captured Emissions",
+        "x": 0.775,
+        "xanchor": "center",
+        "xref": "paper",
+        "y": 1.01,
+        "yanchor": "bottom",
+        "yref": "paper"
+      },
+      {
+        "font": {
+          "color": "darkgrey",
+          "size": 8
+        },
+        "showarrow": false,
+        "text": "2025-12-03 Copyright © CSIRO",
+        "x": 1,
+        "xanchor": "right",
+        "xref": "paper",
+        "y": -0.05,
+        "yanchor": "top",
+        "yref": "paper"
+      }
+    ],
+    "legend": {
+      "tracegroupgap": 0,
+      "title": {
+        "text": ""
+      },
+      "y": -0.07,
+      "yanchor": "top",
+      "xanchor": "center",
+      "x": 0.5
+    },
+    "title": {
+      "text": ""
+    },
+    "shapes": [
+      {
+        "line": {
+          "color": "black",
+          "width": 1
+        },
+        "type": "line",
+        "x0": 0,
+        "x1": 1,
+        "xref": "x domain",
+        "y0": 0,
+        "y1": 0,
+        "yref": "y"
+      },
+      {
+        "line": {
+          "color": "black",
+          "width": 1
+        },
+        "type": "line",
+        "x0": 0,
+        "x1": 1,
+        "xref": "x3 domain",
+        "y0": 0,
+        "y1": 0,
+        "yref": "y3"
+      },
+      {
+        "line": {
+          "color": "black",
+          "width": 1
+        },
+        "type": "line",
+        "x0": 0,
+        "x1": 1,
+        "xref": "x4 domain",
+        "y0": 0,
+        "y1": 0,
+        "yref": "y4"
+      }
+    ],
+    "modebar": {
+      "add": [
+        "v1hovermode",
+        "toggleSpikelines",
+        "drawline",
+        "hoverClosestGl2d",
+        "drawopenpath",
+        "drawclosedpath",
+        "drawcircle",
+        "drawrect",
+        "eraseshape"
+      ]
+    }
+  }
+}

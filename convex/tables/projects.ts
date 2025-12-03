@@ -30,13 +30,36 @@ export const create = mutation({
       throw new Error(`User ${ownerId} not found`);
     }
 
+    const now = Date.now();
+
     const projectId = await ctx.db.insert("projects", {
       ownerId,
       name,
       description,
-      createdAt: Date.now(),
+      createdAt: now,
       archived: false,
     });
+
+    const documentId = await ctx.db.insert("documents", {
+      projectId,
+      title: "Untitled Document",
+      createdAt: now,
+      createdByUserId: ownerId,
+      rootNodeId: undefined,
+    });
+
+    const rootNodeId = await ctx.db.insert("nodes", {
+      projectId,
+      documentId,
+      parentId: undefined,
+      order: 0,
+      nodeType: "document",
+      text: undefined,
+      attrs: { title: "Untitled Document" },
+      createdAt: now,
+    });
+
+    await ctx.db.patch(documentId, { rootNodeId });
 
     return projectId;
   },

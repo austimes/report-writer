@@ -11,6 +11,7 @@
 import type * as debugAuth from "../debugAuth.js";
 import type * as features_agent from "../features/agent.js";
 import type * as features_locking from "../features/locking.js";
+import type * as features_versions from "../features/versions.js";
 import type * as tables_agentMessages from "../tables/agentMessages.js";
 import type * as tables_agentThreads from "../tables/agentThreads.js";
 import type * as tables_comments from "../tables/comments.js";
@@ -32,6 +33,7 @@ declare const fullApi: ApiFromModules<{
   debugAuth: typeof debugAuth;
   "features/agent": typeof features_agent;
   "features/locking": typeof features_locking;
+  "features/versions": typeof features_versions;
   "tables/agentMessages": typeof tables_agentMessages;
   "tables/agentThreads": typeof tables_agentThreads;
   "tables/comments": typeof tables_comments;

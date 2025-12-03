@@ -1,0 +1,89 @@
+{
+  "projection-results": {
+    "description": "Overview of projection results across all sectors",
+    "charts": [
+      "emissions/emissions_reduction_by_sector",
+      "overview/net_emissions_by_sector",
+      "electricity/electricity_consumption_by_sector"
+    ]
+  },
+  "emissions": {
+    "description": "Overview of emissions projection results",
+    "charts": [
+      "emissions/emissions_reduction_by_sector",
+      "overview/net_emissions_by_sector",
+      "emissions/emissions_from_electricity_generation",
+      "emissions/domestic_transport_emissions_by_subsector",
+      "emissions/built_environment_emissions"
+    ]
+  },
+  "electricity-generation": {
+    "description": "Overview of electricity generation projection results",
+    "charts": [
+      "electricity/electricity_generation_energy",
+      "electricity/electricity_generation_capacity_by_tech_and_fuel",
+      "electricity/renewable_energy_fraction",
+      "electricity/generation_emissions_intensity_by_tech",
+      "electricity/storage_capacity_by_technology"
+    ]
+  },
+  "energy-consumption-by-sector": {
+    "description": "Overview of energy consumption by sector projection results",
+    "charts": [
+      "electricity/electricity_consumption_by_sector",
+      "industry/industry_energy_use_by_fuel"
+    ]
+  },
+  "overall": {
+    "description": "Overview of overall energy consumption projection results",
+    "charts": [
+      "electricity/electricity_consumption_by_sector",
+      "overview/net_emissions_by_sector",
+      "emissions/emissions_reduction_by_sector"
+    ]
+  },
+  "transport": {
+    "description": "Overview of transport energy consumption projection results",
+    "charts": [
+      "transport/domestic_transport_energy_use_by_fuel",
+      "transport/road_transport_energy_use_by_fuel",
+      "transport/new_vehicle_sales_by_drivetrain",
+      "transport/road_vehicle_stock_by_drivetrain",
+      "emissions/domestic_transport_emissions_by_subsector"
+    ]
+  },
+  "industry": {
+    "description": "Overview of industry energy consumption projection results",
+    "charts": [
+      "industry/industry_energy_use_by_fuel",
+      "industry/industry_emissions_and_captured_emissions",
+      "iron_and_steel/iron_and_steel_energy_use_by_fuel",
+      "emissions/manufacturing_emissions_by_sector",
+      "manufacturing/chemical_captured_emissions_by_process"
+    ]
+  },
+  "residential": {
+    "description": "Overview of residential energy consumption projection results",
+    "charts": [
+      "built_environment/residential_buildings_energy_use_by_fuel",
+      "emissions/built_environment_emissions",
+      "built_environment/building_production_by_sector"
+    ]
+  },
+  "commercial": {
+    "description": "Overview of commercial energy consumption projection results",
+    "charts": [
+      "built_environment/commercial_buildings_energy_use_by_fuel",
+      "emissions/built_environment_emissions",
+      "built_environment/building_production_by_sector"
+    ]
+  },
+  "agriculture": {
+    "description": "Overview of agriculture energy consumption projection results",
+    "charts": [
+      "agriculture/agriculture_energy_use_by_fuel",
+      "emissions/agriculture_and_land_use_emissions",
+      "emissions/agriculture_abatement_by_process"
+    ]
+  }
+}

@@ -4,14 +4,22 @@ import path from 'path';
 export default defineConfig({
   resolve: {
     alias: [
-      { find: /^\.\.?\/_generated\/api$/, replacement: path.resolve(__dirname, 'convex/_generated/api.d.ts') },
-      { find: /^\.\.?\/_generated\/dataModel$/, replacement: path.resolve(__dirname, 'convex/_generated/dataModel.d.ts') },
-      { find: /^\.\.?\/_generated\/server$/, replacement: path.resolve(__dirname, 'convex/_generated/server.ts') },
+      { find: /^\.\.?\/_generated\/api$/, replacement: path.resolve(__dirname, 'convex/_generated/api') },
+      { find: /^\.\.?\/_generated\/dataModel$/, replacement: path.resolve(__dirname, 'convex/_generated/dataModel') },
+      { find: /^\.\.?\/_generated\/server$/, replacement: path.resolve(__dirname, 'convex/_generated/server') },
     ],
   },
   test: {
     globals: true,
-    environment: 'node',
+    environmentMatchGlobs: [
+      ['convex/**', 'edge-runtime'],
+      ['**', 'node'],
+    ],
+    server: { 
+      deps: { 
+        inline: ['convex-test'] 
+      } 
+    },
     include: ['**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
     exclude: ['**/node_modules/**', '**/dist/**', 'tests/e2e/**'],
     reporters: ['default', 'json'],

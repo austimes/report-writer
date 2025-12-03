@@ -10,7 +10,7 @@ export class ProjectsPage {
 
   constructor(page: Page) {
     this.page = page;
-    this.createProjectButton = page.getByTestId('open-create-project-modal');
+    this.createProjectButton = page.getByRole('button', { name: 'Create Project' });
     this.logoutButton = page.getByRole('button', { name: /logout/i });
     this.userEmail = page.locator('text=/.*@.*\\..*/');
     this.projectList = page.getByTestId('project-list');
@@ -21,7 +21,13 @@ export class ProjectsPage {
     await this.page.goto('/');
   }
 
+  async waitForReady() {
+    await this.createProjectButton.waitFor({ state: 'visible', timeout: 10000 });
+    await this.page.waitForTimeout(2000);
+  }
+
   async openCreateProjectModal() {
+    await this.waitForReady();
     await this.createProjectButton.click();
     await this.page.getByTestId('create-project-modal').waitFor();
   }

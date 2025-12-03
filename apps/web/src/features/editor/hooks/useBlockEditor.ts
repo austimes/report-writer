@@ -4,19 +4,19 @@ import { api } from "../../../lib/convex";
 import type { Id } from "convex/_generated/dataModel";
 
 export function useBlockEditor(userId: Id<"users"> | null) {
-  const updateTextMutation = useMutation(api.tables.blocks.updateText);
+  const updateTextMutation = useMutation(api.tables.nodes.updateText);
   const [saving, setSaving] = useState(false);
   const saveTimeoutRef = useRef<ReturnType<typeof setTimeout>>();
 
-  const saveBlock = useCallback(
-    async (blockId: Id<"blocks">, markdownText: string) => {
+  const saveNode = useCallback(
+    async (nodeId: Id<"nodes">, text: string) => {
       if (!userId) return;
       
       setSaving(true);
       try {
         await updateTextMutation({
-          id: blockId,
-          markdownText,
+          id: nodeId,
+          text,
           editorUserId: userId,
           editType: "human",
         });
@@ -28,26 +28,26 @@ export function useBlockEditor(userId: Id<"users"> | null) {
   );
 
   const debouncedSave = useCallback(
-    (blockId: Id<"blocks">, markdownText: string, delay = 500) => {
+    (nodeId: Id<"nodes">, text: string, delay = 500) => {
       if (saveTimeoutRef.current) {
         clearTimeout(saveTimeoutRef.current);
       }
 
       saveTimeoutRef.current = setTimeout(() => {
-        saveBlock(blockId, markdownText);
+        saveNode(nodeId, text);
       }, delay);
     },
-    [saveBlock]
+    [saveNode]
   );
 
   const immediateSave = useCallback(
-    (blockId: Id<"blocks">, markdownText: string) => {
+    (nodeId: Id<"nodes">, text: string) => {
       if (saveTimeoutRef.current) {
         clearTimeout(saveTimeoutRef.current);
       }
-      saveBlock(blockId, markdownText);
+      saveNode(nodeId, text);
     },
-    [saveBlock]
+    [saveNode]
   );
 
   return {

@@ -6,12 +6,14 @@ import type { Id } from 'convex/_generated/dataModel';
 
 interface CommentsPanelProps {
   projectId: Id<'projects'>;
+  documentId: Id<'documents'>;
   onCommentClick?: (commentId: Id<'comments'>) => void;
   onCreateThread?: (commentId: Id<'comments'>) => void;
 }
 
 export function CommentsPanel({
   projectId,
+  documentId,
   onCommentClick,
   onCreateThread,
 }: CommentsPanelProps) {
@@ -32,11 +34,11 @@ export function CommentsPanel({
     assignToAgent,
     assignToUser,
     resolveComment,
-  } = useComments(projectId, filters);
+  } = useComments(documentId, filters);
 
   const handleCreate = async (data: any) => {
     await createComment({
-      projectId,
+      documentId,
       ...data,
     });
   };

@@ -15,12 +15,19 @@ export function ProjectSettingsPage() {
   const { user } = useAuth();
   const userId = user?.id as Id<'users'>;
   const { members, addMember, removeMember } = useProjectMembers(projectId);
-  const { archiveProject } = useProjects(userId);
+  const { archiveProject, deleteProject } = useProjects(userId);
   const [showInviteModal, setShowInviteModal] = useState(false);
 
   const handleArchive = async () => {
     if (confirm('Are you sure you want to archive this project?')) {
       await archiveProject({ id: projectId });
+      navigate('/');
+    }
+  };
+
+  const handleDelete = async () => {
+    if (confirm('Are you sure you want to permanently delete this project? This action cannot be undone.')) {
+      await deleteProject({ id: projectId });
       navigate('/');
     }
   };
@@ -72,9 +79,24 @@ export function ProjectSettingsPage() {
 
         <Card className="p-6">
           <h2 className="text-xl font-semibold mb-4">Danger Zone</h2>
-          <Button onClick={handleArchive} variant="destructive">
-            Archive Project
-          </Button>
+          <div className="space-y-4">
+            <div>
+              <p className="text-sm text-muted-foreground mb-2">
+                Archive this project to hide it from your project list. You can restore it later.
+              </p>
+              <Button onClick={handleArchive} variant="outline">
+                Archive Project
+              </Button>
+            </div>
+            <div className="pt-4 border-t">
+              <p className="text-sm text-muted-foreground mb-2">
+                Permanently delete this project and all its contents. This action cannot be undone.
+              </p>
+              <Button onClick={handleDelete} variant="destructive">
+                Delete Project
+              </Button>
+            </div>
+          </div>
         </Card>
       </main>
 

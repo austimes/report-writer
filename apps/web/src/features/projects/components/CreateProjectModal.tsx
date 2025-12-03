@@ -6,7 +6,7 @@ import { Id } from 'convex/_generated/dataModel';
 interface CreateProjectModalProps {
   userId: Id<'users'>;
   onClose: () => void;
-  onCreate: (ownerId: Id<'users'>, name: string, description?: string) => Promise<void>;
+  onCreate: (ownerId: Id<'users'>, name: string, description?: string) => Promise<Id<'projects'> | void>;
 }
 
 export function CreateProjectModal({ userId, onClose, onCreate }: CreateProjectModalProps) {

@@ -5,20 +5,18 @@ import type { Id } from 'convex/_generated/dataModel';
 
 interface CreateCommentButtonProps {
   projectId: Id<'projects'>;
-  sectionId?: Id<'sections'>;
-  blockId?: Id<'blocks'>;
+  targetNodeId?: Id<'nodes'>;
   onCreate: (data: {
     body: string;
     assigneeType?: 'human' | 'agent';
     assigneeUserId?: Id<'users'>;
-    linkedSections?: Id<'sections'>[];
+    linkedNodeIds?: Id<'nodes'>[];
   }) => void;
 }
 
 export function CreateCommentButton({
   projectId,
-  sectionId,
-  blockId,
+  targetNodeId,
   onCreate,
 }: CreateCommentButtonProps) {
   const [isOpen, setIsOpen] = useState(false);
@@ -42,8 +40,7 @@ export function CreateCommentButton({
         <h3 className="text-lg font-semibold mb-4">Create Comment</h3>
         <CommentForm
           projectId={projectId}
-          sectionId={sectionId}
-          blockId={blockId}
+          targetNodeId={targetNodeId}
           onSubmit={handleSubmit}
           onCancel={() => setIsOpen(false)}
         />

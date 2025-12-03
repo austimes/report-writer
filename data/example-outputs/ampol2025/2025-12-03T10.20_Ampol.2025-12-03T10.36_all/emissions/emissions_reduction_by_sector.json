@@ -1,0 +1,426 @@
+{
+  "data": [
+    {
+      "cliponaxis": false,
+      "connector": {
+        "line": {
+          "color": "rgb(80,80,80)"
+        }
+      },
+      "decreasing": {
+        "marker": {
+          "color": "rgb(0,29,52)"
+        }
+      },
+      "increasing": {
+        "marker": {
+          "color": "rgb(0,169,206)"
+        }
+      },
+      "insidetextanchor": "start",
+      "measure": [
+        "relative",
+        "relative",
+        "relative",
+        "relative",
+        "relative",
+        "relative",
+        "relative",
+        "relative"
+      ],
+      "name": "Ampol-1p5DS",
+      "orientation": "v",
+      "text": [
+        "401",
+        "-129",
+        "-110",
+        "-94",
+        "-80",
+        "-43",
+        "-14",
+        "-3"
+      ],
+      "x": [
+        "Net 2025",
+        "Power Generation",
+        "Industry",
+        "Transport",
+        "Land Use",
+        "Carbon Dioxide Removal",
+        "Buildings",
+        "Hydrogen Production"
+      ],
+      "y": {
+        "dtype": "f8",
+        "bdata": "MqH9+9UQeUCM5fISkR1gwKwMI652b1vApJthqKaEV8A\u002fSDcq2PBTwIjVEfhzl0XAGr61KX5+LMBRnemugNgEwA=="
+      },
+      "type": "waterfall",
+      "xaxis": "x",
+      "yaxis": "y"
+    },
+    {
+      "cliponaxis": false,
+      "connector": {
+        "line": {
+          "color": "rgb(80,80,80)"
+        }
+      },
+      "decreasing": {
+        "marker": {
+          "color": "rgb(0,29,52)"
+        }
+      },
+      "increasing": {
+        "marker": {
+          "color": "rgb(0,169,206)"
+        }
+      },
+      "insidetextanchor": "start",
+      "measure": [
+        "relative",
+        "relative",
+        "relative",
+        "relative",
+        "relative",
+        "relative",
+        "relative",
+        "relative"
+      ],
+      "name": "Ampol-2p5DS",
+      "orientation": "v",
+      "text": [
+        "401",
+        "-129",
+        "-101",
+        "-97",
+        "-55",
+        "-7",
+        "-6",
+        "-3"
+      ],
+      "x": [
+        "Net 2025",
+        "Power Generation",
+        "Land Use",
+        "Industry",
+        "Transport",
+        "Buildings",
+        "Carbon Dioxide Removal",
+        "Hydrogen Production"
+      ],
+      "y": {
+        "dtype": "f8",
+        "bdata": "MqH9+9UQeUCJyV+0fR1gwLJDJ76HQ1nA4gG1\u002fMlAWMCClWl1x1RLwCPu0l4tFxzA6aB9hk1bGcD2M4LzggQEwA=="
+      },
+      "type": "waterfall",
+      "xaxis": "x2",
+      "yaxis": "y2"
+    },
+    {
+      "cliponaxis": false,
+      "connector": {
+        "line": {
+          "color": "rgb(80,80,80)"
+        }
+      },
+      "decreasing": {
+        "marker": {
+          "color": "rgb(0,29,52)"
+        }
+      },
+      "increasing": {
+        "marker": {
+          "color": "rgb(0,169,206)"
+        }
+      },
+      "insidetextanchor": "start",
+      "measure": [
+        "relative",
+        "relative",
+        "relative",
+        "relative",
+        "relative",
+        "relative",
+        "relative",
+        "relative"
+      ],
+      "name": "Ampol-House-View",
+      "orientation": "v",
+      "text": [
+        "401",
+        "-128",
+        "-72",
+        "-21",
+        "-5",
+        "-3",
+        "-0",
+        "34"
+      ],
+      "x": [
+        "Net 2025",
+        "Power Generation",
+        "Industry",
+        "Transport",
+        "Buildings",
+        "Hydrogen Production",
+        "Carbon Dioxide Removal",
+        "Land Use"
+      ],
+      "y": {
+        "dtype": "f8",
+        "bdata": "MqH9+9UQeUCwhhqi+vRfwKuhqqeaF1LAwHP+910DNcD2HCa2RbITwNAW5Y9v2ATAvljrRlDV3b+f2fQLD8pAQA=="
+      },
+      "type": "waterfall",
+      "xaxis": "x3",
+      "yaxis": "y3"
+    }
+  ],
+  "layout": {
+    "template": {
+      "data": {
+        "scatter": [
+          {
+            "line": {
+              "width": 5
+            },
+            "opacity": 0.7,
+            "type": "scatter"
+          }
+        ]
+      },
+      "layout": {
+        "bargap": 0.5,
+        "colorway": [
+          "rgb(0,29,52)",
+          "rgb(0,0,128)",
+          "rgb(30,34,170)",
+          "rgb(0,75,135)",
+          "rgb(0,115,119)",
+          "rgb(0,169,206)",
+          "rgb(67,194,204)",
+          "rgb(159,174,229)",
+          "rgb(34,70,34)",
+          "rgb(0,122,83)",
+          "rgb(107,142,35)",
+          "rgb(120,190,32)",
+          "rgb(113,204,152)",
+          "rgb(232,119,34)",
+          "rgb(255,184,28)",
+          "rgb(109,32,119)",
+          "rgb(223,25,149)",
+          "rgb(0,0,0)",
+          "rgb(44,44,44)",
+          "rgb(80,80,80)",
+          "rgb(158,158,158)",
+          "rgb(117,117,121)",
+          "rgb(200,200,220)",
+          "rgb(102,51,0)",
+          "rgb(128,0,0)"
+        ],
+        "font": {
+          "family": "Arial",
+          "size": 15
+        },
+        "legend": {
+          "entrywidth": 0,
+          "entrywidthmode": "pixels",
+          "font": {
+            "size": 15
+          },
+          "itemsizing": "constant",
+          "itemwidth": 30,
+          "orientation": "h",
+          "traceorder": "normal",
+          "x": 0.5,
+          "xanchor": "center",
+          "y": -0.05,
+          "yanchor": "top"
+        },
+        "margin": {
+          "b": 105,
+          "r": 25,
+          "t": 50
+        },
+        "paper_bgcolor": "white",
+        "plot_bgcolor": "white",
+        "title": {
+          "font": {
+            "color": "#333333",
+            "size": 16
+          }
+        },
+        "xaxis": {
+          "showgrid": false,
+          "tickfont": {
+            "size": 15
+          },
+          "title": {
+            "font": {
+              "size": 15
+            }
+          }
+        },
+        "yaxis": {
+          "gridcolor": "lightgrey",
+          "tickfont": {
+            "size": 15
+          },
+          "title": {
+            "font": {
+              "size": 15
+            }
+          }
+        }
+      }
+    },
+    "xaxis": {
+      "anchor": "y",
+      "domain": [
+        0.0,
+        0.45
+      ],
+      "tickfont": {
+        "size": 12
+      },
+      "tickangle": 45,
+      "automargin": true
+    },
+    "yaxis": {
+      "anchor": "x",
+      "domain": [
+        0.6000000000000001,
+        1.0
+      ],
+      "title": {
+        "text": "Mt CO₂-e"
+      },
+      "showticklabels": true,
+      "automargin": true
+    },
+    "xaxis2": {
+      "anchor": "y2",
+      "domain": [
+        0.55,
+        1.0
+      ],
+      "tickfont": {
+        "size": 12
+      },
+      "tickangle": 45,
+      "automargin": true
+    },
+    "yaxis2": {
+      "anchor": "x2",
+      "domain": [
+        0.6000000000000001,
+        1.0
+      ],
+      "title": {
+        "text": "Mt CO₂-e"
+      },
+      "showticklabels": true,
+      "automargin": true
+    },
+    "xaxis3": {
+      "anchor": "y3",
+      "domain": [
+        0.0,
+        0.45
+      ],
+      "tickfont": {
+        "size": 12
+      },
+      "tickangle": 45,
+      "automargin": true
+    },
+    "yaxis3": {
+      "anchor": "x3",
+      "domain": [
+        0.0,
+        0.4
+      ],
+      "title": {
+        "text": "Mt CO₂-e"
+      },
+      "showticklabels": true,
+      "automargin": true
+    },
+    "xaxis4": {
+      "anchor": "y4",
+      "domain": [
+        0.55,
+        1.0
+      ],
+      "tickfont": {
+        "size": 12
+      },
+      "tickangle": 45,
+      "automargin": true
+    },
+    "yaxis4": {
+      "anchor": "x4",
+      "domain": [
+        0.0,
+        0.4
+      ],
+      "title": {
+        "text": "Mt CO₂-e"
+      },
+      "showticklabels": true,
+      "automargin": true
+    },
+    "annotations": [
+      {
+        "font": {
+          "size": 15,
+          "family": "Arial",
+          "color": "black"
+        },
+        "showarrow": false,
+        "text": "\u003cb\u003eAmpol-1p5DS: Emissions Reduction by Sector\u003c\u002fb\u003e",
+        "x": 0.225,
+        "xanchor": "center",
+        "xref": "paper",
+        "y": 1.01,
+        "yanchor": "bottom",
+        "yref": "paper"
+      },
+      {
+        "font": {
+          "size": 15,
+          "family": "Arial",
+          "color": "black"
+        },
+        "showarrow": false,
+        "text": "\u003cb\u003eAmpol-2p5DS: Emissions Reduction by Sector\u003c\u002fb\u003e",
+        "x": 0.775,
+        "xanchor": "center",
+        "xref": "paper",
+        "y": 1.01,
+        "yanchor": "bottom",
+        "yref": "paper"
+      },
+      {
+        "font": {
+          "size": 15,
+          "family": "Arial",
+          "color": "black"
+        },
+        "showarrow": false,
+        "text": "\u003cb\u003eAmpol-House-View: Emissions Reduction by Sector\u003c\u002fb\u003e",
+        "x": 0.225,
+        "xanchor": "center",
+        "xref": "paper",
+        "y": 0.41000000000000003,
+        "yanchor": "bottom",
+        "yref": "paper"
+      }
+    ],
+    "height": 900,
+    "width": 1000,
+    "title": {
+      "text": ""
+    },
+    "showlegend": false
+  }
+}

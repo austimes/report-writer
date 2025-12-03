@@ -1,0 +1,1055 @@
+{
+  "data": [
+    {
+      "hovertemplate": "scen=Ampol-1p5DS\u003cbr\u003eyear=%{x}\u003cbr\u003eVehicle Stock (%)=%{y}\u003cextra\u003e\u003c\u002fextra\u003e",
+      "legendgroup": "",
+      "marker": {
+        "color": "rgb(158,158,158)",
+        "symbol": "circle",
+        "size": 0.001
+      },
+      "mode": "markers",
+      "name": "",
+      "orientation": "v",
+      "showlegend": false,
+      "x": {
+        "dtype": "i4",
+        "bdata": "6QcAAOoHAADrBwAA7AcAAO0HAADuBwAA7wcAAPAHAADxBwAA8gcAAPMHAAD4BwAA\u002fQcAAAIIAAA="
+      },
+      "xaxis": "x3",
+      "y": {
+        "dtype": "i1",
+        "bdata": "AAAAAAAAAAAAAAAAAAA="
+      },
+      "yaxis": "y3",
+      "type": "scatter",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(158,158,158)"
+      },
+      "opacity": 0
+    },
+    {
+      "hovertemplate": "scen=Ampol-2p5DS\u003cbr\u003eyear=%{x}\u003cbr\u003eVehicle Stock (%)=%{y}\u003cextra\u003e\u003c\u002fextra\u003e",
+      "legendgroup": "",
+      "marker": {
+        "color": "rgb(158,158,158)",
+        "symbol": "circle",
+        "size": 0.001
+      },
+      "mode": "markers",
+      "name": "",
+      "orientation": "v",
+      "showlegend": false,
+      "x": {
+        "dtype": "i4",
+        "bdata": "6QcAAOoHAADrBwAA7AcAAO0HAADuBwAA7wcAAPAHAADxBwAA8gcAAPMHAAD4BwAA\u002fQcAAAIIAAA="
+      },
+      "xaxis": "x4",
+      "y": {
+        "dtype": "i1",
+        "bdata": "AAAAAAAAAAAAAAAAAAA="
+      },
+      "yaxis": "y4",
+      "type": "scatter",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(158,158,158)"
+      },
+      "opacity": 0
+    },
+    {
+      "hovertemplate": "scen=Ampol-House-View\u003cbr\u003eyear=%{x}\u003cbr\u003eVehicle Stock (%)=%{y}\u003cextra\u003e\u003c\u002fextra\u003e",
+      "legendgroup": "",
+      "marker": {
+        "color": "rgb(158,158,158)",
+        "symbol": "circle",
+        "size": 0.001
+      },
+      "mode": "markers",
+      "name": "",
+      "orientation": "v",
+      "showlegend": false,
+      "x": {
+        "dtype": "i4",
+        "bdata": "6QcAAOoHAADrBwAA7AcAAO0HAADuBwAA7wcAAPAHAADxBwAA8gcAAPMHAAD4BwAA\u002fQcAAAIIAAA="
+      },
+      "xaxis": "x",
+      "y": {
+        "dtype": "i1",
+        "bdata": "AAAAAAAAAAAAAAAAAAA="
+      },
+      "yaxis": "y",
+      "type": "scatter",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(158,158,158)"
+      },
+      "opacity": 0
+    },
+    {
+      "fill": "tonexty",
+      "name": "Combustion Engine",
+      "showlegend": true,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "SJq+kRm66D8kNAAtLs4rQHRRMBoBfT1Akw\u002f51BVtTkD4NQ8G7xVQQKUsKcWU9lFAxEz24zqzUkAVGyRatnBTQGn1xp1K8FNAl3589tz4VECpjJzuJrhUQJ9nR3vdR1ZAY4CMuwxhVkAz53CLsRFXQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x3",
+      "yaxis": "y3",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(67,194,204)"
+      },
+      "legendgroup": "Combustion Engine",
+      "marker": {
+        "color": "rgb(67,194,204)"
+      },
+      "fillcolor": "rgb(67,194,204)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Long-Range Electric Vehicle",
+      "showlegend": true,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "emDB8QgyS0BT0h7KyyFJQKygxiPc50RArtQXK3AxNkDfduvaic4zQIy++liJtS1AObWDlgVcKkC\u002fGpeB1dQmQDmvQSuN4iNA2pAo2rvLHUB3K5lcNgEhQKJADkLSK\u002fg\u002fLLiWEN7V+z9H2GTLDdvqPw=="
+      },
+      "type": "scatter",
+      "xaxis": "x3",
+      "yaxis": "y3",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(0,75,135)"
+      },
+      "legendgroup": "Long-Range Electric Vehicle",
+      "marker": {
+        "color": "rgb(0,75,135)"
+      },
+      "fillcolor": "rgb(0,75,135)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Hybrid",
+      "showlegend": true,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "bCx6R3u\u002f7D9ohmEAeBv4P\u002fJ7VvCT3QFA6BgBUvXSDEBoePQaaEMQQFtvHKuaPBFARLbtZU4dEkCMuUiDK9oSQNQbT44nDBRArmp0oSC2E0CNQlxTS3gSQKhvyfFa2htA4LqhaT90FUAeG2qYy1sUQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x3",
+      "yaxis": "y3",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(0,115,119)"
+      },
+      "legendgroup": "Hybrid",
+      "marker": {
+        "color": "rgb(0,115,119)"
+      },
+      "fillcolor": "rgb(0,115,119)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Short-Range Electric Vehicle",
+      "showlegend": true,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "FVhpWYyVPUC+lT+nH105QOoNs0n7dTRA40qecMqoJUDacJDD7ksjQMzgIZGfWh5Az9PpVYVeGUDeA48rhPYUQJEsqGU12RFAGeKEogmECEA7t5pwWeEKQK+w0GODbPo\u002fAyDKfY+zAUBVVfE09mb0Pw=="
+      },
+      "type": "scatter",
+      "xaxis": "x3",
+      "yaxis": "y3",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(159,174,229)"
+      },
+      "legendgroup": "Short-Range Electric Vehicle",
+      "marker": {
+        "color": "rgb(159,174,229)"
+      },
+      "fillcolor": "rgb(159,174,229)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Plug-In Hybrid Electric",
+      "showlegend": true,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "TBSgjFLZEUBsKCcQ52MMQKvlEC1sPgdAKLxWdWa++D\u002fbv9zJPtr1P83dvq+pGPE\u002f2iqlRvJ57T+evqO44GDqP0ApWfyvQ+o\u002ftxAERT465T9VBaW7YV\u002fkP0fHDs\u002fO3+c\u002fmlGkz9qZ8j8Vfr9t3XDgPw=="
+      },
+      "type": "scatter",
+      "xaxis": "x3",
+      "yaxis": "y3",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(120,190,32)"
+      },
+      "legendgroup": "Plug-In Hybrid Electric",
+      "marker": {
+        "color": "rgb(120,190,32)"
+      },
+      "fillcolor": "rgb(120,190,32)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Fuel Cell Vehicle",
+      "showlegend": true,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "Bgz8QtSgCkC8+\u002fa2QZEFQGxOOkN8xgBACrNvEJwe6j8D3nmz7JXjP9brggkb9dM\u002fCAKHF9CMzD9\u002f4VteesKkP7e1HOtBn2s\u002fKWhIO6N6Yz+t0r+J8WRdP\u002fOnoM5oc0c\u002f3TE18rlROD8UvxVMjxswPw=="
+      },
+      "type": "scatter",
+      "xaxis": "x3",
+      "yaxis": "y3",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(0,0,128)"
+      },
+      "legendgroup": "Fuel Cell Vehicle",
+      "marker": {
+        "color": "rgb(0,0,128)"
+      },
+      "fillcolor": "rgb(0,0,128)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Autonomous Electric Vehicle",
+      "showlegend": true,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "CLx5Y+f0DkCkLyuFh\u002fQAQPsEgYXr2O4\u002fdOK\u002fhi5ixD+W0VbvV0rEP588S2it0I0\u002frjfzpw4wcz\u002fEGMPvbnNyP0\u002fj73zIzXM\u002fJG30BBJccj8rJS0mX6RxP+fHMIDsCXQ\u002fK4WO6n52cz8bIIWlN4F2Pw=="
+      },
+      "type": "scatter",
+      "xaxis": "x3",
+      "yaxis": "y3",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(30,34,170)"
+      },
+      "legendgroup": "Autonomous Electric Vehicle",
+      "marker": {
+        "color": "rgb(30,34,170)"
+      },
+      "fillcolor": "rgb(30,34,170)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Autonomous Ride-Share Electric Vehicle",
+      "showlegend": true,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "XhWbIkiMBUDvFG2OhCjjPwdGQp7YaKQ\u002fIliGTwtw5D5jHGVFQkfkPuA8CeXqX+I+8qFhJwtU4D4IQ3S1s0LcPhsW397j8tc+QXcCHPic0j4i5tMLj2DGPg=="
+      },
+      "type": "scatter",
+      "xaxis": "x3",
+      "yaxis": "y3",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(0,169,206)"
+      },
+      "legendgroup": "Autonomous Ride-Share Electric Vehicle",
+      "marker": {
+        "color": "rgb(0,169,206)"
+      },
+      "fillcolor": "rgb(0,169,206)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Combustion Engine",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "o27zS\u002fpUOEBb+jUM3lNDQDSvvrE5RUtAnBBFUHXkUUB6uYSn03xSQJ+KYpno\u002f1JARER6gXSHU0DLAWHdQRBUQJiqOB10d1RAErUAemcsVUC3ITh3blhVQJ9nR3vdR1ZAY4CMuwxhVkAz53CLsRFXQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x4",
+      "yaxis": "y4",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(67,194,204)"
+      },
+      "legendgroup": "Combustion Engine",
+      "marker": {
+        "color": "rgb(67,194,204)"
+      },
+      "fillcolor": "rgb(67,194,204)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Long-Range Electric Vehicle",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "6aTQLI3ETECO8nC63AJHQMGW07mX1UBAeinvIMVNMkAYB6Hz\u002foUwQAivHd20FC1Ai1QhdbfAKUALr1digUgmQCJZMHEQeSNARs4pO7hjHkBgy20YCt8cQKJADkLSK\u002fg\u002fLLiWEN7V+z9H2GTLDdvqPw=="
+      },
+      "type": "scatter",
+      "xaxis": "x4",
+      "yaxis": "y4",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(0,75,135)"
+      },
+      "legendgroup": "Long-Range Electric Vehicle",
+      "marker": {
+        "color": "rgb(0,75,135)"
+      },
+      "fillcolor": "rgb(0,75,135)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Hybrid",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "DEFTRpt3A0CaNiTl30oIQMmYsS\u002f2pQpAYUvVvC8SFUBZR85ExVwVQO1USKB\u002fRBZAH\u002famiyFJFkAlmwBMvyIWQKe0qlutHhZAWU\u002fKYkxAFUCrwkmtKhAVQKhvyfFa2htA4LqhaT90FUAeG2qYy1sUQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x4",
+      "yaxis": "y4",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(0,115,119)"
+      },
+      "legendgroup": "Hybrid",
+      "marker": {
+        "color": "rgb(0,115,119)"
+      },
+      "fillcolor": "rgb(0,115,119)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Short-Range Electric Vehicle",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "X\u002fY02ZP0JUDZHIwuSYAhQBHrv4deChlAMy7iBOkHDECDNlyyqFMJQCa3lGCQYAdARRHzJwWDBEAJZovRzzACQPVB7uJgfABAT3HSwR97+z8ZDrbph4r4P6+w0GODbPo\u002fAyDKfY+zAUBVVfE09mb0Pw=="
+      },
+      "type": "scatter",
+      "xaxis": "x4",
+      "yaxis": "y4",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(159,174,229)"
+      },
+      "legendgroup": "Short-Range Electric Vehicle",
+      "marker": {
+        "color": "rgb(159,174,229)"
+      },
+      "fillcolor": "rgb(159,174,229)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Plug-In Hybrid Electric",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "dBc3JubyDUB0G\u002fdoTKYHQHz7hNg1SgBAr0LkqvFf9T8pG5e2byXwP5DHHCkn1e4\u002fwRT8OOe16z\u002fKGBPPQVvpP7mwHAvFtek\u002fHRzlMR+n5T89YLRjyyzjP0fHDs\u002fO3+c\u002fmlGkz9qZ8j8Vfr9t3XDgPw=="
+      },
+      "type": "scatter",
+      "xaxis": "x4",
+      "yaxis": "y4",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(120,190,32)"
+      },
+      "legendgroup": "Plug-In Hybrid Electric",
+      "marker": {
+        "color": "rgb(120,190,32)"
+      },
+      "fillcolor": "rgb(120,190,32)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Fuel Cell Vehicle",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "Nz0N0iNB2j\u002fqQVy3YyHUP8Pr3LR7IsQ\u002fYGelCSxlkz8pDB0Jl4WFP1FqoGFYHYE\u002fwxcScAdddz\u002flmlY4GwBxPyQ1FYD5u2c\u002f\u002fyD2cVahXD\u002f9LChoBL9ZP\u002fOnoM5oc0c\u002f3TE18rlROD8UvxVMjxswPw=="
+      },
+      "type": "scatter",
+      "xaxis": "x4",
+      "yaxis": "y4",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(0,0,128)"
+      },
+      "legendgroup": "Fuel Cell Vehicle",
+      "marker": {
+        "color": "rgb(0,0,128)"
+      },
+      "fillcolor": "rgb(0,0,128)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Autonomous Electric Vehicle",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "abl3pXUZ4j+HYuNBmu7QP6hJEMagqnc\u002f2ycYx7x6DT\u002fuaY3e28AOP4z1ju9esA4\u002fMvqhnOzKDT983pzARaYMP8AnRRt67gs\u002fEMFYStZ8CT\u002fZ2byMCHgHP+fHMIDsCXQ\u002fK4WO6n52cz8bIIWlN4F2Pw=="
+      },
+      "type": "scatter",
+      "xaxis": "x4",
+      "yaxis": "y4",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(30,34,170)"
+      },
+      "legendgroup": "Autonomous Electric Vehicle",
+      "marker": {
+        "color": "rgb(30,34,170)"
+      },
+      "fillcolor": "rgb(30,34,170)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Autonomous Ride-Share Electric Vehicle",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "S4PRcXkgYD\u002fldoW763DWPgaycPuiG9k+I3G1RK1I3j79krcm3QzgPhz1tWlWWN8+iSv95WsA3T5inqffbcrZPkxNjYMiUtY+bqfozdB30T47ykbA73LGPg=="
+      },
+      "type": "scatter",
+      "xaxis": "x4",
+      "yaxis": "y4",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(0,169,206)"
+      },
+      "legendgroup": "Autonomous Ride-Share Electric Vehicle",
+      "marker": {
+        "color": "rgb(0,169,206)"
+      },
+      "fillcolor": "rgb(0,169,206)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Combustion Engine",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "kkszeUDBTEDnOBAWfSBPQKZ+XqDjOlFATtaAO79KU0C0QINEM3xTQAiK4uQdzVNAa73z6pcjVECjYBfExXNUQAzgPQsvuVRA9D01TC1zVUDVZllidKlVQJ9nR3vdR1ZAY4CMuwxhVkAz53CLsRFXQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x",
+      "yaxis": "y",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(67,194,204)"
+      },
+      "legendgroup": "Combustion Engine",
+      "marker": {
+        "color": "rgb(67,194,204)"
+      },
+      "fillcolor": "rgb(67,194,204)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Long-Range Electric Vehicle",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "Avq4bp9jMECG8I\u002fUr78qQLTxlytF4yNAYDuxCrjgFkA9t9gIQnkVQKv8A13fbxNA8NzBkGlyEUBkeu8ACyMPQIO56DmVHgxA9vtolRiyBUAhQYPVEBECQKJADkLSK\u002fg\u002fLLiWEN7V+z9H2GTLDdvqPw=="
+      },
+      "type": "scatter",
+      "xaxis": "x",
+      "yaxis": "y",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(0,75,135)"
+      },
+      "legendgroup": "Long-Range Electric Vehicle",
+      "marker": {
+        "color": "rgb(0,75,135)"
+      },
+      "fillcolor": "rgb(0,75,135)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Hybrid",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "K48bclpIL0BaD78hB+AvQBAgwQEsCC1A4IvJ+xo8KUBVuQj+fKsoQHuTmb\u002fGxidA4c3+\u002fBWLJkCSzw13\u002fGwlQI\u002f6v+sOGCRAOJ7piIoGIUA875Cpu5YgQKhvyfFa2htA4LqhaT90FUAeG2qYy1sUQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x",
+      "yaxis": "y",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(0,115,119)"
+      },
+      "legendgroup": "Hybrid",
+      "marker": {
+        "color": "rgb(0,115,119)"
+      },
+      "fillcolor": "rgb(0,115,119)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Short-Range Electric Vehicle",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "4uYLfxUPE0CAxcSG\u002fTUOQHvfZvhjLQdAsLPUlg+uAEA9bGm8REMAQPo1KR\u002fEyf4\u002fkL4jBc7L\u002fT\u002fqDFlZwez8P0LzbQCQXPw\u002fJwMR3x2W+j999PX4Qir4P6+w0GODbPo\u002fAyDKfY+zAUBVVfE09mb0Pw=="
+      },
+      "type": "scatter",
+      "xaxis": "x",
+      "yaxis": "y",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(159,174,229)"
+      },
+      "legendgroup": "Short-Range Electric Vehicle",
+      "marker": {
+        "color": "rgb(159,174,229)"
+      },
+      "fillcolor": "rgb(159,174,229)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Plug-In Hybrid Electric",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "eLeejlkVFkDqAkda2HQSQA+qspV1kg1AvXqnnNY3A0CrZMtBS4gCQMSLGfV48QBAvQIThcwY\u002fz\u002fyIpiKl2X8P0jT9OIITvw\u002fzx+WvPLv9D9U5jWscYv0P0fHDs\u002fO3+c\u002fmlGkz9qZ8j8Vfr9t3XDgPw=="
+      },
+      "type": "scatter",
+      "xaxis": "x",
+      "yaxis": "y",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(120,190,32)"
+      },
+      "legendgroup": "Plug-In Hybrid Electric",
+      "marker": {
+        "color": "rgb(120,190,32)"
+      },
+      "fillcolor": "rgb(120,190,32)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Fuel Cell Vehicle",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "Nzj2bnbfsD8\u002fcYIOQ2emP0\u002fVyHu38po\u002fnMf6RyBMgD9kXp4OwAh7P2Gk+s7TB3Y\u002fDC3w1U4Acz+UpDq+CVNsPz7b68K54mc\u002ftJ5ivkZeXD\u002foZS2OdZNZP\u002fOnoM5oc0c\u002f3TE18rlROD8UvxVMjxswPw=="
+      },
+      "type": "scatter",
+      "xaxis": "x",
+      "yaxis": "y",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(0,0,128)"
+      },
+      "legendgroup": "Fuel Cell Vehicle",
+      "marker": {
+        "color": "rgb(0,0,128)"
+      },
+      "fillcolor": "rgb(0,0,128)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Autonomous Electric Vehicle",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "xWmrBR4Puz\u002fuZI0pnGXmPvE9YGjhdOg+neB1qBo47j6exqB6QVHwPtQULTlS3u8+w48K1rU17j45+RrdwVrsPpTSc6jzPOo+HbEulHT4bT8FbVv22pltP+fHMIDsCXQ\u002fK4WO6n52cz8bIIWlN4F2Pw=="
+      },
+      "type": "scatter",
+      "xaxis": "x",
+      "yaxis": "y",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(30,34,170)"
+      },
+      "legendgroup": "Autonomous Electric Vehicle",
+      "marker": {
+        "color": "rgb(30,34,170)"
+      },
+      "fillcolor": "rgb(30,34,170)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Autonomous Ride-Share Electric Vehicle",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "qW3Ba74BZT99lncpyUzOPvZf4XcTJNE+jXGd5I1M1T6MR0HCNffWPneRSiuyKNY+XZ6Jl6yQ1D6ZRAippKbSPqCRmyTF\u002f88+XgCgMobHyD6kAsjWbRDAPg=="
+      },
+      "type": "scatter",
+      "xaxis": "x",
+      "yaxis": "y",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(0,169,206)"
+      },
+      "legendgroup": "Autonomous Ride-Share Electric Vehicle",
+      "marker": {
+        "color": "rgb(0,169,206)"
+      },
+      "fillcolor": "rgb(0,169,206)"
+    }
+  ],
+  "layout": {
+    "template": {
+      "data": {
+        "scatter": [
+          {
+            "line": {
+              "width": 5
+            },
+            "opacity": 0.7,
+            "type": "scatter"
+          }
+        ]
+      },
+      "layout": {
+        "bargap": 0.5,
+        "colorway": [
+          "rgb(0,29,52)",
+          "rgb(0,0,128)",
+          "rgb(30,34,170)",
+          "rgb(0,75,135)",
+          "rgb(0,115,119)",
+          "rgb(0,169,206)",
+          "rgb(67,194,204)",
+          "rgb(159,174,229)",
+          "rgb(34,70,34)",
+          "rgb(0,122,83)",
+          "rgb(107,142,35)",
+          "rgb(120,190,32)",
+          "rgb(113,204,152)",
+          "rgb(232,119,34)",
+          "rgb(255,184,28)",
+          "rgb(109,32,119)",
+          "rgb(223,25,149)",
+          "rgb(0,0,0)",
+          "rgb(44,44,44)",
+          "rgb(80,80,80)",
+          "rgb(158,158,158)",
+          "rgb(117,117,121)",
+          "rgb(200,200,220)",
+          "rgb(102,51,0)",
+          "rgb(128,0,0)"
+        ],
+        "font": {
+          "family": "Arial",
+          "size": 15
+        },
+        "legend": {
+          "entrywidth": 0,
+          "entrywidthmode": "pixels",
+          "font": {
+            "size": 15
+          },
+          "itemsizing": "constant",
+          "itemwidth": 30,
+          "orientation": "h",
+          "traceorder": "normal",
+          "x": 0.5,
+          "xanchor": "center",
+          "y": -0.05,
+          "yanchor": "top"
+        },
+        "margin": {
+          "b": 105,
+          "r": 25,
+          "t": 50
+        },
+        "paper_bgcolor": "white",
+        "plot_bgcolor": "white",
+        "title": {
+          "font": {
+            "color": "#333333",
+            "size": 16
+          }
+        },
+        "xaxis": {
+          "showgrid": false,
+          "tickfont": {
+            "size": 15
+          },
+          "title": {
+            "font": {
+              "size": 15
+            }
+          }
+        },
+        "yaxis": {
+          "gridcolor": "lightgrey",
+          "tickfont": {
+            "size": 15
+          },
+          "title": {
+            "font": {
+              "size": 15
+            }
+          }
+        }
+      }
+    },
+    "xaxis": {
+      "anchor": "y",
+      "domain": [
+        0.0,
+        0.45
+      ],
+      "title": {
+        "text": ""
+      }
+    },
+    "yaxis": {
+      "anchor": "x",
+      "domain": [
+        0.0,
+        0.47
+      ],
+      "title": {
+        "text": "Vehicle Stock (%)"
+      },
+      "showticklabels": true,
+      "nticks": 10,
+      "matches": "y",
+      "range": [
+        -5.0,
+        125.0
+      ]
+    },
+    "xaxis2": {
+      "anchor": "y2",
+      "domain": [
+        0.55,
+        1.0
+      ],
+      "matches": "x",
+      "title": {
+        "text": ""
+      }
+    },
+    "yaxis2": {
+      "anchor": "x2",
+      "domain": [
+        0.0,
+        0.47
+      ],
+      "matches": "y",
+      "showticklabels": true,
+      "nticks": 10,
+      "range": [
+        -5.0,
+        125.0
+      ],
+      "title": {
+        "text": "Vehicle Stock (%)"
+      }
+    },
+    "xaxis3": {
+      "anchor": "y3",
+      "domain": [
+        0.0,
+        0.45
+      ],
+      "matches": "x",
+      "showticklabels": false,
+      "title": {
+        "text": ""
+      }
+    },
+    "yaxis3": {
+      "anchor": "x3",
+      "domain": [
+        0.53,
+        1.0
+      ],
+      "matches": "y",
+      "title": {
+        "text": "Vehicle Stock (%)"
+      },
+      "showticklabels": true,
+      "nticks": 10,
+      "range": [
+        -5.0,
+        125.0
+      ]
+    },
+    "xaxis4": {
+      "anchor": "y4",
+      "domain": [
+        0.55,
+        1.0
+      ],
+      "matches": "x",
+      "showticklabels": false,
+      "title": {
+        "text": ""
+      }
+    },
+    "yaxis4": {
+      "anchor": "x4",
+      "domain": [
+        0.53,
+        1.0
+      ],
+      "matches": "y",
+      "showticklabels": true,
+      "nticks": 10,
+      "range": [
+        -5.0,
+        125.0
+      ],
+      "title": {
+        "text": "Vehicle Stock (%)"
+      }
+    },
+    "annotations": [
+      {
+        "font": {
+          "color": "black",
+          "family": "Arial",
+          "size": 15
+        },
+        "showarrow": false,
+        "text": "\u003cb\u003eAmpol-House-View\u003c\u002fb\u003e\u003cbr\u003eRoad Vehicle Stock by drivetrain",
+        "x": 0.225,
+        "xanchor": "center",
+        "xref": "paper",
+        "y": 0.48,
+        "yanchor": "bottom",
+        "yref": "paper"
+      },
+      {
+        "font": {
+          "color": "black",
+          "family": "Arial",
+          "size": 15
+        },
+        "showarrow": false,
+        "text": "\u003cb\u003eAmpol-1p5DS\u003c\u002fb\u003e\u003cbr\u003eRoad Vehicle Stock by drivetrain",
+        "x": 0.225,
+        "xanchor": "center",
+        "xref": "paper",
+        "y": 1.01,
+        "yanchor": "bottom",
+        "yref": "paper"
+      },
+      {
+        "font": {
+          "color": "black",
+          "family": "Arial",
+          "size": 15
+        },
+        "showarrow": false,
+        "text": "\u003cb\u003eAmpol-2p5DS\u003c\u002fb\u003e\u003cbr\u003eRoad Vehicle Stock by drivetrain",
+        "x": 0.775,
+        "xanchor": "center",
+        "xref": "paper",
+        "y": 1.01,
+        "yanchor": "bottom",
+        "yref": "paper"
+      },
+      {
+        "font": {
+          "color": "darkgrey",
+          "size": 8
+        },
+        "showarrow": false,
+        "text": "2025-12-03 Copyright © CSIRO",
+        "x": 1,
+        "xanchor": "right",
+        "xref": "paper",
+        "y": -0.05,
+        "yanchor": "top",
+        "yref": "paper"
+      }
+    ],
+    "legend": {
+      "tracegroupgap": 0,
+      "title": {
+        "text": ""
+      },
+      "y": -0.07,
+      "yanchor": "top",
+      "xanchor": "center",
+      "x": 0.5
+    },
+    "title": {
+      "text": ""
+    },
+    "shapes": [
+      {
+        "line": {
+          "color": "black",
+          "width": 1
+        },
+        "type": "line",
+        "x0": 0,
+        "x1": 1,
+        "xref": "x domain",
+        "y0": 0,
+        "y1": 0,
+        "yref": "y"
+      },
+      {
+        "line": {
+          "color": "black",
+          "width": 1
+        },
+        "type": "line",
+        "x0": 0,
+        "x1": 1,
+        "xref": "x3 domain",
+        "y0": 0,
+        "y1": 0,
+        "yref": "y3"
+      },
+      {
+        "line": {
+          "color": "black",
+          "width": 1
+        },
+        "type": "line",
+        "x0": 0,
+        "x1": 1,
+        "xref": "x4 domain",
+        "y0": 0,
+        "y1": 0,
+        "yref": "y4"
+      }
+    ],
+    "modebar": {
+      "add": [
+        "v1hovermode",
+        "toggleSpikelines",
+        "drawline",
+        "hoverClosestGl2d",
+        "drawopenpath",
+        "drawclosedpath",
+        "drawcircle",
+        "drawrect",
+        "eraseshape"
+      ]
+    }
+  }
+}

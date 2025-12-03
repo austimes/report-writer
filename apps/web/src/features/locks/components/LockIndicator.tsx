@@ -4,7 +4,7 @@ import { useLock } from '../hooks/useLock';
 import type { Id } from 'convex/_generated/dataModel';
 
 interface LockIndicatorProps {
-  resourceType: 'section' | 'block' | 'thread';
+  resourceType: 'section' | 'block' | 'thread' | 'project' | 'markdown-section' | 'document' | 'node';
   resourceId: string;
   projectId: Id<'projects'>;
   className?: string;
@@ -16,7 +16,7 @@ export function LockIndicator({
   projectId,
   className = '',
 }: LockIndicatorProps) {
-  const { lockStatus, lockOwner } = useLock(resourceType, resourceId, projectId);
+  const { lockStatus, lockOwner, hierarchyConflict } = useLock(resourceType, resourceId, projectId);
   const owner = useQuery(
     api.tables.users.getById,
     lockOwner ? { id: lockOwner } : 'skip'
@@ -54,6 +54,19 @@ export function LockIndicator({
       >
         <span className="w-2 h-2 rounded-full bg-red-500" />
         <span>Locked by {owner?.name || 'another user'}</span>
+      </div>
+    );
+  }
+
+  if (lockStatus === 'hierarchy-conflict' && hierarchyConflict) {
+    const relationText = hierarchyConflict.relation === 'child' ? 'Subsection' : 'Parent';
+    return (
+      <div
+        className={`inline-flex items-center gap-1 px-2 py-1 rounded text-xs bg-amber-100 text-amber-700 ${className}`}
+        title={`${relationText} "${hierarchyConflict.sectionTitle}" is locked by ${hierarchyConflict.lockedBy}`}
+      >
+        <span className="w-2 h-2 rounded-full bg-amber-500" />
+        <span>{relationText} locked</span>
       </div>
     );
   }

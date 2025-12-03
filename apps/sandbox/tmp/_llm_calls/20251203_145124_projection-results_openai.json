@@ -1,0 +1,29 @@
+{
+  "timestamp": "2025-12-03T14:51:24.850607",
+  "section_id": "projection-results",
+  "provider": "openai",
+  "model": "gpt-5.1-2025-11-13",
+  "request": {
+    "model": "gpt-5.1-2025-11-13",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an expert report writer for energy and emissions analysis."
+      },
+      {
+        "role": "user",
+        "content": "[text prompt, 3 images]"
+      }
+    ],
+    "max_tokens": 4000,
+    "reasoning_effort": "medium",
+    "image_count": 3,
+    "chart_ids": [
+      "emissions_reduction_by_sector",
+      "net_emissions_by_sector",
+      "electricity_consumption_by_sector"
+    ],
+    "prompt_preview": "# Task: Write the 'Projection results' section of the report\n\n## Section Information\n- **Title**: Projection results\n- **Level**: # (heading level 1)\n\n## Instructions\nProvide an overview of the projection results\n\n## Available Data\nThe following 3 chart(s) are available for this section:\n\n### Emissions Reduction by Sector\n- **ID**: emissions_reduction_by_sector\n- **Category**: emissions\n- **Figure Path**: `figures/emissions_reduction_by_sector.png`\n- **Units**: Mt CO\u2082-e\n- **Dimensions**: commodi..."
+  },
+  "response": "Projected emissions trajectories diverge significantly across the three scenarios, despite all beginning from the same 2025 net emissions level of 401.05 Mt CO\u2082\u2011e. In the Ampol\u20111p5DS (1.5\u00b0C\u2011aligned pathway), cumulative measures across sectors reduce annual emissions by 472.53 Mt CO\u2082\u2011e relative to 2025, driving the system to net\u2011negative emissions by 2050. Ampol\u20112p5DS (2.5\u00b0C pathway) delivers a 397.51 Mt CO\u2082\u2011e reduction, bringing emissions close to net zero. By contrast, the Ampol\u2011House\u2011View (reference/baseline scenario) achieves a more modest 195.63 Mt CO\u2082\u2011e reduction, with residual emissions still representing around half of the 2025 level.\n\nAcross all scenarios, Power Generation is the single largest source of abatement, contributing around 129 Mt CO\u2082\u2011e of reductions by 2050. In Ampol\u20111p5DS, substantial additional cuts arise from Industry (\u2011109.74 Mt CO\u2082\u2011e) and Transport (\u201194.07 Mt CO\u2082\u2011e), consistent with deep electrification and efficiency improvements. Ampol\u20112p5DS relies more heavily on Land Use (\u2011101.06 Mt CO\u2082\u2011e) alongside Industry (\u201197.01 Mt CO\u2082\u2011e), while the Ampol\u2011House\u2011View features a net increase in Land Use emissions (+33.58 Mt CO\u2082\u2011e), partially offsetting reductions in Power Generation (\u2011127.83 Mt CO\u2082\u2011e) and Industry (\u201172.37 Mt CO\u2082\u2011e). These patterns underscore the importance of both energy\u2011system decarbonisation and land\u2011sector performance in meeting long\u2011term climate objectives.\n\n![Emissions Reduction by Sector](figures/emissions_reduction_by_sector.png)  \n*Figure: Sectoral contributions to emissions reductions from 2025 to 2050 under each scenario, relative to a 2025 baseline of 401.05 Mt CO\u2082\u2011e.*\n\nThe time\u2011path of net emissions reflects these sectoral contributions. Under Ampol\u20111p5DS, total net emissions fall from 401.05 Mt CO\u2082\u2011e in 2025 to \u201171.48 Mt CO\u2082\u2011e in 2050, a 117.8% reduction that implies net carbon removals at mid\u2011century. Ampol\u20112p5DS delivers a 99.1% reduction over the same period, with 2050 net emissions of 3.52 Mt CO\u2082\u2011e, broadly consistent with an economy at or near net zero. The Ampol\u2011House\u2011View shows a slower decline, reaching 205.41 Mt CO\u2082\u2011e by 2050 (\u201148.8% versus 2025). Consequently, by 2050 the reference/baseline scenario is 276.9 Mt CO\u2082\u2011e higher than the Ampol\u20111p5DS pathway, highlighting the scale of additional effort required beyond current\u2011trajectory settings. The evolution of sectoral profiles and the relative roles of industry, transport, buildings and land use within these totals are examined in more detail in subsequent sectoral sections.\n\n![Net Emissions by Sector](figures/net_emissions_by_sector.png)  \n*Figure: Projected net emissions by sector from 2025 to 2050, showing aggregate trajectories and progress toward (or beyond) net zero under each scenario.*\n\nDecarbonisation is closely linked to increased electricity demand as end\u2011use sectors electrify. From a starting point of 355.36 TWh in 2025, total electricity consumption in Ampol\u20111p5DS almost triples to 1,019.51 TWh in 2050, an increase of 186.9%. Ampol\u20112p5DS shows a 119.7% rise to 780.55 TWh, while electricity use in the Ampol\u2011House\u2011View grows by 102.5% to 719.75 TWh. By 2050, electricity consumption in the 1.5\u00b0C\u2011aligned pathway is 299.8 TWh higher than in the reference/baseline scenario, reflecting greater electrification of transport, industry and buildings, as well as additional demand from emerging loads such as hydrogen production and direct air capture. The interplay between this rising electricity demand and the decarbonisation of power supply is addressed in the dedicated power\u2011sector analysis.\n\n![Electricity consumption by sector](figures/electricity_consumption_by_sector.png)  \n*Figure: Projected electricity consumption by sector from 2025 to 2050, illustrating the stronger electrification trend under the more ambitious climate pathways.*"
+}

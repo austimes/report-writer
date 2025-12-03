@@ -5,6 +5,9 @@ node_modules/
 
 # Testing
 coverage/
+test-results/
+playwright-results/
+tests/e2e/.auth/
 
 # Production builds
 dist/

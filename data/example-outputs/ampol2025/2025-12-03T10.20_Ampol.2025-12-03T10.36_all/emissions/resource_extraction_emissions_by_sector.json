@@ -1,0 +1,899 @@
+{
+  "data": [
+    {
+      "hovertemplate": "scen=Ampol-1p5DS\u003cbr\u003eyear=%{x}\u003cbr\u003eMt CO₂-e=%{y}\u003cextra\u003e\u003c\u002fextra\u003e",
+      "legendgroup": "",
+      "marker": {
+        "color": "rgb(158,158,158)",
+        "symbol": "circle",
+        "size": 0.001
+      },
+      "mode": "markers",
+      "name": "",
+      "orientation": "v",
+      "showlegend": false,
+      "x": {
+        "dtype": "i4",
+        "bdata": "6QcAAOoHAADrBwAA7AcAAO0HAADuBwAA7wcAAPAHAADxBwAA8gcAAPMHAAD4BwAA\u002fQcAAAIIAAA="
+      },
+      "xaxis": "x3",
+      "y": {
+        "dtype": "i1",
+        "bdata": "AAAAAAAAAAAAAAAAAAA="
+      },
+      "yaxis": "y3",
+      "type": "scatter",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(158,158,158)"
+      },
+      "opacity": 0
+    },
+    {
+      "hovertemplate": "scen=Ampol-2p5DS\u003cbr\u003eyear=%{x}\u003cbr\u003eMt CO₂-e=%{y}\u003cextra\u003e\u003c\u002fextra\u003e",
+      "legendgroup": "",
+      "marker": {
+        "color": "rgb(158,158,158)",
+        "symbol": "circle",
+        "size": 0.001
+      },
+      "mode": "markers",
+      "name": "",
+      "orientation": "v",
+      "showlegend": false,
+      "x": {
+        "dtype": "i4",
+        "bdata": "6QcAAOoHAADrBwAA7AcAAO0HAADuBwAA7wcAAPAHAADxBwAA8gcAAPMHAAD4BwAA\u002fQcAAAIIAAA="
+      },
+      "xaxis": "x4",
+      "y": {
+        "dtype": "i1",
+        "bdata": "AAAAAAAAAAAAAAAAAAA="
+      },
+      "yaxis": "y4",
+      "type": "scatter",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(158,158,158)"
+      },
+      "opacity": 0
+    },
+    {
+      "hovertemplate": "scen=Ampol-House-View\u003cbr\u003eyear=%{x}\u003cbr\u003eMt CO₂-e=%{y}\u003cextra\u003e\u003c\u002fextra\u003e",
+      "legendgroup": "",
+      "marker": {
+        "color": "rgb(158,158,158)",
+        "symbol": "circle",
+        "size": 0.001
+      },
+      "mode": "markers",
+      "name": "",
+      "orientation": "v",
+      "showlegend": false,
+      "x": {
+        "dtype": "i4",
+        "bdata": "6QcAAOoHAADrBwAA7AcAAO0HAADuBwAA7wcAAPAHAADxBwAA8gcAAPMHAAD4BwAA\u002fQcAAAIIAAA="
+      },
+      "xaxis": "x",
+      "y": {
+        "dtype": "i1",
+        "bdata": "AAAAAAAAAAAAAAAAAAA="
+      },
+      "yaxis": "y",
+      "type": "scatter",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(158,158,158)"
+      },
+      "opacity": 0
+    },
+    {
+      "fill": "tonexty",
+      "name": "Mining - Coal",
+      "showlegend": true,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "O+7PD5nqBkCWqs2fIHoQQJb+eXgdJhdAWtEBVc6pIkAVecc10t0lQK9a4ClAHChASdworElmLUC16ug0odYxQP+ThiDrMjVAVDrEINf1N0AM0mCZHpk6QO9dY91nzkFA7K43EOFrQkAupLaCZztDQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x3",
+      "yaxis": "y3",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(0,0,0)"
+      },
+      "legendgroup": "Mining - Coal",
+      "marker": {
+        "color": "rgb(0,0,0)"
+      },
+      "fillcolor": "rgb(0,0,0)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Mining - Gas",
+      "showlegend": true,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "jeh3y5AzBkAPo1ROfhsRQLWQGM75QxpAHlh0BYV9IkDPtH1chdskQIHt9mKnrCZATPhmMc\u002fvKEAUG0kqrpArQMPmJlQ+fy1ABsxPlJlQLkB9EvV3hrUuQNVAiXG1my5AnOAL6Fk1L0DbxwmDOtwwQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x3",
+      "yaxis": "y3",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(0,0,128)"
+      },
+      "legendgroup": "Mining - Gas",
+      "marker": {
+        "color": "rgb(0,0,128)"
+      },
+      "fillcolor": "rgb(0,0,128)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Mining - Oil",
+      "showlegend": true,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "PDljy\u002fFn2D8vHrTLYPzZP2DN0txihNs\u002fVO97L7xg3D9g7uaTXbLcPyFBFHUfOt0\u002fqjF0dQu43T+jbG2+iC3ePxEkgR\u002fJmd4\u002fh65rr9\u002ff3T+oCFoVix7dPw3k\u002fjxPr9w\u002fVEDNUd7f2z+AVY5IIxfbPw=="
+      },
+      "type": "scatter",
+      "xaxis": "x3",
+      "yaxis": "y3",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(30,34,170)"
+      },
+      "legendgroup": "Mining - Oil",
+      "marker": {
+        "color": "rgb(30,34,170)"
+      },
+      "fillcolor": "rgb(30,34,170)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Mining - Other",
+      "showlegend": true,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "EOL4hfJU0j43ytZI9K3MPi84i7mBjog\u002fntEptVXInj+gdq6mJaehP3Etxj62UKQ\u002faa\u002fktrqppz+Hf2od87mrP6lfjiGDebg\u002fcWyBHWzTuD8vc8YFpIe5Py240diUX7o\u002fiA1zi4u7uj\u002fdjN2b0xi7Pw=="
+      },
+      "type": "scatter",
+      "xaxis": "x3",
+      "yaxis": "y3",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(0,75,135)"
+      },
+      "legendgroup": "Mining - Other",
+      "marker": {
+        "color": "rgb(0,75,135)"
+      },
+      "fillcolor": "rgb(0,75,135)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Mining - Zinc",
+      "showlegend": true,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "hjLG968CoT7dVrqLU7ecPuaKp\u002fxCvAc\u002fbela2pnmoD8bjfmZq5ulP71T\u002fsLCPqo\u002fK5vIVhjerj8XfguuM4uwPygfCT1joLE\u002fqH\u002fhT9I7sT\u002fdZOm8jAaxP9eCG1OcVLE\u002fHmpuNYaysD9uy4fjrBywPw=="
+      },
+      "type": "scatter",
+      "xaxis": "x3",
+      "yaxis": "y3",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(80,80,80)"
+      },
+      "legendgroup": "Mining - Zinc",
+      "marker": {
+        "color": "rgb(80,80,80)"
+      },
+      "fillcolor": "rgb(80,80,80)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Mining - Copper",
+      "showlegend": true,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "ugFOY969oD5vvOlfNIGaPkCuNBDkVpg+CnFFDS39tD57KkMbn17TPtgI78GrQl4\u002f0xzDFfgobz8fbbhSi2+HP2atZqxP3ag\u002fTMEAK+AlqD+LLmHOcbSnP2cuzWjD\u002f6c\u002fk3Hb9woFpz9x0mmOOBamPw=="
+      },
+      "type": "scatter",
+      "xaxis": "x3",
+      "yaxis": "y3",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(232,119,34)"
+      },
+      "legendgroup": "Mining - Copper",
+      "marker": {
+        "color": "rgb(232,119,34)"
+      },
+      "fillcolor": "rgb(232,119,34)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Mining - Coal",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "zFZsYn1ZE0BAYE6XZYgjQNEWX6FptS1AA4K3CNMkN0Aoer+XisU7QHIb+oRLPD1AgYlLVvfzPUBCGU0v3wQ\u002fQLKehspmpD5ArBl9AxF4QEALdOd3V\u002fJAQO9dY91nzkFA7K43EOFrQkAupLaCZztDQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x4",
+      "yaxis": "y4",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(0,0,0)"
+      },
+      "legendgroup": "Mining - Coal",
+      "marker": {
+        "color": "rgb(0,0,0)"
+      },
+      "fillcolor": "rgb(0,0,0)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Mining - Gas",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "BKKCt6ASG0Cy713LhXUgQIo7qFH8AiRAfPfxMCjaJkCcZc9P\u002f8QnQLGHVr+nYixAUuqCz8O8K0DafuIuGBEuQOlN3INW5S1ASF+w68+ILUC6Opt+0OotQNVAiXG1my5AnOAL6Fk1L0DbxwmDOtwwQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x4",
+      "yaxis": "y4",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(0,0,128)"
+      },
+      "legendgroup": "Mining - Gas",
+      "marker": {
+        "color": "rgb(0,0,128)"
+      },
+      "fillcolor": "rgb(0,0,128)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Mining - Oil",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "+DKcYLHW5z+16qFxC5jlP39oYSmHueM\u002fdZYiUf++4T8tms5Z00XhP4gujG6X0OA\u002fSO3Fhl5e4D\u002f6kewvNt\u002ffP+VQxwNAB98\u002fAwcI27Uz3j\u002fDcbBRrl\u002fdPw3k\u002fjxPr9w\u002fVEDNUd7f2z+AVY5IIxfbPw=="
+      },
+      "type": "scatter",
+      "xaxis": "x4",
+      "yaxis": "y4",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(30,34,170)"
+      },
+      "legendgroup": "Mining - Oil",
+      "marker": {
+        "color": "rgb(30,34,170)"
+      },
+      "fillcolor": "rgb(30,34,170)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Mining - Other",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "LPTm+Ugmaj9u5CZahoV5P5T3wAVOUZM\u002fUGxo8jDotj9cTKgSR363PwjQ6LtNCbg\u002fmTdlA0BiuD\u002fAh4H6a8+4P3Fs4M+PMbk\u002fl32y5KuKuT\u002f4xaDuVeO5Py240diUX7o\u002fiA1zi4u7uj\u002fdjN2b0xi7Pw=="
+      },
+      "type": "scatter",
+      "xaxis": "x4",
+      "yaxis": "y4",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(0,75,135)"
+      },
+      "legendgroup": "Mining - Other",
+      "marker": {
+        "color": "rgb(0,75,135)"
+      },
+      "fillcolor": "rgb(0,75,135)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Mining - Zinc",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "WuvzdqMBeT9n1FNajnOEP8N52PId3IM\u002flkzP179nrD+w8o0AS0GwP\u002fxGRRcxZrI\u002fI+szyneJtD9J2pV7etyzP9ZzzhWQz7I\u002fXvd7tiyIsj+HMqf+dOGxP9eCG1OcVLE\u002fHmpuNYaysD9uy4fjrBywPw=="
+      },
+      "type": "scatter",
+      "xaxis": "x4",
+      "yaxis": "y4",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(80,80,80)"
+      },
+      "legendgroup": "Mining - Zinc",
+      "marker": {
+        "color": "rgb(80,80,80)"
+      },
+      "fillcolor": "rgb(80,80,80)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Mining - Copper",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "9L+cbqpUcz95B8juo9B+Pwf\u002fgBO7NXo\u002fYGQXd\u002fdbdT8wV+E6saF0P4OS8I5wIJI\u002fTOBiIcoNrT+RBMJoAQysP60DLsUKdqo\u002fDEReNSDvqT\u002fTf+Y+CeKoP2cuzWjD\u002f6c\u002fk3Hb9woFpz9x0mmOOBamPw=="
+      },
+      "type": "scatter",
+      "xaxis": "x4",
+      "yaxis": "y4",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(232,119,34)"
+      },
+      "legendgroup": "Mining - Copper",
+      "marker": {
+        "color": "rgb(232,119,34)"
+      },
+      "fillcolor": "rgb(232,119,34)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Mining - Coal",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "UWdB61frG0D2Y2ZUXxQkQGMXSsiTKzBA6D1v9YYMOkAZlPq\u002fQaE8QBc0yzM8Ez5A\u002fap0DPXwPkBPVZYqEvA\u002fQCCObl95KkBAqmemKoOHQECK67fEOPhAQO9dY91nzkFA7K43EOFrQkAupLaCZztDQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x",
+      "yaxis": "y",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(0,0,0)"
+      },
+      "legendgroup": "Mining - Coal",
+      "marker": {
+        "color": "rgb(0,0,0)"
+      },
+      "fillcolor": "rgb(0,0,0)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Mining - Gas",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "F09ASOl5HUDBXtkkVVUhQEpkgLybESRASaj+D8OtJkD6Z4rNREcpQE7ZDO1q3CxAbyV2IUiLLEBbggHysYUuQEQUeFrfNi1AwVyKhwrGLUBl5hyCmRouQNVAiXG1my5AnOAL6Fk1L0DbxwmDOtwwQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x",
+      "yaxis": "y",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(0,0,128)"
+      },
+      "legendgroup": "Mining - Gas",
+      "marker": {
+        "color": "rgb(0,0,128)"
+      },
+      "fillcolor": "rgb(0,0,128)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Mining - Oil",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "Qe8T66Qu5z948YXSJPPkP+mlJc4X7+I\u002fpHeXShgH4T+2R3pto6XgPwQlEd\u002fLR+A\u002fVk81GU3a3z8FYbBMCULfP0xICXBPB98\u002f18DGxRVc3j9QLHIJBYLdPw3k\u002fjxPr9w\u002fVEDNUd7f2z+AVY5IIxfbPw=="
+      },
+      "type": "scatter",
+      "xaxis": "x",
+      "yaxis": "y",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(30,34,170)"
+      },
+      "legendgroup": "Mining - Oil",
+      "marker": {
+        "color": "rgb(30,34,170)"
+      },
+      "fillcolor": "rgb(30,34,170)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Mining - Other",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "WqGJ5CfeeD+kbj4S+e56PweKe8\u002fTopE\u002fmUiTJX4epj\u002fWabX7r+mpP685QPF2pas\u002fFr8IPsTtsD9\u002feGB\u002fUauwP8UhIfeHQ7k\u002fZZGAVLGWuT+1\u002fL3uIuq5Py240diUX7o\u002fiA1zi4u7uj\u002fdjN2b0xi7Pw=="
+      },
+      "type": "scatter",
+      "xaxis": "x",
+      "yaxis": "y",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(0,75,135)"
+      },
+      "legendgroup": "Mining - Other",
+      "marker": {
+        "color": "rgb(0,75,135)"
+      },
+      "fillcolor": "rgb(0,75,135)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Mining - Zinc",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "xWxYN1wriT8KntOEwjyFP+si26ua94M\u002f11ZdHkkeqz+giaQLdJ+vPwwLVUSZubI\u002fiYgm8kB7tD8EX4krI7+zP5UuyaxrLrM\u002fhnlOEw6Ksj\u002fXuvJQyuKxP9eCG1OcVLE\u002fHmpuNYaysD9uy4fjrBywPw=="
+      },
+      "type": "scatter",
+      "xaxis": "x",
+      "yaxis": "y",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(80,80,80)"
+      },
+      "legendgroup": "Mining - Zinc",
+      "marker": {
+        "color": "rgb(80,80,80)"
+      },
+      "fillcolor": "rgb(80,80,80)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Mining - Copper",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "85cdUo2Qgz\u002faBcAD1RmAP4NozVEcX3o\u002fEst1MTSAdT+qSWehi0qSP1+q2t9E\u002fpk\u002fz9KcABWPpj8ZAsvflOmmPwaTOP64Aas\u002flXFT3HfyqT\u002fFqvQWGuWoP2cuzWjD\u002f6c\u002fk3Hb9woFpz9x0mmOOBamPw=="
+      },
+      "type": "scatter",
+      "xaxis": "x",
+      "yaxis": "y",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(232,119,34)"
+      },
+      "legendgroup": "Mining - Copper",
+      "marker": {
+        "color": "rgb(232,119,34)"
+      },
+      "fillcolor": "rgb(232,119,34)"
+    }
+  ],
+  "layout": {
+    "template": {
+      "data": {
+        "scatter": [
+          {
+            "line": {
+              "width": 5
+            },
+            "opacity": 0.7,
+            "type": "scatter"
+          }
+        ]
+      },
+      "layout": {
+        "bargap": 0.5,
+        "colorway": [
+          "rgb(0,29,52)",
+          "rgb(0,0,128)",
+          "rgb(30,34,170)",
+          "rgb(0,75,135)",
+          "rgb(0,115,119)",
+          "rgb(0,169,206)",
+          "rgb(67,194,204)",
+          "rgb(159,174,229)",
+          "rgb(34,70,34)",
+          "rgb(0,122,83)",
+          "rgb(107,142,35)",
+          "rgb(120,190,32)",
+          "rgb(113,204,152)",
+          "rgb(232,119,34)",
+          "rgb(255,184,28)",
+          "rgb(109,32,119)",
+          "rgb(223,25,149)",
+          "rgb(0,0,0)",
+          "rgb(44,44,44)",
+          "rgb(80,80,80)",
+          "rgb(158,158,158)",
+          "rgb(117,117,121)",
+          "rgb(200,200,220)",
+          "rgb(102,51,0)",
+          "rgb(128,0,0)"
+        ],
+        "font": {
+          "family": "Arial",
+          "size": 15
+        },
+        "legend": {
+          "entrywidth": 0,
+          "entrywidthmode": "pixels",
+          "font": {
+            "size": 15
+          },
+          "itemsizing": "constant",
+          "itemwidth": 30,
+          "orientation": "h",
+          "traceorder": "normal",
+          "x": 0.5,
+          "xanchor": "center",
+          "y": -0.05,
+          "yanchor": "top"
+        },
+        "margin": {
+          "b": 105,
+          "r": 25,
+          "t": 50
+        },
+        "paper_bgcolor": "white",
+        "plot_bgcolor": "white",
+        "title": {
+          "font": {
+            "color": "#333333",
+            "size": 16
+          }
+        },
+        "xaxis": {
+          "showgrid": false,
+          "tickfont": {
+            "size": 15
+          },
+          "title": {
+            "font": {
+              "size": 15
+            }
+          }
+        },
+        "yaxis": {
+          "gridcolor": "lightgrey",
+          "tickfont": {
+            "size": 15
+          },
+          "title": {
+            "font": {
+              "size": 15
+            }
+          }
+        }
+      }
+    },
+    "xaxis": {
+      "anchor": "y",
+      "domain": [
+        0.0,
+        0.45
+      ],
+      "title": {
+        "text": ""
+      }
+    },
+    "yaxis": {
+      "anchor": "x",
+      "domain": [
+        0.0,
+        0.47
+      ],
+      "title": {
+        "text": "Mt CO₂-e"
+      },
+      "showticklabels": true,
+      "nticks": 10,
+      "matches": "y",
+      "range": [
+        -2.5,
+        72.5
+      ]
+    },
+    "xaxis2": {
+      "anchor": "y2",
+      "domain": [
+        0.55,
+        1.0
+      ],
+      "matches": "x",
+      "title": {
+        "text": ""
+      }
+    },
+    "yaxis2": {
+      "anchor": "x2",
+      "domain": [
+        0.0,
+        0.47
+      ],
+      "matches": "y",
+      "showticklabels": true,
+      "nticks": 10,
+      "range": [
+        -2.5,
+        72.5
+      ],
+      "title": {
+        "text": "Mt CO₂-e"
+      }
+    },
+    "xaxis3": {
+      "anchor": "y3",
+      "domain": [
+        0.0,
+        0.45
+      ],
+      "matches": "x",
+      "showticklabels": false,
+      "title": {
+        "text": ""
+      }
+    },
+    "yaxis3": {
+      "anchor": "x3",
+      "domain": [
+        0.53,
+        1.0
+      ],
+      "matches": "y",
+      "title": {
+        "text": "Mt CO₂-e"
+      },
+      "showticklabels": true,
+      "nticks": 10,
+      "range": [
+        -2.5,
+        72.5
+      ]
+    },
+    "xaxis4": {
+      "anchor": "y4",
+      "domain": [
+        0.55,
+        1.0
+      ],
+      "matches": "x",
+      "showticklabels": false,
+      "title": {
+        "text": ""
+      }
+    },
+    "yaxis4": {
+      "anchor": "x4",
+      "domain": [
+        0.53,
+        1.0
+      ],
+      "matches": "y",
+      "showticklabels": true,
+      "nticks": 10,
+      "range": [
+        -2.5,
+        72.5
+      ],
+      "title": {
+        "text": "Mt CO₂-e"
+      }
+    },
+    "annotations": [
+      {
+        "font": {
+          "color": "black",
+          "family": "Arial",
+          "size": 15
+        },
+        "showarrow": false,
+        "text": "\u003cb\u003eAmpol-House-View\u003c\u002fb\u003e\u003cbr\u003eResource Extraction Emissions by Sector",
+        "x": 0.225,
+        "xanchor": "center",
+        "xref": "paper",
+        "y": 0.48,
+        "yanchor": "bottom",
+        "yref": "paper"
+      },
+      {
+        "font": {
+          "color": "black",
+          "family": "Arial",
+          "size": 15
+        },
+        "showarrow": false,
+        "text": "\u003cb\u003eAmpol-1p5DS\u003c\u002fb\u003e\u003cbr\u003eResource Extraction Emissions by Sector",
+        "x": 0.225,
+        "xanchor": "center",
+        "xref": "paper",
+        "y": 1.01,
+        "yanchor": "bottom",
+        "yref": "paper"
+      },
+      {
+        "font": {
+          "color": "black",
+          "family": "Arial",
+          "size": 15
+        },
+        "showarrow": false,
+        "text": "\u003cb\u003eAmpol-2p5DS\u003c\u002fb\u003e\u003cbr\u003eResource Extraction Emissions by Sector",
+        "x": 0.775,
+        "xanchor": "center",
+        "xref": "paper",
+        "y": 1.01,
+        "yanchor": "bottom",
+        "yref": "paper"
+      },
+      {
+        "font": {
+          "color": "darkgrey",
+          "size": 8
+        },
+        "showarrow": false,
+        "text": "2025-12-03 Copyright © CSIRO",
+        "x": 1,
+        "xanchor": "right",
+        "xref": "paper",
+        "y": -0.05,
+        "yanchor": "top",
+        "yref": "paper"
+      }
+    ],
+    "legend": {
+      "tracegroupgap": 0,
+      "title": {
+        "text": ""
+      },
+      "y": -0.07,
+      "yanchor": "top",
+      "xanchor": "center",
+      "x": 0.5
+    },
+    "title": {
+      "text": ""
+    },
+    "shapes": [
+      {
+        "line": {
+          "color": "black",
+          "width": 1
+        },
+        "type": "line",
+        "x0": 0,
+        "x1": 1,
+        "xref": "x domain",
+        "y0": 0,
+        "y1": 0,
+        "yref": "y"
+      },
+      {
+        "line": {
+          "color": "black",
+          "width": 1
+        },
+        "type": "line",
+        "x0": 0,
+        "x1": 1,
+        "xref": "x3 domain",
+        "y0": 0,
+        "y1": 0,
+        "yref": "y3"
+      },
+      {
+        "line": {
+          "color": "black",
+          "width": 1
+        },
+        "type": "line",
+        "x0": 0,
+        "x1": 1,
+        "xref": "x4 domain",
+        "y0": 0,
+        "y1": 0,
+        "yref": "y4"
+      }
+    ],
+    "modebar": {
+      "add": [
+        "v1hovermode",
+        "toggleSpikelines",
+        "drawline",
+        "hoverClosestGl2d",
+        "drawopenpath",
+        "drawclosedpath",
+        "drawcircle",
+        "drawrect",
+        "eraseshape"
+      ]
+    }
+  }
+}

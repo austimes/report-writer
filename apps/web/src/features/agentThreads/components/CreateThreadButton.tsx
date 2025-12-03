@@ -7,24 +7,29 @@ import type { Id } from 'convex/_generated/dataModel';
 
 interface CreateThreadButtonProps {
   projectId: Id<'projects'>;
-  anchorSectionId?: Id<'sections'>;
+  documentId?: Id<'documents'>;
+  anchorNodeId?: Id<'nodes'>;
   anchorCommentId?: Id<'comments'>;
   onCreated?: (threadId: Id<'agentThreads'>) => void;
 }
 
 export function CreateThreadButton({
   projectId,
-  anchorSectionId,
+  documentId,
+  anchorNodeId,
   anchorCommentId,
   onCreated,
 }: CreateThreadButtonProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [title, setTitle] = useState('');
   const createThread = useMutation(api.features.agent.createThread);
-  const sections = useQuery(api.tables.sections.listByProject, { projectId });
-  const [selectedSectionId, setSelectedSectionId] = useState<Id<'sections'> | undefined>(
-    anchorSectionId
+  const nodes = useQuery(
+    api.tables.nodes.listByDocument,
+    documentId ? { documentId } : 'skip'
   );
+  const [selectedNodeId, setSelectedNodeId] = useState<Id<'nodes'> | undefined>(anchorNodeId);
+
+  const headingNodes = nodes?.filter((node) => node.nodeType === 'heading') ?? [];
 
   const handleCreate = async () => {
     if (!title.trim()) return;
@@ -32,8 +37,9 @@ export function CreateThreadButton({
     try {
       const threadId = await createThread({
         projectId,
+        documentId,
         title: title.trim(),
-        anchorSectionId: selectedSectionId,
+        anchorNodeId: selectedNodeId,
         anchorCommentId,
       });
       setTitle('');
@@ -74,25 +80,29 @@ export function CreateThreadButton({
             />
           </div>
 
-          <div>
-            <label className="block text-sm font-medium mb-1">
-              Anchor to Section (Optional)
-            </label>
-            <select
-              className="w-full px-3 py-2 border rounded-md"
-              value={selectedSectionId || ''}
-              onChange={(e) =>
-                setSelectedSectionId(e.target.value as Id<'sections'> | undefined)
-              }
-            >
-              <option value="">No anchor</option>
-              {sections?.map((section: any) => (
-                <option key={section._id} value={section._id}>
-                  {section.headingText}
-                </option>
-              ))}
-            </select>
-          </div>
+          {documentId && (
+            <div>
+              <label className="block text-sm font-medium mb-1">
+                Anchor to Heading (Optional)
+              </label>
+              <select
+                className="w-full px-3 py-2 border rounded-md"
+                value={selectedNodeId || ''}
+                onChange={(e) =>
+                  setSelectedNodeId(
+                    e.target.value ? (e.target.value as Id<'nodes'>) : undefined
+                  )
+                }
+              >
+                <option value="">No anchor</option>
+                {headingNodes.map((node) => (
+                  <option key={node._id} value={node._id}>
+                    {node.text || '(Untitled heading)'}
+                  </option>
+                ))}
+              </select>
+            </div>
+          )}
 
           <div className="flex gap-2 justify-end">
             <Button

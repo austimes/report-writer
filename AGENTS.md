@@ -231,6 +231,38 @@ daytona snapshot list                                            # List snapshot
 
 See [DEPLOY.md](DEPLOY.md) for complete deployment instructions.
 
+## Development Workflow
+
+### Type Checking and Linting
+
+**IMPORTANT**: Always run type checking after making code changes.
+
+**Frontend (apps/web):**
+```bash
+cd apps/web && npm run build:typecheck  # TypeScript + build
+cd apps/web && npx tsc --noEmit         # TypeScript only
+cd apps/web && npm run lint             # ESLint
+```
+
+**Backend (Convex):**
+```bash
+npx convex dev --once                   # Compile and validate Convex functions
+```
+
+**Tests:**
+```bash
+npm test                                # Run all Vitest tests
+npm run test:e2e                        # Run Playwright E2E tests
+```
+
+### Pre-commit Checklist
+
+Before committing changes:
+1. ✅ Run `cd apps/web && npm run build:typecheck`
+2. ✅ Run `npx convex dev --once`
+3. ✅ Run relevant tests with `npm test`
+4. ✅ Verify the app works in the browser
+
 ## Available Tools
 
 ### GitHub CLI (gh)

@@ -1,0 +1,31 @@
+{
+  "timestamp": "2025-12-03T14:20:52.346909",
+  "section_id": "electricity-generation",
+  "provider": "openai",
+  "model": "gpt-5.1-2025-11-13",
+  "request": {
+    "model": "gpt-5.1-2025-11-13",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an expert report writer for energy and emissions analysis."
+      },
+      {
+        "role": "user",
+        "content": "[text prompt, 5 images]"
+      }
+    ],
+    "max_tokens": 4000,
+    "reasoning_effort": "medium",
+    "image_count": 5,
+    "chart_ids": [
+      "electricity_generation_energy",
+      "electricity_generation_capacity_by_tech_and_fuel",
+      "renewable_energy_fraction",
+      "generation_emissions_intensity_by_tech",
+      "storage_capacity_by_technology"
+    ],
+    "prompt_preview": "# Task: Write the 'Electricity generation' section of the report\n\n## Section Information\n- **Title**: Electricity generation\n- **Level**: ## (heading level 2)\n- **Parent Section**: Projection results\n\n## Instructions\nProvide an overview of the electricity generation projection results\n\n## Available Data\nThe following 5 chart(s) are available for this section:\n\n### Electricity Generation Energy\n- **ID**: electricity_generation_energy\n- **Category**: electricity\n- **Figure Path**: `figures/electri..."
+  },
+  "response": "Total electricity generation increases substantially in all scenarios, broadly tracking higher electrification and hydrogen demand. From a common 2025 starting point of 266 TWh, output grows to 1,472 TWh by 2050 in Ampol-1p5DS (a 453% increase) and 1,347 TWh in Ampol-2p5DS (406%). In the Ampol-House-View, generation reaches 1,095 TWh by 2050 (311% growth). The 1.5\u00b0C-aligned pathway therefore requires around 377 TWh more annual generation than the reference by 2050, reflecting deeper decarbonisation in end\u2011use sectors and associated electricity demand.\n\n![Electricity Generation Energy](figures/electricity_generation_energy.png)  \n*Figure: Projected electricity generation by technology and scenario, 2025\u20132050 (TWh).*\n\nMeeting this additional demand requires very large expansions in installed capacity. Aggregate capacity rises from 110 GW in 2025 to 720 GW in 2050 under Ampol-1p5DS (552% growth), compared with 625 GW under Ampol-2p5DS (466%) and 559 GW under the Ampol-House-View (406%). By 2050, the system in Ampol-1p5DS has 160 GW more capacity than in the reference case, with wind and solar (utility and rooftop) providing the bulk of the build\u2011out and thermal plant operating increasingly as flexible, residual capacity.\n\n![Electricity Generation Capacity by Tech and Fuel](figures/electricity_generation_capacity_by_tech_and_fuel.png)  \n*Figure: Installed generation capacity by technology and scenario, 2025\u20132050 (GW).*\n\nThe generation mix decarbonises rapidly. The renewable share of grid electricity, including wind, solar and hydro, rises from around 38% in 2025 to effectively 100% by 2050 across all scenarios. In Ampol-1p5DS the renewable fraction reaches about 99.8%, marginally above Ampol-2p5DS (99.8%) and the Ampol-House-View (99.7%), indicating near\u2011complete displacement of unabated fossil generation in all pathways.\n\n![Renewable Energy Fraction](figures/renewable_energy_fraction.png)  \n*Figure: Renewable share of electricity generation by scenario, 2025\u20132050 (% of total output).*\n\nConsistent with this transition, average generation emissions intensity falls from around 0.51 Mt CO\u2082\u2011e/TWh in 2025 to zero by 2050 in all scenarios. Decarbonisation is front\u2011loaded, with steep reductions through the late 2020s and early 2030s as coal and conventional gas are retired or displaced, and remaining fossil output is eliminated or fully abated by mid\u2011century. These trends underpin the power sector emissions profiles presented elsewhere in this report.\n\n![Generation Emissions Intensity by Tech](figures/generation_emissions_intensity_by_tech.png)  \n*Figure: Average emissions intensity of grid electricity by scenario, 2025\u20132050 (Mt CO\u2082\u2011e/TWh).*\n\nBalancing a near\u2011fully renewable system requires a commensurate scale\u2011up in storage. Aggregate storage capacity grows from 4.3 GW in 2025 to 71.8 GW in 2050 under Ampol-1p5DS (a 1,558% increase), compared with 48.6 GW under Ampol-2p5DS (1,021%) and 38.3 GW in the Ampol-House-View (785%). By 2050, storage in the 1.5\u00b0C-aligned pathway is 33.5 GW higher than in the reference case, dominated by utility\u2011scale batteries with meaningful contributions from residential and commercial batteries and hydro storage.\n\n![Storage Capacity by Technology](figures/storage_capacity_by_technology.png)  \n*Figure: Installed electricity storage capacity by technology and scenario, 2025\u20132050 (GW).*"
+}

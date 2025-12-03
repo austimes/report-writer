@@ -1,0 +1,29 @@
+{
+  "timestamp": "2025-12-03T14:24:10.634927",
+  "section_id": "commercial",
+  "provider": "openai",
+  "model": "gpt-5.1-2025-11-13",
+  "request": {
+    "model": "gpt-5.1-2025-11-13",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an expert report writer for energy and emissions analysis."
+      },
+      {
+        "role": "user",
+        "content": "[text prompt, 3 images]"
+      }
+    ],
+    "max_tokens": 4000,
+    "reasoning_effort": "medium",
+    "image_count": 3,
+    "chart_ids": [
+      "commercial_buildings_energy_use_by_fuel",
+      "built_environment_emissions",
+      "building_production_by_sector"
+    ],
+    "prompt_preview": "# Task: Write the 'Commercial' section of the report\n\n## Section Information\n- **Title**: Commercial\n- **Level**: ### (heading level 3)\n- **Parent Section**: Energy consumption by sector\n\n## Instructions\nProvide an overview of the commercial energy consumption projection results\n\n## Available Data\nThe following 3 chart(s) are available for this section:\n\n### Commercial Buildings Energy Use by Fuel\n- **ID**: commercial_buildings_energy_use_by_fuel\n- **Category**: built_environment\n- **Figure Path..."
+  },
+  "response": "Commercial energy demand in buildings increases materially across all scenarios, driven by continued growth in floor area and service demand. Total commercial buildings energy use rises from 276.53 PJ in 2025 to 421.40 PJ in 2050 under **Ampol-1p5DS** (+52.4%). Under the **Ampol-2p5DS** pathway, demand grows to 371.47 PJ (+34.3%), while the **Ampol-House-View** reaches 379.93 PJ (+37.4%) by 2050. The tighter climate scenario therefore has the highest final energy use, with **Ampol-1p5DS** sitting 49.9 PJ above **Ampol-2p5DS** in 2050, reflecting deeper electrification of end-uses that replaces direct combustion of fossil fuels.\n\nElectricity is the dominant energy carrier in all scenarios, expanding steadily over the projection period. Fossil gas and oil products maintain a presence but grow more slowly and decline in relative share, while low\u2011emissions fuels such as biomethane, hydrogen and dedicated \u201celectricity \u2013 electrification\u201d uses begin to appear at small but rising levels toward 2050. This shift in the fuel mix underpins emissions reductions despite rising total energy consumption.\n\n![Commercial Buildings Energy Use by Fuel](figures/commercial_buildings_energy_use_by_fuel.png)  \n*Figure: Projected commercial buildings energy consumption by fuel type under the Ampol-1p5DS, Ampol-2p5DS and Ampol-House-View scenarios (2025\u20132050).*\n\nThe growth in energy demand is consistent with the expansion of commercial floor space. Commercial building production, measured in square metres, increases substantially over the period, with total new commercial floor area by 2050 more than double that in 2025. This sustained construction pipeline (see also the Residential subsection) locks in a larger stock of serviced space, reinforcing the importance of high efficiency standards and low\u2011carbon energy supply.\n\n![Building Production by Sector](figures/building_production_by_sector.png)  \n*Figure: Projected new building production by sector, showing strong growth in commercial floor area to 2050.*\n\nEmissions outcomes for the commercial segment of the built environment follow the broader pattern for buildings. Total built environment emissions (commercial plus residential) fall from 14.25 Mt CO\u2082\u2011e in 2025 to zero by 2050 in **Ampol-1p5DS**, indicating effective full decarbonisation of building energy use. Under **Ampol-2p5DS**, combined emissions decline to 7.22 Mt CO\u2082\u2011e (\u201149.3%), while **Ampol-House-View** achieves a smaller reduction to 9.32 Mt CO\u2082\u2011e (\u201134.6%). Within these totals, commercial emissions decrease in all scenarios, but only the 1.5\u00b0C\u2011aligned pathway delivers complete elimination of direct and indirect emissions from commercial energy use, highlighting the critical role of accelerated electrification and fuel switching alongside efficiency improvements.\n\n![Built Environment Emissions](figures/built_environment_emissions.png)  \n*Figure: Built environment emissions (residential and commercial combined) by scenario, illustrating the deep reductions required in commercial energy use to achieve the Ampol-1p5DS pathway.*"
+}

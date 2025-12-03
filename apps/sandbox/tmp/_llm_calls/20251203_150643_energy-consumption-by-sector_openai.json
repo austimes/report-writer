@@ -1,0 +1,28 @@
+{
+  "timestamp": "2025-12-03T15:06:43.998559",
+  "section_id": "energy-consumption-by-sector",
+  "provider": "openai",
+  "model": "gpt-5.1-2025-11-13",
+  "request": {
+    "model": "gpt-5.1-2025-11-13",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an expert report writer for energy and emissions analysis."
+      },
+      {
+        "role": "user",
+        "content": "[text prompt, 2 images]"
+      }
+    ],
+    "max_tokens": 4000,
+    "reasoning_effort": "medium",
+    "image_count": 2,
+    "chart_ids": [
+      "electricity_consumption_by_sector",
+      "industry_energy_use_by_fuel"
+    ],
+    "prompt_preview": "# Task: Write the 'Energy consumption by sector' section of the report\n\n## Section Information\n- **Title**: Energy consumption by sector\n- **Level**: ## (heading level 2)\n- **Parent Section**: Projection results\n\n## Instructions\nProvide an overview of the energy consumption by sector projection results\n\n## Available Data\nThe following 2 chart(s) are available for this section:\n\n### Electricity consumption by sector\n- **ID**: electricity_consumption_by_sector\n- **Category**: electricity\n- **Figur..."
+  },
+  "response": "Across all scenarios, total final energy consumption shifts markedly towards electricity and low\u2011emissions fuels, even as aggregate industrial energy use declines over the projection period.\n\nTotal electricity consumption across sectors rises from 355.36 TWh in 2025 to 1,019.51 TWh in 2050 under **Ampol-1p5DS (1.5\u00b0C-aligned pathway)**, an increase of 186.9%. The **Ampol-2p5DS (2.5\u00b0C pathway)** and **Ampol-House-View (reference/baseline scenario)** show more moderate growth, reaching 780.55 TWh (+119.7%) and 719.75 TWh (+102.5%) respectively by 2050. By the end of the outlook period, electricity demand in Ampol-1p5DS is 299.8 TWh higher than in Ampol-House-View, reflecting deeper electrification of transport, buildings and industry, and additional load from emerging sectors such as hydrogen production and carbon dioxide removal.\n\n![Electricity consumption by sector](figures/electricity_consumption_by_sector.png)  \n*Figure: Projected electricity consumption by sector under each scenario, highlighting stronger growth in electricity demand under the 1.5\u00b0C-aligned pathway as transport, buildings and industrial processes electrify and new electricity\u2011intensive activities emerge.*\n\nIn contrast to the strong growth in electricity demand, total final energy use in industry declines in all scenarios. From a common 2025 baseline of 1,555.51 PJ, industrial energy consumption falls to 1,179.22 PJ in 2050 in **Ampol-1p5DS** (a 24.2% reduction), 1,089.19 PJ in **Ampol-2p5DS** (\u201130.0%), and 1,164.28 PJ in **Ampol-House-View** (\u201125.2%). The steeper reduction in Ampol-2p5DS reflects more pronounced efficiency gains and fuel savings, while the slightly higher 2050 level in Ampol-1p5DS (90.0 PJ above Ampol-2p5DS) is associated with increased use of electricity, hydrogen and other low\u2011carbon fuels to support deeper emissions abatement.\n\n![Industry Energy Use by Fuel](figures/industry_energy_use_by_fuel.png)  \n*Figure: Industrial final energy consumption by fuel type, showing declining use of natural gas, coal and diesel across all scenarios, partially offset by higher consumption of electricity and low\u2011emissions fuels such as hydrogen, biomass and biomethane, particularly in the 1.5\u00b0C-aligned pathway.*"
+}

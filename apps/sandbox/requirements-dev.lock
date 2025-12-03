@@ -26,6 +26,7 @@ certifi==2025.11.12
     # via httpcore
     # via httpx
 click==8.3.1
+    # via typer
     # via uvicorn
 distro==1.9.0
     # via anthropic
@@ -53,10 +54,18 @@ iniconfig==2.3.0
 jiter==0.12.0
     # via anthropic
     # via openai
+markdown-it-py==4.0.0
+    # via rich
+mdurl==0.1.2
+    # via markdown-it-py
+numpy==2.3.5
+    # via pandas
 openai==2.8.1
     # via report-writer-sandbox
 packaging==25.0
     # via pytest
+pandas==2.3.3
+    # via report-writer-sandbox
 pluggy==1.6.0
     # via pytest
 pydantic==2.12.4
@@ -68,16 +77,28 @@ pydantic-core==2.41.5
     # via pydantic
 pygments==2.19.2
     # via pytest
+    # via rich
 pytest==9.0.1
     # via pytest-asyncio
     # via report-writer-sandbox
 pytest-asyncio==1.3.0
     # via report-writer-sandbox
+python-dateutil==2.9.0.post0
+    # via pandas
 python-dotenv==1.2.1
     # via report-writer-sandbox
     # via uvicorn
+pytz==2025.2
+    # via pandas
 pyyaml==6.0.3
     # via uvicorn
+rich==14.2.0
+    # via report-writer-sandbox
+    # via typer
+shellingham==1.5.4
+    # via typer
+six==1.17.0
+    # via python-dateutil
 sniffio==1.3.1
     # via anthropic
     # via anyio
@@ -86,6 +107,8 @@ starlette==0.50.0
     # via fastapi
 tqdm==4.67.1
     # via openai
+typer==0.20.0
+    # via report-writer-sandbox
 typing-extensions==4.15.0
     # via anthropic
     # via anyio
@@ -95,9 +118,12 @@ typing-extensions==4.15.0
     # via pydantic-core
     # via pytest-asyncio
     # via starlette
+    # via typer
     # via typing-inspection
 typing-inspection==0.4.2
     # via pydantic
+tzdata==2025.2
+    # via pandas
 uvicorn==0.38.0
     # via report-writer-sandbox
 uvloop==0.22.1

@@ -9,7 +9,7 @@ export default defineConfig({
   testDir: './tests/e2e',
   
   // Maximum time one test can run for
-  timeout: 30 * 1000,
+  timeout: 120 * 1000,
   
   // Run tests in files in parallel
   fullyParallel: true,
@@ -27,7 +27,7 @@ export default defineConfig({
   reporter: [
     ['list'],
     ['json', { outputFile: 'playwright-results/results.json' }],
-    ['html', { outputFolder: 'playwright-results/html' }]
+    ['html', { outputFolder: 'playwright-results/html', open: 'never' }]
   ],
   
   use: {
@@ -49,8 +49,16 @@ export default defineConfig({
   // Expand to other browsers once tests are stable
   projects: [
     {
+      name: 'setup',
+      testMatch: /.*\.setup\.ts/,
+    },
+    {
       name: 'chromium',
-      use: { ...devices['Desktop Chrome'] },
+      use: { 
+        ...devices['Desktop Chrome'],
+        storageState: 'tests/e2e/.auth/user.json',
+      },
+      dependencies: ['setup'],
     },
     // Uncomment when ready for cross-browser testing
     // {

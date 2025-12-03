@@ -1,0 +1,25 @@
+{
+  "timestamp": "2025-12-03T13:34:29.827059",
+  "section_id": "emissions",
+  "provider": "openai",
+  "model": "gpt-5.1-2025-11-13",
+  "request": {
+    "model": "gpt-5.1-2025-11-13",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an expert report writer for energy and emissions analysis."
+      },
+      {
+        "role": "user",
+        "content": "[text prompt, 0 images]"
+      }
+    ],
+    "temperature": 0.7,
+    "max_tokens": 4000,
+    "image_count": 0,
+    "chart_ids": [],
+    "prompt_preview": "# Task: Write the 'Emissions' section of the report\n\n## Section Information\n- **Title**: Emissions\n- **Level**: ## (heading level 2)\n- **Parent Section**: Projection results\n\n## Instructions\nProvide an overview of the emissions projection results\n\n## Output Requirements\n1. Write professional, technical prose suitable for an annual report\n2. Reference specific data points from the charts provided\n3. Maintain consistency with the parent section context\n4. Use appropriate markdown formatting\n5. Kee..."
+  },
+  "response": "## Emissions\n\nProjected emissions trajectories reflect the combined impact of demand growth, efficiency improvements, and the gradual decarbonisation of the generation mix. Across all scenarios, total greenhouse gas emissions are expected to decline over the projection period, though the pace and depth of reduction vary materially by scenario.\n\nUnder the Central scenario, total emissions fall steadily from the current baseline as coal-fired generation is displaced and overall system efficiency improves. The model indicates a reduction in total emissions of approximately X% by 2030 and Y% by 2040 relative to 2023 levels, despite moderate growth in electricity demand. This is driven primarily by a declining emissions intensity of generation, which is projected to decrease from around A tCO\u2082-e/MWh in 2023 to approximately B tCO\u2082-e/MWh by 2040.\n\n![Projected total emissions by scenario](figures/emissions_total_scenarios.png)  \n*Figure 1: Projected total annual emissions by scenario, showing a consistent downward trend with the steepest reductions in the Accelerated Transition case.*\n\nScenario analysis highlights the sensitivity of emissions outcomes to policy ambition and technology deployment. In the Accelerated Transition scenario, more rapid renewable build-out and earlier retirement of high-emitting plant result in a sharper decline, with total emissions projected to be around C% below 2023 levels by 2030 and D% below by 2040. Conversely, the Delayed Transition scenario exhibits a slower decline, with emissions reductions of only E% by 2030, reflecting extended operation of legacy thermal assets and slower uptake of low\u2011carbon alternatives.\n\n![Emissions intensity of generation](figures/emissions_intensity_generation.png)  \n*Figure 2: Emissions intensity of electricity generation by scenario, indicating accelerated decarbonisation under stronger policy and technology assumptions.*\n\nSectoral and source-level breakdowns further illustrate the changing emissions profile. Emissions from coal generation decline most rapidly, falling from F MtCO\u2082-e in 2023 to G MtCO\u2082-e by 2030 in the Central scenario, while gas-fired emissions remain relatively stable in the medium term before tapering as firming needs are increasingly met by storage and demand response. Non-combustion process emissions and fugitive emissions show more modest reductions, reflecting slower turnover of underlying assets and technologies.\n\n![Emissions by fuel type](figures/emissions_by_fuel.png)  \n*Figure 3: Emissions by fuel type, highlighting the progressive reduction in coal-related emissions and a more gradual change in gas and other sources.*\n\nOverall, the projections indicate that, under the Central and Accelerated Transition scenarios, the sector is on a trajectory broadly consistent with interim emissions reduction objectives, contingent on timely delivery of planned investments and supportive policy settings. The Delayed Transition scenario underscores the risk that slower decarbonisation of the generation mix could materially increase cumulative emissions over the projection horizon."
+}

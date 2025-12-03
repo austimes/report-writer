@@ -1,0 +1,29 @@
+{
+  "timestamp": "2025-12-03T14:32:07.396387",
+  "section_id": "commercial",
+  "provider": "openai",
+  "model": "gpt-5.1-2025-11-13",
+  "request": {
+    "model": "gpt-5.1-2025-11-13",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an expert report writer for energy and emissions analysis."
+      },
+      {
+        "role": "user",
+        "content": "[text prompt, 3 images]"
+      }
+    ],
+    "max_tokens": 4000,
+    "reasoning_effort": "medium",
+    "image_count": 3,
+    "chart_ids": [
+      "commercial_buildings_energy_use_by_fuel",
+      "built_environment_emissions",
+      "building_production_by_sector"
+    ],
+    "prompt_preview": "# Task: Write the 'Commercial' section of the report\n\n## Section Information\n- **Title**: Commercial\n- **Level**: ### (heading level 3)\n- **Parent Section**: Energy consumption by sector\n\n## Instructions\nProvide an overview of the commercial energy consumption projection results\n\n## Available Data\nThe following 3 chart(s) are available for this section:\n\n### Commercial Buildings Energy Use by Fuel\n- **ID**: commercial_buildings_energy_use_by_fuel\n- **Category**: built_environment\n- **Figure Path..."
+  },
+  "response": "Commercial energy use grows strongly across all scenarios, reflecting continued expansion of the commercial building stock and rising service demand. Total commercial buildings energy consumption increases from 276.5 PJ in 2025 to 421.4 PJ (+52.4%) in 2050 under **Ampol-1p5DS** (1.5\u00b0C\u2011aligned pathway). In the **Ampol-2p5DS** (2.5\u00b0C pathway), energy use rises to 371.5 PJ (+34.3%), while the **Ampol-House-View** (reference/baseline scenario) reaches 379.9 PJ (+37.4%) by 2050. The 1.5\u00b0C-aligned pathway thus has the highest absolute 2050 commercial demand, around 50 PJ above the 2.5\u00b0C pathway, driven by deeper electrification and associated electricity use in buildings.\n\nAcross all scenarios, electricity (including dedicated \u201celectrification\u201d end-uses) becomes the dominant energy carrier, displacing a substantial share of direct fossil fuel use. Oil and natural gas consumption flatten and then decline in the 1.5\u00b0C-aligned pathway, with small but visible contributions from low\u2011carbon gases (biomethane and hydrogen) by mid\u2011century. In the 2.5\u00b0C and reference pathways, fossil fuels remain more persistent, leading to higher emissions for a given level of energy service.  \n\n![Commercial Buildings Energy Use by Fuel](figures/commercial_buildings_energy_use_by_fuel.png)  \n*Figure: Projected commercial buildings final energy consumption by fuel under the three scenarios, 2025\u20132050 (PJ).*\n\nDespite rising energy demand, emissions from the commercial segment of the built environment decline materially in all scenarios, driven by fuel switching and decarbonisation of electricity supply (see also the residential discussion). Total built environment emissions fall from 14.25 Mt CO\u2082\u2011e in 2025 to zero by 2050 under **Ampol-1p5DS**, indicating near\u2011complete decarbonisation of both commercial and residential buildings. Under **Ampol-2p5DS**, emissions are roughly halved to 7.22 Mt CO\u2082\u2011e (\u201149.3%), while **Ampol-House-View** achieves a smaller reduction to 9.32 Mt CO\u2082\u2011e (\u201134.6%), leaving the reference case 9.3 Mt CO\u2082\u2011e higher than the 1.5\u00b0C\u2011aligned pathway in 2050. This highlights the importance of accelerated efficiency, electrification and low\u2011carbon fuels in commercial buildings to align with a 1.5\u00b0C trajectory.\n\n![Built Environment Emissions](figures/built_environment_emissions.png)  \n*Figure: Total built environment emissions (residential and commercial) under the three scenarios, 2025\u20132050 (Mt CO\u2082\u2011e). Commercial emissions follow the same directional trends, with deeper reductions in the 1.5\u00b0C-aligned pathway.*\n\nGrowth in commercial floor area is a key driver of rising sectoral energy use. Annual commercial building production increases from just under 0.5 billion m\u00b2 in 2025 to just over 1.0 billion m\u00b2 by 2050, nearly doubling over the period. This expansion underscores the need to integrate high-performance building envelopes, efficient equipment and low\u2011emissions energy sources into new commercial developments to manage the upward pressure on energy demand and to realise the emissions reductions seen in the 1.5\u00b0C-aligned pathway.\n\n![Building Production by Sector](figures/building_production_by_sector.png)  \n*Figure: Projected building production by sector, 2025\u20132050. Commercial floor area constructed each year almost doubles over the projection period, driving higher energy service demand in the commercial sector.*"
+}

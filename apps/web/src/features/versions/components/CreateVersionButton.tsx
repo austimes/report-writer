@@ -5,10 +5,11 @@ import type { Id } from 'convex/_generated/dataModel';
 
 interface CreateVersionButtonProps {
   projectId: Id<'projects'>;
-  onCreateVersion: (projectId: Id<'projects'>, summary?: string) => Promise<Id<'reportVersions'>>;
+  documentId: Id<'documents'>;
+  onCreateVersion: (projectId: Id<'projects'>, documentId: Id<'documents'>, summary?: string) => Promise<Id<'reportVersions'>>;
 }
 
-export function CreateVersionButton({ projectId, onCreateVersion }: CreateVersionButtonProps) {
+export function CreateVersionButton({ projectId, documentId, onCreateVersion }: CreateVersionButtonProps) {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [summary, setSummary] = useState('');
   const [loading, setLoading] = useState(false);
@@ -16,7 +17,7 @@ export function CreateVersionButton({ projectId, onCreateVersion }: CreateVersio
   const handleCreate = async () => {
     setLoading(true);
     try {
-      await onCreateVersion(projectId, summary || undefined);
+      await onCreateVersion(projectId, documentId, summary || undefined);
       setSummary('');
       setIsModalOpen(false);
     } catch (error) {

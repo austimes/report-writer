@@ -6,7 +6,7 @@ import { Id } from 'convex/_generated/dataModel';
 interface InviteCollaboratorModalProps {
   projectId: Id<'projects'>;
   onClose: () => void;
-  onInvite: (projectId: Id<'projects'>, userId: Id<'users'>, role: 'owner' | 'editor' | 'viewer') => Promise<void>;
+  onInvite: (args: { projectId: Id<'projects'>; userId: Id<'users'>; role: 'owner' | 'editor' | 'viewer' }) => Promise<Id<'projectMembers'> | void>;
 }
 
 export function InviteCollaboratorModal({ projectId, onClose, onInvite }: InviteCollaboratorModalProps) {
@@ -19,7 +19,7 @@ export function InviteCollaboratorModal({ projectId, onClose, onInvite }: Invite
     setLoading(true);
     try {
       const mockUserId = '1' as Id<'users'>;
-      await onInvite(projectId, mockUserId, role);
+      await onInvite({ projectId, userId: mockUserId, role });
       onClose();
     } catch (err) {
       console.error('Failed to invite collaborator:', err);

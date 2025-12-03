@@ -1,0 +1,29 @@
+{
+  "timestamp": "2025-12-03T15:09:42.756183",
+  "section_id": "commercial",
+  "provider": "openai",
+  "model": "gpt-5.1-2025-11-13",
+  "request": {
+    "model": "gpt-5.1-2025-11-13",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an expert report writer for energy and emissions analysis."
+      },
+      {
+        "role": "user",
+        "content": "[text prompt, 3 images]"
+      }
+    ],
+    "max_tokens": 4000,
+    "reasoning_effort": "medium",
+    "image_count": 3,
+    "chart_ids": [
+      "commercial_buildings_energy_use_by_fuel",
+      "built_environment_emissions",
+      "building_production_by_sector"
+    ],
+    "prompt_preview": "# Task: Write the 'Commercial' section of the report\n\n## Section Information\n- **Title**: Commercial\n- **Level**: ### (heading level 3)\n- **Parent Section**: Energy consumption by sector\n\n## Instructions\nProvide an overview of the commercial energy consumption projection results\n\n## Available Data\nThe following 3 chart(s) are available for this section:\n\n### Commercial Buildings Energy Use by Fuel\n- **ID**: commercial_buildings_energy_use_by_fuel\n- **Category**: built_environment\n- **Figure Path..."
+  },
+  "response": "Commercial energy demand in buildings increases across all scenarios, driven by ongoing growth in floor area and service intensity. From a common 2025 baseline of 276.5 PJ, total commercial buildings energy use rises by 52.4% to 421.4 PJ in **Ampol-1.5DS** (1.5\u00b0C\u2011aligned pathway) and by 34.3% to 371.5 PJ in **Ampol-2.5DS** (2.5\u00b0C pathway) by 2050. The **Ampol\u2011House\u2011View** (reference/baseline scenario) sits between these pathways, reaching 379.9 PJ by 2050. By mid\u2011century, commercial energy use in Ampol\u20111.5DS is 49.9 PJ higher than in Ampol\u20112.5DS, reflecting more extensive electrification and higher economic activity. Across all scenarios, electricity becomes increasingly dominant in the commercial fuel mix, while direct use of fossil fuels (oil and natural gas) contracts and low\u2011carbon fuels such as biomethane and hydrogen emerge but remain relatively small contributors by 2050.\n\n![Commercial Buildings Energy Use by Fuel](figures/commercial_buildings_energy_use_by_fuel.png)  \n*Figure: Projected commercial buildings final energy use by fuel under the three scenarios, showing growth in total demand and progressive electrification of the sector.*\n\nDespite rising energy consumption, associated emissions from the built environment decline substantially as the power system decarbonises and direct fossil fuel use in buildings falls. In Ampol\u20111.5DS, total built environment emissions (residential plus commercial) fall from 14.25 Mt CO\u2082\u2011e in 2025 to zero by 2050, implying that commercial buildings effectively achieve net\u2011zero operational emissions. Under Ampol\u20112.5DS, emissions fall by 49.3% to 7.22 Mt CO\u2082\u2011e, while in Ampol\u2011House\u2011View they decline by 34.6% to 9.32 Mt CO\u2082\u2011e. By 2050, the reference pathway is therefore 9.3 Mt CO\u2082\u2011e higher than the 1.5\u00b0C\u2011aligned pathway, highlighting the importance of stronger efficiency measures, fuel switching and grid decarbonisation in the commercial segment. Within the total, the commercial share remains material, particularly in the less ambitious scenarios, underscoring the sector\u2019s role in meeting economy\u2011wide targets discussed in the overarching emissions section.\n\n![Built Environment Emissions](figures/built_environment_emissions.png)  \n*Figure: Built environment emissions by subsector under each scenario, illustrating the steep decline to net zero in Ampol\u20111.5DS and the slower reductions in Ampol\u20112.5DS and Ampol\u2011House\u2011View.*\n\nGrowth in commercial energy demand is closely linked to the expansion of the commercial building stock. Commercial floor area in operation approximately doubles over 2025\u20132050, rising from just under 0.5 billion m\u00b2 to slightly above 1.0 billion m\u00b2, outpacing the growth in commercial energy use. This implies an improvement in energy intensity (energy use per square metre), consistent with tightening building standards, retrofits and more efficient equipment. The divergence between rising floorspace and moderating energy growth is most pronounced under Ampol\u20111.5DS, aligning with the stronger efficiency and electrification assumptions for the sector.\n\n![Building Production by Sector](figures/building_production_by_sector.png)  \n*Figure: Projected commercial and residential building production (floor area and dwellings), showing sustained growth in commercial floorspace that underpins rising, but increasingly efficient, energy use in the sector.*"
+}

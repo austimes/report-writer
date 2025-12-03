@@ -1,0 +1,29 @@
+{
+  "timestamp": "2025-12-03T13:51:57.718118",
+  "section_id": "commercial",
+  "provider": "openai",
+  "model": "gpt-5.1-2025-11-13",
+  "request": {
+    "model": "gpt-5.1-2025-11-13",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an expert report writer for energy and emissions analysis."
+      },
+      {
+        "role": "user",
+        "content": "[text prompt, 3 images]"
+      }
+    ],
+    "temperature": 0.7,
+    "max_tokens": 4000,
+    "image_count": 3,
+    "chart_ids": [
+      "commercial_buildings_energy_use_by_fuel",
+      "built_environment_emissions",
+      "building_production_by_sector"
+    ],
+    "prompt_preview": "# Task: Write the 'Commercial' section of the report\n\n## Section Information\n- **Title**: Commercial\n- **Level**: ### (heading level 3)\n- **Parent Section**: Energy consumption by sector\n\n## Instructions\nProvide an overview of the commercial energy consumption projection results\n\n## Available Data\nThe following 3 chart(s) are available for this section:\n\n### Commercial Buildings Energy Use by Fuel\n- **ID**: commercial_buildings_energy_use_by_fuel\n- **Category**: built_environment\n- **Figure Path..."
+  },
+  "response": "### Commercial\n\nCommercial energy demand is projected to grow steadily across all scenarios, driven primarily by continued expansion of floor space. Commercial building production rises strongly to 2050, with total commercial floor area more than doubling over the projection period, underpinning higher service demand for heating, cooling, lighting and equipment.\n\n![Building Production by Sector](figures/building_production_by_sector.png)  \n*Figure 1: Projected growth in commercial and residential building stock to 2050.*\n\nTotal final energy use in commercial buildings increases from 276.5 PJ in 2025 to between 371.5 PJ and 421.4 PJ by 2050, depending on the scenario. The lowest growth occurs in the Ampol\u20112p5DS case, where energy use rises 34.3% to 371.5 PJ by 2050. Under the Ampol\u2011House\u2011View, demand grows 37.4% to 379.9 PJ. The strongest increase occurs in the Ampol\u20111.5DS scenario, where commercial energy consumption reaches 421.4 PJ in 2050, 52.4% above 2025 levels and 49.9 PJ higher than in Ampol\u20112p5DS. Across all scenarios, electricity provides the dominant share of energy supply, with gas and oil use remaining material but gradually declining in relative importance, while low\u2011emissions fuels such as biomethane and electrification\u2011specific loads (e.g. heat pumps) expand from a low base.\n\n![Commercial Buildings Energy Use by Fuel](figures/commercial_buildings_energy_use_by_fuel.png)  \n*Figure 2: Commercial final energy use by fuel, 2025\u20132050, under the three scenarios.*\n\nDespite the growth in energy demand, commercial emissions fall substantially, reflecting improvements in building efficiency and rapid decarbonisation of electricity and gaseous fuels. Built environment emissions (residential plus commercial) decline from 14.25 Mt CO\u2082\u2011e in 2025 to 7.22 Mt CO\u2082\u2011e in 2050 under Ampol\u20112p5DS (a 49.3% reduction), and to 9.32 Mt CO\u2082\u2011e under the Ampol\u2011House\u2011View (a 34.6% reduction). In the more ambitious Ampol\u20111.5DS scenario, emissions from the built environment fall to zero by 2050, a 100% reduction from 2025. By 2050, the gap between the 1.5\u00b0C\u2011aligned pathway and the House\u2011View is 9.3 Mt CO\u2082\u2011e, highlighting the scale of additional abatement required from accelerated efficiency, electrification and fuel switching in commercial buildings.\n\n![Built Environment Emissions](figures/built_environment_emissions.png)  \n*Figure 3: Emissions from the built environment (residential and commercial) under the three scenarios.*"
+}

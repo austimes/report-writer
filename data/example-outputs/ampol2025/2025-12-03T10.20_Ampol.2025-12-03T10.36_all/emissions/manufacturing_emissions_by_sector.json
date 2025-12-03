@@ -1,0 +1,1208 @@
+{
+  "data": [
+    {
+      "hovertemplate": "scen=Ampol-1p5DS\u003cbr\u003eyear=%{x}\u003cbr\u003eMt CO₂-e=%{y}\u003cextra\u003e\u003c\u002fextra\u003e",
+      "legendgroup": "",
+      "marker": {
+        "color": "rgb(158,158,158)",
+        "symbol": "circle",
+        "size": 0.001
+      },
+      "mode": "markers",
+      "name": "",
+      "orientation": "v",
+      "showlegend": false,
+      "x": {
+        "dtype": "i4",
+        "bdata": "6QcAAOoHAADrBwAA7AcAAO0HAADuBwAA7wcAAPAHAADxBwAA8gcAAPMHAAD4BwAA\u002fQcAAAIIAAA="
+      },
+      "xaxis": "x3",
+      "y": {
+        "dtype": "i1",
+        "bdata": "AAAAAAAAAAAAAAAAAAA="
+      },
+      "yaxis": "y3",
+      "type": "scatter",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(158,158,158)"
+      },
+      "opacity": 0
+    },
+    {
+      "hovertemplate": "scen=Ampol-2p5DS\u003cbr\u003eyear=%{x}\u003cbr\u003eMt CO₂-e=%{y}\u003cextra\u003e\u003c\u002fextra\u003e",
+      "legendgroup": "",
+      "marker": {
+        "color": "rgb(158,158,158)",
+        "symbol": "circle",
+        "size": 0.001
+      },
+      "mode": "markers",
+      "name": "",
+      "orientation": "v",
+      "showlegend": false,
+      "x": {
+        "dtype": "i4",
+        "bdata": "6QcAAOoHAADrBwAA7AcAAO0HAADuBwAA7wcAAPAHAADxBwAA8gcAAPMHAAD4BwAA\u002fQcAAAIIAAA="
+      },
+      "xaxis": "x4",
+      "y": {
+        "dtype": "i1",
+        "bdata": "AAAAAAAAAAAAAAAAAAA="
+      },
+      "yaxis": "y4",
+      "type": "scatter",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(158,158,158)"
+      },
+      "opacity": 0
+    },
+    {
+      "hovertemplate": "scen=Ampol-House-View\u003cbr\u003eyear=%{x}\u003cbr\u003eMt CO₂-e=%{y}\u003cextra\u003e\u003c\u002fextra\u003e",
+      "legendgroup": "",
+      "marker": {
+        "color": "rgb(158,158,158)",
+        "symbol": "circle",
+        "size": 0.001
+      },
+      "mode": "markers",
+      "name": "",
+      "orientation": "v",
+      "showlegend": false,
+      "x": {
+        "dtype": "i4",
+        "bdata": "6QcAAOoHAADrBwAA7AcAAO0HAADuBwAA7wcAAPAHAADxBwAA8gcAAPMHAAD4BwAA\u002fQcAAAIIAAA="
+      },
+      "xaxis": "x",
+      "y": {
+        "dtype": "i1",
+        "bdata": "AAAAAAAAAAAAAAAAAAA="
+      },
+      "yaxis": "y",
+      "type": "scatter",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(158,158,158)"
+      },
+      "opacity": 0
+    },
+    {
+      "fill": "tonexty",
+      "name": "Iron & Steel",
+      "showlegend": true,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "sYfCXceL+j+Rhv9EA3\u002fyP45cbw3CbhdABs1XkcjdLEAhk\u002fI5cOwtQL4MPr6R9y1AEdii9d8CLkBswYql1dcxQEyBNZ9q3jFAJ5034pXtMUDxnN9PBNMxQCqCDlEE0zFA+FZIKJkLMkC+K4L\u002fLUQyQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x3",
+      "yaxis": "y3",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(0,0,0)"
+      },
+      "legendgroup": "Iron & Steel",
+      "marker": {
+        "color": "rgb(0,0,0)"
+      },
+      "fillcolor": "rgb(0,0,0)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Alumina",
+      "showlegend": true,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "EmniXNAQGUBVdgm6GX0YQKn5nyqydyBAf\u002ftHFhX0JkCQTQZcVHsoQBOgvQK+vShAczhRWU0hKUC3Ul0UNdkpQGeQe3r64ipA0v72McSBLEBl52T3xa0tQCvMlNwh1y5AGURk+O\u002fXLkAGvDMUvtguQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x3",
+      "yaxis": "y3",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(0,169,206)"
+      },
+      "legendgroup": "Alumina",
+      "marker": {
+        "color": "rgb(0,169,206)"
+      },
+      "fillcolor": "rgb(0,169,206)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Cement",
+      "showlegend": true,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "plP\u002fjAxFK0ATvXCXCbwqQNUOWPIWzilA\u002fcXqy2J9KkCsrBN1yTcqQF7bdOAY9SlApqHH0ne\u002fKUAamWzG85gpQE0QWBwAfilAakpfmE+BKUCXLFm2MQAqQHB1F+4xFSpAVMxBG8HQKUCdEUoET4kpQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x3",
+      "yaxis": "y3",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(117,117,121)"
+      },
+      "legendgroup": "Cement",
+      "marker": {
+        "color": "rgb(117,117,121)"
+      },
+      "fillcolor": "rgb(117,117,121)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Aluminium",
+      "showlegend": true,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "0RnYHmXk7j9Jrvo6GBzwPw6Mtz7aFwBAuwXgMiqcCUAuV4rHSAoKQKPHNFYqBwpAZFyfnfUGCkCbUbBWfAgKQO4pFEU1GApALJMjMqgRCkB0R7I8JhAKQCivsGcOpQlAn3pce6KbCUASRgiPNpIJQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x3",
+      "yaxis": "y3",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(0,115,119)"
+      },
+      "legendgroup": "Aluminium",
+      "marker": {
+        "color": "rgb(0,115,119)"
+      },
+      "fillcolor": "rgb(0,115,119)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Food & Beverages",
+      "showlegend": true,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "vbLDie7o4z\u002fLinG8UUflP0GcnTJvFeg\u002fTvhBUJ8p7j+sYfK+7ZbzP1q+VyZnr\u002fc\u002f6f2tg64B+j8+elFRotb6P1t\u002fDCqq9vw\u002fvhKfp2B6AUALsp1oqWgDQMtkOeBf9AZAt7rfxI1sB0Bw1K8+ZugHQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x3",
+      "yaxis": "y3",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(0,75,135)"
+      },
+      "legendgroup": "Food & Beverages",
+      "marker": {
+        "color": "rgb(0,75,135)"
+      },
+      "fillcolor": "rgb(0,75,135)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Petroleum Refinery",
+      "showlegend": true,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "hil0\u002fjq70z8rhlhzQDfgPw0\u002fZuCZX+g\u002fdcnthgsT8T9ACq56pS\u002fyP8fuImuWV\u002fM\u002fknbWV3wE9z+L5YjGesUEQOIkXE3+hQZAHH6k6GWxCEDVT+EGPo8KQPBfm+Dl6QxAi7f\u002fZeUhD0CAKcTw0YwQQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x3",
+      "yaxis": "y3",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(0,0,128)"
+      },
+      "legendgroup": "Petroleum Refinery",
+      "marker": {
+        "color": "rgb(0,0,128)"
+      },
+      "fillcolor": "rgb(0,0,128)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Non-Metallic Construction",
+      "showlegend": true,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "xArRZL53xz8pd8D0hl\u002fIP6kobsnVxsw\u002f8j1CCPn70z8w\u002f8QlrmzYP6kcwtOUDN4\u002ftWV4J9O+4j8P9UvkvOvjP6LuKXA2nek\u002fTGDI4n9W8j\u002fjVzgIRRv7P9aPfH3Vw\u002f8\u002fqyXQGLgnAEByiQNzdm8AQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x3",
+      "yaxis": "y3",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(159,174,229)"
+      },
+      "legendgroup": "Non-Metallic Construction",
+      "marker": {
+        "color": "rgb(159,174,229)"
+      },
+      "fillcolor": "rgb(159,174,229)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Ceramics",
+      "showlegend": true,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "1Jt8wAsq7T9EKs4t6P7vP+HA5ptCH\u002fE\u002fLC3zmCzA8j+HWr8t++HyPx5KQZSYHPM\u002fpf6RHw578z+Dlr0AE+vzP7MgYmBPLvQ\u002foSTS0teA9D+9WuAVaf30P9BWcKurK\u002fU\u002fG7VWD9Cg9T9CX3yaFhX2Pw=="
+      },
+      "type": "scatter",
+      "xaxis": "x3",
+      "yaxis": "y3",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(109,32,119)"
+      },
+      "legendgroup": "Ceramics",
+      "marker": {
+        "color": "rgb(109,32,119)"
+      },
+      "fillcolor": "rgb(109,32,119)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Paper Products",
+      "showlegend": true,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "tMqeTykPqz6HlDjtfk2pPoBOvtaPS5I\u002fiZ09knEGpD\u002fLhRLin\u002fKoP+7t03Kt4K8\u002fehPKUReF0j9P\u002fFPlIWXTP\u002fbcWhyDhNU\u002f9o8UCtVO2z9ENSe4c1LeP7PqnDMZYeQ\u002ffTa8MA1A5T+khXe5UtLlPw=="
+      },
+      "type": "scatter",
+      "xaxis": "x3",
+      "yaxis": "y3",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(30,34,170)"
+      },
+      "legendgroup": "Paper Products",
+      "marker": {
+        "color": "rgb(30,34,170)"
+      },
+      "fillcolor": "rgb(30,34,170)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "",
+      "showlegend": true,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "SnBfulaApz\u002fVcKy6bsbsP3MgXibQ2gFAM62IuCOZ8D+5V9vopPCzPwL0wpjsKLQ\u002ftSJnUOhwtD\u002fmddSS2cq0P\u002fnXZ0YxPLU\u002fi+f4qzNmtT\u002fwJvj0TZm1P7C2ytF\u002fTLU\u002f69tkOanctT+CHmxatV62Pw=="
+      },
+      "type": "scatter",
+      "xaxis": "x3",
+      "yaxis": "y3",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(158,158,158)"
+      },
+      "marker": {
+        "color": "rgb(158,158,158)"
+      },
+      "fillcolor": "rgb(158,158,158)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Iron & Steel",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "8mX699SXyD8gH7gUNgrxPzCYpW5UIRtADkSKF8KML0A6kqZJMmAwQDXQjnz\u002fkjBAtG+fwpawMEAcvVXE47cwQC8wHcEwvzBAbgMlRYFlMUAYcgLKQpwxQCqCDlEE0zFA+FZIKJkLMkC+K4L\u002fLUQyQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x4",
+      "yaxis": "y4",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(0,0,0)"
+      },
+      "legendgroup": "Iron & Steel",
+      "marker": {
+        "color": "rgb(0,0,0)"
+      },
+      "fillcolor": "rgb(0,0,0)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Alumina",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "0nOVlnbSJEASGpWnr20mQADz5wjppy1ATGmAyVhrLkC4SM5RF2ouQPv1aM2TaS5AvoH82qNpLkDyfwub6WkuQJYgxFkvai5Am4KhRf3VLkCXF7yij9YuQCvMlNwh1y5AGURk+O\u002fXLkAGvDMUvtguQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x4",
+      "yaxis": "y4",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(0,169,206)"
+      },
+      "legendgroup": "Alumina",
+      "marker": {
+        "color": "rgb(0,169,206)"
+      },
+      "fillcolor": "rgb(0,169,206)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Cement",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "GWFvQMT3LEDRlPkczvgtQBBCm3MIXyxA7CjkfAtGK0C6ZULyfBsrQFx+2YRL2CpAsqU4Qt6UKkCvKBBfklAqQDE1ZrD6BipADMoLEsacKkBKL+EGSVoqQHB1F+4xFSpAVMxBG8HQKUCdEUoET4kpQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x4",
+      "yaxis": "y4",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(117,117,121)"
+      },
+      "legendgroup": "Cement",
+      "marker": {
+        "color": "rgb(117,117,121)"
+      },
+      "fillcolor": "rgb(117,117,121)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Aluminium",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "e655Q3OSAkBiE+QMbpICQLLuxDY4AAVAGujyYxXzB0A04CwknQ4IQNFGhUX0FQhAs8R6C1HoB0BEPBTfs+QHQJz2DcLf5wdAwI8gJYmkCUBOLrNuq6cJQCivsGcOpQlAn3pce6KbCUASRgiPNpIJQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x4",
+      "yaxis": "y4",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(0,115,119)"
+      },
+      "legendgroup": "Aluminium",
+      "marker": {
+        "color": "rgb(0,115,119)"
+      },
+      "fillcolor": "rgb(0,115,119)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Food & Beverages",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "\u002fg9hPARy9z\u002ffYa1i2Dj9P0QWrXxh2\u002f8\u002fY21UFJNuAUC7IGZxj+gCQJJw72jBQARAtN71vdTIBEAYEhgRkDQFQAxYl484hgVAenFle3cGBkDvZC2ksXgGQMtkOeBf9AZAt7rfxI1sB0Bw1K8+ZugHQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x4",
+      "yaxis": "y4",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(0,75,135)"
+      },
+      "legendgroup": "Food & Beverages",
+      "marker": {
+        "color": "rgb(0,75,135)"
+      },
+      "fillcolor": "rgb(0,75,135)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Petroleum Refinery",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "GmF9+HrO5z96HbRBIiHlP\u002f9oEU833e0\u002fCrZndpx\u002f9D82NXlC+Lz1Pw60yUXyBPc\u002fXJfDyjvJ+T\u002fxIdYr5NP\u002fP58GApnwTgNAOTykSI80BUAzlQRlvjYIQPBfm+Dl6QxAi7f\u002fZeUhD0CAKcTw0YwQQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x4",
+      "yaxis": "y4",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(0,0,128)"
+      },
+      "legendgroup": "Petroleum Refinery",
+      "marker": {
+        "color": "rgb(0,0,128)"
+      },
+      "fillcolor": "rgb(0,0,128)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Non-Metallic Construction",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "iH8VvY0c6z+A24RkhNbzP0BbEj+4TfU\u002fGvwGiz659j8T8PG9AC\u002f5P5gAN6IcHPs\u002f\u002f+NLfAfs+z9tspuIoWj8PxFHK0\u002fbz\u002fw\u002fKIWg\u002f1Sk\u002fj\u002fXK2LeXSv\u002fP9aPfH3Vw\u002f8\u002fqyXQGLgnAEByiQNzdm8AQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x4",
+      "yaxis": "y4",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(159,174,229)"
+      },
+      "legendgroup": "Non-Metallic Construction",
+      "marker": {
+        "color": "rgb(159,174,229)"
+      },
+      "fillcolor": "rgb(159,174,229)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Ceramics",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "xAKtdSDZ5z\u002fcW5FHDD3sP5axTJ59gO8\u002fwt51+XHf8T+1Y0g6ogHyPxlUb5gERfI\u002fmzwJIYKi8j82ZIDa\u002fQPzP6gXhFfoBvM\u002f1mj1M7c29D9gwsac4rL0P9BWcKurK\u002fU\u002fG7VWD9Cg9T9CX3yaFhX2Pw=="
+      },
+      "type": "scatter",
+      "xaxis": "x4",
+      "yaxis": "y4",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(109,32,119)"
+      },
+      "legendgroup": "Ceramics",
+      "marker": {
+        "color": "rgb(109,32,119)"
+      },
+      "fillcolor": "rgb(109,32,119)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Paper Products",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "+kmGJvpskT9XjsUlxji1P7tlbbDhobo\u002fP1YsWmvMwz\u002fvDexlUHjTPz0LfOlx\u002f94\u002fGYwZuSUD3z88YAw2QfnfPya5WBOUrN8\u002fjefH9Hkm4z+qwyaK4YnjP7PqnDMZYeQ\u002ffTa8MA1A5T+khXe5UtLlPw=="
+      },
+      "type": "scatter",
+      "xaxis": "x4",
+      "yaxis": "y4",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(30,34,170)"
+      },
+      "legendgroup": "Paper Products",
+      "marker": {
+        "color": "rgb(30,34,170)"
+      },
+      "fillcolor": "rgb(30,34,170)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "GyLfUp\u002fqmj8zrjBDFHyePzAu7k\u002f8zqk\u002fIFCKJ0h6sj8+ZTP3UZmyP90mIFz0x7I\u002fI3qqdIkGsz+abyFctEWzP\u002fM1rBuwiLM\u002f5vCVRC54tD+HksK4gvS0P7C2ytF\u002fTLU\u002f69tkOanctT+CHmxatV62Pw=="
+      },
+      "type": "scatter",
+      "xaxis": "x4",
+      "yaxis": "y4",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(158,158,158)"
+      },
+      "marker": {
+        "color": "rgb(158,158,158)"
+      },
+      "fillcolor": "rgb(158,158,158)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Iron & Steel",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "wi392gRIKEDmWGNhMd8pQO\u002f77tsUHi5ACVDj+GQtMEC6mUo+MmAwQC7OpnH\u002fkjBABQZdpMzFMEAV5AgoRvowQConKKu\u002fLjFAQN7PO4FlMUAqgjjHQpwxQCqCDlEE0zFA+FZIKJkLMkC+K4L\u002fLUQyQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x",
+      "yaxis": "y",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(0,0,0)"
+      },
+      "legendgroup": "Iron & Steel",
+      "marker": {
+        "color": "rgb(0,0,0)"
+      },
+      "fillcolor": "rgb(0,0,0)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Alumina",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "4lnYkCKALEC0ZQeQFXssQMMqK48XEy5Av53JwIXWLkAFOT88RNUuQFBTl8XA1C5AhtxPW9LULkDorZMLH9UuQNbrJL5r1S5A3148zv3VLkDyETLej9YuQCvMlNwh1y5AGURk+O\u002fXLkAGvDMUvtguQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x",
+      "yaxis": "y",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(0,169,206)"
+      },
+      "legendgroup": "Alumina",
+      "marker": {
+        "color": "rgb(0,169,206)"
+      },
+      "fillcolor": "rgb(0,169,206)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Cement",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "WeN9T6qgMECYpfWJ+2ovQLO1goRuky1AXto3MQdALECDdlbTd\u002fsrQGrrB95KtitAbr4yT5hwK0BmorLbRi8rQJ6J\u002fcx2\u002fipAqmeipcywKkD33WSWDGMqQHB1F+4xFSpAVMxBG8HQKUCdEUoET4kpQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x",
+      "yaxis": "y",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(117,117,121)"
+      },
+      "legendgroup": "Cement",
+      "marker": {
+        "color": "rgb(117,117,121)"
+      },
+      "fillcolor": "rgb(117,117,121)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Aluminium",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "mm+6Sy1XCUCgPRC8rRQJQG\u002fVAZpNVQlAwkugjjyzCUBVoJfQkbgJQHC7wwjnvQlASJpJPzzDCUAgceVl4MgJQILhu+BN1QlAHvM3Jxa5CUDgu46DEa8JQCivsGcOpQlAn3pce6KbCUASRgiPNpIJQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x",
+      "yaxis": "y",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(0,115,119)"
+      },
+      "legendgroup": "Aluminium",
+      "marker": {
+        "color": "rgb(0,115,119)"
+      },
+      "fillcolor": "rgb(0,115,119)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Food & Beverages",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "1f1x\u002fgkO\u002fj995k+4wW0AQOHZQs8a8AFAbwmHWhClA0BsVmAh7gIEQGGjaLKoZwRACPkAaMnLBED+j5EYZS8FQBqZf28dmAVAAmsHAOQPBkB6S3riP4EGQMtkOeBf9AZAt7rfxI1sB0Bw1K8+ZugHQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x",
+      "yaxis": "y",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(0,75,135)"
+      },
+      "legendgroup": "Food & Beverages",
+      "marker": {
+        "color": "rgb(0,75,135)"
+      },
+      "fillcolor": "rgb(0,75,135)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Petroleum Refinery",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "F4FSQ+0D4T9jDOlCRvbpP\u002f5bsOMx0\u002fE\u002fIQ7BXTRk9z+\u002fIoNTgRr7P4IKeGVC1fw\u002f3a6jNl9N\u002fj\u002fl2FALaNsBQONLpzmrnARAXp2uFrPAB0C4FzEEgXMKQPBfm+Dl6QxAi7f\u002fZeUhD0CAKcTw0YwQQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x",
+      "yaxis": "y",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(0,0,128)"
+      },
+      "legendgroup": "Petroleum Refinery",
+      "marker": {
+        "color": "rgb(0,0,128)"
+      },
+      "fillcolor": "rgb(0,0,128)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Non-Metallic Construction",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "3Jfuk\u002fix9T\u002f7nKK1TXf3P55lEPcYcPk\u002fKVW\u002fCDxl+z+oSlCvi+37P\u002f7yz80HUPw\u002fHeVldfAz\u002fT94Zid3ZMD9P\u002fq7YqGLLP4\u002fLP1x4TC1\u002fj8Qr4wRYTv\u002fP9aPfH3Vw\u002f8\u002fqyXQGLgnAEByiQNzdm8AQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x",
+      "yaxis": "y",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(159,174,229)"
+      },
+      "legendgroup": "Non-Metallic Construction",
+      "marker": {
+        "color": "rgb(159,174,229)"
+      },
+      "fillcolor": "rgb(159,174,229)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Ceramics",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "uvxQRrbx6T+FquqF8rHsP8gDGXtH\u002fu8\u002fDvkYQ\u002fso8j9f\u002fVPZC1DyP+t8VMCFmvI\u002fpkODFdkA8z8+XvO2dWvzP\u002fa077Gw0vM\u002fkAlkYLhC9D+SwLUtA7P0P9BWcKurK\u002fU\u002fG7VWD9Cg9T9CX3yaFhX2Pw=="
+      },
+      "type": "scatter",
+      "xaxis": "x",
+      "yaxis": "y",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(109,32,119)"
+      },
+      "legendgroup": "Ceramics",
+      "marker": {
+        "color": "rgb(109,32,119)"
+      },
+      "fillcolor": "rgb(109,32,119)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Paper Products",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "mFK1udxVxj8pkiM9veTKP+sQ35EfuMo\u002f0WccekuHzz90fd9jBTDXP\u002fOBouZEoNw\u002fsXMmq\u002fEt4j++S6aphmjiP9TgH2XMqOI\u002f8TPO01sg4z9N1Dag\u002fYvjP7PqnDMZYeQ\u002ffTa8MA1A5T+khXe5UtLlPw=="
+      },
+      "type": "scatter",
+      "xaxis": "x",
+      "yaxis": "y",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(30,34,170)"
+      },
+      "legendgroup": "Paper Products",
+      "marker": {
+        "color": "rgb(30,34,170)"
+      },
+      "fillcolor": "rgb(30,34,170)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "Hv1RnubCoz\u002fROF1yyjykP3C75tU6Pa0\u002flfOYT6SNsj+5BHwLka2yP6xQPl3b8LI\u002f1ErSz9hQsz\u002fUDCiWPbmzP8XsSWvXHLQ\u002fEyeUMU2ItD+2L3sEfvS0P7C2ytF\u002fTLU\u002f69tkOanctT+CHmxatV62Pw=="
+      },
+      "type": "scatter",
+      "xaxis": "x",
+      "yaxis": "y",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(158,158,158)"
+      },
+      "marker": {
+        "color": "rgb(158,158,158)"
+      },
+      "fillcolor": "rgb(158,158,158)"
+    }
+  ],
+  "layout": {
+    "template": {
+      "data": {
+        "scatter": [
+          {
+            "line": {
+              "width": 5
+            },
+            "opacity": 0.7,
+            "type": "scatter"
+          }
+        ]
+      },
+      "layout": {
+        "bargap": 0.5,
+        "colorway": [
+          "rgb(0,29,52)",
+          "rgb(0,0,128)",
+          "rgb(30,34,170)",
+          "rgb(0,75,135)",
+          "rgb(0,115,119)",
+          "rgb(0,169,206)",
+          "rgb(67,194,204)",
+          "rgb(159,174,229)",
+          "rgb(34,70,34)",
+          "rgb(0,122,83)",
+          "rgb(107,142,35)",
+          "rgb(120,190,32)",
+          "rgb(113,204,152)",
+          "rgb(232,119,34)",
+          "rgb(255,184,28)",
+          "rgb(109,32,119)",
+          "rgb(223,25,149)",
+          "rgb(0,0,0)",
+          "rgb(44,44,44)",
+          "rgb(80,80,80)",
+          "rgb(158,158,158)",
+          "rgb(117,117,121)",
+          "rgb(200,200,220)",
+          "rgb(102,51,0)",
+          "rgb(128,0,0)"
+        ],
+        "font": {
+          "family": "Arial",
+          "size": 15
+        },
+        "legend": {
+          "entrywidth": 0,
+          "entrywidthmode": "pixels",
+          "font": {
+            "size": 15
+          },
+          "itemsizing": "constant",
+          "itemwidth": 30,
+          "orientation": "h",
+          "traceorder": "normal",
+          "x": 0.5,
+          "xanchor": "center",
+          "y": -0.05,
+          "yanchor": "top"
+        },
+        "margin": {
+          "b": 105,
+          "r": 25,
+          "t": 50
+        },
+        "paper_bgcolor": "white",
+        "plot_bgcolor": "white",
+        "title": {
+          "font": {
+            "color": "#333333",
+            "size": 16
+          }
+        },
+        "xaxis": {
+          "showgrid": false,
+          "tickfont": {
+            "size": 15
+          },
+          "title": {
+            "font": {
+              "size": 15
+            }
+          }
+        },
+        "yaxis": {
+          "gridcolor": "lightgrey",
+          "tickfont": {
+            "size": 15
+          },
+          "title": {
+            "font": {
+              "size": 15
+            }
+          }
+        }
+      }
+    },
+    "xaxis": {
+      "anchor": "y",
+      "domain": [
+        0.0,
+        0.45
+      ],
+      "title": {
+        "text": ""
+      }
+    },
+    "yaxis": {
+      "anchor": "x",
+      "domain": [
+        0.0,
+        0.47
+      ],
+      "title": {
+        "text": "Mt CO₂-e"
+      },
+      "showticklabels": true,
+      "nticks": 10,
+      "matches": "y",
+      "range": [
+        -2.5,
+        72.5
+      ]
+    },
+    "xaxis2": {
+      "anchor": "y2",
+      "domain": [
+        0.55,
+        1.0
+      ],
+      "matches": "x",
+      "title": {
+        "text": ""
+      }
+    },
+    "yaxis2": {
+      "anchor": "x2",
+      "domain": [
+        0.0,
+        0.47
+      ],
+      "matches": "y",
+      "showticklabels": true,
+      "nticks": 10,
+      "range": [
+        -2.5,
+        72.5
+      ],
+      "title": {
+        "text": "Mt CO₂-e"
+      }
+    },
+    "xaxis3": {
+      "anchor": "y3",
+      "domain": [
+        0.0,
+        0.45
+      ],
+      "matches": "x",
+      "showticklabels": false,
+      "title": {
+        "text": ""
+      }
+    },
+    "yaxis3": {
+      "anchor": "x3",
+      "domain": [
+        0.53,
+        1.0
+      ],
+      "matches": "y",
+      "title": {
+        "text": "Mt CO₂-e"
+      },
+      "showticklabels": true,
+      "nticks": 10,
+      "range": [
+        -2.5,
+        72.5
+      ]
+    },
+    "xaxis4": {
+      "anchor": "y4",
+      "domain": [
+        0.55,
+        1.0
+      ],
+      "matches": "x",
+      "showticklabels": false,
+      "title": {
+        "text": ""
+      }
+    },
+    "yaxis4": {
+      "anchor": "x4",
+      "domain": [
+        0.53,
+        1.0
+      ],
+      "matches": "y",
+      "showticklabels": true,
+      "nticks": 10,
+      "range": [
+        -2.5,
+        72.5
+      ],
+      "title": {
+        "text": "Mt CO₂-e"
+      }
+    },
+    "annotations": [
+      {
+        "font": {
+          "color": "black",
+          "family": "Arial",
+          "size": 15
+        },
+        "showarrow": false,
+        "text": "\u003cb\u003eAmpol-House-View\u003c\u002fb\u003e\u003cbr\u003eManufacturing Emissions by Sector",
+        "x": 0.225,
+        "xanchor": "center",
+        "xref": "paper",
+        "y": 0.48,
+        "yanchor": "bottom",
+        "yref": "paper"
+      },
+      {
+        "font": {
+          "color": "black",
+          "family": "Arial",
+          "size": 15
+        },
+        "showarrow": false,
+        "text": "\u003cb\u003eAmpol-1p5DS\u003c\u002fb\u003e\u003cbr\u003eManufacturing Emissions by Sector",
+        "x": 0.225,
+        "xanchor": "center",
+        "xref": "paper",
+        "y": 1.01,
+        "yanchor": "bottom",
+        "yref": "paper"
+      },
+      {
+        "font": {
+          "color": "black",
+          "family": "Arial",
+          "size": 15
+        },
+        "showarrow": false,
+        "text": "\u003cb\u003eAmpol-2p5DS\u003c\u002fb\u003e\u003cbr\u003eManufacturing Emissions by Sector",
+        "x": 0.775,
+        "xanchor": "center",
+        "xref": "paper",
+        "y": 1.01,
+        "yanchor": "bottom",
+        "yref": "paper"
+      },
+      {
+        "font": {
+          "color": "darkgrey",
+          "size": 8
+        },
+        "showarrow": false,
+        "text": "2025-12-03 Copyright © CSIRO",
+        "x": 1,
+        "xanchor": "right",
+        "xref": "paper",
+        "y": -0.05,
+        "yanchor": "top",
+        "yref": "paper"
+      }
+    ],
+    "legend": {
+      "tracegroupgap": 0,
+      "title": {
+        "text": ""
+      },
+      "y": -0.07,
+      "yanchor": "top",
+      "xanchor": "center",
+      "x": 0.5
+    },
+    "title": {
+      "text": ""
+    },
+    "shapes": [
+      {
+        "line": {
+          "color": "black",
+          "width": 1
+        },
+        "type": "line",
+        "x0": 0,
+        "x1": 1,
+        "xref": "x domain",
+        "y0": 0,
+        "y1": 0,
+        "yref": "y"
+      },
+      {
+        "line": {
+          "color": "black",
+          "width": 1
+        },
+        "type": "line",
+        "x0": 0,
+        "x1": 1,
+        "xref": "x3 domain",
+        "y0": 0,
+        "y1": 0,
+        "yref": "y3"
+      },
+      {
+        "line": {
+          "color": "black",
+          "width": 1
+        },
+        "type": "line",
+        "x0": 0,
+        "x1": 1,
+        "xref": "x4 domain",
+        "y0": 0,
+        "y1": 0,
+        "yref": "y4"
+      }
+    ],
+    "modebar": {
+      "add": [
+        "v1hovermode",
+        "toggleSpikelines",
+        "drawline",
+        "hoverClosestGl2d",
+        "drawopenpath",
+        "drawclosedpath",
+        "drawcircle",
+        "drawrect",
+        "eraseshape"
+      ]
+    }
+  }
+}

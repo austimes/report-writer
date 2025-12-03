@@ -1,0 +1,31 @@
+{
+  "timestamp": "2025-12-03T13:50:20.110726",
+  "section_id": "electricity-generation",
+  "provider": "openai",
+  "model": "gpt-5.1-2025-11-13",
+  "request": {
+    "model": "gpt-5.1-2025-11-13",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an expert report writer for energy and emissions analysis."
+      },
+      {
+        "role": "user",
+        "content": "[text prompt, 5 images]"
+      }
+    ],
+    "temperature": 0.7,
+    "max_tokens": 4000,
+    "image_count": 5,
+    "chart_ids": [
+      "electricity_generation_energy",
+      "electricity_generation_capacity_by_tech_and_fuel",
+      "renewable_energy_fraction",
+      "generation_emissions_intensity_by_tech",
+      "storage_capacity_by_technology"
+    ],
+    "prompt_preview": "# Task: Write the 'Electricity generation' section of the report\n\n## Section Information\n- **Title**: Electricity generation\n- **Level**: ## (heading level 2)\n- **Parent Section**: Projection results\n\n## Instructions\nProvide an overview of the electricity generation projection results\n\n## Available Data\nThe following 5 chart(s) are available for this section:\n\n### Electricity Generation Energy\n- **ID**: electricity_generation_energy\n- **Category**: electricity\n- **Figure Path**: `figures/electri..."
+  },
+  "response": "## Electricity generation\n\nElectricity generation expands substantially across all scenarios, underpinned by rapid deployment of renewable capacity and storage. Total grid output rises from 266 TWh in 2025 to between 1,095 TWh (Ampol\u2011House\u2011View) and 1,472 TWh (Ampol\u20111.5DS) in 2050, an increase of 311\u2013453%. The 1.5\u00b0C scenario delivers 377 TWh more generation than the House View by 2050, reflecting stronger electrification and higher demand for zero\u2011emissions power.\n\n![Electricity Generation Energy](figures/electricity_generation_energy.png)  \n*Figure 1: Projected electricity generation by technology, 2025\u20132050, showing strong growth in wind and solar across all scenarios.*\n\nInstalled generation capacity grows even more rapidly than output as the system transitions towards variable renewables. Total capacity increases from 110 GW in 2025 to 559 GW in the House View, 625 GW in the 2.5\u00b0C scenario and 720 GW in the 1.5\u00b0C scenario by 2050, equivalent to a 407\u2013552% expansion. The 1.5\u00b0C pathway therefore requires around 160 GW more capacity than the House View, dominated by additional wind and utility\u2011scale solar build\u2011out.\n\n![Electricity Generation Capacity by Tech and Fuel](figures/electricity_generation_capacity_by_tech_and_fuel.png)  \n*Figure 2: Installed generation capacity by technology and fuel, highlighting the large-scale build-out of wind and solar and the phase\u2011down of fossil generation.*\n\nThe generation mix decarbonises rapidly. The renewable share of electricity supply increases from around 38% in 2025 to nearly 100% in all scenarios by 2050. The 1.5\u00b0C scenario reaches a renewable fraction of 99.8% by 2050, marginally higher than the House View at 99.7%, with convergence across scenarios from the mid\u20112030s.\n\n![Renewable Energy Fraction](figures/renewable_energy_fraction.png)  \n*Figure 3: Renewable share of total electricity generation, approaching 100% in all scenarios by 2050.*\n\nConsistent with this transition, average generation emissions intensity falls from 0.51 Mt CO\u2082\u2011e/TWh in 2025 to effectively zero by 2050 in every scenario, implying the near\u2011complete retirement or abatement of unabated fossil\u2011fuelled generation. The steepest decline occurs before 2030, after which residual emissions are progressively eliminated.\n\n![Generation Emissions Intensity by Tech](figures/generation_emissions_intensity_by_tech.png)  \n*Figure 4: Emissions intensity of electricity generation, falling to zero across all scenarios by 2050.*\n\nSystem reliability under high renewable penetration is maintained through a major scale\u2011up of storage. Total storage capacity increases from 4.3 GW in 2025 to 38.3 GW in the House View, 48.6 GW in the 2.5\u00b0C scenario and 71.8 GW in the 1.5\u00b0C scenario by 2050\u2014growth of 785\u20131,558%. Utility\u2011scale batteries dominate this expansion, complemented by residential and commercial batteries and hydro storage. The higher\u2011ambition scenarios therefore rely on significantly greater flexible capacity to balance variable wind and solar output.\n\n![Storage Capacity by Technology](figures/storage_capacity_by_technology.png)  \n*Figure 5: Storage capacity by technology, with rapid growth in utility-scale and distributed batteries supporting a near\u2011fully renewable grid.*"
+}

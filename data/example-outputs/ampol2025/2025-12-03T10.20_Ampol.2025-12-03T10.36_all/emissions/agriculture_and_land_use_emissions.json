@@ -1,0 +1,1167 @@
+{
+  "data": [
+    {
+      "hovertemplate": "scen=Ampol-1p5DS\u003cbr\u003eyear=%{x}\u003cbr\u003eMt CO₂-e=%{y}\u003cextra\u003e\u003c\u002fextra\u003e",
+      "legendgroup": "",
+      "marker": {
+        "color": "rgb(158,158,158)",
+        "symbol": "circle",
+        "size": 0.001
+      },
+      "mode": "markers",
+      "name": "",
+      "orientation": "v",
+      "showlegend": false,
+      "x": {
+        "dtype": "i4",
+        "bdata": "6QcAAOoHAADrBwAA7AcAAO0HAADuBwAA7wcAAPAHAADxBwAA8gcAAPMHAAD4BwAA\u002fQcAAAIIAAA="
+      },
+      "xaxis": "x3",
+      "y": {
+        "dtype": "i1",
+        "bdata": "AAAAAAAAAAAAAAAAAAA="
+      },
+      "yaxis": "y3",
+      "type": "scatter",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(158,158,158)"
+      },
+      "opacity": 0
+    },
+    {
+      "hovertemplate": "scen=Ampol-2p5DS\u003cbr\u003eyear=%{x}\u003cbr\u003eMt CO₂-e=%{y}\u003cextra\u003e\u003c\u002fextra\u003e",
+      "legendgroup": "",
+      "marker": {
+        "color": "rgb(158,158,158)",
+        "symbol": "circle",
+        "size": 0.001
+      },
+      "mode": "markers",
+      "name": "",
+      "orientation": "v",
+      "showlegend": false,
+      "x": {
+        "dtype": "i4",
+        "bdata": "6QcAAOoHAADrBwAA7AcAAO0HAADuBwAA7wcAAPAHAADxBwAA8gcAAPMHAAD4BwAA\u002fQcAAAIIAAA="
+      },
+      "xaxis": "x4",
+      "y": {
+        "dtype": "i1",
+        "bdata": "AAAAAAAAAAAAAAAAAAA="
+      },
+      "yaxis": "y4",
+      "type": "scatter",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(158,158,158)"
+      },
+      "opacity": 0
+    },
+    {
+      "hovertemplate": "scen=Ampol-House-View\u003cbr\u003eyear=%{x}\u003cbr\u003eMt CO₂-e=%{y}\u003cextra\u003e\u003c\u002fextra\u003e",
+      "legendgroup": "",
+      "marker": {
+        "color": "rgb(158,158,158)",
+        "symbol": "circle",
+        "size": 0.001
+      },
+      "mode": "markers",
+      "name": "",
+      "orientation": "v",
+      "showlegend": false,
+      "x": {
+        "dtype": "i4",
+        "bdata": "6QcAAOoHAADrBwAA7AcAAO0HAADuBwAA7wcAAPAHAADxBwAA8gcAAPMHAAD4BwAA\u002fQcAAAIIAAA="
+      },
+      "xaxis": "x",
+      "y": {
+        "dtype": "i1",
+        "bdata": "AAAAAAAAAAAAAAAAAAA="
+      },
+      "yaxis": "y",
+      "type": "scatter",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(158,158,158)"
+      },
+      "opacity": 0
+    },
+    {
+      "fill": "tonexty",
+      "name": "Agriculture - Sheep & Cattle",
+      "showlegend": true,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "qMKLSYHHREC3X6NqBGhGQA+zy+gyREhAc\u002fnXaMXdSUAntDbgZRNKQBbQfH8iTUpA66\u002f8JJ5cSkCOvmnOqnBKQOVFQYgQW0pAnO3oXgddSkAcI2YUhXxLQMtUIXegfE1AprRxx2eATUBYoCa2VIRNQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x3",
+      "yaxis": "y3",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(80,80,80)"
+      },
+      "legendgroup": "Agriculture - Sheep & Cattle",
+      "marker": {
+        "color": "rgb(80,80,80)"
+      },
+      "fillcolor": "rgb(80,80,80)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Agriculture - Dairy",
+      "showlegend": true,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "qi48oI6jGUBy9AkoKQ4bQE80wYmDQxxARLpa1skgHkAZQG8D2IweQFi300j52x5AYAAsMrASH0CCNKTePDEfQJKAd8MZih9AqxP02x3YH0CvAt3EtBIgQNd4kx8bTyJATTslb0MeIkCnmwmGOewhQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x3",
+      "yaxis": "y3",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(159,174,229)"
+      },
+      "legendgroup": "Agriculture - Dairy",
+      "marker": {
+        "color": "rgb(159,174,229)"
+      },
+      "fillcolor": "rgb(159,174,229)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Agriculture - Grain",
+      "showlegend": true,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "4GHdv27yGUBR80a\u002fmO8dQPW+Vc8X5hxAN6ApIXlFHEAsAMHUJfoaQPBQCIaUnBtAeGphlK8jHUA3gCVPqAIdQHSrJoCU5BxAXzD1qFbPGkDuol8wDLseQHIsnVLO4h9ACLBHcSC0H0CgGJn5QXgfQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x3",
+      "yaxis": "y3",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(255,184,28)"
+      },
+      "legendgroup": "Agriculture - Grain",
+      "marker": {
+        "color": "rgb(255,184,28)"
+      },
+      "fillcolor": "rgb(255,184,28)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Agriculture - Other Agriculture",
+      "showlegend": true,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "6MuwxF4FE0AZTs1f9MYVQJxJ4i8AGhZA+dXAvywEFEBR4pciO+0TQPIz\u002fD9J1xNA7kn59XXEE0BNLV2aSa8TQJb7aV4SlhNA8LgI1AYME0Ca17p0XWMUQBxvK0Fy5BZAHh\u002f1cuaoFkDuxBEJtnkWQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x3",
+      "yaxis": "y3",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(102,51,0)"
+      },
+      "legendgroup": "Agriculture - Other Agriculture",
+      "marker": {
+        "color": "rgb(102,51,0)"
+      },
+      "fillcolor": "rgb(102,51,0)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Agriculture - Other Animals",
+      "showlegend": true,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "OLsbIZFADUABhyUM5xoNQApMJ4VbIQlA6M65PHvXBkAwv9j8pJcGQFwe5DRo0gRAbeELVmelBEAuRYvNS20EQGE9qouaQQRA89m5+VrTAUC5f7o4oqwHQCYnFpoyYAdAts9jIicPB0CxIBERRbwGQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x3",
+      "yaxis": "y3",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(34,70,34)"
+      },
+      "legendgroup": "Agriculture - Other Animals",
+      "marker": {
+        "color": "rgb(34,70,34)"
+      },
+      "fillcolor": "rgb(34,70,34)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Agriculture - Agricultural Services & Fishing",
+      "showlegend": true,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "j5kW0zUt1j\u002ff17n4GWTiP5X0eIGGCOs\u002fK0D6sUPQ8T+ZakWkmqDyP1mMmGRScvM\u002flFviCfxX9D+JQs5yWSb1P2o4p1v4RPc\u002fPg\u002fjKBor+j+FXNoEmrb8P35\u002fUcSd0P0\u002fQYi63y6U\u002fj+F99Zghbv+Pw=="
+      },
+      "type": "scatter",
+      "xaxis": "x3",
+      "yaxis": "y3",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(30,34,170)"
+      },
+      "legendgroup": "Agriculture - Agricultural Services & Fishing",
+      "marker": {
+        "color": "rgb(30,34,170)"
+      },
+      "fillcolor": "rgb(30,34,170)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Sequestration",
+      "showlegend": true,
+      "stackgroup": "negative",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "+KjDk5ZcV8BxL1s5w4tUwFwEfVgJ+kzASxX6DPklPsAqf9sVd50wwPBwndxlTCbAu+NMdZGHGsDCMvwvdKMGwPsswNR21eW\u002fbLsgH9W8uL\u002fUdw2T8\u002fSSvw=="
+      },
+      "type": "scatter",
+      "xaxis": "x3",
+      "yaxis": "y3",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(0,115,119)"
+      },
+      "legendgroup": "Sequestration",
+      "marker": {
+        "color": "rgb(0,115,119)"
+      },
+      "fillcolor": "rgb(0,115,119)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Forestry & Logging",
+      "showlegend": true,
+      "stackgroup": "negative",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "w\u002foIK7UERMBx3KVnPnFHwFOCXz9J3krA1ot0xh5NTsDfV93UCQBPwCM6u5lMtE\u002fAPvrvDB7YT8AZ6\u002fABj\u002f9PwMMkaFkvok\u002fANnVKFiEhUMAS9lAQhj5QwBVJl3Mx7VDAAii9wCXlUcDqeC0jEjBTwA=="
+      },
+      "type": "scatter",
+      "xaxis": "x3",
+      "yaxis": "y3",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(120,190,32)"
+      },
+      "legendgroup": "Forestry & Logging",
+      "marker": {
+        "color": "rgb(120,190,32)"
+      },
+      "fillcolor": "rgb(120,190,32)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Agriculture - Sheep & Cattle",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "qLypNycoRUC2q1A5Bx5KQMoZ2\u002fhejEtAbieqdiXBTECJS0utTmJNQKPSzyAQVU1AFOhef+5kTUCZ6t3k80dNQD85\u002fn30Z01ABKjXKftrTUA+K9RDtHNNQMtUIXegfE1AprRxx2eATUBYoCa2VIRNQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x4",
+      "yaxis": "y4",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(80,80,80)"
+      },
+      "legendgroup": "Agriculture - Sheep & Cattle",
+      "marker": {
+        "color": "rgb(80,80,80)"
+      },
+      "fillcolor": "rgb(80,80,80)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Agriculture - Dairy",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "YxeRA9SoIkDXct9v2PkiQB27LFqs8yJAaG2oBp6vI0De9a3o7MsjQDegIBPsjiNA+XhQT49hI0DB2B8pPyIjQKpnti3q8yJAI1x+jD69IkBRwN\u002fsDIciQNd4kx8bTyJATTslb0MeIkCnmwmGOewhQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x4",
+      "yaxis": "y4",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(159,174,229)"
+      },
+      "legendgroup": "Agriculture - Dairy",
+      "marker": {
+        "color": "rgb(159,174,229)"
+      },
+      "fillcolor": "rgb(159,174,229)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Agriculture - Grain",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "z\u002fRdeZJwH0CNDQ8FoHkhQL9PStNyCyFAhNFzIqA2IECaUejkIpogQHuZclQjiSBABHBV1W95IEBjDvaPGlMgQOpVZKxVWSBAL5edjOE2IEC89aRQuxMgQHIsnVLO4h9ACLBHcSC0H0CgGJn5QXgfQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x4",
+      "yaxis": "y4",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(255,184,28)"
+      },
+      "legendgroup": "Agriculture - Grain",
+      "marker": {
+        "color": "rgb(255,184,28)"
+      },
+      "fillcolor": "rgb(255,184,28)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Agriculture - Other Agriculture",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "ZQmiF2XiFUBH222lEEsaQLrXEyytpRlAJbQ0zwqoF0DJ7nGRJzgYQMHmDcvF9hdApALx+Tu4F0CKA1OChVAXQEG0cX1cORdAzWskh08vF0AJRwhK7CAXQBxvK0Fy5BZAHh\u002f1cuaoFkDuxBEJtnkWQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x4",
+      "yaxis": "y4",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(102,51,0)"
+      },
+      "legendgroup": "Agriculture - Other Agriculture",
+      "marker": {
+        "color": "rgb(102,51,0)"
+      },
+      "fillcolor": "rgb(102,51,0)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Agriculture - Other Animals",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "h6BwESj4DED8mI72gDAOQGqrawyqOgxArIkitJZhCUA623gO9dMJQASXRu6ocQlA3gm6v9QZCUAwvUVBBbgIQCJ73DnsXAhAmdzAJXATCED6lMZtwbsHQCYnFpoyYAdAts9jIicPB0CxIBERRbwGQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x4",
+      "yaxis": "y4",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(34,70,34)"
+      },
+      "legendgroup": "Agriculture - Other Animals",
+      "marker": {
+        "color": "rgb(34,70,34)"
+      },
+      "fillcolor": "rgb(34,70,34)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Agriculture - Agricultural Services & Fishing",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "6LF0YKSw8z\u002fIimXDZ7r1P\u002fRy5LiWmfo\u002f+QZG+7\u002f1+j9rzTbSvxz7P3JjuXAqOPs\u002fRGU76S5b+z8q\u002fc66lHH7PyFi4w6dhvs\u002f3e5fopO+\u002fD+d0bflRL79P35\u002fUcSd0P0\u002fQYi63y6U\u002fj+F99Zghbv+Pw=="
+      },
+      "type": "scatter",
+      "xaxis": "x4",
+      "yaxis": "y4",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(30,34,170)"
+      },
+      "legendgroup": "Agriculture - Agricultural Services & Fishing",
+      "marker": {
+        "color": "rgb(30,34,170)"
+      },
+      "fillcolor": "rgb(30,34,170)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Sequestration",
+      "showlegend": false,
+      "stackgroup": "negative",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "+LIB\u002f\u002fp\u002fXsBACzrTV09PwDXeD94SKDfAlME3tCumJMBSZ7NK5KgVwHwHPS8nTAvAtpdN88CN\u002fb8ibA7styDov\u002fBXTC6R0MS\u002f76Zy3oEVnr+WGbjq00Bqvw=="
+      },
+      "type": "scatter",
+      "xaxis": "x4",
+      "yaxis": "y4",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(0,115,119)"
+      },
+      "legendgroup": "Sequestration",
+      "marker": {
+        "color": "rgb(0,115,119)"
+      },
+      "fillcolor": "rgb(0,115,119)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Forestry & Logging",
+      "showlegend": false,
+      "stackgroup": "negative",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "aphY\u002f72xQ8AJi8JlSChHwHlNtaCnjkrAHoQ2cqcgTsDOZ0FsF9dOwNpxS29EkU\u002fAAYlw5CawT8Bu1UZsddVPwM7K4imBh0\u002fAkYAnEjMaUMDtgK95zT5QwBVJl3Mx7VDAAii9wCXlUcDqeC0jEjBTwA=="
+      },
+      "type": "scatter",
+      "xaxis": "x4",
+      "yaxis": "y4",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(120,190,32)"
+      },
+      "legendgroup": "Forestry & Logging",
+      "marker": {
+        "color": "rgb(120,190,32)"
+      },
+      "fillcolor": "rgb(120,190,32)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Agriculture - Sheep & Cattle",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "h7aENGi9SUCyWHyy05lLQB6x3lxy00xAkaIOCe9rTUAjHio7+HNNQH1uomHkak1A89mM9Jp3TUBQ25eAbm9NQIMzW+RPek1AdaX7Okp7TUDMUMGWJnxNQMtUIXegfE1AprRxx2eATUBYoCa2VIRNQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x",
+      "yaxis": "y",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(80,80,80)"
+      },
+      "legendgroup": "Agriculture - Sheep & Cattle",
+      "marker": {
+        "color": "rgb(80,80,80)"
+      },
+      "fillcolor": "rgb(80,80,80)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Agriculture - Dairy",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "3a0VTKq+I0AbNxgmBI8jQCirYlXZUyNAfVf2KSXrI0BSiuBrMcUjQETKW9vDjyNAQ65E265hI0BQdQvzwCcjQGa3cQAL9CJAyRV6ili9IkAD8lgsKociQNd4kx8bTyJATTslb0MeIkCnmwmGOewhQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x",
+      "yaxis": "y",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(159,174,229)"
+      },
+      "legendgroup": "Agriculture - Dairy",
+      "marker": {
+        "color": "rgb(159,174,229)"
+      },
+      "fillcolor": "rgb(159,174,229)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Agriculture - Grain",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "gjSj+HtDIkCzDKq04n0hQOKbhYs4DiFA0nt\u002fRqOtIECpz9cyyZsgQDKOuPiEiiBAQRyIjqp5IEDUmy5kZ2kgQBMkpxmNWSBAsLAVMAw3IEDKD9FQ6RMgQHIsnVLO4h9ACLBHcSC0H0CgGJn5QXgfQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x",
+      "yaxis": "y",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(255,184,28)"
+      },
+      "legendgroup": "Agriculture - Grain",
+      "marker": {
+        "color": "rgb(255,184,28)"
+      },
+      "fillcolor": "rgb(255,184,28)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Agriculture - Other Agriculture",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "RsM1p+yaGkCSht9hnocaQHR1y9G7rxlAJl0hUYV6GECwD1RFLDcYQOUO0V879RdAxmCzAHm0F0DsgsUAHnUXQN2n0L+ROhdAadtVPnIRF0D053cs++8WQBxvK0Fy5BZAHh\u002f1cuaoFkDuxBEJtnkWQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x",
+      "yaxis": "y",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(102,51,0)"
+      },
+      "legendgroup": "Agriculture - Other Agriculture",
+      "marker": {
+        "color": "rgb(102,51,0)"
+      },
+      "fillcolor": "rgb(102,51,0)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Agriculture - Other Animals",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "hBS0a8+KD0AJk2a4SkcOQDNeoNyYMwxAVNPNoS81CkDsm7F5SdUJQJvpXb4gdQlALk1o8swbCUD6WYs\u002fx7wIQHAf\u002fhrpZAhA9sw+CyAOCEBO324r57sHQCYnFpoyYAdAts9jIicPB0CxIBERRbwGQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x",
+      "yaxis": "y",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(34,70,34)"
+      },
+      "legendgroup": "Agriculture - Other Animals",
+      "marker": {
+        "color": "rgb(34,70,34)"
+      },
+      "fillcolor": "rgb(34,70,34)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Agriculture - Agricultural Services & Fishing",
+      "showlegend": false,
+      "stackgroup": "positive",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "mlL3CmEe9j9bA40enZ73P3VR6kZwTfs\u002f6eLOEhSz+z+FDWQgRMj7P3L6KgMN3vs\u002fl8yg3jj0+z9huekVATP8P\u002fFIHQzscfw\u002fwSWSczfm\u002fD95xkC8ZWX9P35\u002fUcSd0P0\u002fQYi63y6U\u002fj+F99Zghbv+Pw=="
+      },
+      "type": "scatter",
+      "xaxis": "x",
+      "yaxis": "y",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(30,34,170)"
+      },
+      "legendgroup": "Agriculture - Agricultural Services & Fishing",
+      "marker": {
+        "color": "rgb(30,34,170)"
+      },
+      "fillcolor": "rgb(30,34,170)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Sequestration",
+      "showlegend": false,
+      "stackgroup": "negative",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "wIC1aUqYIL9GGDv1ipQav2vFIv+Y1BG\u002f87vjzsGoAb+kWvCllWryvnaBeJMEN+e+FjMyU6vi2L6jkFQsvC3Evq2wJvDmSqW+V\u002f0SzW7nfr4rVWFseaBavg=="
+      },
+      "type": "scatter",
+      "xaxis": "x",
+      "yaxis": "y",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(0,115,119)"
+      },
+      "legendgroup": "Sequestration",
+      "marker": {
+        "color": "rgb(0,115,119)"
+      },
+      "fillcolor": "rgb(0,115,119)"
+    },
+    {
+      "fill": "tonexty",
+      "name": "Forestry & Logging",
+      "showlegend": false,
+      "stackgroup": "negative",
+      "x": {
+        "dtype": "i4",
+        "bdata": "AggAAP0HAAD4BwAA8wcAAPIHAADxBwAA8AcAAO8HAADuBwAA7QcAAOwHAADrBwAA6gcAAOkHAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "cfTp2b2xQ8A+h8aTbDhHwD\u002f5BMe+nUrAgv4X2TQhTsCx4x9Fid9OwI275f+Ik0\u002fAr3WGeIK2T8DXk4KOxNxPwBGjT4s8hk\u002fAvArtF8kZUMCHaSpEYD1QwBVJl3Mx7VDAAii9wCXlUcDqeC0jEjBTwA=="
+      },
+      "type": "scatter",
+      "xaxis": "x",
+      "yaxis": "y",
+      "line": {
+        "width": 0.1,
+        "color": "rgb(120,190,32)"
+      },
+      "legendgroup": "Forestry & Logging",
+      "marker": {
+        "color": "rgb(120,190,32)"
+      },
+      "fillcolor": "rgb(120,190,32)"
+    },
+    {
+      "legendgroup": "Net",
+      "line": {
+        "width": 2,
+        "color": "yellow"
+      },
+      "marker": {
+        "line": {
+          "color": "black",
+          "width": 1
+        },
+        "size": 10,
+        "color": "yellow"
+      },
+      "mode": "lines+markers",
+      "name": "Net",
+      "showlegend": false,
+      "x": {
+        "dtype": "i4",
+        "bdata": "6QcAAOoHAADrBwAA7AcAAO0HAADuBwAA7wcAAPAHAADxBwAA8gcAAPMHAAD4BwAA\u002fQcAAAIIAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "mOvsNnn8IkBgerGdh7stQGxFKQTp5jJAmIB7u04YL0AoohXPks0mQOwLfE2TgSlAxEu0q0fNI0AQBh619\u002f8YQODwCN0MDvc\u002fIHu6tJPlCMAoIFZvOOQuwHFTmWt0rUPAEdUvzuosTsDLqlkDSZFRwA=="
+      },
+      "type": "scatter",
+      "xaxis": "x3",
+      "yaxis": "y3"
+    },
+    {
+      "legendgroup": "Net",
+      "line": {
+        "width": 2,
+        "color": "yellow"
+      },
+      "marker": {
+        "line": {
+          "color": "black",
+          "width": 1
+        },
+        "size": 10,
+        "color": "yellow"
+      },
+      "mode": "lines+markers",
+      "name": "Net",
+      "showlegend": false,
+      "x": {
+        "dtype": "i4",
+        "bdata": "6QcAAOoHAADrBwAA7AcAAO0HAADuBwAA7wcAAPAHAADxBwAA8gcAAPMHAAD4BwAA\u002fQcAAAIIAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "mOvsNnn8IkBgerGdh7stQGxFKQTp5jJAiLmjR1zUNUA44M7X33s2QJLVbepD0DdA4hLDYt+ANkBiEQI+L0U2QESggmiDCTVAThWB2ZHZNED0x76aLU0vQMzkL8KK2iBAVvJ8APvEOsA+pkmX+ONWwA=="
+      },
+      "type": "scatter",
+      "xaxis": "x4",
+      "yaxis": "y4"
+    },
+    {
+      "legendgroup": "Net",
+      "line": {
+        "width": 2,
+        "color": "yellow"
+      },
+      "marker": {
+        "line": {
+          "color": "black",
+          "width": 1
+        },
+        "size": 10,
+        "color": "yellow"
+      },
+      "mode": "lines+markers",
+      "name": "Net",
+      "showlegend": false,
+      "x": {
+        "dtype": "i4",
+        "bdata": "6QcAAOoHAADrBwAA7AcAAO0HAADuBwAA7wcAAPAHAADxBwAA8gcAAPMHAAD4BwAA\u002fQcAAAIIAAA="
+      },
+      "y": {
+        "dtype": "f8",
+        "bdata": "mOvsNnn8IkBgerGdh7stQGxFKQTp5jJAzFxT5yfaNUAg\u002f9J5Jp42QJzdkwhTMThAvIbtYPilN0Aeb8y1uD84QBIevjOupThAxL9Yl1JeOkDM977sTgI8QNpwu13SIUFA3sWL4\u002fqWQ0CGFLBZLYlFQA=="
+      },
+      "type": "scatter",
+      "xaxis": "x",
+      "yaxis": "y"
+    },
+    {
+      "legendgroup": "Net",
+      "line": {
+        "width": 2,
+        "color": "yellow"
+      },
+      "marker": {
+        "line": {
+          "color": "black",
+          "width": 1
+        },
+        "size": 10,
+        "color": "yellow"
+      },
+      "mode": "lines+markers",
+      "name": "Net",
+      "showlegend": true,
+      "x": [
+        null
+      ],
+      "y": [
+        null
+      ],
+      "type": "scatter"
+    }
+  ],
+  "layout": {
+    "template": {
+      "data": {
+        "scatter": [
+          {
+            "line": {
+              "width": 5
+            },
+            "opacity": 0.7,
+            "type": "scatter"
+          }
+        ]
+      },
+      "layout": {
+        "bargap": 0.5,
+        "colorway": [
+          "rgb(0,29,52)",
+          "rgb(0,0,128)",
+          "rgb(30,34,170)",
+          "rgb(0,75,135)",
+          "rgb(0,115,119)",
+          "rgb(0,169,206)",
+          "rgb(67,194,204)",
+          "rgb(159,174,229)",
+          "rgb(34,70,34)",
+          "rgb(0,122,83)",
+          "rgb(107,142,35)",
+          "rgb(120,190,32)",
+          "rgb(113,204,152)",
+          "rgb(232,119,34)",
+          "rgb(255,184,28)",
+          "rgb(109,32,119)",
+          "rgb(223,25,149)",
+          "rgb(0,0,0)",
+          "rgb(44,44,44)",
+          "rgb(80,80,80)",
+          "rgb(158,158,158)",
+          "rgb(117,117,121)",
+          "rgb(200,200,220)",
+          "rgb(102,51,0)",
+          "rgb(128,0,0)"
+        ],
+        "font": {
+          "family": "Arial",
+          "size": 15
+        },
+        "legend": {
+          "entrywidth": 0,
+          "entrywidthmode": "pixels",
+          "font": {
+            "size": 15
+          },
+          "itemsizing": "constant",
+          "itemwidth": 30,
+          "orientation": "h",
+          "traceorder": "normal",
+          "x": 0.5,
+          "xanchor": "center",
+          "y": -0.05,
+          "yanchor": "top"
+        },
+        "margin": {
+          "b": 105,
+          "r": 25,
+          "t": 50
+        },
+        "paper_bgcolor": "white",
+        "plot_bgcolor": "white",
+        "title": {
+          "font": {
+            "color": "#333333",
+            "size": 16
+          }
+        },
+        "xaxis": {
+          "showgrid": false,
+          "tickfont": {
+            "size": 15
+          },
+          "title": {
+            "font": {
+              "size": 15
+            }
+          }
+        },
+        "yaxis": {
+          "gridcolor": "lightgrey",
+          "tickfont": {
+            "size": 15
+          },
+          "title": {
+            "font": {
+              "size": 15
+            }
+          }
+        }
+      }
+    },
+    "xaxis": {
+      "anchor": "y",
+      "domain": [
+        0.0,
+        0.45
+      ],
+      "title": {
+        "text": ""
+      }
+    },
+    "yaxis": {
+      "anchor": "x",
+      "domain": [
+        0.0,
+        0.47
+      ],
+      "title": {
+        "text": "Mt CO₂-e"
+      },
+      "showticklabels": true,
+      "nticks": 10,
+      "matches": "y",
+      "range": [
+        -162.5,
+        162.5
+      ]
+    },
+    "xaxis2": {
+      "anchor": "y2",
+      "domain": [
+        0.55,
+        1.0
+      ],
+      "matches": "x",
+      "title": {
+        "text": ""
+      }
+    },
+    "yaxis2": {
+      "anchor": "x2",
+      "domain": [
+        0.0,
+        0.47
+      ],
+      "matches": "y",
+      "showticklabels": true,
+      "nticks": 10,
+      "range": [
+        -162.5,
+        162.5
+      ],
+      "title": {
+        "text": "Mt CO₂-e"
+      }
+    },
+    "xaxis3": {
+      "anchor": "y3",
+      "domain": [
+        0.0,
+        0.45
+      ],
+      "matches": "x",
+      "showticklabels": false,
+      "title": {
+        "text": ""
+      }
+    },
+    "yaxis3": {
+      "anchor": "x3",
+      "domain": [
+        0.53,
+        1.0
+      ],
+      "matches": "y",
+      "title": {
+        "text": "Mt CO₂-e"
+      },
+      "showticklabels": true,
+      "nticks": 10,
+      "range": [
+        -162.5,
+        162.5
+      ]
+    },
+    "xaxis4": {
+      "anchor": "y4",
+      "domain": [
+        0.55,
+        1.0
+      ],
+      "matches": "x",
+      "showticklabels": false,
+      "title": {
+        "text": ""
+      }
+    },
+    "yaxis4": {
+      "anchor": "x4",
+      "domain": [
+        0.53,
+        1.0
+      ],
+      "matches": "y",
+      "showticklabels": true,
+      "nticks": 10,
+      "range": [
+        -162.5,
+        162.5
+      ],
+      "title": {
+        "text": "Mt CO₂-e"
+      }
+    },
+    "annotations": [
+      {
+        "font": {
+          "color": "black",
+          "family": "Arial",
+          "size": 15
+        },
+        "showarrow": false,
+        "text": "\u003cb\u003eAmpol-House-View\u003c\u002fb\u003e\u003cbr\u003eAgriculture and Land Use Emissions",
+        "x": 0.225,
+        "xanchor": "center",
+        "xref": "paper",
+        "y": 0.48,
+        "yanchor": "bottom",
+        "yref": "paper"
+      },
+      {
+        "font": {
+          "color": "black",
+          "family": "Arial",
+          "size": 15
+        },
+        "showarrow": false,
+        "text": "\u003cb\u003eAmpol-1p5DS\u003c\u002fb\u003e\u003cbr\u003eAgriculture and Land Use Emissions",
+        "x": 0.225,
+        "xanchor": "center",
+        "xref": "paper",
+        "y": 1.01,
+        "yanchor": "bottom",
+        "yref": "paper"
+      },
+      {
+        "font": {
+          "color": "black",
+          "family": "Arial",
+          "size": 15
+        },
+        "showarrow": false,
+        "text": "\u003cb\u003eAmpol-2p5DS\u003c\u002fb\u003e\u003cbr\u003eAgriculture and Land Use Emissions",
+        "x": 0.775,
+        "xanchor": "center",
+        "xref": "paper",
+        "y": 1.01,
+        "yanchor": "bottom",
+        "yref": "paper"
+      },
+      {
+        "font": {
+          "color": "darkgrey",
+          "size": 8
+        },
+        "showarrow": false,
+        "text": "2025-12-03 Copyright © CSIRO",
+        "x": 1,
+        "xanchor": "right",
+        "xref": "paper",
+        "y": -0.05,
+        "yanchor": "top",
+        "yref": "paper"
+      }
+    ],
+    "legend": {
+      "tracegroupgap": 0,
+      "title": {
+        "text": ""
+      },
+      "y": -0.07,
+      "yanchor": "top",
+      "xanchor": "center",
+      "x": 0.5
+    },
+    "title": {
+      "text": ""
+    },
+    "shapes": [
+      {
+        "line": {
+          "color": "black",
+          "width": 1
+        },
+        "type": "line",
+        "x0": 0,
+        "x1": 1,
+        "xref": "x domain",
+        "y0": 0,
+        "y1": 0,
+        "yref": "y"
+      },
+      {
+        "line": {
+          "color": "black",
+          "width": 1
+        },
+        "type": "line",
+        "x0": 0,
+        "x1": 1,
+        "xref": "x3 domain",
+        "y0": 0,
+        "y1": 0,
+        "yref": "y3"
+      },
+      {
+        "line": {
+          "color": "black",
+          "width": 1
+        },
+        "type": "line",
+        "x0": 0,
+        "x1": 1,
+        "xref": "x4 domain",
+        "y0": 0,
+        "y1": 0,
+        "yref": "y4"
+      }
+    ],
+    "modebar": {
+      "add": [
+        "v1hovermode",
+        "toggleSpikelines",
+        "drawline",
+        "hoverClosestGl2d",
+        "drawopenpath",
+        "drawclosedpath",
+        "drawcircle",
+        "drawrect",
+        "eraseshape"
+      ]
+    }
+  }
+}

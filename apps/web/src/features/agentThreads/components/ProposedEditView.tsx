@@ -1,16 +1,16 @@
 import type { Id } from 'convex/_generated/dataModel';
 
-interface BlockEdit {
-  type: 'edit_block';
-  blockId: Id<'blocks'>;
+interface NodeEdit {
+  type: 'edit_node';
+  nodeId: Id<'nodes'>;
   oldText: string;
   newText: string;
 }
 
 interface ProposedEditViewProps {
-  edits: BlockEdit[];
-  onAccept?: (blockId: Id<'blocks'>) => void;
-  onReject?: (blockId: Id<'blocks'>) => void;
+  edits: NodeEdit[];
+  onAccept?: (nodeId: Id<'nodes'>) => void;
+  onReject?: (nodeId: Id<'nodes'>) => void;
   showActions?: boolean;
 }
 
@@ -30,7 +30,7 @@ export function ProposedEditView({
       {edits.map((edit, idx) => (
         <div key={idx} className="border rounded-lg overflow-hidden">
           <div className="bg-gray-50 px-3 py-2 text-xs text-muted-foreground border-b">
-            Block {edit.blockId}
+            Node {edit.nodeId}
           </div>
 
           <div className="divide-y">
@@ -52,13 +52,13 @@ export function ProposedEditView({
           {showActions && (
             <div className="flex gap-2 p-3 bg-gray-50 border-t">
               <button
-                onClick={() => onAccept?.(edit.blockId)}
+                onClick={() => onAccept?.(edit.nodeId)}
                 className="px-3 py-1 text-sm bg-green-600 text-white rounded hover:bg-green-700"
               >
                 Accept
               </button>
               <button
-                onClick={() => onReject?.(edit.blockId)}
+                onClick={() => onReject?.(edit.nodeId)}
                 className="px-3 py-1 text-sm bg-red-600 text-white rounded hover:bg-red-700"
               >
                 Reject

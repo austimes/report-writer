@@ -6,13 +6,12 @@ import type { Id } from 'convex/_generated/dataModel';
 
 interface CommentFormProps {
   projectId: Id<'projects'>;
-  sectionId?: Id<'sections'>;
-  blockId?: Id<'blocks'>;
+  targetNodeId?: Id<'nodes'>;
   onSubmit: (data: {
     body: string;
     assigneeType?: 'human' | 'agent';
     assigneeUserId?: Id<'users'>;
-    linkedSections?: Id<'sections'>[];
+    linkedNodeIds?: Id<'nodes'>[];
   }) => void;
   onCancel: () => void;
 }

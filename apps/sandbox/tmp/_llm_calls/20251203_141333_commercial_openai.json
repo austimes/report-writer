@@ -1,0 +1,29 @@
+{
+  "timestamp": "2025-12-03T14:13:33.406543",
+  "section_id": "commercial",
+  "provider": "openai",
+  "model": "gpt-5.1-2025-11-13",
+  "request": {
+    "model": "gpt-5.1-2025-11-13",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an expert report writer for energy and emissions analysis."
+      },
+      {
+        "role": "user",
+        "content": "[text prompt, 3 images]"
+      }
+    ],
+    "max_tokens": 4000,
+    "reasoning_effort": "medium",
+    "image_count": 3,
+    "chart_ids": [
+      "commercial_buildings_energy_use_by_fuel",
+      "built_environment_emissions",
+      "building_production_by_sector"
+    ],
+    "prompt_preview": "# Task: Write the 'Commercial' section of the report\n\n## Section Information\n- **Title**: Commercial\n- **Level**: ### (heading level 3)\n- **Parent Section**: Energy consumption by sector\n\n## Instructions\nProvide an overview of the commercial energy consumption projection results\n\n## Available Data\nThe following 3 chart(s) are available for this section:\n\n### Commercial Buildings Energy Use by Fuel\n- **ID**: commercial_buildings_energy_use_by_fuel\n- **Category**: built_environment\n- **Figure Path..."
+  },
+  "response": "Commercial sector energy demand increases across all scenarios, driven by sustained growth in commercial floorspace and service intensity. From a common 2025 starting point of 276.5 PJ, total commercial buildings energy use rises by 52.4% to 421.4 PJ in 2050 under **Ampol-1p5DS** (1.5\u00b0C-aligned pathway). In **Ampol-2p5DS** (2.5\u00b0C pathway) and **Ampol-House-View** (reference/baseline scenario), demand grows more moderately to 371.5 PJ (+34.3%) and 379.9 PJ (+37.4%) respectively. By 2050, energy use in **Ampol-1p5DS** is 49.9 PJ higher than in **Ampol-2p5DS**, reflecting faster electrification and higher service provision despite stronger efficiency and decarbonisation measures.\n\n![Commercial Buildings Energy Use by Fuel](figures/commercial_buildings_energy_use_by_fuel.png)  \n*Figure: Projected commercial buildings final energy use by fuel under the three scenarios, showing growth in total demand and increasing dominance of electricity over fossil fuels to 2050.*\n\nThe fuel mix shifts markedly towards electricity in all pathways. Electricity becomes the dominant energy source for commercial buildings, displacing direct use of fossil fuels, particularly oil and natural gas. Under **Ampol-1p5DS**, this electrification is most pronounced, with only small residual contributions from gaseous and liquid fuels by 2050, supplemented by low\u2011emissions options such as biomethane and hydrogen. In **Ampol-2p5DS** and **Ampol-House-View**, fossil fuel use declines more gradually, leading to a slower reduction in combustion-related emissions even though total final energy growth is more modest.\n\nThese changes in energy use occur alongside strong expansion in commercial floor area. The **Building Production by Sector** results indicate that commercial construction activity increases steadily from 2025, with total commercial floorspace rising substantially\u2014around a doubling by 2050. This growth outpaces that of the residential sector (see Residential section), reinforcing that rising activity and occupancy in commercial buildings is a key driver of higher energy demand despite improvements in energy performance.\n\n![Building Production by Sector](figures/building_production_by_sector.png)  \n*Figure: Projected building production by sector, indicating sustained growth in commercial floor area that underpins rising energy demand in the commercial built environment.*\n\nWhile total built-environment emissions (residential plus commercial) start at 14.25 Mt CO\u2082-e in 2025 across all scenarios, their trajectories diverge significantly with the pace of fuel switching and efficiency. Under **Ampol-1p5DS**, built-environment emissions fall to zero by 2050 (a 100% reduction), consistent with deep electrification and decarbonisation of energy supply. In **Ampol-2p5DS**, emissions decline by 49.3% to 7.22 Mt CO\u2082-e by 2050, while under **Ampol-House-View** they fall by 34.6% to 9.32 Mt CO\u2082-e\u20149.3 Mt CO\u2082-e higher than in **Ampol-1p5DS**. The commercial segment accounts for a substantial portion of these totals throughout the period, so the relative ambition of commercial decarbonisation strategies has a material impact on overall built-environment outcomes.\n\n![Built Environment Emissions](figures/built_environment_emissions.png)  \n*Figure: Total built-environment (residential and commercial) greenhouse gas emissions by scenario, highlighting the stronger and earlier reductions achieved in the 1.5\u00b0C-aligned pathway compared with the 2.5\u00b0C and baseline scenarios.*"
+}

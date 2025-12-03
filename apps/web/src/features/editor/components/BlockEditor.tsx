@@ -2,25 +2,25 @@ import { useState, useRef, useEffect } from 'react';
 import { cn } from '@/shared/utils/cn';
 import type { Id } from 'convex/_generated/dataModel';
 
-interface Block {
-  _id: Id<"blocks">;
-  markdownText: string;
-  blockType: string;
+interface Node {
+  _id: Id<"nodes">;
+  text?: string;
+  nodeType: string;
   order: number;
-  lastEditedAt: number;
-  lastEditorUserId: Id<"users">;
-  lastEditType: "human" | "agent";
+  lastEditedAt?: number;
+  lastEditorUserId?: Id<"users">;
+  lastEditType?: "human" | "agent";
 }
 
 interface BlockEditorProps {
-  block: Block;
-  onSave: (blockId: Id<"blocks">, text: string) => void;
-  onBlur: (blockId: Id<"blocks">, text: string) => void;
+  node: Node;
+  onSave: (nodeId: Id<"nodes">, text: string) => void;
+  onBlur: (nodeId: Id<"nodes">, text: string) => void;
   saving?: boolean;
   disabled?: boolean;
 }
 
-const blockTypeLabels: Record<string, string> = {
+const nodeTypeLabels: Record<string, string> = {
   paragraph: "P",
   bulletList: "UL",
   numberedList: "OL",
@@ -29,7 +29,7 @@ const blockTypeLabels: Record<string, string> = {
   codeBlock: "Code",
 };
 
-const blockTypeColors: Record<string, string> = {
+const nodeTypeColors: Record<string, string> = {
   paragraph: "bg-blue-100 text-blue-700",
   bulletList: "bg-green-100 text-green-700",
   numberedList: "bg-green-100 text-green-700",
@@ -38,14 +38,14 @@ const blockTypeColors: Record<string, string> = {
   codeBlock: "bg-gray-100 text-gray-700",
 };
 
-export function BlockEditor({ block, onSave, onBlur, saving, disabled = false }: BlockEditorProps) {
-  const [text, setText] = useState(block.markdownText);
+export function BlockEditor({ node, onSave, onBlur, saving, disabled = false }: BlockEditorProps) {
+  const [text, setText] = useState(node.text ?? '');
   const [isFocused, setIsFocused] = useState(false);
   const textareaRef = useRef<HTMLTextAreaElement>(null);
 
   useEffect(() => {
-    setText(block.markdownText);
-  }, [block.markdownText]);
+    setText(node.text ?? '');
+  }, [node.text]);
 
   useEffect(() => {
     if (textareaRef.current) {
@@ -60,21 +60,21 @@ export function BlockEditor({ block, onSave, onBlur, saving, disabled = false }:
 
   const handleBlur = () => {
     setIsFocused(false);
-    if (text !== block.markdownText) {
-      onBlur(block._id, text);
+    if (text !== node.text) {
+      onBlur(node._id, text);
     }
   };
 
   const handleKeyDown = (e: React.KeyboardEvent<HTMLTextAreaElement>) => {
     if ((e.metaKey || e.ctrlKey) && e.key === 's') {
       e.preventDefault();
-      onSave(block._id, text);
+      onSave(node._id, text);
     }
   };
 
-  const lastEditTime = new Date(block.lastEditedAt).toLocaleString();
-  const blockTypeLabel = blockTypeLabels[block.blockType] || block.blockType;
-  const blockTypeColor = blockTypeColors[block.blockType] || "bg-gray-100 text-gray-700";
+  const lastEditTime = node.lastEditedAt ? new Date(node.lastEditedAt).toLocaleString() : 'never';
+  const nodeTypeLabel = nodeTypeLabels[node.nodeType] || node.nodeType;
+  const nodeTypeColor = nodeTypeColors[node.nodeType] || "bg-gray-100 text-gray-700";
 
   return (
     <div
@@ -86,10 +86,10 @@ export function BlockEditor({ block, onSave, onBlur, saving, disabled = false }:
       )}
     >
       <div className="flex items-start gap-2 mb-2">
-        <span className={cn("text-xs px-2 py-1 rounded font-medium", blockTypeColor)}>
-          {blockTypeLabel}
+        <span className={cn("text-xs px-2 py-1 rounded font-medium", nodeTypeColor)}>
+          {nodeTypeLabel}
         </span>
-        <span className="text-xs text-muted-foreground">#{block.order}</span>
+        <span className="text-xs text-muted-foreground">#{node.order}</span>
         {saving && (
           <span className="text-xs text-muted-foreground ml-auto">Saving...</span>
         )}
@@ -106,14 +106,14 @@ export function BlockEditor({ block, onSave, onBlur, saving, disabled = false }:
         className={cn(
           "w-full resize-none bg-transparent border-none outline-none",
           "font-mono text-sm leading-relaxed",
-          block.blockType === 'codeBlock' && "font-mono bg-muted p-2 rounded",
+          node.nodeType === 'codeBlock' && "font-mono bg-muted p-2 rounded",
           disabled && "cursor-not-allowed"
         )}
         rows={1}
       />
 
       <div className="opacity-0 group-hover:opacity-100 transition-opacity mt-2 text-xs text-muted-foreground">
-        Last edited {lastEditTime} by {block.lastEditType}
+        Last edited {lastEditTime} by {node.lastEditType ?? 'unknown'}
       </div>
     </div>
   );

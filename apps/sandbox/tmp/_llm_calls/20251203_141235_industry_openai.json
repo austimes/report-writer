@@ -1,0 +1,31 @@
+{
+  "timestamp": "2025-12-03T14:12:35.988650",
+  "section_id": "industry",
+  "provider": "openai",
+  "model": "gpt-5.1-2025-11-13",
+  "request": {
+    "model": "gpt-5.1-2025-11-13",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an expert report writer for energy and emissions analysis."
+      },
+      {
+        "role": "user",
+        "content": "[text prompt, 5 images]"
+      }
+    ],
+    "max_tokens": 4000,
+    "reasoning_effort": "medium",
+    "image_count": 5,
+    "chart_ids": [
+      "industry_energy_use_by_fuel",
+      "industry_emissions_and_captured_emissions",
+      "iron_and_steel_energy_use_by_fuel",
+      "manufacturing_emissions_by_sector",
+      "chemical_captured_emissions_by_process"
+    ],
+    "prompt_preview": "# Task: Write the 'Industry' section of the report\n\n## Section Information\n- **Title**: Industry\n- **Level**: ### (heading level 3)\n- **Parent Section**: Energy consumption by sector\n\n## Instructions\nProvide an overview of the industry energy consumption projection results\n\n## Available Data\nThe following 5 chart(s) are available for this section:\n\n### Industry Energy Use by Fuel\n- **ID**: industry_energy_use_by_fuel\n- **Category**: industry\n- **Figure Path**: `figures/industry_energy_use_by_fue..."
+  },
+  "response": "Industry remains a major energy consumer across all scenarios, but aggregate demand declines materially to 2050. Total industry energy use falls from 1,555 PJ in 2025 to 1,179 PJ in 2050 in **Ampol-1p5DS** (\u201324.2%) and to 1,089 PJ in **Ampol-2p5DS** (\u201330.0%), while the **Ampol-House-View** shows a similar reduction to 1,164 PJ (\u201325.2%). By 2050, energy use in Ampol-1p5DS is around 90 PJ higher than in Ampol-2p5DS, reflecting higher assumed industrial activity alongside stronger mitigation measures. Across all cases, this reduction is driven by declining use of natural gas, black coal and diesel, with a growing share of electricity, electrification, biomass, hydrogen and biomethane in the energy mix.  \n\n![Industry Energy Use by Fuel](figures/industry_energy_use_by_fuel.png)  \n*Figure: Projected industrial final energy use by fuel, showing declining total demand and a shift away from fossil fuels towards electricity and emerging low\u2011emissions fuels across all scenarios.*\n\nWithin industry, iron and steel production exhibits the most pronounced structural change. In **Ampol-1p5DS**, iron and steel energy use increases from 98.7 PJ in 2025 to 166.1 PJ in 2050 (+68.3%), driven by higher output and significant fuel switching from coal to electricity, natural gas and hydrogen. In contrast, energy use in **Ampol-2p5DS** falls sharply to 28.5 PJ (\u201371.1%), and to 68.9 PJ (\u201330.2%) in **Ampol-House-View**, indicating lower capacity utilisation and slower adoption of new processes in the less ambitious pathways.\n\n![Iron and Steel Energy Use by Fuel](figures/iron_and_steel_energy_use_by_fuel.png)  \n*Figure: Iron and steel energy consumption by fuel, highlighting the coal phase\u2011out and increased electrification and gas use in the 1.5\u00b0C\u2011aligned pathway relative to other scenarios.*\n\nEmissions from industry decline faster than energy use, reflecting efficiency gains, fuel switching and deployment of carbon capture. Total industry emissions fall from 146.8 Mt CO\u2082-e in 2025 to 37.0 Mt CO\u2082-e in 2050 in **Ampol-1p5DS** (\u201374.8%) and to 49.8 Mt CO\u2082-e in **Ampol-2p5DS** (\u201366.1%). Under **Ampol-House-View**, emissions decrease less steeply to 74.4 Mt CO\u2082-e (\u201349.3%), leaving a gap of 37.4 Mt CO\u2082-e relative to Ampol-1p5DS in 2050. The results indicate increasing contributions from captured emissions over time, particularly in the climate\u2011aligned pathways, which offset a growing share of both combustion- and process\u2011related emissions.\n\n![Industry Emissions and Captured Emissions](figures/industry_emissions_and_captured_emissions.png)  \n*Figure: Total industrial emissions by source with captured emissions, showing steeper net reductions in the 1.5\u00b0C and 2.5\u00b0C pathways compared with the reference case.*\n\nManufacturing subsectors contribute substantially to these reductions. Aggregate manufacturing emissions decline from 61.0 Mt CO\u2082-e in 2025 to 24.6 Mt CO\u2082-e in 2050 in **Ampol-1p5DS** (\u201359.7%) and to 31.3 Mt CO\u2082-e in **Ampol-2p5DS** (\u201348.7%), compared with a more modest decline to 51.0 Mt CO\u2082-e (\u201316.4%) in **Ampol-House-View**. In the 1.5\u00b0C-aligned pathway, emissions from energy\u2011intensive sectors such as iron and steel, alumina, cement and petroleum refining all fall markedly, with iron and steel emissions approaching zero by 2050, underscoring the importance of technology shifts and fuel substitution described above.\n\n![Manufacturing Emissions by Sector](figures/manufacturing_emissions_by_sector.png)  \n*Figure: Manufacturing emissions by subsector, illustrating deeper decarbonisation of iron & steel, alumina, cement and refining in the climate\u2011aligned scenarios relative to the reference.*\n\nChemical process decarbonisation via carbon capture and storage (CCS) is scenario\u2011dependent. **Ampol-2p5DS** includes targeted CCS in selected chemical processes, yielding net captured emissions of about 1.0 Mt CO\u2082-e by 2050, while **Ampol-1p5DS** and **Ampol-House-View** show negligible captured volumes in this segment. This indicates that, under current assumptions, deep industrial decarbonisation in the 1.5\u00b0C-aligned pathway relies more on electrification, fuel switching and process change, with CCS providing a modest but locally important contribution in the 2.5\u00b0C pathway.\n\n![Chemical Captured Emissions by Process](figures/chemical_captured_emissions_by_process.png)  \n*Figure: Captured emissions from chemical processes, showing limited deployment overall and a small but growing role for CCS in the 2.5\u00b0C pathway by 2050.*"
+}
