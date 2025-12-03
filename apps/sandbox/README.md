@@ -2,6 +2,55 @@
 
 Python-based LLM orchestration service for report-writer.
 
+## Why a Separate Sandbox?
+
+The sandbox exists to **isolate AI processing from the main Convex backend**:
+
+| Reason | Explanation |
+|--------|-------------|
+| **Security** | LLM API keys stay here, never exposed to the browser |
+| **Decoupling** | Heavy LLM calls don't block real-time database sync |
+| **Python** | Better AI/ML ecosystem (LLM SDKs, future code execution) |
+| **Scaling** | AI workloads scale independently from database operations |
+
+### How It Fits Together
+
+```mermaid
+sequenceDiagram
+    participant Convex as Convex Backend
+    participant Sandbox as Python Sandbox
+    participant LLM as OpenAI/Anthropic
+
+    Convex->>Sandbox: POST /v1/agent/run<br/>{messages, context}
+    Sandbox->>Sandbox: Build prompt
+    Sandbox->>LLM: Chat completion
+    LLM-->>Sandbox: Response
+    Sandbox->>Sandbox: Parse edits
+    Sandbox-->>Convex: {agent_message, proposed_edits}
+```
+
+<details>
+<summary>ASCII version</summary>
+
+```
+Convex Backend                    Python Sandbox                   LLM
+     │                                  │                           │
+     │  POST /v1/agent/run              │                           │
+     │  {messages, context}             │                           │
+     │─────────────────────────────────▶│                           │
+     │                                  │  Build prompt             │
+     │                                  │───────────────────────────▶
+     │                                  │                           │
+     │                                  │◀───────────────────────────
+     │                                  │  Parse proposed edits     │
+     │◀─────────────────────────────────│                           │
+     │  {agent_message, proposed_edits} │                           │
+```
+
+</details>
+
+The sandbox receives document context and chat history, calls the LLM, parses the response, and returns proposed text edits. Convex stores these for user review.
+
 ## Setup
 
 1. **Install dependencies** (requires [uv](https://docs.astral.sh/uv/)):

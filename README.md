@@ -15,28 +15,83 @@ A collaborative web application for drafting Markdown-based reports with real-ti
 
 This is a 3-tier application:
 
-1. **Web App** (apps/web): React SPA with Vite, TypeScript, TailwindCSS
-2. **Backend** (convex/): Convex for real-time data sync, business logic, and schema
-3. **Agent Sandbox** (apps/sandbox): Python FastAPI service for AI agent orchestration and code execution
+| Layer | Directory | Runs On | Purpose |
+|-------|-----------|---------|---------|
+| **Web App** | `apps/web` | Vercel (static) | React SPA with Vite, TypeScript, TailwindCSS |
+| **Backend** | `convex/` | Convex Cloud | Real-time data sync, business logic, schema |
+| **Agent Sandbox** | `apps/sandbox` | Daytona | Python FastAPI for LLM orchestration |
+
+```mermaid
+flowchart TB
+    subgraph Client["🌐 Browser"]
+        Web["React SPA<br/>(apps/web)"]
+    end
+    
+    subgraph Vercel["☁️ Vercel"]
+        Static["Static Hosting"]
+    end
+    
+    subgraph ConvexCloud["☁️ Convex Cloud"]
+        Backend["Convex Backend<br/>(convex/)"]
+        DB[(Database)]
+        Backend --> DB
+    end
+    
+    subgraph Daytona["☁️ Daytona Sandbox"]
+        Sandbox["Python FastAPI<br/>(apps/sandbox)"]
+        LLM["OpenAI / Anthropic"]
+        Sandbox --> LLM
+    end
+    
+    Web -->|"WebSocket<br/>Real-time sync"| Backend
+    Backend -->|"HTTP POST<br/>/v1/agent/run"| Sandbox
+    Sandbox -->|"Proposed edits"| Backend
+    Static -.->|"Serves"| Web
+```
+
+<details>
+<summary>ASCII version</summary>
 
 ```
-┌─────────────┐
-│  React SPA  │ ──(Convex client)──┐
-└─────────────┘                    │
-                                   ▼
-                            ┌──────────────┐
-                            │    Convex    │
-                            │   Backend    │
-                            └──────┬───────┘
-                                   │
-                            (HTTP Actions)
-                                   │
-                                   ▼
-                          ┌─────────────────┐
-                          │ Python Sandbox  │
-                          │    (FastAPI)    │
-                          └─────────────────┘
+┌─────────────────────────────────────────────────────────────────────┐
+│  🌐 Browser                                                         │
+│  ┌─────────────────┐                                                │
+│  │   React SPA     │                                                │
+│  │   (apps/web)    │                                                │
+│  └────────┬────────┘                                                │
+└───────────┼─────────────────────────────────────────────────────────┘
+            │ WebSocket (real-time sync)
+            ▼
+┌─────────────────────────────────────────────────────────────────────┐
+│  ☁️ Convex Cloud                                                     │
+│  ┌─────────────────┐      ┌──────────┐                              │
+│  │ Convex Backend  │──────│ Database │                              │
+│  │    (convex/)    │      └──────────┘                              │
+│  └────────┬────────┘                                                │
+└───────────┼─────────────────────────────────────────────────────────┘
+            │ HTTP POST /v1/agent/run
+            ▼
+┌─────────────────────────────────────────────────────────────────────┐
+│  ☁️ Daytona Sandbox                                                  │
+│  ┌─────────────────┐      ┌──────────────────┐                      │
+│  │ Python FastAPI  │──────│ OpenAI/Anthropic │                      │
+│  │ (apps/sandbox)  │      └──────────────────┘                      │
+│  └─────────────────┘                                                │
+└─────────────────────────────────────────────────────────────────────┘
 ```
+
+</details>
+
+### Why a Separate Sandbox?
+
+The sandbox isolates AI/LLM processing from the Convex backend:
+
+| Reason | Explanation |
+|--------|-------------|
+| **Security** | LLM API keys stay server-side, never exposed to the browser |
+| **Decoupling** | Heavy LLM calls don't block real-time database operations |
+| **Python** | Better AI/ML ecosystem for LLM SDKs and future code execution |
+| **Human-in-the-loop** | Returns proposed edits for user review before applying |
 
 ## Quick Start
 
