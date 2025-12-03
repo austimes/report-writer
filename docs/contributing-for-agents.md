@@ -2,7 +2,114 @@
 
 Quick reference for AI coding assistants (Amp, Cursor, GitHub Copilot, etc.).
 
-## Essential Command
+> **Canonical Source**: [AGENTS.md](../AGENTS.md) at the repository root is the authoritative source for AI agent configuration. This document provides expanded, human-readable guidance.
+
+---
+
+## Issue Tracking with bd (beads)
+
+**IMPORTANT**: This project uses **bd (beads)** for ALL issue tracking. Do NOT use markdown TODOs, task lists, or other tracking methods.
+
+### Why bd?
+
+- **Dependency-aware**: Track blockers and relationships between issues
+- **Git-friendly**: Auto-syncs to `.beads/issues.jsonl` for version control
+- **Agent-optimized**: JSON output, ready work detection, discovered-from links
+- **Prevents duplicate tracking**: No confusion between different systems
+
+### Essential Commands
+
+```bash
+# Check for ready work (unblocked issues)
+bd ready --json
+
+# Create new issues
+bd create "Issue title" -t bug|feature|task -p 0-4 --json
+bd create "Issue title" -p 1 --deps discovered-from:bd-123 --json
+
+# Claim and update
+bd update bd-42 --status in_progress --json
+bd update bd-42 --priority 1 --json
+
+# Complete work
+bd close bd-42 --reason "Completed" --json
+```
+
+### Issue Types
+
+| Type | Use For |
+|------|---------|
+| `bug` | Something broken |
+| `feature` | New functionality |
+| `task` | Work items (tests, docs, refactoring) |
+| `epic` | Large features with subtasks |
+| `chore` | Maintenance (dependencies, tooling) |
+
+### Priorities
+
+| Priority | Level | Examples |
+|----------|-------|----------|
+| `0` | Critical | Security, data loss, broken builds |
+| `1` | High | Major features, important bugs |
+| `2` | Medium | Default, nice-to-have |
+| `3` | Low | Polish, optimization |
+| `4` | Backlog | Future ideas |
+
+### AI Agent Workflow
+
+1. **Check ready work**: `bd ready` shows unblocked issues
+2. **Claim your task**: `bd update <id> --status in_progress`
+3. **Work on it**: Implement, test, document
+4. **Discover new work?** Create linked issue:
+   ```bash
+   bd create "Found bug" -p 1 --deps discovered-from:<parent-id>
+   ```
+5. **Complete**: `bd close <id> --reason "Done"`
+6. **Commit together**: Always commit `.beads/issues.jsonl` with your code changes
+
+### Important Rules
+
+- ✅ Use bd for ALL task tracking
+- ✅ Always use `--json` flag for programmatic use
+- ✅ Link discovered work with `discovered-from` dependencies
+- ✅ Check `bd ready` before asking "what should I work on?"
+- ✅ Store AI planning docs in `history/` directory
+- ❌ Do NOT create markdown TODO lists
+- ❌ Do NOT use external issue trackers
+- ❌ Do NOT duplicate tracking systems
+- ❌ Do NOT clutter repo root with planning documents
+
+---
+
+## LLM-Specific Documentation
+
+This project includes specialized documentation for LLMs in [`docs/llm/`](llm/).
+
+### Available References
+
+| File | Description | Use When |
+|------|-------------|----------|
+| [`convex-llms.txt`](llm/convex-llms.txt) | Compact Convex reference with URLs | Quick lookups, conserve tokens |
+| [`daytona-llms.txt`](llm/daytona-llms.txt) | Compact Daytona reference with URLs | Quick lookups, conserve tokens |
+| [`daytona-cli-llms.txt`](llm/daytona-cli-llms.txt) | Daytona CLI reference | CLI command help |
+
+### Usage Guidelines
+
+**Prefer compact versions when:**
+- You have web access and can follow documentation links
+- You need to conserve context window tokens
+- You're doing exploratory work
+
+**Full documentation files** (if available in project or via web):
+- Use when you need comprehensive offline reference
+- For complex features requiring detailed examples
+- When web access is unavailable
+
+---
+
+## Development Commands
+
+### Essential Command
 
 Before submitting any code:
 
@@ -11,6 +118,78 @@ npm run test:ci
 ```
 
 This runs linters, unit tests, integration tests, and E2E tests. **All must pass.**
+
+### Type Checking & Linting
+
+**IMPORTANT**: Always run type checking after making code changes.
+
+```bash
+# Frontend (apps/web)
+cd apps/web && npm run build:typecheck  # TypeScript + build
+cd apps/web && npx tsc --noEmit         # TypeScript only
+cd apps/web && npm run lint             # ESLint
+
+# Backend (Convex)
+npx convex dev --once                   # Compile and validate Convex functions
+```
+
+### Testing
+
+```bash
+npm test                                # Run all Vitest tests
+npm run test:e2e                        # Run Playwright E2E tests
+npm run test:ci                         # Full CI suite (use before PR)
+```
+
+### Pre-commit Checklist
+
+1. ✅ Run `cd apps/web && npm run build:typecheck`
+2. ✅ Run `npx convex dev --once`
+3. ✅ Run relevant tests with `npm test`
+4. ✅ Verify the app works in the browser
+
+---
+
+## Deployment Commands
+
+### Quick Deploy
+
+```bash
+# Deploy Convex backend
+npx convex deploy
+
+# Deploy to Daytona sandbox
+daytona sandbox create --name report-writer-sandbox --snapshot daytona-medium --auto-stop 0
+
+# Build and deploy frontend (Vercel)
+cd apps/web && pnpm build && vercel --prod
+```
+
+### Convex Commands
+
+```bash
+npx convex dev              # Start dev mode (auto-deploys on changes)
+npx convex deploy           # Deploy to production
+npx convex env set KEY val  # Set environment variable
+npx convex env list         # List environment variables
+npx convex dashboard        # Open web dashboard
+npx convex logs             # Stream logs
+npx convex data             # View database tables
+npx convex run <function>   # Execute a function
+```
+
+### Daytona Commands
+
+```bash
+daytona sandbox create --name <name> --snapshot daytona-medium  # Create sandbox
+daytona sandbox list                                             # List sandboxes
+daytona sandbox info <name>                                      # Get sandbox details
+daytona sandbox stop <name>                                      # Stop sandbox
+daytona sandbox start <name>                                     # Start sandbox
+daytona sandbox delete <name>                                    # Delete sandbox
+```
+
+---
 
 ## Project Structure
 
@@ -27,8 +206,11 @@ report-writer/
 │           ├── routes/    # API endpoints
 │           └── services/  # LLM orchestration
 ├── convex/               # Backend (queries, mutations, schema)
+├── docs/
+│   └── llm/              # LLM-specific documentation
 ├── packages/
 │   └── shared-types/     # Shared TypeScript types
+├── history/              # AI planning documents (ephemeral)
 └── tests/
     ├── integration/      # Cross-service tests
     └── e2e/              # Playwright tests
@@ -49,125 +231,23 @@ report-writer/
 | Integration test | `tests/integration/` |
 | E2E test | `tests/e2e/` |
 
-## Common Tasks
+---
 
-### Add a new feature
+## Managing AI-Generated Documents
 
-1. **Create feature directory:**
-   ```bash
-   mkdir apps/web/src/features/my-feature
-   ```
+AI assistants often create planning and design documents during development:
+- PLAN.md, IMPLEMENTATION.md, ARCHITECTURE.md
+- DESIGN.md, CODEBASE_SUMMARY.md, INTEGRATION_PLAN.md
 
-2. **Add components, hooks, types:**
-   ```
-   my-feature/
-   ├── MyFeature.tsx
-   ├── MyFeature.test.tsx
-   ├── hooks.ts
-   └── types.ts
-   ```
+**Best Practice**: Store ALL AI-generated planning/design docs in `history/`
 
-3. **Add Convex backend if needed:**
-   - Define schema in `convex/schema.ts`
-   - Add mutations/queries in `convex/mutations.ts`, `convex/queries.ts`
+**Benefits:**
+- ✅ Clean repository root
+- ✅ Clear separation between ephemeral and permanent documentation
+- ✅ Preserves planning history for later reference
+- ✅ Reduces noise when browsing the project
 
-4. **Write tests:**
-   - Unit: Co-located `.test.tsx`
-   - Integration: `tests/integration/my-feature.test.ts`
-   - E2E: `tests/e2e/my-feature.spec.ts`
-
-5. **Run tests:**
-   ```bash
-   npm run test:ci
-   ```
-
-### Modify Convex schema
-
-1. **Edit `convex/schema.ts`:**
-   ```typescript
-   myTable: defineTable({
-     field1: v.string(),
-     field2: v.number(),
-   }).index('by_field1', ['field1']),
-   ```
-
-2. **Update TypeScript types:**
-   - Convex auto-generates types in `convex/_generated/`
-   - Import: `import { Doc } from './_generated/dataModel';`
-
-3. **Add migration if needed** (for production data)
-
-4. **Test changes:**
-   ```bash
-   npm test
-   ```
-
-### Add agent capability
-
-1. **Edit `apps/sandbox/app/services/agent.py`:**
-   ```python
-   class AgentOrchestrator:
-       def build_prompt(self, context, user_message):
-           # Add new context handling
-           pass
-   ```
-
-2. **Update API endpoint if needed:**
-   `apps/sandbox/app/routes/agent.py`
-
-3. **Add Python tests:**
-   ```bash
-   cd apps/sandbox
-   pytest tests/test_agent.py
-   ```
-
-4. **Update Convex action** to pass new context:
-   `convex/actions.ts`
-
-### Fix a bug
-
-1. **Write a failing test** that reproduces the bug
-2. **Fix the code**
-3. **Verify test passes:**
-   ```bash
-   npm test -- <test-file>
-   ```
-4. **Run full suite:**
-   ```bash
-   npm run test:ci
-   ```
-
-## Testing Requirements
-
-### Non-Interactive
-
-❌ **Don't** use prompts, user input, or manual confirmation.
-
-✅ **Do** use mocks and fixtures.
-
-### Deterministic
-
-❌ **Don't** rely on random data, real API calls, or system time (unless mocked).
-
-✅ **Do** use seeds, mocks, and `vi.setSystemTime()`.
-
-### Example: Testing Agent Code
-
-**Bad:**
-```python
-async def test_agent():
-    response = await openai.ChatCompletion.create(...)  # Real API call
-    assert 'summary' in response
-```
-
-**Good:**
-```python
-async def test_agent():
-    fake_llm = FakeLLM(response={'message': 'summary'})
-    orchestrator = AgentOrchestrator(llm=fake_llm)
-    response = await orchestrator.run('prompt')
-    assert response['message'] == 'summary'
-```
+---
 
 ## Code Style
 
@@ -188,46 +268,7 @@ docs(readme): update installation steps
 test(locks): add expiry edge cases
 ```
 
-## Pull Request Checklist
-
-- [ ] `npm run test:ci` passes
-- [ ] All new code has tests
-- [ ] Updated documentation if needed
-- [ ] Commit messages follow convention
-- [ ] No console.log or debug code left in
-
-## Key Files to Reference
-
-- **PRD**: `docs/AgentMarkdownEditor_PRD_v0_4.md` - Product requirements
-- **Architecture**: `docs/architecture.md` - System design
-- **Data Model**: `docs/data-model.md` - Convex schema explained
-- **Locks & Versions**: `docs/locks-and-versions.md` - Locking mechanism
-- **Agent Threads**: `docs/agent-threads.md` - AI integration
-- **Testing**: `docs/testing.md` - Full testing guide
-
-## Issue Tracking
-
-Use **bd (beads)** for all tasks:
-
-```bash
-# Check for work
-bd ready
-
-# Claim task
-bd update <issue-id> --status in_progress
-
-# Complete
-bd close <issue-id> --reason "Done"
-```
-
-See [AGENTS.md](../AGENTS.md) for full workflow.
-
-## Getting Help
-
-1. **Check existing docs**: Start with `docs/`
-2. **Search codebase**: Use grep/finder to find examples
-3. **Run tests**: See what's already tested for similar features
-4. **Ask**: Create an issue or discussion if stuck
+---
 
 ## Quick Reference
 
@@ -242,7 +283,21 @@ See [AGENTS.md](../AGENTS.md) for full workflow.
 | `pnpm format` | Format code |
 | `pnpm lint` | Lint code |
 | `bd ready` | Check for tasks |
+| `bd update <id> --status in_progress` | Claim task |
+| `bd close <id> --reason "Done"` | Complete task |
 
 ---
 
-**Remember:** Always run `npm run test:ci` before committing!
+## Key Documentation
+
+- **PRD**: `docs/AgentMarkdownEditor_PRD_v0_4.md` - Product requirements
+- **Architecture**: `docs/architecture.md` - System design
+- **Data Model**: `docs/data-model.md` - Convex schema explained
+- **Testing**: `docs/testing.md` - Full testing guide
+- **AGENTS.md**: [`../AGENTS.md`](../AGENTS.md) - Canonical AI agent configuration
+
+---
+
+**Remember:** 
+- Always run `npm run test:ci` before committing!
+- Always commit `.beads/issues.jsonl` with your code changes!

@@ -128,7 +128,7 @@ console.log(`URL: ${await sandbox.getUrl(8000)}`);
 The sandbox needs these environment variables:
 
 ```bash
-CONVEX_URL=https://your-deployment.convex.cloud
+CONVEX_URL=https://<your-project>.convex.cloud
 PORT=8000
 PYTHONUNBUFFERED=1
 ```
@@ -170,14 +170,55 @@ pnpm build
 
 #### Option 1: Vercel (Recommended)
 
-```bash
-# Install Vercel CLI
-npm install -g vercel
+Vercel integrates with Convex to automatically deploy both backend and frontend.
 
-# Deploy
+**Step 1: Get Convex Production Deploy Key**
+
+1. Run `npx convex dashboard` (or visit https://dashboard.convex.dev)
+2. Select your project
+3. Go to **Settings** → **Deploy Keys**
+4. Click **Generate Production Deploy Key**
+5. Copy the generated key
+
+**Step 2: Set Environment Variables in Vercel**
+
+```bash
+cd apps/web
+
+# Set the Convex deploy key (required)
+vercel env add CONVEX_DEPLOY_KEY production
+
+# Set sandbox URL if needed
+vercel env add VITE_SANDBOX_URL production
+```
+
+Or set via Vercel Dashboard: Project → Settings → Environment Variables
+
+**Step 3: Deploy**
+
+```bash
 cd apps/web
 vercel --prod
 ```
+
+**How It Works**
+
+The `vercel.json` configuration handles the integration:
+
+```json
+{
+  "buildCommand": "npx convex deploy --cmd 'npm run build'",
+  "framework": "vite",
+  "outputDirectory": "dist"
+}
+```
+
+During deployment:
+1. `npx convex deploy` reads `CONVEX_DEPLOY_KEY`
+2. Deploys Convex functions to production
+3. Sets `VITE_CONVEX_URL` automatically
+4. Runs `npm run build` with the correct Convex URL
+5. Vercel serves the built static files
 
 #### Option 2: Netlify
 
@@ -212,8 +253,8 @@ npx convex deploy
 Set these in your hosting platform:
 
 ```bash
-VITE_CONVEX_URL=https://your-deployment.convex.cloud
-VITE_SANDBOX_URL=https://your-sandbox.proxy.daytona.works
+VITE_CONVEX_URL=https://<your-project>.convex.cloud
+VITE_SANDBOX_URL=https://8000-<your-sandbox-id>.proxy.daytona.works
 ```
 
 ## Step 4: Connect the Services
@@ -228,7 +269,7 @@ const SANDBOX_URL = process.env.SANDBOX_URL || 'http://localhost:8000';
 Set the environment variable in Convex:
 
 ```bash
-npx convex env set SANDBOX_URL https://your-sandbox.proxy.daytona.works
+npx convex env set SANDBOX_URL https://8000-<your-sandbox-id>.proxy.daytona.works
 ```
 
 ## Deployment Checklist
@@ -398,4 +439,4 @@ jobs:
 For deployment issues:
 - Convex: https://docs.convex.dev
 - Daytona: https://daytona.io/docs
-- GitHub Issues: [Report an issue](https://github.com/your-repo/issues)
+- GitHub Issues: [Report an issue](https://github.com/<your-org>/<your-repo>/issues)

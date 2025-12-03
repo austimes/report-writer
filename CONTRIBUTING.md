@@ -2,6 +2,14 @@
 
 Thank you for your interest in contributing! This guide will help you set up your development environment and understand the contribution workflow.
 
+## Issue Tracking
+
+We use **GitHub Issues** for tracking bugs and feature requests. Before starting work:
+
+1. Check [existing issues](https://github.com/austimes/report-writer/issues) to avoid duplicates
+2. Create a new issue describing your proposed change
+3. Wait for feedback before starting significant work
+
 ## Development Environment Setup
 
 ### Required Tools
@@ -160,17 +168,21 @@ test(locks): add expiry edge cases
 4. **Push and create PR**:
    ```bash
    git push origin feat/my-feature
-   # Create PR on GitHub
    ```
 
-5. **PR Requirements**:
+5. **Open a Pull Request on GitHub**:
+   - Go to your fork on GitHub
+   - Click "Compare & pull request"
+   - Fill out the PR template with a clear description
+
+6. **PR Requirements**:
    - All tests passing
    - Code follows existing style and conventions
    - New features include tests
    - Documentation updated if needed
    - PR description explains changes and rationale
 
-6. **Review process**:
+7. **Review process**:
    - At least one approval required
    - CI must pass
    - No merge conflicts
@@ -192,29 +204,35 @@ test(locks): add expiry edge cases
 - **Formatting**: Prettier (run `pnpm format`)
 - **Linting**: ESLint (run `pnpm lint`)
 
-## Issue Tracking
-
-We use **bd (beads)** for issue tracking:
-
-```bash
-# Check for work
-bd ready
-
-# Claim a task
-bd update <issue-id> --status in_progress
-
-# Complete
-bd close <issue-id> --reason "Done"
-```
-
-See [AGENTS.md](AGENTS.md) for full bd workflow.
-
 ## Getting Help
 
 - Check existing [documentation](docs/)
-- Search [existing issues](https://github.com/dlg0/report-writer/issues)
+- Search [existing issues](https://github.com/austimes/report-writer/issues)
 - Ask in discussions or create a new issue
 
 ## License
 
 By contributing, you agree that your contributions will be licensed under the MIT License.
+
+---
+
+## Advanced Workflows (for AI Tools)
+
+This section covers tooling used for AI-assisted development workflows.
+
+### bd (beads) Issue Tracking
+
+For AI agents and advanced automation, we use **bd (beads)** for structured issue tracking:
+
+```bash
+# Check for available work
+bd ready
+
+# Claim a task
+bd update <issue-id> --status in_progress
+
+# Complete a task
+bd close <issue-id> --reason "Done"
+```
+
+See [AGENTS.md](AGENTS.md) for the full bd workflow and AI agent guidelines.
