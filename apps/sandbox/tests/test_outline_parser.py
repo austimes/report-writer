@@ -25,33 +25,41 @@ class TestSlugify:
 
 class TestParseReviewBlock:
     def test_empty_text(self):
-        ratings, notes = parse_review_block("")
+        author, ratings, notes = parse_review_block("")
+        assert author == ""
         assert ratings == {}
         assert notes == ""
 
     def test_rating_only(self):
         text = "RATING: accuracy=4, completeness=3"
-        ratings, notes = parse_review_block(text)
+        author, ratings, notes = parse_review_block(text)
         assert ratings == {"accuracy": 4, "completeness": 3}
         assert notes == ""
 
     def test_rating_with_notes(self):
         text = "RATING: accuracy=4, completeness=3\nNOTES: Good coverage but missed House View scenario."
-        ratings, notes = parse_review_block(text)
+        author, ratings, notes = parse_review_block(text)
         assert ratings == {"accuracy": 4, "completeness": 3}
         assert notes == "Good coverage but missed House View scenario."
 
     def test_notes_multiline(self):
         text = "RATING: clarity=5\nNOTES: First line.\nSecond line."
-        ratings, notes = parse_review_block(text)
+        author, ratings, notes = parse_review_block(text)
         assert ratings == {"clarity": 5}
         assert notes == "First line.\nSecond line."
 
     def test_no_rating_line(self):
         text = "Some random text without rating"
-        ratings, notes = parse_review_block(text)
+        author, ratings, notes = parse_review_block(text)
         assert ratings == {}
         assert notes == ""
+
+    def test_author_field(self):
+        text = "AUTHOR: Alice\nRATING: clarity=5\nNOTES: Great work."
+        author, ratings, notes = parse_review_block(text)
+        assert author == "Alice"
+        assert ratings == {"clarity": 5}
+        assert notes == "Great work."
 
 
 class TestParseOutline:

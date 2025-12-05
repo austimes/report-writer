@@ -1,0 +1,11 @@
+You spent ${total_cost} to generate {section_count} sections of a technical report using AI.
+
+Write a single witty, funny one-liner celebrating this achievement. The tone should be:
+- Playful and slightly sarcastic
+- Appreciative of how AI saves time vs weeks of manual report writing
+- Maybe hint at thanking the robots or being grateful for automation
+- Keep it under 50 words
+
+Example tone (don't copy exactly): "Man, that was the best $2.35 we ever spent... saved about 6 weeks of brain-melting report writing. Maybe you should thank the robots?"
+
+Just respond with the quip, nothing else.

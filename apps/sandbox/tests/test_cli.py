@@ -56,7 +56,7 @@ class TestGenerateSectionCommand:
                 "--outline", str(tmp_path / "missing.md"),
                 "--data-root", str(sample_data_root),
                 "--section", "emissions",
-                "--output", str(tmp_path / "output.md"),
+                "--output-root", str(tmp_path / "output"),
             ],
         )
         assert result.exit_code == 1
@@ -70,7 +70,7 @@ class TestGenerateSectionCommand:
                 "--outline", str(sample_outline),
                 "--data-root", str(tmp_path / "missing"),
                 "--section", "emissions",
-                "--output", str(tmp_path / "output.md"),
+                "--output-root", str(tmp_path / "output"),
             ],
         )
         assert result.exit_code == 1
@@ -84,7 +84,7 @@ class TestGenerateSectionCommand:
                 "--outline", str(sample_outline),
                 "--data-root", str(sample_data_root),
                 "--section", "nonexistent",
-                "--output", str(tmp_path / "output.md"),
+                "--output-root", str(tmp_path / "output"),
             ],
         )
         assert result.exit_code == 1
@@ -99,7 +99,7 @@ class TestGenerateSectionCommand:
                 "--outline", str(sample_outline),
                 "--data-root", str(sample_data_root),
                 "--section", "emissions",
-                "--output", str(tmp_path / "output.md"),
+                "--output-root", str(tmp_path / "output"),
                 "--dry-run",
             ],
         )
@@ -116,7 +116,7 @@ class TestGenerateReportCommand:
                 "generate-report",
                 "--outline", str(tmp_path / "missing.md"),
                 "--data-root", str(sample_data_root),
-                "--output", str(tmp_path / "output.md"),
+                "--output-root", str(tmp_path / "output"),
             ],
         )
         assert result.exit_code == 1
@@ -129,7 +129,7 @@ class TestGenerateReportCommand:
                 "generate-report",
                 "--outline", str(sample_outline),
                 "--data-root", str(sample_data_root),
-                "--output", str(tmp_path / "output.md"),
+                "--output-root", str(tmp_path / "output"),
                 "--dry-run",
             ],
         )

@@ -1,0 +1,15 @@
+Generate a fake reviewer for a technical report section titled "{section_title}".
+
+Create:
+1. A funny, creative fake name (can be punny, alliterative, or absurd - like "Skeptical Steve McDoubtface" or "Dr. Actually Well...")
+2. A sarcastic/spicy but ultimately helpful review comment (2-3 sentences)
+
+The comment should:
+- Be playfully antagonistic or sarcastic in tone
+- Still contain a kernel of useful feedback
+- Be funny and memorable
+- Examples of the vibe: "Oh great, another chart I have to pretend to understand" or "Did the AI learn to write from fortune cookies?"
+
+Respond in this exact format (no other text):
+NAME: [funny name here]
+NOTES: [spicy comment here]

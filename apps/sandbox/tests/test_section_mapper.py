@@ -7,6 +7,7 @@ from report_agent.outline_parser import Section
 from report_agent.section_mapper import (
     SectionMapper,
     SectionMapping,
+    ChartSelector,
     get_section_keywords,
     CATEGORY_ALIASES,
 )
@@ -20,6 +21,7 @@ class TestGetSectionKeywords:
             level=1,
             instructions="Discuss carbon emissions trends",
             review_comments="",
+            review_author="",
             review_ratings={},
             review_notes="",
             parent_id=None,
@@ -37,6 +39,7 @@ class TestGetSectionKeywords:
             level=1,
             instructions="This is a section about the analysis",
             review_comments="",
+            review_author="",
             review_ratings={},
             review_notes="",
             parent_id=None,
@@ -55,6 +58,7 @@ class TestGetSectionKeywords:
             level=1,
             instructions="",
             review_comments="",
+            review_author="",
             review_ratings={},
             review_notes="",
             parent_id=None,
@@ -68,13 +72,48 @@ class TestGetSectionKeywords:
 
 class TestSectionMapping:
     def test_dataclass(self):
-        mapping = SectionMapping(charts=["chart1", "chart2"], description="Test mapping")
+        selectors = [ChartSelector(id="chart1"), ChartSelector(id="chart2")]
+        mapping = SectionMapping(selectors=selectors, description="Test mapping")
         assert mapping.charts == ["chart1", "chart2"]
         assert mapping.description == "Test mapping"
 
     def test_default_description(self):
-        mapping = SectionMapping(charts=["chart1"])
+        selectors = [ChartSelector(id="chart1")]
+        mapping = SectionMapping(selectors=selectors)
         assert mapping.description == ""
+
+    def test_max_charts(self):
+        selectors = [ChartSelector(id="chart1")]
+        mapping = SectionMapping(selectors=selectors, max_charts=5)
+        assert mapping.max_charts == 5
+
+    def test_charts_property_filters_patterns(self):
+        selectors = [
+            ChartSelector(id="chart1"),
+            ChartSelector(pattern="test/*"),
+            ChartSelector(id="chart2"),
+        ]
+        mapping = SectionMapping(selectors=selectors)
+        assert mapping.charts == ["chart1", "chart2"]
+
+
+class TestChartSelector:
+    def test_explicit_id(self):
+        sel = ChartSelector(id="emissions/test_chart")
+        assert sel.id == "emissions/test_chart"
+        assert sel.pattern is None
+        assert sel.auto is False
+
+    def test_pattern(self):
+        sel = ChartSelector(pattern="built_environment/residential_*", max=3)
+        assert sel.pattern == "built_environment/residential_*"
+        assert sel.max == 3
+        assert sel.id is None
+
+    def test_auto(self):
+        sel = ChartSelector(auto=True, max=2)
+        assert sel.auto is True
+        assert sel.max == 2
 
 
 class TestSectionMapperWithMockData:
@@ -222,6 +261,7 @@ class TestSectionMapperWithSectionObject(TestSectionMapperWithMockData):
             level=1,
             instructions="Analyze transport energy use by fuel type",
             review_comments="",
+            review_author="",
             review_ratings={},
             review_notes="",
             parent_id=None,
@@ -240,6 +280,7 @@ class TestSectionMapperWithSectionObject(TestSectionMapperWithMockData):
             level=1,
             instructions="Focus on residential building energy consumption patterns",
             review_comments="",
+            review_author="",
             review_ratings={},
             review_notes="",
             parent_id=None,
@@ -284,3 +325,140 @@ class TestSectionMapperInvalidMapping:
     def test_nonexistent_mapping_file(self, catalog, tmp_path):
         mapper = SectionMapper(catalog, tmp_path / "nonexistent.json")
         assert mapper.get_all_mappings() == {}
+
+
+class TestPatternMatching(TestSectionMapperWithMockData):
+    """Test pattern-based chart selection."""
+
+    @pytest.fixture
+    def extended_data_root(self, tmp_path):
+        """Create data with multiple residential/commercial charts."""
+        (tmp_path / "built_environment").mkdir()
+        (tmp_path / "emissions").mkdir()
+
+        (tmp_path / "built_environment" / "residential_buildings_energy_use_by_fuel.csv").write_text("data")
+        (tmp_path / "built_environment" / "residential_buildings_demand.csv").write_text("data")
+        (tmp_path / "built_environment" / "residential_buildings_emissions.csv").write_text("data")
+        (tmp_path / "built_environment" / "commercial_buildings_energy_use_by_fuel.csv").write_text("data")
+        (tmp_path / "built_environment" / "commercial_buildings_demand.csv").write_text("data")
+        (tmp_path / "built_environment" / "building_production_by_sector.csv").write_text("data")
+
+        (tmp_path / "emissions" / "built_environment_emissions.csv").write_text("data")
+
+        return tmp_path
+
+    @pytest.fixture
+    def extended_catalog(self, extended_data_root):
+        return DataCatalog(extended_data_root)
+
+    def test_pattern_matches_multiple_charts(self, extended_catalog, tmp_path):
+        mapping_data = {
+            "residential": {
+                "charts": [
+                    {"pattern": "built_environment/residential_buildings_*"}
+                ],
+                "description": "Residential charts",
+            }
+        }
+        mapping_path = tmp_path / "mapping.json"
+        mapping_path.write_text(json.dumps(mapping_data))
+
+        mapper = SectionMapper(extended_catalog, mapping_path)
+        charts = mapper.get_charts_for_section("residential")
+
+        chart_ids = [c.id for c in charts]
+        assert len(charts) == 3
+        assert "residential_buildings_energy_use_by_fuel" in chart_ids
+        assert "residential_buildings_demand" in chart_ids
+        assert "residential_buildings_emissions" in chart_ids
+
+    def test_pattern_with_max_limit(self, extended_catalog, tmp_path):
+        mapping_data = {
+            "residential": {
+                "charts": [
+                    {"pattern": "built_environment/residential_buildings_*", "max": 2}
+                ],
+            }
+        }
+        mapping_path = tmp_path / "mapping.json"
+        mapping_path.write_text(json.dumps(mapping_data))
+
+        mapper = SectionMapper(extended_catalog, mapping_path)
+        charts = mapper.get_charts_for_section("residential")
+        assert len(charts) == 2
+
+    def test_explicit_plus_pattern(self, extended_catalog, tmp_path):
+        mapping_data = {
+            "residential": {
+                "charts": [
+                    "built_environment/residential_buildings_energy_use_by_fuel",
+                    {"pattern": "built_environment/residential_buildings_*", "max": 3},
+                    "emissions/built_environment_emissions",
+                ],
+            }
+        }
+        mapping_path = tmp_path / "mapping.json"
+        mapping_path.write_text(json.dumps(mapping_data))
+
+        mapper = SectionMapper(extended_catalog, mapping_path)
+        charts = mapper.get_charts_for_section("residential")
+
+        chart_ids = [c.id for c in charts]
+        assert charts[0].id == "residential_buildings_energy_use_by_fuel"
+        assert "built_environment_emissions" in chart_ids
+        assert len(charts) == 4
+
+    def test_max_charts_section_limit(self, extended_catalog, tmp_path):
+        mapping_data = {
+            "residential": {
+                "max_charts": 2,
+                "charts": [
+                    {"pattern": "built_environment/residential_buildings_*"},
+                ],
+            }
+        }
+        mapping_path = tmp_path / "mapping.json"
+        mapping_path.write_text(json.dumps(mapping_data))
+
+        mapper = SectionMapper(extended_catalog, mapping_path)
+        charts = mapper.get_charts_for_section("residential")
+        assert len(charts) == 2
+
+    def test_deduplication(self, extended_catalog, tmp_path):
+        mapping_data = {
+            "residential": {
+                "charts": [
+                    "built_environment/residential_buildings_demand",
+                    {"pattern": "built_environment/residential_buildings_*"},
+                ],
+            }
+        }
+        mapping_path = tmp_path / "mapping.json"
+        mapping_path.write_text(json.dumps(mapping_data))
+
+        mapper = SectionMapper(extended_catalog, mapping_path)
+        charts = mapper.get_charts_for_section("residential")
+
+        chart_ids = [c.id for c in charts]
+        assert chart_ids.count("residential_buildings_demand") == 1
+        assert len(charts) == 3
+
+    def test_backwards_compatibility(self, extended_catalog, tmp_path):
+        """Legacy format with just string arrays should still work."""
+        mapping_data = {
+            "residential": {
+                "charts": [
+                    "built_environment/residential_buildings_energy_use_by_fuel",
+                    "emissions/built_environment_emissions",
+                ],
+            }
+        }
+        mapping_path = tmp_path / "mapping.json"
+        mapping_path.write_text(json.dumps(mapping_data))
+
+        mapper = SectionMapper(extended_catalog, mapping_path)
+        charts = mapper.get_charts_for_section("residential")
+
+        assert len(charts) == 2
+        assert charts[0].id == "residential_buildings_energy_use_by_fuel"
+        assert charts[1].id == "built_environment_emissions"

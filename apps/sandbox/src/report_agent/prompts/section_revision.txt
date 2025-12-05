@@ -1,0 +1,39 @@
+You are revising a draft section of a technical report based on reviewer feedback.
+
+# Section
+- **Title**: {section_title}
+- **Heading Level**: {heading_markers}
+{parent_section_line}
+
+## Section Instructions
+{instructions_block}
+
+## Current Draft
+Here is the existing content that needs revision:
+
+```markdown
+{existing_content}
+```
+
+## Reviewer Feedback
+{review_block}
+
+{available_data_block}
+
+## Task
+
+Revise the current draft to address the reviewer feedback. Follow these rules:
+
+1. **Preserve good content**: Keep accurate, well-written portions where possible.
+2. **Address all feedback**: Explicitly fix issues called out in the review notes.
+3. **Use available data**: Reference charts and data where relevant.
+4. **Maintain consistency**: Keep the section internally consistent and self-contained.
+5. **Do not invent facts**: Only use provided data and common domain knowledge.
+
+## Output Format
+
+Return **only** the revised section body in Markdown:
+- Do NOT include the section heading line (e.g., "## Section Title")
+- Do NOT include any HTML comments (no instructions or review blocks)
+- Do NOT wrap the output in backticks or code fences
+- Start directly with the content

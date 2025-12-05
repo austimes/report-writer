@@ -54,26 +54,34 @@
   },
   "industry": {
     "description": "Overview of industry energy consumption projection results",
+    "max_charts": 12,
     "charts": [
       "industry/industry_energy_use_by_fuel",
       "industry/industry_emissions_and_captured_emissions",
-      "iron_and_steel/iron_and_steel_energy_use_by_fuel",
+      { "pattern": "iron_and_steel/*", "max": 3 },
+      { "pattern": "industry/aluminium_*", "max": 3 },
+      "emissions/iron_and_steel_emissions",
+      { "pattern": "emissions/*aluminium*", "max": 1 },
       "emissions/manufacturing_emissions_by_sector",
       "manufacturing/chemical_captured_emissions_by_process"
     ]
   },
   "residential": {
     "description": "Overview of residential energy consumption projection results",
+    "max_charts": 6,
     "charts": [
       "built_environment/residential_buildings_energy_use_by_fuel",
+      { "pattern": "built_environment/residential_buildings_*", "max": 4 },
       "emissions/built_environment_emissions",
       "built_environment/building_production_by_sector"
     ]
   },
   "commercial": {
     "description": "Overview of commercial energy consumption projection results",
+    "max_charts": 6,
     "charts": [
       "built_environment/commercial_buildings_energy_use_by_fuel",
+      { "pattern": "built_environment/commercial_buildings_*", "max": 4 },
       "emissions/built_environment_emissions",
       "built_environment/building_production_by_sector"
     ]

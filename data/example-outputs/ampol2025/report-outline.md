@@ -27,11 +27,11 @@
 <!-- Review comments: -->
 
 ### Residential 
-<!-- Section instructions: Provide an overview of the residential energy consumption projection results -->
+<!-- Section instructions: Provide an overview of the residential energy consumption projection results. Be sure to only include residential and NOT commercial. The explaination should take into account the demand. -->
 <!-- Review comments: -->
 
 ### Commercial 
-<!-- Section instructions: Provide an overview of the commercial energy consumption projection results -->
+<!-- Section instructions: Provide an overview of the commercial energy consumption projection results. Do NOT include residential. Be sure to incorporate the impact of demand on the energy consumption. -->
 <!-- Review comments: -->
 
 ### Agriculture
