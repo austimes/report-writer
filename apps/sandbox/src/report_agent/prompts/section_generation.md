@@ -9,6 +9,10 @@
 
 {existing_content_block}
 
+{integration_hints_block}
+
+{state_hints_block}
+
 {available_data_block}
 
 ## Output Requirements

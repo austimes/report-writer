@@ -7,8 +7,22 @@ import pytest
 from typer.testing import CliRunner
 
 from report_agent.cli import app
+from report_agent.git_integration import REPORT_META_FILENAME
 
 runner = CliRunner()
+
+
+def init_mock_report_project(output_root: Path) -> None:
+    """Create a mock initialized report project for testing (without actual git/gh)."""
+    output_root.mkdir(parents=True, exist_ok=True)
+    (output_root / ".git").mkdir()
+    meta = {
+        "report_name": "Test Report",
+        "github_repo": "git@github.com:austimes/test-report.git",
+        "created_at": "2025-01-01T00:00:00",
+        "tool_version": "0.1.0",
+    }
+    (output_root / REPORT_META_FILENAME).write_text(json.dumps(meta))
 
 
 @pytest.fixture
@@ -48,7 +62,8 @@ def sample_data_root(tmp_path: Path) -> Path:
 
 
 class TestGenerateSectionCommand:
-    def test_missing_outline(self, tmp_path: Path, sample_data_root: Path):
+    def test_requires_initialized_project(self, tmp_path: Path, sample_data_root: Path):
+        """Commands now require init-report to be run first."""
         result = runner.invoke(
             app,
             [
@@ -60,9 +75,27 @@ class TestGenerateSectionCommand:
             ],
         )
         assert result.exit_code == 1
-        assert "not found" in result.output
+        assert "init-report" in result.output
+
+    def test_missing_outline(self, tmp_path: Path, sample_data_root: Path):
+        output_root = tmp_path / "output"
+        init_mock_report_project(output_root)
+        result = runner.invoke(
+            app,
+            [
+                "generate-section",
+                "--outline", str(tmp_path / "missing.md"),
+                "--data-root", str(sample_data_root),
+                "--section", "emissions",
+                "--output-root", str(output_root),
+            ],
+        )
+        assert result.exit_code == 1
+        assert "not found" in result.output or "No outline found" in result.output
 
     def test_missing_data_root(self, sample_outline: Path, tmp_path: Path):
+        output_root = tmp_path / "output"
+        init_mock_report_project(output_root)
         result = runner.invoke(
             app,
             [
@@ -70,13 +103,15 @@ class TestGenerateSectionCommand:
                 "--outline", str(sample_outline),
                 "--data-root", str(tmp_path / "missing"),
                 "--section", "emissions",
-                "--output-root", str(tmp_path / "output"),
+                "--output-root", str(output_root),
             ],
         )
         assert result.exit_code == 1
         assert "not found" in result.output
 
     def test_missing_section(self, sample_outline: Path, sample_data_root: Path, tmp_path: Path):
+        output_root = tmp_path / "output"
+        init_mock_report_project(output_root)
         result = runner.invoke(
             app,
             [
@@ -84,7 +119,7 @@ class TestGenerateSectionCommand:
                 "--outline", str(sample_outline),
                 "--data-root", str(sample_data_root),
                 "--section", "nonexistent",
-                "--output-root", str(tmp_path / "output"),
+                "--output-root", str(output_root),
             ],
         )
         assert result.exit_code == 1
@@ -109,7 +144,8 @@ class TestGenerateSectionCommand:
 
 
 class TestGenerateReportCommand:
-    def test_missing_outline(self, tmp_path: Path, sample_data_root: Path):
+    def test_requires_initialized_project(self, tmp_path: Path, sample_data_root: Path):
+        """Commands now require init-report to be run first."""
         result = runner.invoke(
             app,
             [
@@ -120,7 +156,22 @@ class TestGenerateReportCommand:
             ],
         )
         assert result.exit_code == 1
-        assert "not found" in result.output
+        assert "init-report" in result.output
+
+    def test_missing_outline(self, tmp_path: Path, sample_data_root: Path):
+        output_root = tmp_path / "output"
+        init_mock_report_project(output_root)
+        result = runner.invoke(
+            app,
+            [
+                "generate-report",
+                "--outline", str(tmp_path / "missing.md"),
+                "--data-root", str(sample_data_root),
+                "--output-root", str(output_root),
+            ],
+        )
+        assert result.exit_code == 1
+        assert "not found" in result.output or "No outline found" in result.output
 
     def test_dry_run(self, sample_outline: Path, sample_data_root: Path, tmp_path: Path):
         result = runner.invoke(

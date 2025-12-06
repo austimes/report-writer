@@ -1,0 +1,199 @@
+"""Editorial log system for human-readable README.md commentary.
+
+Generates concise, editor-style notes after each CLI operation and appends
+them to a dedicated section in README.md. Uses a cheap LLM model for speed.
+"""
+
+from __future__ import annotations
+
+import re
+from datetime import datetime, timezone
+from pathlib import Path
+from typing import Any
+
+from .change_journal import JournalEntry
+from .prompts import load_prompt
+
+QUIP_MODEL = "gpt-5-nano-2025-08-07"
+
+EDITORIAL_START = "<!-- REPORT-AGENT:EDITORIAL-LOG-START -->"
+EDITORIAL_END = "<!-- REPORT-AGENT:EDITORIAL-LOG-END -->"
+
+MODEL_PRICING: dict[str, dict[str, float]] = {
+    "gpt-5-nano-2025-08-07": {"input": 0.10, "output": 0.40},
+}
+
+
+def _build_operation_summary(
+    entry: JournalEntry,
+    extra_context: dict[str, Any] | None = None,
+) -> str:
+    """Build a compact, machine-readable summary for the LLM prompt."""
+    lines = []
+    
+    lines.append(f"- command: {entry.command}")
+    lines.append(f"- timestamp: {entry.timestamp}")
+    
+    if entry.sections_affected:
+        lines.append(f"- sections_affected: {entry.sections_affected}")
+    
+    if entry.model:
+        lines.append(f"- model: {entry.model}")
+    
+    if entry.thinking_level:
+        lines.append(f"- thinking_level: {entry.thinking_level}")
+    
+    if entry.review_author:
+        lines.append(f"- review_author: {entry.review_author}")
+    
+    if entry.review_notes:
+        notes = entry.review_notes
+        if len(notes) > 200:
+            notes = notes[:197] + "..."
+        lines.append(f"- review_notes: {notes}")
+    
+    if entry.cost_usd is not None:
+        lines.append(f"- cost_usd: ${entry.cost_usd:.4f}")
+    
+    if entry.duration_seconds is not None:
+        lines.append(f"- duration_seconds: {entry.duration_seconds:.1f}")
+    
+    if not entry.success:
+        lines.append(f"- status: FAILED")
+        if entry.error_message:
+            lines.append(f"- error: {entry.error_message}")
+    
+    if extra_context:
+        lines.append("")
+        lines.append("Additional context:")
+        for key, value in extra_context.items():
+            if value is None:
+                continue
+            if isinstance(value, list):
+                if len(value) > 5:
+                    value = value[:5] + ["..."]
+                value = ", ".join(str(v) for v in value)
+            lines.append(f"- {key}: {value}")
+    
+    return "\n".join(lines)
+
+
+def generate_editor_note(
+    entry: JournalEntry,
+    extra_context: dict[str, Any] | None = None,
+) -> str:
+    """Call a small LLM to turn journal + context into 1-2 editor-style sentences.
+    
+    Args:
+        entry: The journal entry for the operation
+        extra_context: Additional operation-specific context
+        
+    Returns:
+        A short editorial note (1-2 sentences)
+    """
+    operation_summary = _build_operation_summary(entry, extra_context)
+    
+    template = load_prompt("editor_note")
+    prompt = template.format(operation_summary=operation_summary)
+    
+    note = _call_llm(prompt)
+    return note.strip()
+
+
+def _call_llm(prompt: str) -> str:
+    """Call the cheap LLM model for commentary generation."""
+    from openai import OpenAI
+    
+    client = OpenAI()
+    
+    response = client.chat.completions.create(
+        model=QUIP_MODEL,
+        messages=[{"role": "user", "content": prompt}],
+        max_completion_tokens=100,
+    )
+    
+    if not response.choices:
+        raise RuntimeError("LLM returned no choices")
+    
+    return response.choices[0].message.content or ""
+
+
+def _ensure_editorial_section(content: str) -> str:
+    """Ensure the README content has the editorial log section."""
+    if EDITORIAL_START in content:
+        return content
+    
+    section = f"""
+## Editorial Log
+
+{EDITORIAL_START}
+<!-- Entries are appended here by report-agent. Most recent at top. -->
+{EDITORIAL_END}
+"""
+    
+    return content.rstrip() + "\n" + section
+
+
+def _format_entry(note: str, entry: JournalEntry) -> str:
+    """Format a single editorial log entry as markdown."""
+    ts = datetime.fromisoformat(entry.timestamp)
+    ts_str = ts.strftime("%Y-%m-%d %H:%M UTC")
+    return f"- **{ts_str} · {entry.command}** — {note}\n"
+
+
+def append_note_to_readme(
+    output_root: Path,
+    note: str,
+    entry: JournalEntry,
+) -> None:
+    """Append an editorial note to README.md.
+    
+    Creates README.md if it doesn't exist. Ensures the editorial log section
+    exists and inserts the new entry at the top (most recent first).
+    
+    Args:
+        output_root: The report project directory
+        note: The editorial note text
+        entry: The journal entry for metadata (timestamp, command)
+    """
+    readme_path = output_root / "README.md"
+    
+    if readme_path.exists():
+        content = readme_path.read_text()
+    else:
+        content = f"# Report\n\nGenerated by report-agent.\n"
+    
+    content = _ensure_editorial_section(content)
+    
+    formatted_entry = _format_entry(note, entry)
+    
+    pattern = rf"({re.escape(EDITORIAL_START)}\n)(<!-- Entries.*?-->\n)?"
+    replacement = rf"\1{formatted_entry}"
+    
+    new_content = re.sub(pattern, replacement, content)
+    
+    readme_path.write_text(new_content)
+
+
+def update_readme_with_note(
+    output_root: Path,
+    entry: JournalEntry,
+    extra_context: dict[str, Any] | None = None,
+) -> str | None:
+    """Generate and append an editorial note to README.md.
+    
+    This is the main entry point for CLI commands. It handles the full flow:
+    1. Generate note via LLM
+    2. Append to README.md
+    
+    Returns the generated note, or None if generation failed.
+    Failures are logged but don't raise exceptions.
+    """
+    try:
+        note = generate_editor_note(entry, extra_context)
+        append_note_to_readme(output_root, note, entry)
+        return note
+    except Exception as e:
+        import sys
+        print(f"Warning: Failed to update editorial log: {e}", file=sys.stderr)
+        return None

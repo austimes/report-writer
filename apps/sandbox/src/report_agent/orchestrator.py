@@ -12,9 +12,12 @@ from .chart_reader import ChartReader, ChartSummary
 from .data_catalog import ChartMeta, DataCatalog
 from .outline_parser import Section, parse_outline
 from .prompts import get_system_prompt, load_prompt
+from .report_state import CanonicalFigure, ReportState
 from .section_mapper import SectionMapper
+from .section_meta import IntegrationHints, parse_section_meta
 
 ProgressCallback = Callable[[str], None]
+SectionCompleteCallback = Callable[["GenerationResult", str], None]  # (result, action)
 
 DEFAULT_MODEL = "gpt-5.1-2025-11-13"
 DEFAULT_THINKING_LEVEL = "medium"
@@ -71,6 +74,7 @@ class ReportOrchestrator:
         thinking_level: str = DEFAULT_THINKING_LEVEL,
         dry_run: bool = False,
         on_progress: ProgressCallback | None = None,
+        on_section_complete: SectionCompleteCallback | None = None,
         llm_log_dir: Path | None = None,
         output_dir: Path | None = None,
     ):
@@ -80,6 +84,7 @@ class ReportOrchestrator:
         self.thinking_level = thinking_level
         self.dry_run = dry_run
         self._on_progress = on_progress
+        self._on_section_complete = on_section_complete
         self._output_dir = Path(output_dir) if output_dir else None
         self._llm_log_dir = (
             Path(llm_log_dir) if llm_log_dir
@@ -228,7 +233,8 @@ class ReportOrchestrator:
         """Build the prompt for generating a section.
         
         Uses the template from prompts/section_generation.md with dynamic blocks
-        for parent section, instructions, existing content, and chart data.
+        for parent section, instructions, existing content, chart data, and
+        integration hints.
         """
         parent_section_line = ""
         if section.parent_id:
@@ -248,6 +254,10 @@ class ReportOrchestrator:
 
         available_data_block = self._build_available_data_block(charts)
 
+        integration_hints_block, state_hints_block = self._load_integration_hints_for_section(
+            section
+        )
+
         template = load_prompt("section_generation")
         return template.format(
             section_title=section.title,
@@ -257,6 +267,8 @@ class ReportOrchestrator:
             instructions_block=instructions_block,
             existing_content_block=existing_content_block,
             available_data_block=available_data_block,
+            integration_hints_block=integration_hints_block,
+            state_hints_block=state_hints_block,
         )
 
     def _build_available_data_block(self, charts: list[ChartMeta]) -> str:
@@ -300,6 +312,95 @@ class ReportOrchestrator:
             lines.append("")
         return "\n".join(lines)
 
+    def _build_integration_hints_block(self, hints: IntegrationHints) -> str:
+        """Build markdown block from IntegrationHints for section prompts."""
+        lines: list[str] = []
+
+        if hints.notes:
+            lines.append("## Integration Guidelines")
+            lines.append("")
+            lines.append("### Previous Integration Notes")
+            lines.append("The integration pass previously made these changes to this section:")
+            for note in hints.notes:
+                desc = note.type
+                if note.semantic_key:
+                    desc += f" ({note.semantic_key})"
+                if note.reason:
+                    desc += f": {note.reason}"
+                lines.append(f"- {desc}")
+            lines.append("")
+
+        if hints.avoid_figures:
+            if not lines:
+                lines.append("## Integration Guidelines")
+                lines.append("")
+            lines.append("### Figures to Avoid Recreating")
+            lines.append("Do NOT recreate these figures (they exist in other sections):")
+            for key in hints.avoid_figures:
+                ref_info = ""
+                for cf in hints.canonical_figures:
+                    if cf.get("semantic_key") == key:
+                        ref_info = f" - Refer to Figure {cf.get('id', '?')} instead"
+                        break
+                lines.append(f"- {key}{ref_info}")
+            lines.append("")
+
+        return "\n".join(lines) if lines else ""
+
+    def _build_state_hints_block(
+        self, figures: list[CanonicalFigure], section_id: str
+    ) -> str:
+        """Build markdown block listing figures from other sections."""
+        other_figs = [f for f in figures if f.owner_section != section_id]
+        if not other_figs:
+            return ""
+
+        lines = [
+            "## Cross-Section Figures",
+            "",
+            "The following figures already exist in other sections. Reference them instead of recreating:",
+        ]
+        for fig in other_figs:
+            lines.append(
+                f'- **{fig.id}** ({fig.semantic_key}): "{fig.caption}" - owned by \'{fig.owner_section}\''
+            )
+        lines.append("")
+        lines.append('Use cross-references like: "As shown in Figure 1 (see Results section)..."')
+        lines.append("")
+
+        return "\n".join(lines)
+
+    def _load_integration_hints_for_section(
+        self, section: Section
+    ) -> tuple[str, str]:
+        """Load integration hints from section meta and report state.
+        
+        Returns (integration_hints_block, state_hints_block).
+        """
+        integration_hints_block = ""
+        state_hints_block = ""
+
+        existing_body = self._load_existing_section_body(section)
+        if existing_body:
+            meta = parse_section_meta(existing_body)
+            if meta and meta.integration_hints:
+                integration_hints_block = self._build_integration_hints_block(
+                    meta.integration_hints
+                )
+
+        if self._output_dir:
+            state_path = self._output_dir / "report_state.json"
+            if state_path.exists():
+                try:
+                    report_state = ReportState.load(state_path)
+                    state_hints_block = self._build_state_hints_block(
+                        report_state.figures, section.id
+                    )
+                except (json.JSONDecodeError, FileNotFoundError):
+                    pass
+
+        return integration_hints_block, state_hints_block
+
     def build_section_revision_prompt(
         self,
         section: Section,
@@ -309,7 +410,7 @@ class ReportOrchestrator:
         """Build the prompt for revising a section based on review comments.
 
         Uses the template from prompts/section_revision.txt with dynamic blocks
-        for existing content, review feedback, and chart data.
+        for existing content, review feedback, chart data, and integration hints.
         """
         parent_section_line = ""
         if section.parent_id:
@@ -341,6 +442,10 @@ class ReportOrchestrator:
 
         available_data_block = self._build_available_data_block(charts)
 
+        integration_hints_block, state_hints_block = self._load_integration_hints_for_section(
+            section
+        )
+
         template = load_prompt("section_revision")
         return template.format(
             section_title=section.title,
@@ -350,6 +455,8 @@ class ReportOrchestrator:
             existing_content=existing_content,
             review_block=review_block,
             available_data_block=available_data_block,
+            integration_hints_block=integration_hints_block,
+            state_hints_block=state_hints_block,
         )
 
     def generate_section(self, section_id: str) -> GenerationResult:
@@ -516,6 +623,10 @@ class ReportOrchestrator:
 
             if self._output_dir and not result.dry_run:
                 self._write_section_file(result)
+                
+                # Notify CLI layer to commit after each section
+                if self._on_section_complete:
+                    self._on_section_complete(result, "generated")
 
         self._emit("Assembling final report from section files")
         report_content = self._build_report_from_sections()
@@ -561,10 +672,101 @@ class ReportOrchestrator:
             
             results.append(result)
             total_usage = total_usage + result.usage
+            
+            # Notify CLI layer to commit after each section
+            if self._on_section_complete and not result.dry_run:
+                self._on_section_complete(result, action_map[section.id])
 
         self._emit("Assembling final report from section files")
         report_content = self._build_report_from_sections()
         return report_content, total_usage, action_map
+
+    def integrate_report(
+        self,
+        max_change_ratio: float = 0.3,
+    ) -> "IntegrationResult":
+        """Run integration pass on the current report.
+        
+        This method:
+        1. Loads the current report from _sections
+        2. Loads or creates report_state.json
+        3. Runs the integrator LLM pass
+        4. Writes updated sections and state
+        5. Rebuilds report.md
+        
+        Args:
+            max_change_ratio: Maximum allowed content change ratio (0.0-1.0)
+            
+        Returns:
+            IntegrationResult with integrated content and updated state
+            
+        Raises:
+            ValueError: If output_dir is not set
+        """
+        from .integrator import ReportIntegrator, IntegrationResult as IR
+        from .report_state import ReportState
+        
+        if self._output_dir is None:
+            raise ValueError("output_dir must be set to integrate report")
+        
+        self._emit("Loading current report content...")
+        report_content = self._build_report_from_sections()
+        
+        state_path = self._output_dir / "report_state.json"
+        if state_path.exists():
+            self._emit(f"Loading report state from {state_path}")
+            report_state = ReportState.load(state_path)
+        else:
+            report_id = self._output_dir.name
+            self._emit(f"Creating new report state for '{report_id}'")
+            report_state = ReportState.new(report_id)
+        
+        integrator = ReportIntegrator(
+            model=self.model,
+            thinking_level=self.thinking_level,
+            dry_run=self.dry_run,
+            on_progress=self._on_progress,
+            llm_log_dir=self._llm_log_dir,
+        )
+        
+        result = integrator.integrate(
+            report_content=report_content,
+            report_state=report_state,
+            sections=self._sections,
+            max_change_ratio=max_change_ratio,
+        )
+        
+        if not self.dry_run and result.validation_passed:
+            self._emit("Writing integrated sections...")
+            self._write_integrated_sections(result.integrated_content)
+            
+            self._emit(f"Saving report state to {state_path}")
+            result.report_state.save(state_path)
+            
+            self._emit("Rebuilding report.md...")
+            final_content = self._build_report_from_sections()
+            report_path = self._output_dir / "report.md"
+            report_path.write_text(final_content)
+        
+        return result
+    
+    def _write_integrated_sections(self, integrated_content: str) -> None:
+        """Parse integrated content and write individual section files."""
+        import re
+        
+        for section in self._sections:
+            pattern = (
+                rf'<!-- BEGIN SECTION: {re.escape(section.id)} .*?-->\s*'
+                rf'(.*?)\s*'
+                rf'<!-- END SECTION: {re.escape(section.id)} -->'
+            )
+            match = re.search(pattern, integrated_content, re.DOTALL)
+            
+            if match:
+                section_content = match.group(1).strip()
+                section_path = self._get_section_path(section)
+                section_path.write_text(section_content)
+                self._emit(f"Updated section file: {section_path.name}")
 
     def _setup_sections_dir(self) -> Path | None:
         """Create _sections directory if output_dir is set."""

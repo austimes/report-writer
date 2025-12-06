@@ -18,6 +18,10 @@ Here is the existing content that needs revision:
 ## Reviewer Feedback
 {review_block}
 
+{integration_hints_block}
+
+{state_hints_block}
+
 {available_data_block}
 
 ## Task

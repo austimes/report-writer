@@ -207,3 +207,84 @@ class TestHasExistingProject:
         from report_agent.cli import has_existing_project
         
         assert has_existing_project(tmp_path) is False
+
+
+class TestOutlineResolution:
+    """Tests for outline resolution and copying helpers."""
+
+    def test_get_outline_in_output_returns_none_if_missing(self, tmp_path):
+        """Should return None if no outline.md in output."""
+        from report_agent.cli import get_outline_in_output
+        
+        assert get_outline_in_output(tmp_path) is None
+
+    def test_get_outline_in_output_returns_path_if_exists(self, tmp_path):
+        """Should return path if outline.md exists."""
+        from report_agent.cli import get_outline_in_output, OUTLINE_FILENAME
+        
+        outline = tmp_path / OUTLINE_FILENAME
+        outline.write_text("# Intro")
+        
+        result = get_outline_in_output(tmp_path)
+        assert result == outline
+
+    def test_copy_outline_to_output(self, tmp_path):
+        """Should copy outline file to output_root."""
+        from report_agent.cli import copy_outline_to_output, OUTLINE_FILENAME
+        
+        source = tmp_path / "source_outline.md"
+        source.write_text("# Intro\n\nSome content.")
+        
+        output_root = tmp_path / "output"
+        dest = copy_outline_to_output(source, output_root)
+        
+        assert dest == output_root / OUTLINE_FILENAME
+        assert dest.exists()
+        assert dest.read_text() == source.read_text()
+
+    def test_resolve_outline_prefers_output_root(self, tmp_path):
+        """Should prefer outline in output_root over provided path."""
+        from report_agent.cli import resolve_outline, OUTLINE_FILENAME
+        from rich.console import Console
+        
+        source = tmp_path / "source_outline.md"
+        source.write_text("# Source")
+        
+        output_root = tmp_path / "output"
+        output_root.mkdir()
+        output_outline = output_root / OUTLINE_FILENAME
+        output_outline.write_text("# Output Version")
+        
+        console = Console(quiet=True)
+        result = resolve_outline(source, output_root, console)
+        
+        assert result == output_outline
+
+    def test_resolve_outline_falls_back_to_provided(self, tmp_path):
+        """Should use provided outline if none in output_root."""
+        from report_agent.cli import resolve_outline
+        from rich.console import Console
+        
+        source = tmp_path / "source_outline.md"
+        source.write_text("# Source")
+        
+        output_root = tmp_path / "output"
+        output_root.mkdir()
+        
+        console = Console(quiet=True)
+        result = resolve_outline(source, output_root, console)
+        
+        assert result == source
+
+    def test_resolve_outline_returns_none_if_not_found(self, tmp_path):
+        """Should return None if no outline found anywhere."""
+        from report_agent.cli import resolve_outline
+        from rich.console import Console
+        
+        output_root = tmp_path / "output"
+        output_root.mkdir()
+        
+        console = Console(quiet=True)
+        result = resolve_outline(None, output_root, console)
+        
+        assert result is None
